@@ -1,0 +1,386 @@
+[
+  {
+    "code": "31.08",
+    "dep": [],
+    "name": "Sistemas de Representación",
+    "formal": "Sistemas de Representación",
+    "semester": 1
+  },
+  {
+    "code": "72.03",
+    "dep": [],
+    "name": "Introducción a la Informática",
+    "formal": "Introducción a la Informática",
+    "semester": 1
+  },
+  {
+    "code": "93.26",
+    "dep": [],
+    "name": "Análisis Matemático I",
+    "formal": "Análisis Matemático I",
+    "semester": 1
+  },
+  {
+    "code": "93.58",
+    "dep": [],
+    "name": "Álgebra",
+    "formal": "Álgebra",
+    "semester": 1
+  },
+  {
+    "code": "94.24",
+    "dep": [],
+    "name": "Metodología del Aprendizaje",
+    "formal": "Metodología del Aprendizaje",
+    "semester": 1
+  },
+  {
+    "code": "72.31",
+    "dep": [
+      "93.58",
+      "72.03"
+    ],
+    "name": "Programación Imperativa",
+    "formal": "Programación Imperativa",
+    "semester": 2
+  },
+  {
+    "code": "93.28",
+    "dep": [
+      "93.58",
+      "93.26"
+    ],
+    "name": "Análisis Matemático II",
+    "formal": "Análisis Matemático II",
+    "semester": 2
+  },
+  {
+    "code": "93.41",
+    "dep": [
+      "93.26"
+    ],
+    "name": "Física I",
+    "formal": "Física I",
+    "semester": 2
+  },
+  {
+    "code": "93.59",
+    "dep": [
+      "93.58"
+    ],
+    "name": "Matemática Discreta",
+    "formal": "Matemática Discreta",
+    "semester": 2
+  },
+  {
+    "code": "12.09",
+    "dep": [],
+    "name": "Química",
+    "formal": "Química",
+    "semester": 3
+  },
+  {
+    "code": "72.32",
+    "dep": [
+      "72.31"
+    ],
+    "name": "Diseño y Procesamiento de Documentos XML",
+    "formal": "Diseño y Procesamiento de Documentos XML",
+    "semester": 3
+  },
+  {
+    "code": "72.33",
+    "dep": [
+      "72.31"
+    ],
+    "name": "Programación Orientada a Objetos",
+    "formal": "Programación Orientada a Objetos",
+    "semester": 3
+  },
+  {
+    "code": "93.35",
+    "dep": [
+      "93.58"
+    ],
+    "name": "Lógica Computacional",
+    "formal": "Lógica Computacional",
+    "semester": 3
+  },
+  {
+    "code": "93.42",
+    "dep": [
+      "93.28"
+    ],
+    "name": "Física II",
+    "formal": "Física II",
+    "semester": 3
+  },
+  {
+    "code": "72.08",
+    "dep": [
+      "72.31"
+    ],
+    "name": "Arquitectura de Computadoras",
+    "formal": "Arquitectura de Computadoras",
+    "semester": 4
+  },
+  {
+    "code": "72.34",
+    "dep": [
+      "93.59",
+      "72.33"
+    ],
+    "name": "Estructura de Datos y Algoritmos",
+    "formal": "Estructura de Datos y Algoritmos",
+    "semester": 4
+  },
+  {
+    "code": "93.24",
+    "dep": [
+      "93.28"
+    ],
+    "name": "Probabilidad y Estadística",
+    "formal": "Probabilidad y Estadística",
+    "semester": 4
+  },
+  {
+    "code": "93.43",
+    "dep": [
+      "93.28",
+      "93.41"
+    ],
+    "name": "Física III",
+    "formal": "Física III",
+    "semester": 4
+  },
+  {
+    "code": "72.11",
+    "dep": [
+      "72.08",
+      "72.34"
+    ],
+    "name": "Sistemas Operativos",
+    "formal": "Sistemas Operativos",
+    "semester": 5
+  },
+  {
+    "code": "72.35",
+    "dep": [
+      "72.33"
+    ],
+    "name": "Ingenieria de Software I",
+    "formal": "Ingenieria de Software I",
+    "semester": 5
+  },
+  {
+    "code": "72.36",
+    "dep": [
+      "72.33",
+      "72.32"
+    ],
+    "name": "Interacción Hombre-Computadora (HCI)",
+    "formal": "Interacción Hombre-Computadora (HCI)",
+    "semester": 5
+  },
+  {
+    "code": "72.37",
+    "dep": [
+      "72.34",
+      "93.35"
+    ],
+    "name": "Base de Datos I",
+    "formal": "Base de Datos I",
+    "semester": 5
+  },
+  {
+    "code": "72.07",
+    "dep": [
+      "72.11"
+    ],
+    "name": "Protocolos de Comunicación",
+    "formal": "Protocolos de Comunicación",
+    "semester": 6
+  },
+  {
+    "code": "72.38",
+    "dep": [
+      "72.11",
+      "72.37",
+      "72.36",
+      "72.35"
+    ],
+    "name": "Proyecto de Aplicaciones Web",
+    "formal": "Proyecto de Aplicaciones Web",
+    "semester": 6
+  },
+  {
+    "code": "72.39",
+    "dep": [
+      "72.34"
+    ],
+    "name": "Autómatas, Teoría de Lenguajes y Compiladores",
+    "formal": "Autómatas, Teoría de Lenguajes y Compiladores",
+    "semester": 6
+  },
+  {
+    "code": "93.07",
+    "dep": [
+      "93.28"
+    ],
+    "name": "Métodos Numéricos",
+    "formal": "Métodos Numéricos",
+    "semester": 6
+  },
+  {
+    "code": "94.21",
+    "dep": [],
+    "name": "Formación General I",
+    "formal": "Formación General I",
+    "semester": 6
+  },
+  {
+    "code": "94.51",
+    "dep": [],
+    "name": "Inglés I",
+    "formal": "Inglés I",
+    "semester": 6
+  },
+  {
+    "code": "61.23",
+    "dep": [
+      "93.24"
+    ],
+    "name": "Economía para Ingenieros",
+    "formal": "Economía para Ingenieros",
+    "semester": 7
+  },
+  {
+    "code": "61.32",
+    "dep": [],
+    "name": "Derecho para Ingenieros",
+    "formal": "Derecho para Ingenieros",
+    "semester": 7
+  },
+  {
+    "code": "72.40",
+    "dep": [
+      "72.38",
+      "72.35"
+    ],
+    "name": "Ingenieria del Software II",
+    "formal": "Ingenieria del Software II",
+    "semester": 7
+  },
+  {
+    "code": "72.41",
+    "dep": [
+      "72.11",
+      "72.37"
+    ],
+    "name": "Base de Datos II",
+    "formal": "Base de Datos II",
+    "semester": 7
+  },
+  {
+    "code": "72.42",
+    "dep": [
+      "72.07",
+      "72.38"
+    ],
+    "name": "Programación de Objetos Distribuidos",
+    "formal": "Programación de Objetos Distribuidos",
+    "semester": 7
+  },
+  {
+    "code": "93.75",
+    "dep": [
+      "93.07"
+    ],
+    "name": "Métodos Numéricos Avanzados",
+    "formal": "Métodos Numéricos Avanzados",
+    "semester": 7
+  },
+  {
+    "code": "72.25",
+    "dep": [
+      "72.34",
+      "93.07"
+    ],
+    "name": "Simulación de Sistemas",
+    "formal": "Simulación de Sistemas",
+    "semester": 8
+  },
+  {
+    "code": "72.27",
+    "dep": [
+      "93.24",
+      "72.34"
+    ],
+    "name": "Sistemas de Inteligencia Artificial",
+    "formal": "Sistemas de Inteligencia Artificial",
+    "semester": 8
+  },
+  {
+    "code": "72.43",
+    "dep": [],
+    "name": "Gestión de Proyectos Informáticos",
+    "formal": "Gestión de Proyectos Informáticos",
+    "semester": 8
+  },
+  {
+    "code": "72.44",
+    "dep": [
+      "72.07",
+      "72.38"
+    ],
+    "name": "Criptografía y Seguridad",
+    "formal": "Criptografía y Seguridad",
+    "semester": 8
+  },
+  {
+    "code": "12.83",
+    "dep": [],
+    "name": "Seguridad Ocupacional y Ambiental",
+    "formal": "Seguridad Ocupacional y Ambiental",
+    "semester": 9
+  },
+  {
+    "code": "72.45",
+    "dep": [],
+    "name": "Proyecto Final ",
+    "formal": "Proyecto Final ",
+    "semester": 9
+  },
+  {
+    "code": "72.20",
+    "dep": [
+      "72.07"
+    ],
+    "name": "Redes de Información",
+    "formal": "Redes de Información",
+    "semester": 10
+  },
+  {
+    "code": "72.98",
+    "dep": [],
+    "name": "Práctica Laboral",
+    "formal": "Práctica Laboral",
+    "semester": 10
+  },
+  {
+    "code": "94.23",
+    "dep": [],
+    "name": "Formación General III",
+    "formal": "Formación General III",
+    "semester": 10
+  },
+  {
+    "code": "94.52",
+    "dep": [
+      "94.51"
+    ],
+    "name": "Inglés II",
+    "formal": "Inglés II",
+    "semester": 10
+  }
+]
