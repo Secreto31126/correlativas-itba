@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1, p, a {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: max(calc(200px - 10vw), 36px);
+}
+
+a {
+  font-size: max(calc(150px - 10vw), 21px);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.cuatrimestre {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.75vh;
+}
+
+.cuatrimestre > div {
+  padding: 1vh;
+  max-width: 15%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  border: 5px solid rgb(var(--color));
+  border-radius: 1rem;
+  
+  -webkit-transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  
+  touch-action: none;
+}
+
+.hide {
+  opacity: 0.3;
+}
+
+.show {
+  background-color: rgba(var(--color), 0.4);
+}
+
+.famous {
+  z-index: 99999;
+}
+
+.primer.cuatrimestre, .sexto.cuatrimestre {
+  --color: 0, 155, 255;
+}
+
+.segundo.cuatrimestre, .septimo.cuatrimestre {
+  --color: 255, 220, 190;
+}
+
+.tercer.cuatrimestre, .octavo.cuatrimestre {
+  --color: 130, 255, 120;
+}
+
+.cuarto.cuatrimestre, .noveno.cuatrimestre {
+  --color: 255, 60, 60;
+}
+
+.quinto.cuatrimestre, .decimo.cuatrimestre {
+  --color: 225, 150, 255;
+}
+
+.cuatrimestre > div > p {
+  margin: 0;
+  
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
