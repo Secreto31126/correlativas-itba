@@ -1,4 +1,4 @@
 <h1>Correlativas de...</h1>
-<div class="cuatrimestre">
-	<a href="/informatica">Informática</a>
+<div class="text-center">
+	<a href="/informatica" class="underline text-blue-500">Informática</a>
 </div>

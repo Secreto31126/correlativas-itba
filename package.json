@@ -33,7 +33,6 @@
 	"type": "module",
 	"dependencies": {
 		"interactjs": "^1.10.17",
-		"jquery": "^3.7.0",
 		"leader-line": "^1.0.7"
 	}
 }

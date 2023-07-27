@@ -1,42 +1,42 @@
 [
   {
     "code": "31.08",
-    "dep": [],
+    "parent": [],
     "name": "Sistemas de Representación",
     "formal": "Sistemas de Representación",
     "semester": 1
   },
   {
     "code": "72.03",
-    "dep": [],
+    "parent": [],
     "name": "Introducción a la Informática",
     "formal": "Introducción a la Informática",
     "semester": 1
   },
   {
     "code": "93.26",
-    "dep": [],
+    "parent": [],
     "name": "Análisis Matemático I",
     "formal": "Análisis Matemático I",
     "semester": 1
   },
   {
     "code": "93.58",
-    "dep": [],
+    "parent": [],
     "name": "Álgebra",
     "formal": "Álgebra",
     "semester": 1
   },
   {
     "code": "94.24",
-    "dep": [],
+    "parent": [],
     "name": "Metodología del Aprendizaje",
     "formal": "Metodología del Aprendizaje",
     "semester": 1
   },
   {
     "code": "72.31",
-    "dep": [
+    "parent": [
       "93.58",
       "72.03"
     ],
@@ -46,7 +46,7 @@
   },
   {
     "code": "93.28",
-    "dep": [
+    "parent": [
       "93.58",
       "93.26"
     ],
@@ -56,7 +56,7 @@
   },
   {
     "code": "93.41",
-    "dep": [
+    "parent": [
       "93.26"
     ],
     "name": "Física I",
@@ -65,7 +65,7 @@
   },
   {
     "code": "93.59",
-    "dep": [
+    "parent": [
       "93.58"
     ],
     "name": "Matemática Discreta",
@@ -74,14 +74,14 @@
   },
   {
     "code": "12.09",
-    "dep": [],
+    "parent": [],
     "name": "Química",
     "formal": "Química",
     "semester": 3
   },
   {
     "code": "72.32",
-    "dep": [
+    "parent": [
       "72.31"
     ],
     "name": "Diseño y Procesamiento de Documentos XML",
@@ -90,7 +90,7 @@
   },
   {
     "code": "72.33",
-    "dep": [
+    "parent": [
       "72.31"
     ],
     "name": "Programación Orientada a Objetos",
@@ -99,7 +99,7 @@
   },
   {
     "code": "93.35",
-    "dep": [
+    "parent": [
       "93.58"
     ],
     "name": "Lógica Computacional",
@@ -108,7 +108,7 @@
   },
   {
     "code": "93.42",
-    "dep": [
+    "parent": [
       "93.28"
     ],
     "name": "Física II",
@@ -117,7 +117,7 @@
   },
   {
     "code": "72.08",
-    "dep": [
+    "parent": [
       "72.31"
     ],
     "name": "Arquitectura de Computadoras",
@@ -126,7 +126,7 @@
   },
   {
     "code": "72.34",
-    "dep": [
+    "parent": [
       "93.59",
       "72.33"
     ],
@@ -136,7 +136,7 @@
   },
   {
     "code": "93.24",
-    "dep": [
+    "parent": [
       "93.28"
     ],
     "name": "Probabilidad y Estadística",
@@ -145,7 +145,7 @@
   },
   {
     "code": "93.43",
-    "dep": [
+    "parent": [
       "93.28",
       "93.41"
     ],
@@ -155,7 +155,7 @@
   },
   {
     "code": "72.11",
-    "dep": [
+    "parent": [
       "72.08",
       "72.34"
     ],
@@ -165,7 +165,7 @@
   },
   {
     "code": "72.35",
-    "dep": [
+    "parent": [
       "72.33"
     ],
     "name": "Ingenieria de Software I",
@@ -174,7 +174,7 @@
   },
   {
     "code": "72.36",
-    "dep": [
+    "parent": [
       "72.33",
       "72.32"
     ],
@@ -184,7 +184,7 @@
   },
   {
     "code": "72.37",
-    "dep": [
+    "parent": [
       "72.34",
       "93.35"
     ],
@@ -194,7 +194,7 @@
   },
   {
     "code": "72.07",
-    "dep": [
+    "parent": [
       "72.11"
     ],
     "name": "Protocolos de Comunicación",
@@ -203,7 +203,7 @@
   },
   {
     "code": "72.38",
-    "dep": [
+    "parent": [
       "72.11",
       "72.37",
       "72.36",
@@ -215,7 +215,7 @@
   },
   {
     "code": "72.39",
-    "dep": [
+    "parent": [
       "72.34"
     ],
     "name": "Autómatas, Teoría de Lenguajes y Compiladores",
@@ -224,7 +224,7 @@
   },
   {
     "code": "93.07",
-    "dep": [
+    "parent": [
       "93.28"
     ],
     "name": "Métodos Numéricos",
@@ -233,21 +233,21 @@
   },
   {
     "code": "94.21",
-    "dep": [],
+    "parent": [],
     "name": "Formación General I",
     "formal": "Formación General I",
     "semester": 6
   },
   {
     "code": "94.51",
-    "dep": [],
+    "parent": [],
     "name": "Inglés I",
     "formal": "Inglés I",
     "semester": 6
   },
   {
     "code": "61.23",
-    "dep": [
+    "parent": [
       "93.24"
     ],
     "name": "Economía para Ingenieros",
@@ -256,14 +256,14 @@
   },
   {
     "code": "61.32",
-    "dep": [],
+    "parent": [],
     "name": "Derecho para Ingenieros",
     "formal": "Derecho para Ingenieros",
     "semester": 7
   },
   {
     "code": "72.40",
-    "dep": [
+    "parent": [
       "72.38",
       "72.35"
     ],
@@ -273,7 +273,7 @@
   },
   {
     "code": "72.41",
-    "dep": [
+    "parent": [
       "72.11",
       "72.37"
     ],
@@ -283,7 +283,7 @@
   },
   {
     "code": "72.42",
-    "dep": [
+    "parent": [
       "72.07",
       "72.38"
     ],
@@ -293,7 +293,7 @@
   },
   {
     "code": "93.75",
-    "dep": [
+    "parent": [
       "93.07"
     ],
     "name": "Métodos Numéricos Avanzados",
@@ -302,7 +302,7 @@
   },
   {
     "code": "72.25",
-    "dep": [
+    "parent": [
       "72.34",
       "93.07"
     ],
@@ -312,7 +312,7 @@
   },
   {
     "code": "72.27",
-    "dep": [
+    "parent": [
       "93.24",
       "72.34"
     ],
@@ -322,14 +322,14 @@
   },
   {
     "code": "72.43",
-    "dep": [],
+    "parent": [],
     "name": "Gestión de Proyectos Informáticos",
     "formal": "Gestión de Proyectos Informáticos",
     "semester": 8
   },
   {
     "code": "72.44",
-    "dep": [
+    "parent": [
       "72.07",
       "72.38"
     ],
@@ -339,21 +339,21 @@
   },
   {
     "code": "12.83",
-    "dep": [],
+    "parent": [],
     "name": "Seguridad Ocupacional y Ambiental",
     "formal": "Seguridad Ocupacional y Ambiental",
     "semester": 9
   },
   {
     "code": "72.45",
-    "dep": [],
+    "parent": [],
     "name": "Proyecto Final ",
     "formal": "Proyecto Final ",
     "semester": 9
   },
   {
     "code": "72.20",
-    "dep": [
+    "parent": [
       "72.07"
     ],
     "name": "Redes de Información",
@@ -362,21 +362,21 @@
   },
   {
     "code": "72.98",
-    "dep": [],
+    "parent": [],
     "name": "Práctica Laboral",
     "formal": "Práctica Laboral",
     "semester": 10
   },
   {
     "code": "94.23",
-    "dep": [],
+    "parent": [],
     "name": "Formación General III",
     "formal": "Formación General III",
     "semester": 10
   },
   {
     "code": "94.52",
-    "dep": [
+    "parent": [
       "94.51"
     ],
     "name": "Inglés II",
