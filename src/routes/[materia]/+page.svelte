@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 
 	import { browser } from '$app/environment';
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount, tick } from 'svelte';
 	// import interact from 'interactjs';
 
 	export let data: PageData;
@@ -27,6 +27,7 @@
 		position: () => LeaderLineType;
 		hide: (animation: string) => LeaderLineType;
 		show: (animation: string) => LeaderLineType;
+		remove: () => void;
 	};
 
 	let LeaderLine: LeaderLineType;
@@ -51,20 +52,27 @@
 		return data.career.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
-	function highlight(e: string) {
+	async function highlight(e: string) {
 		// If someone is already being highlighted, return
 		if (famous) return;
 
 		famous = e;
-		lines[famous]?.forEach((l) => l.position().show('draw'));
+		await tick();
+		redrawLines();
 	}
 
-	function defaultView() {
-		// If no elements are being highlighted, return
-		if (!famous) return;
+	async function defaultView(e: string) {
+		// If someone else is trying to steal the reflector, return
+		if (famous !== e) return;
 
 		lines[famous]?.forEach((l) => l.hide('draw'));
 		famous = undefined;
+	}
+
+	function redrawLines(subject = famous) {
+		if (!subject) return;
+
+		lines[subject]?.forEach((l) => l.position().show('draw'));
 	}
 
 	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : false;
@@ -72,7 +80,7 @@
 		if (mouse) return;
 
 		// Toggle famous
-		if (famous) defaultView();
+		if (famous) defaultView(e);
 		else highlight(e);
 	}
 
@@ -123,33 +131,45 @@
 			});
 		});
 	});
+
+	onDestroy(() => {
+		Object.values(lines)
+			.flat()
+			.forEach((l) => l.remove());
+	});
 </script>
 
-{#each semesters as semester}
-	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div class="flex justify-around m-6 cuatrimestre">
-		{#each data.career.filter((e) => e.semester === semester) as subject}
-			<div
-				id={subject.codec}
-				data-parents={subject.parentc.join(' ')}
-				class="flex flex-col justify-center touch-none p-4 max-w-[15%]
-				border-4 rounded-2xl border-[--color]
-				transition-all duration-500 ease-in-out
-				materia"
-				class:famous={subject.codec === famous}
-				class:show={show.includes(subject.codec)}
-				class:hide={famous && !highlighted.includes(subject.codec)}
-				title={subject.formal}
-				on:mouseenter={() => highlight(subject.codec)}
-				on:mouseleave={defaultView}
-				on:click={() => touchScreen(subject.codec)}
-			>
-				<p class="m-0 select-none">{subject.name}</p>
-			</div>
-		{/each}
-	</div>
-{/each}
+<div class="flex flex-col justify-around w-full min-h-screen">
+	{#each semesters as semester}
+		<div class="flex justify-around cuatrimestre">
+			{#each data.career.filter((e) => e.semester === semester) as subject}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<div
+					id={subject.codec}
+					data-parents={subject.parentc.join(' ')}
+					class="flex flex-col justify-center touch-none p-2 max-w-[25%]
+					border-4 rounded-2xl border-[--color] outline-none
+					transition-all duration-500 ease-in-out"
+					class:famous={subject.codec === famous}
+					class:show={show.includes(subject.codec)}
+					class:hide={famous && !highlighted.includes(subject.codec)}
+					title={subject.name}
+					role="cell"
+					tabindex={all.indexOf(subject.codec) + 1}
+					on:focusin={() => highlight(subject.codec)}
+					on:mouseenter={() => highlight(subject.codec)}
+					on:focusout={() => defaultView(subject.codec)}
+					on:mouseleave={() => defaultView(subject.codec)}
+					on:click={() => touchScreen(subject.codec)}
+				>
+					<p class="m-0 select-none">
+						{subject.codec === famous ? subject.formal : subject.name}
+					</p>
+				</div>
+			{/each}
+		</div>
+	{/each}
+</div>
 
 <style lang="postcss">
 	.hide {
