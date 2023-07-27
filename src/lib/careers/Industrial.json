@@ -1,0 +1,340 @@
+[
+    {
+        "code": "12.67",
+        "parent": [],
+        "name": "Química General",
+        "formal": "Química General",
+        "semester": 1
+    },
+    {
+        "code": "71.20",
+        "parent": [],
+        "name": "Informática General",
+        "formal": "Informática General",
+        "semester": 1
+    },
+    {
+        "code": "92.01",
+        "parent": [],
+        "name": "Análisis Matemático I",
+        "formal": "Análisis Matemático I",
+        "semester": 1
+    },
+    {
+        "code": "93.18",
+        "parent": [],
+        "name": "Álgebra Lineal",
+        "formal": "Álgebra Lineal",
+        "semester": 1
+    },
+    {
+        "code": "94.33",
+        "parent": [],
+        "name": "Tecnología y Sociedad",
+        "formal": "Tecnología y Sociedad",
+        "semester": 1
+    },
+    {
+        "code": "16.55",
+        "parent": [],
+        "name": "Biología",
+        "formal": "Biología",
+        "semester": 2
+    },
+    {
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
+        "semester": 2
+    },
+    {
+        "code": "71.88",
+        "parent": [
+            "71.20"
+        ],
+        "name": "Gestión de Datos",
+        "formal": "Gestión de Datos",
+        "semester": 2
+    },
+    {
+        "code": "92.02",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático II",
+        "formal": "Análisis Matemático II",
+        "semester": 2
+    },
+    {
+        "code": "93.41",
+        "parent": [
+            "92.01"
+        ],
+        "name": "Física I",
+        "formal": "Física I",
+        "semester": 2
+    },
+    {
+        "code": "30.89",
+        "parent": [
+            "93.41"
+        ],
+        "name": "Mecánica de Sólidos",
+        "formal": "Mecánica de Sólidos",
+        "semester": 3
+    },
+    {
+        "code": "92.03",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático III",
+        "formal": "Análisis Matemático III",
+        "semester": 3
+    },
+    {
+        "code": "93.36",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Probabilidad",
+        "formal": "Probabilidad",
+        "semester": 3
+    },
+    {
+        "code": "93.42",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Física II",
+        "formal": "Física II",
+        "semester": 3
+    },
+    {
+        "code": "11.28",
+        "parent": [],
+        "name": "Sistemas Complejos",
+        "formal": "Sistemas Complejos",
+        "semester": 4
+    },
+    {
+        "code": "11.67",
+        "parent": [
+            "93.36"
+        ],
+        "name": "Estadística Aplicada",
+        "formal": "Estadística Aplicada",
+        "semester": 4
+    },
+    {
+        "code": "31.24",
+        "parent": [
+            "92.03",
+            "93.41"
+        ],
+        "name": "Mecánica de Fluidos",
+        "formal": "Mecánica de Fluidos",
+        "semester": 4
+    },
+    {
+        "code": "92.05",
+        "parent": [
+            "92.03"
+        ],
+        "name": "Análisis Matemático IV",
+        "formal": "Análisis Matemático IV",
+        "semester": 4
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "92.03"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 4
+    },
+    {
+        "code": "93.43",
+        "parent": [
+            "92.03"
+        ],
+        "name": "Física III",
+        "formal": "Física III",
+        "semester": 4
+    },
+    {
+        "code": "11.10",
+        "parent": [],
+        "name": "Organización de la Producción I",
+        "formal": "Organización de la Producción I",
+        "semester": 5
+    },
+    {
+        "code": "11.16",
+        "parent": [
+            "30.89"
+        ],
+        "name": "Materiales y Procesos",
+        "formal": "Materiales y Procesos",
+        "semester": 5
+    },
+    {
+        "code": "21.30",
+        "parent": [
+            "93.43"
+        ],
+        "name": "Principios y Aplicaciones Eléctricas",
+        "formal": "Principios y Aplicaciones Eléctricas",
+        "semester": 5
+    },
+    {
+        "code": "93.61",
+        "parent": [
+            "93.43"
+        ],
+        "name": "Física IV",
+        "formal": "Física IV",
+        "semester": 5
+    },
+    {
+        "code": "94.43",
+        "parent": [],
+        "name": "Metodología del Diseño",
+        "formal": "Metodología del Diseño",
+        "semester": 5
+    },
+    {
+        "code": "11.20",
+        "parent": [
+            "11.10"
+        ],
+        "name": "Supply Chain",
+        "formal": "Supply Chain",
+        "semester": 6
+    },
+    {
+        "code": "11.51",
+        "parent": [
+            "11.67"
+        ],
+        "name": "Investigación Operativa",
+        "formal": "Investigación Operativa",
+        "semester": 6
+    },
+    {
+        "code": "30.32",
+        "parent": [
+            "93.42"
+        ],
+        "name": "Termodinámica y sus aplicaciones",
+        "formal": "Termodinámica y sus aplicaciones",
+        "semester": 6
+    },
+    {
+        "code": "94.44",
+        "parent": [],
+        "name": "Proyecto Interdisciplinario",
+        "formal": "Proyecto Interdisciplinario",
+        "semester": 6
+    },
+    {
+        "code": "11.75",
+        "parent": [
+            "11.16"
+        ],
+        "name": "Tecnologías y Procesos de Producción",
+        "formal": "Tecnologías y Procesos de Producción",
+        "semester": 7
+    },
+    {
+        "code": "23.17",
+        "parent": [],
+        "name": "Electrónica e Instrumentación",
+        "formal": "Electrónica e Instrumentación",
+        "semester": 7
+    },
+    {
+        "code": "61.09",
+        "parent": [
+            "11.10"
+        ],
+        "name": "Economía Empresaria",
+        "formal": "Economía Empresaria",
+        "semester": 7
+    },
+    {
+        "code": "71.90",
+        "parent": [],
+        "name": "Certificaciones tecnológicas",
+        "formal": "Certificaciones tecnológicas",
+        "semester": 7
+    },
+    {
+        "code": "94.51",
+        "parent": [],
+        "name": "Inglés I",
+        "formal": "Inglés I",
+        "semester": 7
+    },
+    {
+        "code": "10.02",
+        "parent": [
+            "11.75"
+        ],
+        "name": "Gestión Ambiental",
+        "formal": "Gestión Ambiental",
+        "semester": 8
+    },
+    {
+        "code": "11.63",
+        "parent": [
+            "11.51"
+        ],
+        "name": "Simulación",
+        "formal": "Simulación",
+        "semester": 8
+    },
+    {
+        "code": "61.28",
+        "parent": [
+            "61.09"
+        ],
+        "name": "Economía",
+        "formal": "Economía",
+        "semester": 8
+    },
+    {
+        "code": "61.31",
+        "parent": [],
+        "name": "Derecho para Ingenieros",
+        "formal": "Derecho para Ingenieros",
+        "semester": 8
+    },
+    {
+        "code": "10.01",
+        "parent": [],
+        "name": "Proyecto Final de Ingeniería Industrial (Anual)",
+        "formal": "Proyecto Final de Ingeniería Industrial (Anual)",
+        "semester": 9
+    },
+    {
+        "code": "94.52",
+        "parent": [
+            "94.51"
+        ],
+        "name": "Inglés II",
+        "formal": "Inglés II",
+        "semester": 10
+    },
+    {
+        "code": "94.65",
+        "parent": [],
+        "name": "Practica Profesional supervisada",
+        "formal": "Practica Profesional supervisada",
+        "semester": 10
+    }
+]
