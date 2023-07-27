@@ -52,4 +52,4 @@ $("tr:not(:has(table)):has(td > a)").each(function () {
     db.push(new Subject(code, name, parents, year, semester));
 });
 
-console.log(JSON.stringify(db, null, 2));
+console.log(JSON.stringify(db, null, 4));
