@@ -1,28 +1,21 @@
 import type { PageServerLoad } from './$types';
+import type Subject from '$lib/subjects';
 
 import { error } from '@sveltejs/kit';
-
-function codify(s: string) {
-	return `i${s.replace('.', '')}`;
-}
+import { codify } from '$lib/codes';
+import { isPath } from '$lib/files';
 
 export const load = (async ({ params }) => {
-	type Subject = {
-		code: string;
-		parent: string[];
-		name: string;
-		formal: string;
-		semester: number;
-		parentc?: string[];
-		codec?: string;
-	};
+	const files = import.meta.glob('$lib/subjects/*.json', { as: 'raw' });
+	const path = Object.keys(files).find((p) => isPath(params.materia, p));
 
-	let data: Subject[];
+	if (!path) throw error(404, `Materia ${params.materia} not found`);
 
+	let data;
 	try {
-		data = (await import(/* @vite-ignore */ `../../lib/subjects/${params.materia}.json`)).default;
+		data = JSON.parse(await files[path]()) as Subject[];
 	} catch (e) {
-		throw error(404, `Materia ${params.materia} not found`);
+		throw error(500, 'Failed to open file');
 	}
 
 	return {
