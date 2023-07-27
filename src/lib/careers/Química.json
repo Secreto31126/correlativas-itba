@@ -1,0 +1,452 @@
+[
+    {
+        "code": "12.67",
+        "parent": [],
+        "name": "Química General",
+        "formal": "Química General",
+        "semester": 1
+    },
+    {
+        "code": "71.58",
+        "parent": [],
+        "name": "Informática General",
+        "formal": "Informática General",
+        "semester": 1
+    },
+    {
+        "code": "92.01",
+        "parent": [],
+        "name": "Análisis Matemático I",
+        "formal": "Análisis Matemático I",
+        "semester": 1
+    },
+    {
+        "code": "93.18",
+        "parent": [],
+        "name": "Álgebra Lineal",
+        "formal": "Álgebra Lineal",
+        "semester": 1
+    },
+    {
+        "code": "94.33",
+        "parent": [],
+        "name": "Tecnología y Sociedad",
+        "formal": "Tecnología y Sociedad",
+        "semester": 1
+    },
+    {
+        "code": "13.01",
+        "parent": [
+            "12.67"
+        ],
+        "name": "Química Inorgánica",
+        "formal": "Química Inorgánica",
+        "semester": 2
+    },
+    {
+        "code": "17.01",
+        "parent": [
+            "12.67"
+        ],
+        "name": "Introducción a la Ingeniería Química",
+        "formal": "Introducción a la Ingeniería Química",
+        "semester": 2
+    },
+    {
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
+        "semester": 2
+    },
+    {
+        "code": "71.90",
+        "parent": [],
+        "name": "Certificaciones tecnológicas",
+        "formal": "Certificaciones tecnológicas",
+        "semester": 2
+    },
+    {
+        "code": "92.02",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático II",
+        "formal": "Análisis Matemático II",
+        "semester": 2
+    },
+    {
+        "code": "93.41",
+        "parent": [
+            "92.01"
+        ],
+        "name": "Física I",
+        "formal": "Física I",
+        "semester": 2
+    },
+    {
+        "code": "13.03",
+        "parent": [
+            "13.01"
+        ],
+        "name": "Química Orgánica I",
+        "formal": "Química Orgánica I",
+        "semester": 3
+    },
+    {
+        "code": "16.55",
+        "parent": [],
+        "name": "Biología",
+        "formal": "Biología",
+        "semester": 3
+    },
+    {
+        "code": "17.02",
+        "parent": [
+            "93.41",
+            "17.01"
+        ],
+        "name": "Procesos Industriales",
+        "formal": "Procesos Industriales",
+        "semester": 3
+    },
+    {
+        "code": "92.03",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático III",
+        "formal": "Análisis Matemático III",
+        "semester": 3
+    },
+    {
+        "code": "93.42",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Física II",
+        "formal": "Física II",
+        "semester": 3
+    },
+    {
+        "code": "12.33",
+        "parent": [
+            "13.03"
+        ],
+        "name": "Química Orgánica II",
+        "formal": "Química Orgánica II",
+        "semester": 4
+    },
+    {
+        "code": "92.05",
+        "parent": [
+            "92.02",
+            "92.03"
+        ],
+        "name": "Análisis Matemático IV",
+        "formal": "Análisis Matemático IV",
+        "semester": 4
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "92.03"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 4
+    },
+    {
+        "code": "93.24",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Probabilidad y Estadística",
+        "formal": "Probabilidad y Estadística",
+        "semester": 4
+    },
+    {
+        "code": "93.43",
+        "parent": [
+            "92.03",
+            "93.41"
+        ],
+        "name": "Física III",
+        "formal": "Física III",
+        "semester": 4
+    },
+    {
+        "code": "12.19",
+        "parent": [
+            "13.01",
+            "93.24"
+        ],
+        "name": "Química Analítica",
+        "formal": "Química Analítica",
+        "semester": 5
+    },
+    {
+        "code": "12.20",
+        "parent": [
+            "92.03",
+            "17.02"
+        ],
+        "name": "Química-Física",
+        "formal": "Química-Física",
+        "semester": 5
+    },
+    {
+        "code": "17.03",
+        "parent": [
+            "12.33",
+            "16.55"
+        ],
+        "name": "Bioquímica y Microbiología Aplicadas",
+        "formal": "Bioquímica y Microbiología Aplicadas",
+        "semester": 5
+    },
+    {
+        "code": "30.62",
+        "parent": [
+            "13.01",
+            "93.42"
+        ],
+        "name": "Materiales para la Industria Química",
+        "formal": "Materiales para la Industria Química",
+        "semester": 5
+    },
+    {
+        "code": "94.43",
+        "parent": [],
+        "name": "Metodología del Diseño",
+        "formal": "Metodología del Diseño",
+        "semester": 5
+    },
+    {
+        "code": "12.26",
+        "parent": [
+            "12.20"
+        ],
+        "name": "Termodinámica",
+        "formal": "Termodinámica",
+        "semester": 6
+    },
+    {
+        "code": "17.04",
+        "parent": [
+            "12.20"
+        ],
+        "name": "Fenómenos de Transporte",
+        "formal": "Fenómenos de Transporte",
+        "semester": 6
+    },
+    {
+        "code": "21.06",
+        "parent": [
+            "93.43"
+        ],
+        "name": "Electrotecnia",
+        "formal": "Electrotecnia",
+        "semester": 6
+    },
+    {
+        "code": "30.61",
+        "parent": [
+            "30.62",
+            "93.41",
+            "31.08"
+        ],
+        "name": "Instalaciones Mecánicas en Plantas de Proceso",
+        "formal": "Instalaciones Mecánicas en Plantas de Proceso",
+        "semester": 6
+    },
+    {
+        "code": "94.44",
+        "parent": [
+            "94.43"
+        ],
+        "name": "Proyecto Interdisciplinario",
+        "formal": "Proyecto Interdisciplinario",
+        "semester": 6
+    },
+    {
+        "code": "94.51",
+        "parent": [],
+        "name": "Inglés I",
+        "formal": "Inglés I",
+        "semester": 6
+    },
+    {
+        "code": "12.11",
+        "parent": [
+            "30.61",
+            "17.04",
+            "12.26"
+        ],
+        "name": "Operaciones Unitarias I",
+        "formal": "Operaciones Unitarias I",
+        "semester": 7
+    },
+    {
+        "code": "12.12",
+        "parent": [
+            "17.04",
+            "12.26"
+        ],
+        "name": "Operaciones Unitarias II",
+        "formal": "Operaciones Unitarias II",
+        "semester": 7
+    },
+    {
+        "code": "12.24",
+        "parent": [
+            "17.04",
+            "93.07"
+        ],
+        "name": "Ingenieria de Reacciones y Reactores I",
+        "formal": "Ingenieria de Reacciones y Reactores I",
+        "semester": 7
+    },
+    {
+        "code": "61.31",
+        "parent": [],
+        "name": "Derecho para Ingenieros",
+        "formal": "Derecho para Ingenieros",
+        "semester": 7
+    },
+    {
+        "code": "12.13",
+        "parent": [
+            "12.11",
+            "12.12"
+        ],
+        "name": "Operaciones Unitarias III",
+        "formal": "Operaciones Unitarias III",
+        "semester": 8
+    },
+    {
+        "code": "12.25",
+        "parent": [
+            "12.24",
+            "12.11",
+            "17.03"
+        ],
+        "name": "Ingeniería de Reacciones y Reactores II",
+        "formal": "Ingeniería de Reacciones y Reactores II",
+        "semester": 8
+    },
+    {
+        "code": "12.27",
+        "parent": [
+            "12.11",
+            "12.12"
+        ],
+        "name": "Simulación de Procesos",
+        "formal": "Simulación de Procesos",
+        "semester": 8
+    },
+    {
+        "code": "17.05",
+        "parent": [
+            "12.11",
+            "12.12",
+            "92.05"
+        ],
+        "name": "Control de Procesos",
+        "formal": "Control de Procesos",
+        "semester": 8
+    },
+    {
+        "code": "11.15",
+        "parent": [
+            "93.24"
+        ],
+        "name": "Organización Industrial",
+        "formal": "Organización Industrial",
+        "semester": 9
+    },
+    {
+        "code": "12.85",
+        "parent": [
+            "12.24",
+            "12.13",
+            "12.27"
+        ],
+        "name": "Diseño Conceptual de Procesos",
+        "formal": "Diseño Conceptual de Procesos",
+        "semester": 9
+    },
+    {
+        "code": "17.06",
+        "parent": [
+            "12.13",
+            "12.27",
+            "17.05"
+        ],
+        "name": "Proyecto Final de Carrera I",
+        "formal": "Proyecto Final de Carrera I",
+        "semester": 9
+    },
+    {
+        "code": "61.27",
+        "parent": [
+            "93.24"
+        ],
+        "name": "Análisis de Coyuntura Económica",
+        "formal": "Análisis de Coyuntura Económica",
+        "semester": 9
+    },
+    {
+        "code": "94.52",
+        "parent": [
+            "94.51"
+        ],
+        "name": "Inglés II",
+        "formal": "Inglés II",
+        "semester": 9
+    },
+    {
+        "code": "12.66",
+        "parent": [],
+        "name": "Gestión de la Salud y la Seguridad en el Trabajo",
+        "formal": "Gestión de la Salud y la Seguridad en el Trabajo",
+        "semester": 10
+    },
+    {
+        "code": "17.07",
+        "parent": [
+            "17.06"
+        ],
+        "name": "Proyecto Final de Carrera II",
+        "formal": "Proyecto Final de Carrera II",
+        "semester": 10
+    },
+    {
+        "code": "17.15",
+        "parent": [
+            "12.11"
+        ],
+        "name": "Introducción a la Ingeniería Ambiental",
+        "formal": "Introducción a la Ingeniería Ambiental",
+        "semester": 10
+    },
+    {
+        "code": "61.16",
+        "parent": [
+            "11.15",
+            "61.27"
+        ],
+        "name": "Introducción a las Finanzas",
+        "formal": "Introducción a las Finanzas",
+        "semester": 10
+    },
+    {
+        "code": "94.65",
+        "parent": [],
+        "name": "Practica Profesional supervisada",
+        "formal": "Practica Profesional supervisada",
+        "semester": 10
+    }
+]
