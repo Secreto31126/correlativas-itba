@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 
+	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	// import interact from 'interactjs';
 
@@ -66,7 +67,7 @@
 		famous = undefined;
 	}
 
-	const mouse = window.matchMedia('(pointer: fine)').matches;
+	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : false;
 	function touchScreen(e: string) {
 		if (mouse) return;
 
