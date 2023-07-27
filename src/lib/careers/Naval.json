@@ -1,0 +1,475 @@
+[
+    {
+        "code": "12.67",
+        "parent": [],
+        "name": "Química General",
+        "formal": "Química General",
+        "semester": 1
+    },
+    {
+        "code": "71.58",
+        "parent": [],
+        "name": "Informática General",
+        "formal": "Informática General",
+        "semester": 1
+    },
+    {
+        "code": "92.01",
+        "parent": [],
+        "name": "Análisis Matemático I",
+        "formal": "Análisis Matemático I",
+        "semester": 1
+    },
+    {
+        "code": "93.18",
+        "parent": [],
+        "name": "Álgebra Lineal",
+        "formal": "Álgebra Lineal",
+        "semester": 1
+    },
+    {
+        "code": "94.33",
+        "parent": [],
+        "name": "Tecnología y Sociedad",
+        "formal": "Tecnología y Sociedad",
+        "semester": 1
+    },
+    {
+        "code": "30.26",
+        "parent": [
+            "12.67"
+        ],
+        "name": "Ciencia de Materiales I",
+        "formal": "Ciencia de Materiales I",
+        "semester": 2
+    },
+    {
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
+        "semester": 2
+    },
+    {
+        "code": "32.06",
+        "parent": [],
+        "name": "Introducción a la Ing. Naval",
+        "formal": "Introducción a la Ing. Naval",
+        "semester": 2
+    },
+    {
+        "code": "71.90",
+        "parent": [],
+        "name": "Certificaciones tecnológicas",
+        "formal": "Certificaciones tecnológicas",
+        "semester": 2
+    },
+    {
+        "code": "92.02",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático II",
+        "formal": "Análisis Matemático II",
+        "semester": 2
+    },
+    {
+        "code": "93.41",
+        "parent": [
+            "92.01"
+        ],
+        "name": "Física I",
+        "formal": "Física I",
+        "semester": 2
+    },
+    {
+        "code": "16.55",
+        "parent": [],
+        "name": "Biología",
+        "formal": "Biología",
+        "semester": 3
+    },
+    {
+        "code": "30.41",
+        "parent": [
+            "93.41",
+            "30.26",
+            "31.08"
+        ],
+        "name": "Diseño Mecánico I",
+        "formal": "Diseño Mecánico I",
+        "semester": 3
+    },
+    {
+        "code": "71.59",
+        "parent": [
+            "71.58",
+            "71.90"
+        ],
+        "name": "Estructura de Datos y Programación",
+        "formal": "Estructura de Datos y Programación",
+        "semester": 3
+    },
+    {
+        "code": "92.03",
+        "parent": [
+            "92.01",
+            "93.18"
+        ],
+        "name": "Análisis Matemático III",
+        "formal": "Análisis Matemático III",
+        "semester": 3
+    },
+    {
+        "code": "93.42",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Física II",
+        "formal": "Física II",
+        "semester": 3
+    },
+    {
+        "code": "30.42",
+        "parent": [
+            "92.02",
+            "92.03",
+            "93.41"
+        ],
+        "name": "Diseño Mecánico II",
+        "formal": "Diseño Mecánico II",
+        "semester": 4
+    },
+    {
+        "code": "31.21",
+        "parent": [
+            "93.42",
+            "93.41"
+        ],
+        "name": "Termodinámica",
+        "formal": "Termodinámica",
+        "semester": 4
+    },
+    {
+        "code": "92.04",
+        "parent": [
+            "92.02",
+            "92.03"
+        ],
+        "name": "Análisis Matemàtico IV",
+        "formal": "Análisis Matemàtico IV",
+        "semester": 4
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "71.58",
+            "92.03"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 4
+    },
+    {
+        "code": "93.43",
+        "parent": [
+            "92.03",
+            "93.41"
+        ],
+        "name": "Física III",
+        "formal": "Física III",
+        "semester": 4
+    },
+    {
+        "code": "30.25",
+        "parent": [
+            "30.26"
+        ],
+        "name": "Ciencia de Materiales II",
+        "formal": "Ciencia de Materiales II",
+        "semester": 5
+    },
+    {
+        "code": "30.43",
+        "parent": [
+            "30.42",
+            "92.03",
+            "93.07",
+            "92.04"
+        ],
+        "name": "Diseño Mecánico III A",
+        "formal": "Diseño Mecánico III A",
+        "semester": 5
+    },
+    {
+        "code": "30.44",
+        "parent": [
+            "30.42",
+            "92.03",
+            "93.07",
+            "92.04"
+        ],
+        "name": "Diseño Mecánico III B",
+        "formal": "Diseño Mecánico III B",
+        "semester": 5
+    },
+    {
+        "code": "32.66",
+        "parent": [
+            "92.03",
+            "93.41",
+            "31.08"
+        ],
+        "name": "Hidrostática y Estabilidad",
+        "formal": "Hidrostática y Estabilidad",
+        "semester": 5
+    },
+    {
+        "code": "93.61",
+        "parent": [
+            "93.42",
+            "93.43"
+        ],
+        "name": "Física IV",
+        "formal": "Física IV",
+        "semester": 5
+    },
+    {
+        "code": "94.43",
+        "parent": [],
+        "name": "Metodología del Diseño",
+        "formal": "Metodología del Diseño",
+        "semester": 5
+    },
+    {
+        "code": "21.08",
+        "parent": [
+            "93.43"
+        ],
+        "name": "Electrotecnia",
+        "formal": "Electrotecnia",
+        "semester": 6
+    },
+    {
+        "code": "31.22",
+        "parent": [
+            "31.21",
+            "92.03",
+            "93.42",
+            "93.41"
+        ],
+        "name": "Mecánica de Fluidos",
+        "formal": "Mecánica de Fluidos",
+        "semester": 6
+    },
+    {
+        "code": "32.69",
+        "parent": [
+            "32.66"
+        ],
+        "name": "Resistencia y Propulsión",
+        "formal": "Resistencia y Propulsión",
+        "semester": 6
+    },
+    {
+        "code": "93.24",
+        "parent": [
+            "92.02"
+        ],
+        "name": "Probabilidad y Estadística",
+        "formal": "Probabilidad y Estadística",
+        "semester": 6
+    },
+    {
+        "code": "94.44",
+        "parent": [
+            "94.43"
+        ],
+        "name": "Proyecto Interdisciplinario",
+        "formal": "Proyecto Interdisciplinario",
+        "semester": 6
+    },
+    {
+        "code": "94.51",
+        "parent": [],
+        "name": "Inglés I",
+        "formal": "Inglés I",
+        "semester": 6
+    },
+    {
+        "code": "11.15",
+        "parent": [
+            "93.24"
+        ],
+        "name": "Organización Industrial",
+        "formal": "Organización Industrial",
+        "semester": 7
+    },
+    {
+        "code": "22.10",
+        "parent": [
+            "92.04",
+            "21.08"
+        ],
+        "name": "Electrónica e Instrumentación",
+        "formal": "Electrónica e Instrumentación",
+        "semester": 7
+    },
+    {
+        "code": "30.49",
+        "parent": [
+            "31.22"
+        ],
+        "name": "Máquinas Térmicas e Hidráulicas",
+        "formal": "Máquinas Térmicas e Hidráulicas",
+        "semester": 7
+    },
+    {
+        "code": "32.54",
+        "parent": [
+            "32.66",
+            "30.44"
+        ],
+        "name": "Construcción Naval",
+        "formal": "Construcción Naval",
+        "semester": 7
+    },
+    {
+        "code": "61.27",
+        "parent": [
+            "93.24"
+        ],
+        "name": "Análisis de Coyuntura Económica",
+        "formal": "Análisis de Coyuntura Económica",
+        "semester": 7
+    },
+    {
+        "code": "12.83",
+        "parent": [],
+        "name": "Seguridad Ocupacional y Ambiental",
+        "formal": "Seguridad Ocupacional y Ambiental",
+        "semester": 8
+    },
+    {
+        "code": "30.45",
+        "parent": [
+            "30.43",
+            "30.25",
+            "30.44"
+        ],
+        "name": "Diseño Mecánico IV",
+        "formal": "Diseño Mecánico IV",
+        "semester": 8
+    },
+    {
+        "code": "32.03",
+        "parent": [
+            "30.49"
+        ],
+        "name": "Motores Marinos",
+        "formal": "Motores Marinos",
+        "semester": 8
+    },
+    {
+        "code": "32.56",
+        "parent": [
+            "31.21",
+            "31.22",
+            "32.66"
+        ],
+        "name": "Alistamiento Naval",
+        "formal": "Alistamiento Naval",
+        "semester": 8
+    },
+    {
+        "code": "61.31",
+        "parent": [],
+        "name": "Derecho para Ingenieros",
+        "formal": "Derecho para Ingenieros",
+        "semester": 8
+    },
+    {
+        "code": "32.49",
+        "parent": [
+            "30.44"
+        ],
+        "name": "Estructura de Buques",
+        "formal": "Estructura de Buques",
+        "semester": 9
+    },
+    {
+        "code": "32.64",
+        "parent": [
+            "22.10",
+            "30.45",
+            "32.03"
+        ],
+        "name": "Plantas Propulsoras Marinas",
+        "formal": "Plantas Propulsoras Marinas",
+        "semester": 9
+    },
+    {
+        "code": "32.72",
+        "parent": [
+            "32.54",
+            "32.56",
+            "30.45",
+            "32.03"
+        ],
+        "name": "Proyecto de Buques",
+        "formal": "Proyecto de Buques",
+        "semester": 9
+    },
+    {
+        "code": "32.05",
+        "parent": [],
+        "name": "Astilleros y Mantenimiento de Buques",
+        "formal": "Astilleros y Mantenimiento de Buques",
+        "semester": 10
+    },
+    {
+        "code": "32.70",
+        "parent": [],
+        "name": "Práctica de Embarque",
+        "formal": "Práctica de Embarque",
+        "semester": 10
+    },
+    {
+        "code": "32.71",
+        "parent": [
+            "32.54",
+            "32.56",
+            "30.45",
+            "32.03"
+        ],
+        "name": "Proyecto de Embarcaciones de Trabajo",
+        "formal": "Proyecto de Embarcaciones de Trabajo",
+        "semester": 10
+    },
+    {
+        "code": "32.73",
+        "parent": [
+            "32.72"
+        ],
+        "name": "Proyecto Final (Anual)",
+        "formal": "Proyecto Final (Anual)",
+        "semester": 10
+    },
+    {
+        "code": "94.52",
+        "parent": [
+            "94.51"
+        ],
+        "name": "Inglés II",
+        "formal": "Inglés II",
+        "semester": 10
+    },
+    {
+        "code": "94.65",
+        "parent": [],
+        "name": "Practica Profesional supervisada",
+        "formal": "Practica Profesional supervisada",
+        "semester": 10
+    }
+]
