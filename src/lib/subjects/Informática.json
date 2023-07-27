@@ -9,14 +9,14 @@
   {
     "code": "72.03",
     "parent": [],
-    "name": "Introducción a la Informática",
+    "name": "Intro Info",
     "formal": "Introducción a la Informática",
     "semester": 1
   },
   {
     "code": "93.26",
     "parent": [],
-    "name": "Análisis Matemático I",
+    "name": "Análisis I",
     "formal": "Análisis Matemático I",
     "semester": 1
   },
@@ -30,7 +30,7 @@
   {
     "code": "94.24",
     "parent": [],
-    "name": "Metodología del Aprendizaje",
+    "name": "Metodología",
     "formal": "Metodología del Aprendizaje",
     "semester": 1
   },
@@ -40,7 +40,7 @@
       "93.58",
       "72.03"
     ],
-    "name": "Programación Imperativa",
+    "name": "PI",
     "formal": "Programación Imperativa",
     "semester": 2
   },
@@ -50,7 +50,7 @@
       "93.58",
       "93.26"
     ],
-    "name": "Análisis Matemático II",
+    "name": "Análisis II",
     "formal": "Análisis Matemático II",
     "semester": 2
   },
@@ -84,7 +84,7 @@
     "parent": [
       "72.31"
     ],
-    "name": "Diseño y Procesamiento de Documentos XML",
+    "name": "XML",
     "formal": "Diseño y Procesamiento de Documentos XML",
     "semester": 3
   },
@@ -93,7 +93,7 @@
     "parent": [
       "72.31"
     ],
-    "name": "Programación Orientada a Objetos",
+    "name": "POO",
     "formal": "Programación Orientada a Objetos",
     "semester": 3
   },
@@ -102,7 +102,7 @@
     "parent": [
       "93.58"
     ],
-    "name": "Lógica Computacional",
+    "name": "Lógica",
     "formal": "Lógica Computacional",
     "semester": 3
   },
@@ -120,7 +120,7 @@
     "parent": [
       "72.31"
     ],
-    "name": "Arquitectura de Computadoras",
+    "name": "Arqui",
     "formal": "Arquitectura de Computadoras",
     "semester": 4
   },
@@ -130,7 +130,7 @@
       "93.59",
       "72.33"
     ],
-    "name": "Estructura de Datos y Algoritmos",
+    "name": "EDA",
     "formal": "Estructura de Datos y Algoritmos",
     "semester": 4
   },
@@ -139,7 +139,7 @@
     "parent": [
       "93.28"
     ],
-    "name": "Probabilidad y Estadística",
+    "name": "Proba",
     "formal": "Probabilidad y Estadística",
     "semester": 4
   },
@@ -159,7 +159,7 @@
       "72.08",
       "72.34"
     ],
-    "name": "Sistemas Operativos",
+    "name": "SO",
     "formal": "Sistemas Operativos",
     "semester": 5
   },
@@ -178,7 +178,7 @@
       "72.33",
       "72.32"
     ],
-    "name": "Interacción Hombre-Computadora (HCI)",
+    "name": "HCI",
     "formal": "Interacción Hombre-Computadora (HCI)",
     "semester": 5
   },
@@ -197,7 +197,7 @@
     "parent": [
       "72.11"
     ],
-    "name": "Protocolos de Comunicación",
+    "name": "Protos",
     "formal": "Protocolos de Comunicación",
     "semester": 6
   },
@@ -209,7 +209,7 @@
       "72.36",
       "72.35"
     ],
-    "name": "Proyecto de Aplicaciones Web",
+    "name": "PAW",
     "formal": "Proyecto de Aplicaciones Web",
     "semester": 6
   },
@@ -218,7 +218,7 @@
     "parent": [
       "72.34"
     ],
-    "name": "Autómatas, Teoría de Lenguajes y Compiladores",
+    "name": "TLA",
     "formal": "Autómatas, Teoría de Lenguajes y Compiladores",
     "semester": 6
   },
@@ -250,14 +250,14 @@
     "parent": [
       "93.24"
     ],
-    "name": "Economía para Ingenieros",
+    "name": "Economía",
     "formal": "Economía para Ingenieros",
     "semester": 7
   },
   {
     "code": "61.32",
     "parent": [],
-    "name": "Derecho para Ingenieros",
+    "name": "Derecho",
     "formal": "Derecho para Ingenieros",
     "semester": 7
   },
@@ -287,7 +287,7 @@
       "72.07",
       "72.38"
     ],
-    "name": "Programación de Objetos Distribuidos",
+    "name": "POD",
     "formal": "Programación de Objetos Distribuidos",
     "semester": 7
   },
@@ -296,7 +296,7 @@
     "parent": [
       "93.07"
     ],
-    "name": "Métodos Numéricos Avanzados",
+    "name": "MNA",
     "formal": "Métodos Numéricos Avanzados",
     "semester": 7
   },
@@ -323,7 +323,7 @@
   {
     "code": "72.43",
     "parent": [],
-    "name": "Gestión de Proyectos Informáticos",
+    "name": "Gestión de Proyectos",
     "formal": "Gestión de Proyectos Informáticos",
     "semester": 8
   },
@@ -333,22 +333,22 @@
       "72.07",
       "72.38"
     ],
-    "name": "Criptografía y Seguridad",
+    "name": "Criptografía",
     "formal": "Criptografía y Seguridad",
     "semester": 8
   },
   {
     "code": "12.83",
     "parent": [],
-    "name": "Seguridad Ocupacional y Ambiental",
+    "name": "Seguridad Ocupacional",
     "formal": "Seguridad Ocupacional y Ambiental",
     "semester": 9
   },
   {
     "code": "72.45",
     "parent": [],
-    "name": "Proyecto Final ",
-    "formal": "Proyecto Final ",
+    "name": "Proyecto Final",
+    "formal": "Proyecto Final",
     "semester": 9
   },
   {
@@ -356,7 +356,7 @@
     "parent": [
       "72.07"
     ],
-    "name": "Redes de Información",
+    "name": "Redes",
     "formal": "Redes de Información",
     "semester": 10
   },
