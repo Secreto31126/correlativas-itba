@@ -1,0 +1,487 @@
+[
+    {
+        "code": "12.01",
+        "parent": [],
+        "name": "Química I",
+        "formal": "Química I",
+        "semester": 1
+    },
+    {
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
+        "semester": 1
+    },
+    {
+        "code": "93.17",
+        "parent": [],
+        "name": "Matemática I",
+        "formal": "Matemática I",
+        "semester": 1
+    },
+    {
+        "code": "93.18",
+        "parent": [],
+        "name": "Álgebra Lineal",
+        "formal": "Álgebra Lineal",
+        "semester": 1
+    },
+    {
+        "code": "94.21",
+        "parent": [],
+        "name": "Formación General I",
+        "formal": "Formación General I",
+        "semester": 1
+    },
+    {
+        "code": "12.02",
+        "parent": [
+            "12.01"
+        ],
+        "name": "Química II",
+        "formal": "Química II",
+        "semester": 2
+    },
+    {
+        "code": "71.58",
+        "parent": [],
+        "name": "Informática General",
+        "formal": "Informática General",
+        "semester": 2
+    },
+    {
+        "code": "93.02",
+        "parent": [
+            "93.18",
+            "93.17"
+        ],
+        "name": "Matemática II",
+        "formal": "Matemática II",
+        "semester": 2
+    },
+    {
+        "code": "93.41",
+        "parent": [
+            "93.17"
+        ],
+        "name": "Física I",
+        "formal": "Física I",
+        "semester": 2
+    },
+    {
+        "code": "94.24",
+        "parent": [],
+        "name": "Metodología del Aprendizaje",
+        "formal": "Metodología del Aprendizaje",
+        "semester": 2
+    },
+    {
+        "code": "31.19",
+        "parent": [
+            "93.02",
+            "93.41",
+            "31.08"
+        ],
+        "name": "Estática y Resistencia de Materiales",
+        "formal": "Estática y Resistencia de Materiales",
+        "semester": 3
+    },
+    {
+        "code": "71.56",
+        "parent": [
+            "71.58"
+        ],
+        "name": "Programación Básica",
+        "formal": "Programación Básica",
+        "semester": 3
+    },
+    {
+        "code": "93.03",
+        "parent": [
+            "93.18",
+            "93.17"
+        ],
+        "name": "Matemática III",
+        "formal": "Matemática III",
+        "semester": 3
+    },
+    {
+        "code": "93.42",
+        "parent": [
+            "93.02"
+        ],
+        "name": "Física II",
+        "formal": "Física II",
+        "semester": 3
+    },
+    {
+        "code": "41.33",
+        "parent": [
+            "31.19"
+        ],
+        "name": "Metalurgia Física I",
+        "formal": "Metalurgia Física I",
+        "semester": 4
+    },
+    {
+        "code": "93.22",
+        "parent": [
+            "93.02"
+        ],
+        "name": "Probabilidad y Estadística",
+        "formal": "Probabilidad y Estadística",
+        "semester": 4
+    },
+    {
+        "code": "93.43",
+        "parent": [
+            "93.03",
+            "93.41"
+        ],
+        "name": "Física III",
+        "formal": "Física III",
+        "semester": 4
+    },
+    {
+        "code": "93.51",
+        "parent": [
+            "93.03",
+            "93.41"
+        ],
+        "name": "Mecánica General",
+        "formal": "Mecánica General",
+        "semester": 4
+    },
+    {
+        "code": "93.65",
+        "parent": [
+            "93.02",
+            "93.03"
+        ],
+        "name": "Matemática IV",
+        "formal": "Matemática IV",
+        "semester": 4
+    },
+    {
+        "code": "12.34",
+        "parent": [
+            "12.02"
+        ],
+        "name": "Química Orgánica para Petroleo",
+        "formal": "Química Orgánica para Petroleo",
+        "semester": 5
+    },
+    {
+        "code": "21.06",
+        "parent": [
+            "93.43"
+        ],
+        "name": "Electrotecnia",
+        "formal": "Electrotecnia",
+        "semester": 5
+    },
+    {
+        "code": "31.22",
+        "parent": [
+            "93.65"
+        ],
+        "name": "Mecánica de Fluidos",
+        "formal": "Mecánica de Fluidos",
+        "semester": 5
+    },
+    {
+        "code": "41.32",
+        "parent": [
+            "12.02",
+            "93.42"
+        ],
+        "name": "Geología para Ingenieros",
+        "formal": "Geología para Ingenieros",
+        "semester": 5
+    },
+    {
+        "code": "93.44",
+        "parent": [
+            "93.42",
+            "93.43"
+        ],
+        "name": "Física IV",
+        "formal": "Física IV",
+        "semester": 5
+    },
+    {
+        "code": "21.07",
+        "parent": [
+            "21.06"
+        ],
+        "name": "Máquinas e Instalaciones Eléctricas",
+        "formal": "Máquinas e Instalaciones Eléctricas",
+        "semester": 6
+    },
+    {
+        "code": "31.21",
+        "parent": [
+            "93.41"
+        ],
+        "name": "Termodinámica",
+        "formal": "Termodinámica",
+        "semester": 6
+    },
+    {
+        "code": "41.03",
+        "parent": [
+            "41.32"
+        ],
+        "name": "Perforación Petrolera I",
+        "formal": "Perforación Petrolera I",
+        "semester": 6
+    },
+    {
+        "code": "41.08",
+        "parent": [
+            "41.32"
+        ],
+        "name": "Petrofísica y Fluidos de Reservorios",
+        "formal": "Petrofísica y Fluidos de Reservorios",
+        "semester": 6
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "93.03"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 6
+    },
+    {
+        "code": "94.51",
+        "parent": [],
+        "name": "Inglés I",
+        "formal": "Inglés I",
+        "semester": 6
+    },
+    {
+        "code": "11.15",
+        "parent": [
+            "93.22"
+        ],
+        "name": "Organización Industrial",
+        "formal": "Organización Industrial",
+        "semester": 7
+    },
+    {
+        "code": "41.04",
+        "parent": [
+            "41.03"
+        ],
+        "name": "Perforación Petrolera II",
+        "formal": "Perforación Petrolera II",
+        "semester": 7
+    },
+    {
+        "code": "41.09",
+        "parent": [
+            "41.08"
+        ],
+        "name": "Ingeniería de Reservorios",
+        "formal": "Ingeniería de Reservorios",
+        "semester": 7
+    },
+    {
+        "code": "41.16",
+        "parent": [
+            "93.65"
+        ],
+        "name": "Análisis de Transientes de Presión",
+        "formal": "Análisis de Transientes de Presión",
+        "semester": 7
+    },
+    {
+        "code": "41.21",
+        "parent": [
+            "41.03"
+        ],
+        "name": "Práctica de Campo I",
+        "formal": "Práctica de Campo I",
+        "semester": 7
+    },
+    {
+        "code": "41.24",
+        "parent": [
+            "41.08"
+        ],
+        "name": "Registros de Pozo",
+        "formal": "Registros de Pozo",
+        "semester": 7
+    },
+    {
+        "code": "41.05",
+        "parent": [
+            "41.24"
+        ],
+        "name": "Geología del Petróleo",
+        "formal": "Geología del Petróleo",
+        "semester": 8
+    },
+    {
+        "code": "41.10",
+        "parent": [
+            "41.09"
+        ],
+        "name": "Recuperación Asistida de Petróleo",
+        "formal": "Recuperación Asistida de Petróleo",
+        "semester": 8
+    },
+    {
+        "code": "41.18",
+        "parent": [
+            "41.32",
+            "93.42"
+        ],
+        "name": "Geofísica de Reservorios",
+        "formal": "Geofísica de Reservorios",
+        "semester": 8
+    },
+    {
+        "code": "41.25",
+        "parent": [
+            "41.04"
+        ],
+        "name": "Terminación y Reparación de Pozos de Petróleo y Gas",
+        "formal": "Terminación y Reparación de Pozos de Petróleo y Gas",
+        "semester": 8
+    },
+    {
+        "code": "41.27",
+        "parent": [
+            "41.03"
+        ],
+        "name": "Producción de Petróleo",
+        "formal": "Producción de Petróleo",
+        "semester": 8
+    },
+    {
+        "code": "61.23",
+        "parent": [
+            "93.22"
+        ],
+        "name": "Economía para Ingenieros",
+        "formal": "Economía para Ingenieros",
+        "semester": 8
+    },
+    {
+        "code": "12.83",
+        "parent": [
+            "21.06"
+        ],
+        "name": "Seguridad Ocupacional y Ambiental",
+        "formal": "Seguridad Ocupacional y Ambiental",
+        "semester": 9
+    },
+    {
+        "code": "41.12",
+        "parent": [
+            "41.27"
+        ],
+        "name": "Proyecto de Instalaciones de Superficie",
+        "formal": "Proyecto de Instalaciones de Superficie",
+        "semester": 9
+    },
+    {
+        "code": "41.22",
+        "parent": [
+            "41.25",
+            "41.27"
+        ],
+        "name": "Práctica de Campo II",
+        "formal": "Práctica de Campo II",
+        "semester": 9
+    },
+    {
+        "code": "41.34",
+        "parent": [
+            "41.05",
+            "41.18",
+            "41.09"
+        ],
+        "name": "Desarrollo de Yacimientos",
+        "formal": "Desarrollo de Yacimientos",
+        "semester": 9
+    },
+    {
+        "code": "41.35",
+        "parent": [
+            "41.09"
+        ],
+        "name": "Simulación de Reservorios",
+        "formal": "Simulación de Reservorios",
+        "semester": 9
+    },
+    {
+        "code": "41.38",
+        "parent": [
+            "61.23"
+        ],
+        "name": "Formación General II",
+        "formal": "Formación General II",
+        "semester": 9
+    },
+    {
+        "code": "61.31",
+        "parent": [],
+        "name": "Derecho para Ingenieros",
+        "formal": "Derecho para Ingenieros",
+        "semester": 9
+    },
+    {
+        "code": "12.30",
+        "parent": [
+            "12.34"
+        ],
+        "name": "Industrialización y Economía Petrolera",
+        "formal": "Industrialización y Economía Petrolera",
+        "semester": 10
+    },
+    {
+        "code": "41.15",
+        "parent": [
+            "31.21",
+            "31.22"
+        ],
+        "name": "Gas y Gasolina Natural",
+        "formal": "Gas y Gasolina Natural",
+        "semester": 10
+    },
+    {
+        "code": "41.19",
+        "parent": [
+            "61.23"
+        ],
+        "name": "Desarrollo de Negocios",
+        "formal": "Desarrollo de Negocios",
+        "semester": 10
+    },
+    {
+        "code": "41.40",
+        "parent": [],
+        "name": "Práctica Laboral",
+        "formal": "Práctica Laboral",
+        "semester": 10
+    },
+    {
+        "code": "94.23",
+        "parent": [],
+        "name": "Formación General III",
+        "formal": "Formación General III",
+        "semester": 10
+    },
+    {
+        "code": "94.53",
+        "parent": [],
+        "name": "Ingles III",
+        "formal": "Ingles III",
+        "semester": 10
+    }
+]

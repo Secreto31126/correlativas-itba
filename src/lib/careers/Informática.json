@@ -1,0 +1,386 @@
+[
+    {
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas",
+        "formal": "Sistemas de Representación",
+        "semester": 1
+    },
+    {
+        "code": "72.03",
+        "parent": [],
+        "name": "Intro Info",
+        "formal": "Introducción a la Informática",
+        "semester": 1
+    },
+    {
+        "code": "93.26",
+        "parent": [],
+        "name": "Análisis I",
+        "formal": "Análisis Matemático I",
+        "semester": 1
+    },
+    {
+        "code": "93.58",
+        "parent": [],
+        "name": "Álgebra",
+        "formal": "Álgebra",
+        "semester": 1
+    },
+    {
+        "code": "94.24",
+        "parent": [],
+        "name": "Metodología",
+        "formal": "Metodología del Aprendizaje",
+        "semester": 1
+    },
+    {
+        "code": "72.31",
+        "parent": [
+            "93.58",
+            "72.03"
+        ],
+        "name": "PI",
+        "formal": "Programación Imperativa",
+        "semester": 2
+    },
+    {
+        "code": "93.28",
+        "parent": [
+            "93.58",
+            "93.26"
+        ],
+        "name": "Análisis II",
+        "formal": "Análisis Matemático II",
+        "semester": 2
+    },
+    {
+        "code": "93.41",
+        "parent": [
+            "93.26"
+        ],
+        "name": "Física I",
+        "formal": "Física I",
+        "semester": 2
+    },
+    {
+        "code": "93.59",
+        "parent": [
+            "93.58"
+        ],
+        "name": "Mate Discreta",
+        "formal": "Matemática Discreta",
+        "semester": 2
+    },
+    {
+        "code": "12.09",
+        "parent": [],
+        "name": "Química",
+        "formal": "Química",
+        "semester": 3
+    },
+    {
+        "code": "72.32",
+        "parent": [
+            "72.31"
+        ],
+        "name": "XML",
+        "formal": "Diseño y Procesamiento de Documentos XML",
+        "semester": 3
+    },
+    {
+        "code": "72.33",
+        "parent": [
+            "72.31"
+        ],
+        "name": "POO",
+        "formal": "Programación Orientada a Objetos",
+        "semester": 3
+    },
+    {
+        "code": "93.35",
+        "parent": [
+            "93.58"
+        ],
+        "name": "Lógica",
+        "formal": "Lógica Computacional",
+        "semester": 3
+    },
+    {
+        "code": "93.42",
+        "parent": [
+            "93.28"
+        ],
+        "name": "Física II",
+        "formal": "Física II",
+        "semester": 3
+    },
+    {
+        "code": "72.08",
+        "parent": [
+            "72.31"
+        ],
+        "name": "Arqui",
+        "formal": "Arquitectura de Computadoras",
+        "semester": 4
+    },
+    {
+        "code": "72.34",
+        "parent": [
+            "93.59",
+            "72.33"
+        ],
+        "name": "EDA",
+        "formal": "Estructura de Datos y Algoritmos",
+        "semester": 4
+    },
+    {
+        "code": "93.24",
+        "parent": [
+            "93.28"
+        ],
+        "name": "Proba",
+        "formal": "Probabilidad y Estadística",
+        "semester": 4
+    },
+    {
+        "code": "93.43",
+        "parent": [
+            "93.28",
+            "93.41"
+        ],
+        "name": "Física III",
+        "formal": "Física III",
+        "semester": 4
+    },
+    {
+        "code": "72.11",
+        "parent": [
+            "72.08",
+            "72.34"
+        ],
+        "name": "SO",
+        "formal": "Sistemas Operativos",
+        "semester": 5
+    },
+    {
+        "code": "72.35",
+        "parent": [
+            "72.33"
+        ],
+        "name": "Ingenieria de Software I",
+        "formal": "Ingenieria de Software I",
+        "semester": 5
+    },
+    {
+        "code": "72.36",
+        "parent": [
+            "72.33",
+            "72.32"
+        ],
+        "name": "HCI",
+        "formal": "Interacción Hombre-Computadora (HCI)",
+        "semester": 5
+    },
+    {
+        "code": "72.37",
+        "parent": [
+            "72.34",
+            "93.35"
+        ],
+        "name": "Base de Datos I",
+        "formal": "Base de Datos I",
+        "semester": 5
+    },
+    {
+        "code": "72.07",
+        "parent": [
+            "72.11"
+        ],
+        "name": "Protos",
+        "formal": "Protocolos de Comunicación",
+        "semester": 6
+    },
+    {
+        "code": "72.38",
+        "parent": [
+            "72.11",
+            "72.37",
+            "72.36",
+            "72.35"
+        ],
+        "name": "PAW",
+        "formal": "Proyecto de Aplicaciones Web",
+        "semester": 6
+    },
+    {
+        "code": "72.39",
+        "parent": [
+            "72.34"
+        ],
+        "name": "TLA",
+        "formal": "Autómatas, Teoría de Lenguajes y Compiladores",
+        "semester": 6
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "93.28"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 6
+    },
+    {
+        "code": "94.21",
+        "parent": [],
+        "name": "Formación General I",
+        "formal": "Formación General I",
+        "semester": 6
+    },
+    {
+        "code": "94.51",
+        "parent": [],
+        "name": "Inglés I",
+        "formal": "Inglés I",
+        "semester": 6
+    },
+    {
+        "code": "61.23",
+        "parent": [
+            "93.24"
+        ],
+        "name": "Economía",
+        "formal": "Economía para Ingenieros",
+        "semester": 7
+    },
+    {
+        "code": "61.32",
+        "parent": [],
+        "name": "Derecho",
+        "formal": "Derecho para Ingenieros",
+        "semester": 7
+    },
+    {
+        "code": "72.40",
+        "parent": [
+            "72.38",
+            "72.35"
+        ],
+        "name": "Ingenieria del Software II",
+        "formal": "Ingenieria del Software II",
+        "semester": 7
+    },
+    {
+        "code": "72.41",
+        "parent": [
+            "72.11",
+            "72.37"
+        ],
+        "name": "Base de Datos II",
+        "formal": "Base de Datos II",
+        "semester": 7
+    },
+    {
+        "code": "72.42",
+        "parent": [
+            "72.07",
+            "72.38"
+        ],
+        "name": "POD",
+        "formal": "Programación de Objetos Distribuidos",
+        "semester": 7
+    },
+    {
+        "code": "93.75",
+        "parent": [
+            "93.07"
+        ],
+        "name": "MNA",
+        "formal": "Métodos Numéricos Avanzados",
+        "semester": 7
+    },
+    {
+        "code": "72.25",
+        "parent": [
+            "72.34",
+            "93.07"
+        ],
+        "name": "Simulación de Sistemas",
+        "formal": "Simulación de Sistemas",
+        "semester": 8
+    },
+    {
+        "code": "72.27",
+        "parent": [
+            "93.24",
+            "72.34"
+        ],
+        "name": "SIA",
+        "formal": "Sistemas de Inteligencia Artificial",
+        "semester": 8
+    },
+    {
+        "code": "72.43",
+        "parent": [],
+        "name": "Gestión de Proyectos",
+        "formal": "Gestión de Proyectos Informáticos",
+        "semester": 8
+    },
+    {
+        "code": "72.44",
+        "parent": [
+            "72.07",
+            "72.38"
+        ],
+        "name": "Criptografía",
+        "formal": "Criptografía y Seguridad",
+        "semester": 8
+    },
+    {
+        "code": "12.83",
+        "parent": [],
+        "name": "Seguridad Ocupacional",
+        "formal": "Seguridad Ocupacional y Ambiental",
+        "semester": 9
+    },
+    {
+        "code": "72.45",
+        "parent": [],
+        "name": "Proyecto Final",
+        "formal": "Proyecto Final",
+        "semester": 9
+    },
+    {
+        "code": "72.20",
+        "parent": [
+            "72.07"
+        ],
+        "name": "Redes",
+        "formal": "Redes de Información",
+        "semester": 10
+    },
+    {
+        "code": "72.98",
+        "parent": [],
+        "name": "Práctica Laboral",
+        "formal": "Práctica Laboral",
+        "semester": 10
+    },
+    {
+        "code": "94.23",
+        "parent": [],
+        "name": "Formación General III",
+        "formal": "Formación General III",
+        "semester": 10
+    },
+    {
+        "code": "94.52",
+        "parent": [
+            "94.51"
+        ],
+        "name": "Inglés II",
+        "formal": "Inglés II",
+        "semester": 10
+    }
+]

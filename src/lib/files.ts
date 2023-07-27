@@ -8,7 +8,7 @@
  * @returns The name of the file without the extension
  */
 export function getName(path: string, normalize = true) {
-	const name = path.match(/(?<=subjects\/).*(?=.json)/i)?.[0];
+	const name = path.match(/(?<=careers\/).*(?=.json)/i)?.[0];
 	return normalize && name ? standarize(name) : name;
 }
 

@@ -5,7 +5,7 @@
 </script>
 
 <h1>Correlativas de...</h1>
-<div class="text-center">
+<div class="flex flex-col justify-center">
 	{#each data.careers as career}
 		{#if career}
 			<a href="/{career.url}" class="underline text-blue-500">{career.og}</a>
