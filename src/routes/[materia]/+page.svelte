@@ -139,7 +139,7 @@
 	});
 </script>
 
-<div class="flex flex-col justify-around gap-4 w-full min-h-screen">
+<div class="flex flex-col justify-around gap-4 w-full min-h-screen py-4">
 	{#each semesters as semester}
 		<div class="flex justify-around gap-4 cuatrimestre">
 			{#each data.career.filter((e) => e.semester === semester) as subject}
