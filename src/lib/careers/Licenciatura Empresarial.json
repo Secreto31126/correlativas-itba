@@ -1,0 +1,256 @@
+[
+    {
+        "code": "71.80",
+        "parent": [],
+        "name": "Utilitarios en Informática",
+        "formal": "Utilitarios en Informática",
+        "semester": 1
+    },
+    {
+        "code": "81.06",
+        "parent": [],
+        "name": "Introducción a la Administración",
+        "formal": "Introducción a la Administración",
+        "semester": 1
+    },
+    {
+        "code": "93.20",
+        "parent": [],
+        "name": "Análisis Matemático",
+        "formal": "Análisis Matemático",
+        "semester": 1
+    },
+    {
+        "code": "93.21",
+        "parent": [],
+        "name": "Álgebra",
+        "formal": "Álgebra",
+        "semester": 1
+    },
+    {
+        "code": "71.20",
+        "parent": [],
+        "name": "Informática General",
+        "formal": "Informática General",
+        "semester": 2
+    },
+    {
+        "code": "82.15",
+        "parent": [
+            "93.20",
+            "93.21"
+        ],
+        "name": "Matemática Aplicada",
+        "formal": "Matemática Aplicada",
+        "semester": 2
+    },
+    {
+        "code": "93.16",
+        "parent": [],
+        "name": "Matemática Discreta",
+        "formal": "Matemática Discreta",
+        "semester": 2
+    },
+    {
+        "code": "94.24",
+        "parent": [],
+        "name": "Metodología del Aprendizaje",
+        "formal": "Metodología del Aprendizaje",
+        "semester": 2
+    },
+    {
+        "code": "94.60",
+        "parent": [],
+        "name": "Panorama Histórico Global",
+        "formal": "Panorama Histórico Global",
+        "semester": 2
+    },
+    {
+        "code": "61.81",
+        "parent": [
+            "93.20"
+        ],
+        "name": "Microeconomía",
+        "formal": "Microeconomía",
+        "semester": 3
+    },
+    {
+        "code": "71.45",
+        "parent": [
+            "71.20"
+        ],
+        "name": "Estructura de Datos y Programación",
+        "formal": "Estructura de Datos y Programación",
+        "semester": 3
+    },
+    {
+        "code": "93.36",
+        "parent": [
+            "93.16",
+            "82.15"
+        ],
+        "name": "Probabilidad",
+        "formal": "Probabilidad",
+        "semester": 3
+    },
+    {
+        "code": "94.61",
+        "parent": [],
+        "name": "Filosofía",
+        "formal": "Filosofía",
+        "semester": 3
+    },
+    {
+        "code": "94.62",
+        "parent": [],
+        "name": "Ética en los Negocios",
+        "formal": "Ética en los Negocios",
+        "semester": 3
+    },
+    {
+        "code": "11.67",
+        "parent": [
+            "93.36"
+        ],
+        "name": "Estadística Aplicada",
+        "formal": "Estadística Aplicada",
+        "semester": 4
+    },
+    {
+        "code": "71.88",
+        "parent": [
+            "71.20"
+        ],
+        "name": "Gestión de Datos",
+        "formal": "Gestión de Datos",
+        "semester": 4
+    },
+    {
+        "code": "72.74",
+        "parent": [
+            "71.20"
+        ],
+        "name": "Visualización de Información",
+        "formal": "Visualización de Información",
+        "semester": 4
+    },
+    {
+        "code": "94.40",
+        "parent": [
+            "81.06"
+        ],
+        "name": "Estructura de las Organizaciones",
+        "formal": "Estructura de las Organizaciones",
+        "semester": 4
+    },
+    {
+        "code": "94.90",
+        "parent": [],
+        "name": "Inglés I (analista)",
+        "formal": "Inglés I (analista)",
+        "semester": 4
+    },
+    {
+        "code": "61.82",
+        "parent": [
+            "93.20"
+        ],
+        "name": "Macroeconomía",
+        "formal": "Macroeconomía",
+        "semester": 5
+    },
+    {
+        "code": "61.87",
+        "parent": [],
+        "name": "Derecho Público y Privado I",
+        "formal": "Derecho Público y Privado I",
+        "semester": 5
+    },
+    {
+        "code": "82.01",
+        "parent": [],
+        "name": "Proyecto I",
+        "formal": "Proyecto I",
+        "semester": 5
+    },
+    {
+        "code": "82.03",
+        "parent": [
+            "71.88"
+        ],
+        "name": "Gestión del Ciclo de Vida de la Información",
+        "formal": "Gestión del Ciclo de Vida de la Información",
+        "semester": 5
+    },
+    {
+        "code": "82.04",
+        "parent": [
+            "71.88"
+        ],
+        "name": "Analítica Descriptiva",
+        "formal": "Analítica Descriptiva",
+        "semester": 5
+    },
+    {
+        "code": "11.86",
+        "parent": [
+            "11.67",
+            "93.20",
+            "93.21"
+        ],
+        "name": "Investigación de Operaciones I",
+        "formal": "Investigación de Operaciones I",
+        "semester": 6
+    },
+    {
+        "code": "82.05",
+        "parent": [
+            "11.67"
+        ],
+        "name": "Análisis Predictivo",
+        "formal": "Análisis Predictivo",
+        "semester": 6
+    },
+    {
+        "code": "11.87",
+        "parent": [
+            "11.67",
+            "11.86"
+        ],
+        "name": "Investigación de Operaciones II",
+        "formal": "Investigación de Operaciones II",
+        "semester": 7
+    },
+    {
+        "code": "11.63",
+        "parent": [
+            "11.87"
+        ],
+        "name": "Simulación",
+        "formal": "Simulación",
+        "semester": 8
+    },
+    {
+        "code": "82.02",
+        "parent": [
+            "82.05",
+            "72.74",
+            "82.04",
+            "11.87",
+            "82.03",
+            "82.01"
+        ],
+        "name": "Proyecto Final",
+        "formal": "Proyecto Final",
+        "semester": 8
+    },
+    {
+        "code": "94.91",
+        "parent": [
+            "94.90"
+        ],
+        "name": "Inglés II (licenciado)",
+        "formal": "Inglés II (licenciado)",
+        "semester": 8
+    }
+]
