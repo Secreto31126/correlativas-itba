@@ -18,7 +18,7 @@
 
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
-	$: highlighted = famous ? [show, getChilds(famous)].flat() : [];
+	$: highlighted = famous ? [...show, ...getChilds(famous)] : [];
 
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore - LeaderLine is not typed
