@@ -6,7 +6,7 @@ import { codify } from '$lib/codes';
 import { isPath } from '$lib/files';
 
 export const load = (async ({ params }) => {
-	const files = import.meta.glob('$lib/subjects/*.json', { as: 'raw' });
+	const files = import.meta.glob('$lib/careers/*.json', { as: 'raw' });
 	const path = Object.keys(files).find((p) => isPath(params.materia, p));
 
 	if (!path) throw error(404, `Materia ${params.materia} not found`);
