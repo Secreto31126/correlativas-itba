@@ -139,9 +139,9 @@
 	});
 </script>
 
-<div class="flex flex-col justify-around w-full min-h-screen">
+<div class="flex flex-col justify-around gap-4 w-full min-h-screen">
 	{#each semesters as semester}
-		<div class="flex justify-around cuatrimestre">
+		<div class="flex justify-around gap-4 cuatrimestre">
 			{#each data.career.filter((e) => e.semester === semester) as subject}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div
