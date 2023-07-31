@@ -116,7 +116,7 @@
 		// 	}
 		// });
 
-		LeaderLine = (await import('$lib/leader-line.min')).default;
+		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
 
 		all.forEach((id) => {
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
