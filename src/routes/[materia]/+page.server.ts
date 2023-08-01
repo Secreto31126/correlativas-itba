@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import type Subject from '$lib/types/subjects';
+import type { Subject, FilledSubject } from '$lib/types/subjects';
 
 import { error } from '@sveltejs/kit';
 import { codify } from '$lib/modules/codes';
@@ -22,7 +22,7 @@ export const load = (async ({ params }) => {
 		career: data.map((e) => {
 			e.codec = codify(e.code);
 			e.parentc = e.parent.map(codify);
-			return e as Subject & { codec: string; parentc: string[] };
+			return e as FilledSubject;
 		})
 	};
 }) satisfies PageServerLoad;
