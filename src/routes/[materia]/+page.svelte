@@ -58,26 +58,31 @@
 
 		famous = e.detail;
 		await tick();
-		redrawLines();
+		showLines();
 	}
 
-	async function defaultView(e: CustomEvent<string>) {
-		// If someone else is trying to steal the reflector, return
-		if (famous !== e.detail) return;
+	async function defaultView() {
+		if (!famous) return;
 
 		lines[famous]?.forEach((l) => l.hide('draw'));
 		famous = undefined;
 	}
 
-	function redrawLines(subject = famous) {
+	function showLines(subject = famous) {
 		if (!subject) return;
 
 		lines[subject]?.forEach((l) => l.position().show('draw'));
 	}
 
+	function updateLines(subject = famous) {
+		if (!subject) return;
+
+		lines[subject]?.forEach((l) => l.position());
+	}
+
 	function touchScreen(e: CustomEvent<string>) {
 		// Toggle famous
-		if (famous) defaultView(e);
+		if (famous) defaultView();
 		else highlight(e);
 	}
 
@@ -138,9 +143,11 @@
 	});
 </script>
 
-<div class="flex flex-col justify-around gap-4 w-full min-h-screen py-4">
+<div
+	class="flex flex-col md:justify-around gap-6 md:gap-2 w-full min-h-[90vh] md:min-h-screen py-2"
+>
 	{#each semesters as semester}
-		<div class="flex justify-around gap-4 cuatrimestre">
+		<div class="flex flex-wrap justify-around items-center gap-1 md:gap-4 h-full cuatrimestre">
 			{#each data.career.filter((e) => e.semester === semester) as subject}
 				<Block
 					{subject}
@@ -151,6 +158,8 @@
 					on:in={highlight}
 					on:out={defaultView}
 					on:toggle={touchScreen}
+					on:tick={() => updateLines()}
+					on:ready={() => updateLines()}
 				/>
 			{/each}
 		</div>
