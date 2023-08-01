@@ -120,10 +120,12 @@
 		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
 
 		all.forEach((id) => {
+			const origin = document.querySelector(`#${id}`);
+
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
 				if (!lines[id]) lines[id] = [];
 				lines[id].push(
-					new LeaderLine(document.querySelector(`#${id}`), target, {
+					new LeaderLine(origin, target, {
 						dash: { animation: true },
 						path: 'magnet',
 						hide: true
