@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 
-	import { browser } from '$app/environment';
 	import { onDestroy, onMount, tick } from 'svelte';
+	import Block from '$lib/components/Block.svelte';
 	// import interact from 'interactjs';
 
 	export let data: PageData;
@@ -52,35 +52,37 @@
 		return data.career.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
-	async function highlight(e: string) {
+	async function highlight(e: CustomEvent<string>) {
 		// If someone is already being highlighted, return
 		if (famous) return;
 
-		famous = e;
+		famous = e.detail;
 		await tick();
-		redrawLines();
+		showLines();
 	}
 
-	async function defaultView(e: string) {
-		// If someone else is trying to steal the reflector, return
-		if (famous !== e) return;
+	async function defaultView() {
+		if (!famous) return;
 
 		lines[famous]?.forEach((l) => l.hide('draw'));
 		famous = undefined;
 	}
 
-	function redrawLines(subject = famous) {
+	function showLines(subject = famous) {
 		if (!subject) return;
 
 		lines[subject]?.forEach((l) => l.position().show('draw'));
 	}
 
-	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : false;
-	function touchScreen(e: string) {
-		if (mouse) return;
+	function updateLines(subject = famous) {
+		if (!subject) return;
 
+		lines[subject]?.forEach((l) => l.position());
+	}
+
+	function touchScreen(e: CustomEvent<string>) {
 		// Toggle famous
-		if (famous) defaultView(e);
+		if (famous) defaultView();
 		else highlight(e);
 	}
 
@@ -116,13 +118,15 @@
 		// 	}
 		// });
 
-		LeaderLine = (await import('$lib/leader-line.min')).default;
+		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
 
 		all.forEach((id) => {
+			const origin = document.querySelector(`#${id}`);
+
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
 				if (!lines[id]) lines[id] = [];
 				lines[id].push(
-					new LeaderLine(document.querySelector(`#${id}`), target, {
+					new LeaderLine(origin, target, {
 						dash: { animation: true },
 						path: 'magnet',
 						hide: true
@@ -139,72 +143,51 @@
 	});
 </script>
 
-<div class="flex flex-col justify-around gap-4 w-full min-h-screen py-4">
+<div
+	class="flex flex-col md:justify-around gap-6 md:gap-2 w-full min-h-[90vh] md:min-h-screen py-2"
+>
 	{#each semesters as semester}
-		<div class="flex justify-around gap-4 cuatrimestre">
+		<div class="flex flex-wrap justify-around items-center gap-1 md:gap-4 h-full cuatrimestre">
 			{#each data.career.filter((e) => e.semester === semester) as subject}
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<div
-					id={subject.codec}
-					data-parents={subject.parentc.join(' ')}
-					class="flex flex-col justify-center touch-none p-2 max-w-[25%]
-					border-4 rounded-2xl border-[--color] outline-none
-					transition-all duration-500 ease-in-out"
-					class:famous={subject.codec === famous}
-					class:show={show.includes(subject.codec)}
-					class:hide={famous && !highlighted.includes(subject.codec)}
-					title={subject.name}
-					role="cell"
+				<Block
+					{subject}
+					{famous}
+					{show}
+					{highlighted}
 					tabindex={all.indexOf(subject.codec) + 1}
-					on:focusin={() => highlight(subject.codec)}
-					on:mouseenter={() => highlight(subject.codec)}
-					on:focusout={() => defaultView(subject.codec)}
-					on:mouseleave={() => defaultView(subject.codec)}
-					on:click={() => touchScreen(subject.codec)}
-				>
-					<p class="m-0 select-none">
-						{subject.codec === famous ? subject.formal : subject.name}
-					</p>
-				</div>
+					on:in={highlight}
+					on:out={defaultView}
+					on:toggle={touchScreen}
+					on:tick={() => updateLines()}
+					on:ready={() => updateLines()}
+				/>
 			{/each}
 		</div>
 	{/each}
 </div>
 
 <style lang="postcss">
-	.hide {
-		opacity: 0.3;
-	}
-
-	.show {
-		background-color: var(--b-color);
-	}
-
-	.famous {
-		z-index: 99999;
-	}
-
-	.cuatrimestre:nth-child(5n) {
+	.cuatrimestre:nth-child(5n + 1) {
 		--color: rgb(0, 155, 255);
 		--b-color: rgba(0, 155, 255, 0.4);
 	}
 
-	.cuatrimestre:nth-child(5n + 1) {
+	.cuatrimestre:nth-child(5n + 2) {
 		--color: rgb(255, 220, 190);
 		--b-color: rgba(255, 220, 190, 0.4);
 	}
 
-	.cuatrimestre:nth-child(5n + 2) {
+	.cuatrimestre:nth-child(5n + 3) {
 		--color: rgb(130, 255, 120);
 		--b-color: rgba(130, 255, 120, 0.4);
 	}
 
-	.cuatrimestre:nth-child(5n + 3) {
+	.cuatrimestre:nth-child(5n + 4) {
 		--color: rgb(255, 60, 60);
 		--b-color: rgba(255, 60, 60, 0.4);
 	}
 
-	.cuatrimestre:nth-child(5n + 4) {
+	.cuatrimestre:nth-child(5n + 5) {
 		--color: rgb(225, 150, 255);
 		--b-color: rgba(225, 150, 255, 0.4);
 	}

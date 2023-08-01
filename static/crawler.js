@@ -1,12 +1,12 @@
 /**
- * With this script, you can get the subjects from the ITBA website
- * and save them in the JSON format that the code can read.
+ * With this script, you can get the subjects from the ITBA website and
+ * save them in the JSON format that the code can read.
  *
  * It asumes JQuery is loaded in the page.
  *
  * To use it, open SGA, go to a career's "Plan de estudio", open the
  * browser's console (ctrl + mayus + i) and paste the code. Copy the
- * output and save it in a new file in `src/lib/subjects/{CAREER}.json`.
+ * output and save it in `src/lib/server/data/{CAREER}.json`.
  *
  * Last, you need to manually change the `name` property of the subjects
  * to be cooler :D

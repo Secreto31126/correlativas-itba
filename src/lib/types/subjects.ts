@@ -1,4 +1,4 @@
-export default interface Subject {
+export interface Subject {
 	code: string;
 	parent: string[];
 	name: string;
@@ -6,4 +6,9 @@ export default interface Subject {
 	semester: number;
 	parentc?: string[];
 	codec?: string;
+}
+
+export interface FilledSubject extends Subject {
+	parentc: string[];
+	codec: string;
 }
