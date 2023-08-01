@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 
-	import { browser } from '$app/environment';
 	import { onDestroy, onMount, tick } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
 	// import interact from 'interactjs';
@@ -76,10 +75,7 @@
 		lines[subject]?.forEach((l) => l.position().show('draw'));
 	}
 
-	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : false;
 	function touchScreen(e: CustomEvent<string>) {
-		if (mouse) return;
-
 		// Toggle famous
 		if (famous) defaultView(e);
 		else highlight(e);

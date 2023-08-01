@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { FilledSubject } from '$lib/types/subjects';
 
+	import { browser } from '$app/environment';
 	import { createEventDispatcher } from 'svelte';
 
 	export let subject: FilledSubject;
@@ -17,7 +18,9 @@
 
 	const dispatch = createEventDispatcher<Events>();
 
+	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : undefined;
 	function event(type: keyof Events) {
+		if ((mouse && type === 'toggle') || (!mouse && type !== 'toggle')) return;
 		dispatch(type, subject.codec);
 	}
 </script>
