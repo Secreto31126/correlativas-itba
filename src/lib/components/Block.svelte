@@ -125,6 +125,7 @@
 
 	.show {
 		background-color: var(--b-color);
+		z-index: 99998;
 	}
 
 	.famous {
