@@ -1,23 +1,23 @@
 [
     {
-        "code": "12.01",
+        "code": "12.67",
         "parent": [],
-        "name": "Química I",
-        "formal": "Química I",
+        "name": "Química General",
+        "formal": "Química General",
         "semester": 1
     },
     {
-        "code": "31.08",
+        "code": "71.58",
         "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
+        "name": "Informática General",
+        "formal": "Informática General",
         "semester": 1
     },
     {
-        "code": "93.17",
+        "code": "92.01",
         "parent": [],
-        "name": "Matemática I",
-        "formal": "Matemática I",
+        "name": "Análisis Matemático I",
+        "formal": "Análisis Matemático I",
         "semester": 1
     },
     {
@@ -28,86 +28,93 @@
         "semester": 1
     },
     {
-        "code": "94.21",
+        "code": "94.33",
         "parent": [],
-        "name": "Formación General I",
-        "formal": "Formación General I",
+        "name": "Tecnología y Sociedad",
+        "formal": "Tecnología y Sociedad",
         "semester": 1
     },
     {
-        "code": "12.45",
+        "code": "13.02",
         "parent": [
-            "12.01"
+            "12.67"
         ],
-        "name": "Química II",
-        "formal": "Química II",
+        "name": "Fundamentos de Química Orgánica",
+        "formal": "Fundamentos de Química Orgánica",
         "semester": 2
     },
     {
-        "code": "71.20",
+        "code": "16.55",
         "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
+        "name": "Biología",
+        "formal": "Biología",
         "semester": 2
     },
     {
-        "code": "93.02",
+        "code": "31.08",
+        "parent": [],
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
+        "semester": 2
+    },
+    {
+        "code": "92.02",
         "parent": [
-            "93.18",
-            "93.17"
+            "92.01",
+            "93.18"
         ],
-        "name": "Matemática II",
-        "formal": "Matemática II",
+        "name": "Análisis Matemático II",
+        "formal": "Análisis Matemático II",
         "semester": 2
     },
     {
         "code": "93.41",
         "parent": [
-            "93.17"
+            "92.01"
         ],
         "name": "Física I",
         "formal": "Física I",
         "semester": 2
     },
     {
-        "code": "94.24",
+        "code": "94.51",
         "parent": [],
-        "name": "Metodología del Aprendizaje",
-        "formal": "Metodología del Aprendizaje",
+        "name": "Inglés I",
+        "formal": "Inglés I",
         "semester": 2
     },
     {
         "code": "16.01",
         "parent": [
-            "12.45"
+            "13.02"
         ],
         "name": "Biología Molecular y Celular",
         "formal": "Biología Molecular y Celular",
         "semester": 3
     },
     {
-        "code": "71.44",
+        "code": "71.59",
         "parent": [
-            "71.20"
+            "71.58"
         ],
         "name": "Estructura de Datos y Programación",
         "formal": "Estructura de Datos y Programación",
         "semester": 3
     },
     {
-        "code": "93.03",
+        "code": "92.03",
         "parent": [
-            "93.18",
-            "93.17"
+            "92.01",
+            "93.18"
         ],
-        "name": "Matemática III",
-        "formal": "Matemática III",
+        "name": "Análisis Matemático III",
+        "formal": "Análisis Matemático III",
         "semester": 3
     },
     {
         "code": "93.42",
         "parent": [
-            "93.02"
+            "92.02"
         ],
         "name": "Física II",
         "formal": "Física II",
@@ -123,9 +130,19 @@
         "semester": 4
     },
     {
+        "code": "92.04",
+        "parent": [
+            "92.02",
+            "92.03"
+        ],
+        "name": "Análisis Matemàtico IV",
+        "formal": "Análisis Matemàtico IV",
+        "semester": 4
+    },
+    {
         "code": "93.24",
         "parent": [
-            "93.02"
+            "92.02"
         ],
         "name": "Probabilidad y Estadística",
         "formal": "Probabilidad y Estadística",
@@ -134,7 +151,7 @@
     {
         "code": "93.43",
         "parent": [
-            "93.03",
+            "92.03",
             "93.41"
         ],
         "name": "Física III",
@@ -142,32 +159,31 @@
         "semester": 4
     },
     {
-        "code": "93.65",
+        "code": "94.52",
         "parent": [
-            "93.02",
-            "93.03"
+            "94.51"
         ],
-        "name": "Matemática IV",
-        "formal": "Matemática IV",
+        "name": "Inglés II",
+        "formal": "Inglés II",
         "semester": 4
     },
     {
         "code": "16.03",
         "parent": [
-            "16.02"
+            "16.01"
         ],
         "name": "Fisiología",
         "formal": "Fisiología",
         "semester": 5
     },
     {
-        "code": "16.12",
+        "code": "16.64",
         "parent": [
             "16.02",
             "93.41"
         ],
-        "name": "Biomateriales",
-        "formal": "Biomateriales",
+        "name": "Mecánica de biomateriales y tejidos",
+        "formal": "Mecánica de biomateriales y tejidos",
         "semester": 5
     },
     {
@@ -180,7 +196,7 @@
         "semester": 5
     },
     {
-        "code": "93.44",
+        "code": "93.61",
         "parent": [
             "93.42",
             "93.43"
@@ -190,50 +206,47 @@
         "semester": 5
     },
     {
-        "code": "93.57",
+        "code": "94.43",
         "parent": [
-            "93.65"
+            "93.24"
         ],
-        "name": "Matemática V",
-        "formal": "Matemática V",
+        "name": "Metodología del Diseño",
+        "formal": "Metodología del Diseño",
         "semester": 5
     },
     {
-        "code": "16.06",
+        "code": "16.24",
         "parent": [
-            "93.57",
-            "21.06"
+            "16.03"
+        ],
+        "name": "Ingeniería de Rehabilitación",
+        "formal": "Ingeniería de Rehabilitación",
+        "semester": 6
+    },
+    {
+        "code": "16.44",
+        "parent": [
+            "93.61"
+        ],
+        "name": "Física Médica",
+        "formal": "Física Médica",
+        "semester": 6
+    },
+    {
+        "code": "16.68",
+        "parent": [
+            "92.04"
         ],
         "name": "Señales y Sistemas",
         "formal": "Señales y Sistemas",
         "semester": 6
     },
     {
-        "code": "16.13",
-        "parent": [
-            "16.02",
-            "93.41"
-        ],
-        "name": "Biomecánica",
-        "formal": "Biomecánica",
-        "semester": 6
-    },
-    {
-        "code": "16.14",
-        "parent": [
-            "93.57",
-            "16.03",
-            "93.43"
-        ],
-        "name": "Fisiología Cuantitativa",
-        "formal": "Fisiología Cuantitativa",
-        "semester": 6
-    },
-    {
         "code": "23.02",
         "parent": [
-            "71.44",
-            "21.06"
+            "71.59",
+            "21.06",
+            "92.04"
         ],
         "name": "Electrónica Analógica y Digital",
         "formal": "Electrónica Analógica y Digital",
@@ -242,34 +255,44 @@
     {
         "code": "93.54",
         "parent": [
-            "71.44",
-            "93.03"
+            "71.59",
+            "92.03"
         ],
         "name": "Métodos Numéricos",
         "formal": "Métodos Numéricos",
         "semester": 6
     },
     {
-        "code": "94.51",
-        "parent": [],
-        "name": "Inglés I",
-        "formal": "Inglés I",
+        "code": "94.44",
+        "parent": [
+            "94.43"
+        ],
+        "name": "Proyecto Interdisciplinario",
+        "formal": "Proyecto Interdisciplinario",
         "semester": 6
     },
     {
-        "code": "16.15",
+        "code": "11.15",
         "parent": [
-            "16.03",
-            "16.06"
+            "93.24"
         ],
-        "name": "Procesamiento de Señales Biomédicas",
-        "formal": "Procesamiento de Señales Biomédicas",
+        "name": "Organización Industrial",
+        "formal": "Organización Industrial",
+        "semester": 7
+    },
+    {
+        "code": "12.83",
+        "parent": [
+            "21.06"
+        ],
+        "name": "Seguridad Ocupacional y Ambiental",
+        "formal": "Seguridad Ocupacional y Ambiental",
         "semester": 7
     },
     {
         "code": "16.17",
         "parent": [
-            "16.03",
+            "16.68",
             "23.02"
         ],
         "name": "Instrumentación Biomédica I",
@@ -277,48 +300,22 @@
         "semester": 7
     },
     {
-        "code": "16.20",
+        "code": "16.63",
         "parent": [
-            "71.44",
-            "16.03"
+            "16.68"
         ],
-        "name": "Biomedicina Estructural y Computacional",
-        "formal": "Biomedicina Estructural y Computacional",
+        "name": "Procesamiento de Señales e Imágenes Biomédicas",
+        "formal": "Procesamiento de Señales e Imágenes Biomédicas",
         "semester": 7
     },
     {
-        "code": "23.03",
+        "code": "23.16",
         "parent": [
-            "16.06"
+            "16.68"
         ],
         "name": "Sistemas de Control",
         "formal": "Sistemas de Control",
         "semester": 7
-    },
-    {
-        "code": "61.31",
-        "parent": [],
-        "name": "Derecho para Ingenieros",
-        "formal": "Derecho para Ingenieros",
-        "semester": 7
-    },
-    {
-        "code": "11.15",
-        "parent": [
-            "94.24"
-        ],
-        "name": "Organización Industrial",
-        "formal": "Organización Industrial",
-        "semester": 8
-    },
-    {
-        "code": "16.16",
-        "parent": [
-            "16.15"
-        ],
-        "name": "Procesamiento de Imágenes Biomédicas",
-        "formal": "Procesamiento de Imágenes Biomédicas",
-        "semester": 8
     },
     {
         "code": "16.18",
@@ -330,53 +327,38 @@
         "semester": 8
     },
     {
-        "code": "16.19",
+        "code": "16.25",
         "parent": [
-            "16.03",
-            "23.02"
+            "16.17"
         ],
-        "name": "Biosensores",
-        "formal": "Biosensores",
+        "name": "Ingeniería Clínica",
+        "formal": "Ingeniería Clínica",
         "semester": 8
     },
     {
-        "code": "16.21",
+        "code": "61.16",
         "parent": [
-            "16.20"
+            "11.15"
         ],
-        "name": "Bioinformática",
-        "formal": "Bioinformática",
+        "name": "Introducción a las Finanzas",
+        "formal": "Introducción a las Finanzas",
         "semester": 8
     },
     {
-        "code": "16.22",
+        "code": "61.27",
         "parent": [
-            "71.44",
-            "16.14"
+            "93.24"
         ],
-        "name": "Informática Médica",
-        "formal": "Informática Médica",
-        "semester": 9
+        "name": "Análisis de Coyuntura Económica",
+        "formal": "Análisis de Coyuntura Económica",
+        "semester": 8
     },
     {
-        "code": "16.23",
-        "parent": [
-            "16.12",
-            "16.14"
-        ],
-        "name": "Órganos Artificiales",
-        "formal": "Órganos Artificiales",
-        "semester": 9
-    },
-    {
-        "code": "16.24",
-        "parent": [
-            "16.16",
-            "16.18"
-        ],
-        "name": "Ingeniería de Rehabilitación",
-        "formal": "Ingeniería de Rehabilitación",
-        "semester": 9
+        "code": "61.31",
+        "parent": [],
+        "name": "Derecho para Ingenieros",
+        "formal": "Derecho para Ingenieros",
+        "semester": 8
     },
     {
         "code": "16.30",
@@ -386,57 +368,10 @@
         "semester": 9
     },
     {
-        "code": "94.28",
-        "parent": [
-            "94.21",
-            "94.24"
-        ],
-        "name": "Formación General II",
-        "formal": "Formación General II",
-        "semester": 9
-    },
-    {
-        "code": "12.83",
-        "parent": [
-            "21.06"
-        ],
-        "name": "Seguridad Ocupacional y Ambiental",
-        "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 10
-    },
-    {
-        "code": "16.33",
-        "parent": [
-            "16.16",
-            "16.18"
-        ],
-        "name": "Ingeniería Hospitalaria",
-        "formal": "Ingeniería Hospitalaria",
-        "semester": 10
-    },
-    {
-        "code": "16.86",
+        "code": "94.65",
         "parent": [],
-        "name": "Práctica Laboral",
-        "formal": "Práctica Laboral",
-        "semester": 10
-    },
-    {
-        "code": "61.23",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Economía para Ingenieros",
-        "formal": "Economía para Ingenieros",
-        "semester": 10
-    },
-    {
-        "code": "94.52",
-        "parent": [
-            "94.51"
-        ],
-        "name": "Inglés II",
-        "formal": "Inglés II",
+        "name": "Practica Profesional supervisada",
+        "formal": "Practica Profesional supervisada",
         "semester": 10
     }
 ]
