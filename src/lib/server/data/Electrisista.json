@@ -4,28 +4,32 @@
         "parent": [],
         "name": "Química I",
         "formal": "Química I",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "22.06",
         "parent": [],
         "name": "Introducción a la Computación",
         "formal": "Introducción a la Computación",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.17",
         "parent": [],
         "name": "Matemática I",
         "formal": "Matemática I",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.18",
         "parent": [],
         "name": "Álgebra Lineal",
         "formal": "Álgebra Lineal",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "22.07",
@@ -34,14 +38,16 @@
         ],
         "name": "Programación I",
         "formal": "Programación I",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "31.08",
         "parent": [],
         "name": "Sistemas de Representación",
         "formal": "Sistemas de Representación",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "93.02",
@@ -51,7 +57,8 @@
         ],
         "name": "Matemática II",
         "formal": "Matemática II",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "93.41",
@@ -60,14 +67,16 @@
         ],
         "name": "Física I",
         "formal": "Física I",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "94.21",
         "parent": [],
         "name": "Formación General I",
         "formal": "Formación General I",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "22.08",
@@ -77,7 +86,8 @@
         ],
         "name": "Algoritmos y Estructura de Datos",
         "formal": "Algoritmos y Estructura de Datos",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.03",
@@ -87,7 +97,8 @@
         ],
         "name": "Matemática III",
         "formal": "Matemática III",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.24",
@@ -96,7 +107,8 @@
         ],
         "name": "Probabilidad y Estadística",
         "formal": "Probabilidad y Estadística",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.43",
@@ -106,7 +118,8 @@
         ],
         "name": "Física III",
         "formal": "Física III",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "21.71",
@@ -115,7 +128,8 @@
         ],
         "name": "Electrotecnia I",
         "formal": "Electrotecnia I",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "93.07",
@@ -124,7 +138,8 @@
         ],
         "name": "Métodos Numéricos",
         "formal": "Métodos Numéricos",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "93.42",
@@ -133,7 +148,8 @@
         ],
         "name": "Física II",
         "formal": "Física II",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "93.65",
@@ -143,14 +159,16 @@
         ],
         "name": "Matemática IV",
         "formal": "Matemática IV",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "94.24",
         "parent": [],
         "name": "Metodología del Aprendizaje",
         "formal": "Metodología del Aprendizaje",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "21.74",
@@ -159,7 +177,8 @@
         ],
         "name": "Instrumentos y Mediciones Eléctricas",
         "formal": "Instrumentos y Mediciones Eléctricas",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "21.80",
@@ -169,7 +188,8 @@
         ],
         "name": "Máquinas Eléctricas I",
         "formal": "Máquinas Eléctricas I",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "22.20",
@@ -178,7 +198,8 @@
         ],
         "name": "Electrónica General",
         "formal": "Electrónica General",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "22.37",
@@ -188,7 +209,8 @@
         ],
         "name": "Electromagnetismo",
         "formal": "Electromagnetismo",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "22.42",
@@ -197,7 +219,8 @@
         ],
         "name": "Laboratorio de Electrónica",
         "formal": "Laboratorio de Electrónica",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "31.21",
@@ -206,7 +229,8 @@
         ],
         "name": "Termodinámica",
         "formal": "Termodinámica",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "21.79",
@@ -215,7 +239,8 @@
         ],
         "name": "Electrotecnia II",
         "formal": "Electrotecnia II",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "21.81",
@@ -224,7 +249,8 @@
         ],
         "name": "Máquinas Eléctricas II",
         "formal": "Máquinas Eléctricas II",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "22.58",
@@ -233,7 +259,8 @@
         ],
         "name": "Instrumentación y Control",
         "formal": "Instrumentación y Control",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "31.19",
@@ -244,7 +271,8 @@
         ],
         "name": "Estática y Resistencia de Materiales",
         "formal": "Estática y Resistencia de Materiales",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "31.24",
@@ -253,14 +281,16 @@
         ],
         "name": "Mecánica de Fluidos",
         "formal": "Mecánica de Fluidos",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "94.51",
         "parent": [],
         "name": "Inglés I",
         "formal": "Inglés I",
-        "semester": 6
+        "semester": 6,
+        "credits": 0
     },
     {
         "code": "21.32",
@@ -270,7 +300,8 @@
         ],
         "name": "Tecnología de Mat. Eléctricos",
         "formal": "Tecnología de Mat. Eléctricos",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "21.65",
@@ -279,7 +310,8 @@
         ],
         "name": "Instalaciones Eléctricas y Luminotecnia",
         "formal": "Instalaciones Eléctricas y Luminotecnia",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "21.82",
@@ -288,7 +320,8 @@
         ],
         "name": "Centrales Eléctricas",
         "formal": "Centrales Eléctricas",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "21.83",
@@ -298,7 +331,8 @@
         ],
         "name": "Transmisión de la Energía Eléctrica",
         "formal": "Transmisión de la Energía Eléctrica",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "31.27",
@@ -309,7 +343,8 @@
         ],
         "name": "Mecanismos y Elementos de Máquinas",
         "formal": "Mecanismos y Elementos de Máquinas",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "21.85",
@@ -319,7 +354,8 @@
         ],
         "name": "Sistemas Eléctricos de Potencia",
         "formal": "Sistemas Eléctricos de Potencia",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "21.86",
@@ -328,7 +364,8 @@
         ],
         "name": "Diseño de Líneas de Transmisión y Estaciones Transformadoras",
         "formal": "Diseño de Líneas de Transmisión y Estaciones Transformadoras",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "22.28",
@@ -337,7 +374,8 @@
         ],
         "name": "Electrónica de Potencia",
         "formal": "Electrónica de Potencia",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "93.44",
@@ -347,7 +385,8 @@
         ],
         "name": "Física IV",
         "formal": "Física IV",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "21.72",
@@ -357,7 +396,8 @@
         ],
         "name": "Mantenimiento de Máquinas e Instalaciones Eléctricas",
         "formal": "Mantenimiento de Máquinas e Instalaciones Eléctricas",
-        "semester": 9
+        "semester": 9,
+        "credits": 3
     },
     {
         "code": "21.73",
@@ -367,7 +407,8 @@
         ],
         "name": "Energías Alternativas",
         "formal": "Energías Alternativas",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "21.84",
@@ -378,7 +419,8 @@
         ],
         "name": "Proyecto Final ",
         "formal": "Proyecto Final ",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "21.87",
@@ -388,7 +430,8 @@
         ],
         "name": "Mercado Eléctrico",
         "formal": "Mercado Eléctrico",
-        "semester": 9
+        "semester": 9,
+        "credits": 3
     },
     {
         "code": "21.88",
@@ -398,7 +441,8 @@
         ],
         "name": "Distribución de la Energía Eléctrica",
         "formal": "Distribución de la Energía Eléctrica",
-        "semester": 9
+        "semester": 9,
+        "credits": 3
     },
     {
         "code": "61.23",
@@ -407,7 +451,8 @@
         ],
         "name": "Economía para Ingenieros",
         "formal": "Economía para Ingenieros",
-        "semester": 9
+        "semester": 9,
+        "credits": 3
     },
     {
         "code": "11.15",
@@ -416,7 +461,8 @@
         ],
         "name": "Organización Industrial",
         "formal": "Organización Industrial",
-        "semester": 10
+        "semester": 10,
+        "credits": 3
     },
     {
         "code": "12.83",
@@ -425,7 +471,8 @@
         ],
         "name": "Seguridad Ocupacional y Ambiental",
         "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 10
+        "semester": 10,
+        "credits": 3
     },
     {
         "code": "21.45",
@@ -434,14 +481,16 @@
         ],
         "name": "Eficiencia Energética",
         "formal": "Eficiencia Energética",
-        "semester": 10
+        "semester": 10,
+        "credits": 3
     },
     {
         "code": "21.98",
         "parent": [],
         "name": "Práctica Laboral",
         "formal": "Práctica Laboral",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     },
     {
         "code": "31.38",
@@ -451,14 +500,16 @@
         ],
         "name": "Turbomáquinas",
         "formal": "Turbomáquinas",
-        "semester": 10
+        "semester": 10,
+        "credits": 6
     },
     {
         "code": "61.31",
         "parent": [],
         "name": "Derecho para Ingenieros",
         "formal": "Derecho para Ingenieros",
-        "semester": 10
+        "semester": 10,
+        "credits": 3
     },
     {
         "code": "94.52",
@@ -467,6 +518,7 @@
         ],
         "name": "Inglés II",
         "formal": "Inglés II",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     }
 ]
