@@ -4,35 +4,40 @@
         "parent": [],
         "name": "Química General",
         "formal": "Química General",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "71.58",
         "parent": [],
         "name": "Informática General",
         "formal": "Informática General",
-        "semester": 1
+        "semester": 1,
+        "credits": 3
     },
     {
         "code": "92.01",
         "parent": [],
         "name": "Análisis Matemático I",
         "formal": "Análisis Matemático I",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.18",
         "parent": [],
         "name": "Álgebra Lineal",
         "formal": "Álgebra Lineal",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "94.33",
         "parent": [],
         "name": "Tecnología y Sociedad",
         "formal": "Tecnología y Sociedad",
-        "semester": 1
+        "semester": 1,
+        "credits": 3
     },
     {
         "code": "13.02",
@@ -41,21 +46,24 @@
         ],
         "name": "Fundamentos de Química Orgánica",
         "formal": "Fundamentos de Química Orgánica",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "16.55",
         "parent": [],
         "name": "Biología",
         "formal": "Biología",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "31.08",
         "parent": [],
         "name": "Sistemas de Representación",
         "formal": "Sistemas de Representación",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "92.02",
@@ -65,7 +73,8 @@
         ],
         "name": "Análisis Matemático II",
         "formal": "Análisis Matemático II",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "93.41",
@@ -74,14 +83,16 @@
         ],
         "name": "Física I",
         "formal": "Física I",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "94.51",
         "parent": [],
         "name": "Inglés I",
         "formal": "Inglés I",
-        "semester": 2
+        "semester": 2,
+        "credits": 0
     },
     {
         "code": "16.01",
@@ -90,7 +101,8 @@
         ],
         "name": "Biología Molecular y Celular",
         "formal": "Biología Molecular y Celular",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "71.59",
@@ -99,7 +111,8 @@
         ],
         "name": "Estructura de Datos y Programación",
         "formal": "Estructura de Datos y Programación",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "92.03",
@@ -109,7 +122,8 @@
         ],
         "name": "Análisis Matemático III",
         "formal": "Análisis Matemático III",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.42",
@@ -118,7 +132,8 @@
         ],
         "name": "Física II",
         "formal": "Física II",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "16.02",
@@ -127,7 +142,8 @@
         ],
         "name": "Histología y Anatomía",
         "formal": "Histología y Anatomía",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "92.04",
@@ -137,7 +153,8 @@
         ],
         "name": "Análisis Matemàtico IV",
         "formal": "Análisis Matemàtico IV",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "93.24",
@@ -146,7 +163,8 @@
         ],
         "name": "Probabilidad y Estadística",
         "formal": "Probabilidad y Estadística",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "93.43",
@@ -156,7 +174,8 @@
         ],
         "name": "Física III",
         "formal": "Física III",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "94.52",
@@ -165,7 +184,8 @@
         ],
         "name": "Inglés II",
         "formal": "Inglés II",
-        "semester": 4
+        "semester": 4,
+        "credits": 0
     },
     {
         "code": "16.03",
@@ -174,7 +194,8 @@
         ],
         "name": "Fisiología",
         "formal": "Fisiología",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "16.64",
@@ -184,7 +205,8 @@
         ],
         "name": "Mecánica de biomateriales y tejidos",
         "formal": "Mecánica de biomateriales y tejidos",
-        "semester": 5
+        "semester": 5,
+        "credits": 8
     },
     {
         "code": "21.06",
@@ -193,7 +215,8 @@
         ],
         "name": "Electrotecnia",
         "formal": "Electrotecnia",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "93.61",
@@ -203,7 +226,8 @@
         ],
         "name": "Física IV",
         "formal": "Física IV",
-        "semester": 5
+        "semester": 5,
+        "credits": 4
     },
     {
         "code": "94.43",
@@ -212,7 +236,8 @@
         ],
         "name": "Metodología del Diseño",
         "formal": "Metodología del Diseño",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "16.24",
@@ -221,7 +246,8 @@
         ],
         "name": "Ingeniería de Rehabilitación",
         "formal": "Ingeniería de Rehabilitación",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "16.44",
@@ -230,7 +256,8 @@
         ],
         "name": "Física Médica",
         "formal": "Física Médica",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "16.68",
@@ -239,7 +266,8 @@
         ],
         "name": "Señales y Sistemas",
         "formal": "Señales y Sistemas",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "23.02",
@@ -250,7 +278,8 @@
         ],
         "name": "Electrónica Analógica y Digital",
         "formal": "Electrónica Analógica y Digital",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "93.54",
@@ -260,7 +289,8 @@
         ],
         "name": "Métodos Numéricos",
         "formal": "Métodos Numéricos",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "94.44",
@@ -269,7 +299,8 @@
         ],
         "name": "Proyecto Interdisciplinario",
         "formal": "Proyecto Interdisciplinario",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "11.15",
@@ -278,7 +309,8 @@
         ],
         "name": "Organización Industrial",
         "formal": "Organización Industrial",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "12.83",
@@ -287,7 +319,8 @@
         ],
         "name": "Seguridad Ocupacional y Ambiental",
         "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "16.17",
@@ -297,7 +330,8 @@
         ],
         "name": "Instrumentación Biomédica I",
         "formal": "Instrumentación Biomédica I",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "16.63",
@@ -306,7 +340,8 @@
         ],
         "name": "Procesamiento de Señales e Imágenes Biomédicas",
         "formal": "Procesamiento de Señales e Imágenes Biomédicas",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "23.16",
@@ -315,7 +350,8 @@
         ],
         "name": "Sistemas de Control",
         "formal": "Sistemas de Control",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "16.18",
@@ -324,7 +360,8 @@
         ],
         "name": "Instrumentación Biomédica II",
         "formal": "Instrumentación Biomédica II",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "16.25",
@@ -333,7 +370,8 @@
         ],
         "name": "Ingeniería Clínica",
         "formal": "Ingeniería Clínica",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "61.16",
@@ -342,7 +380,8 @@
         ],
         "name": "Introducción a las Finanzas",
         "formal": "Introducción a las Finanzas",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "61.27",
@@ -351,27 +390,31 @@
         ],
         "name": "Análisis de Coyuntura Económica",
         "formal": "Análisis de Coyuntura Económica",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "61.31",
         "parent": [],
         "name": "Derecho para Ingenieros",
         "formal": "Derecho para Ingenieros",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "16.30",
         "parent": [],
         "name": "Proyecto Final de Carrera (Anual)",
         "formal": "Proyecto Final de Carrera (Anual)",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "94.65",
         "parent": [],
         "name": "Practica Profesional supervisada",
         "formal": "Practica Profesional supervisada",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     }
 ]
