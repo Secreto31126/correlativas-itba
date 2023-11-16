@@ -4,35 +4,40 @@
         "parent": [],
         "name": "Química General",
         "formal": "Química General",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "71.58",
         "parent": [],
         "name": "Informática General",
         "formal": "Informática General",
-        "semester": 1
+        "semester": 1,
+        "credits": 3
     },
     {
         "code": "92.01",
         "parent": [],
         "name": "Análisis Matemático I",
         "formal": "Análisis Matemático I",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.18",
         "parent": [],
         "name": "Álgebra Lineal",
         "formal": "Álgebra Lineal",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "94.33",
         "parent": [],
         "name": "Tecnología y Sociedad",
         "formal": "Tecnología y Sociedad",
-        "semester": 1
+        "semester": 1,
+        "credits": 3
     },
     {
         "code": "30.26",
@@ -41,28 +46,32 @@
         ],
         "name": "Ciencia de Materiales I",
         "formal": "Ciencia de Materiales I",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "31.08",
         "parent": [],
         "name": "Sistemas de Representación",
         "formal": "Sistemas de Representación",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "32.06",
         "parent": [],
         "name": "Introducción a la Ing. Naval",
         "formal": "Introducción a la Ing. Naval",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "71.90",
         "parent": [],
         "name": "Certificaciones tecnológicas",
         "formal": "Certificaciones tecnológicas",
-        "semester": 2
+        "semester": 2,
+        "credits": 0
     },
     {
         "code": "92.02",
@@ -72,7 +81,8 @@
         ],
         "name": "Análisis Matemático II",
         "formal": "Análisis Matemático II",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "93.41",
@@ -81,14 +91,16 @@
         ],
         "name": "Física I",
         "formal": "Física I",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "16.55",
         "parent": [],
         "name": "Biología",
         "formal": "Biología",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "30.41",
@@ -99,7 +111,8 @@
         ],
         "name": "Diseño Mecánico I",
         "formal": "Diseño Mecánico I",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "71.59",
@@ -109,7 +122,8 @@
         ],
         "name": "Estructura de Datos y Programación",
         "formal": "Estructura de Datos y Programación",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "92.03",
@@ -119,7 +133,8 @@
         ],
         "name": "Análisis Matemático III",
         "formal": "Análisis Matemático III",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.42",
@@ -128,7 +143,8 @@
         ],
         "name": "Física II",
         "formal": "Física II",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "30.42",
@@ -139,7 +155,8 @@
         ],
         "name": "Diseño Mecánico II",
         "formal": "Diseño Mecánico II",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "31.21",
@@ -149,7 +166,8 @@
         ],
         "name": "Termodinámica",
         "formal": "Termodinámica",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "92.04",
@@ -159,7 +177,8 @@
         ],
         "name": "Análisis Matemàtico IV",
         "formal": "Análisis Matemàtico IV",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "93.07",
@@ -169,7 +188,8 @@
         ],
         "name": "Métodos Numéricos",
         "formal": "Métodos Numéricos",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "93.43",
@@ -179,7 +199,8 @@
         ],
         "name": "Física III",
         "formal": "Física III",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "30.25",
@@ -188,7 +209,8 @@
         ],
         "name": "Ciencia de Materiales II",
         "formal": "Ciencia de Materiales II",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "30.43",
@@ -200,7 +222,8 @@
         ],
         "name": "Diseño Mecánico III A",
         "formal": "Diseño Mecánico III A",
-        "semester": 5
+        "semester": 5,
+        "credits": 4
     },
     {
         "code": "30.44",
@@ -212,7 +235,8 @@
         ],
         "name": "Diseño Mecánico III B",
         "formal": "Diseño Mecánico III B",
-        "semester": 5
+        "semester": 5,
+        "credits": 4
     },
     {
         "code": "32.66",
@@ -223,7 +247,8 @@
         ],
         "name": "Hidrostática y Estabilidad",
         "formal": "Hidrostática y Estabilidad",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "93.61",
@@ -233,14 +258,16 @@
         ],
         "name": "Física IV",
         "formal": "Física IV",
-        "semester": 5
+        "semester": 5,
+        "credits": 4
     },
     {
         "code": "94.43",
         "parent": [],
         "name": "Metodología del Diseño",
         "formal": "Metodología del Diseño",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "21.08",
@@ -249,7 +276,8 @@
         ],
         "name": "Electrotecnia",
         "formal": "Electrotecnia",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "31.22",
@@ -261,7 +289,8 @@
         ],
         "name": "Mecánica de Fluidos",
         "formal": "Mecánica de Fluidos",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "32.69",
@@ -270,7 +299,8 @@
         ],
         "name": "Resistencia y Propulsión",
         "formal": "Resistencia y Propulsión",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "93.24",
@@ -279,7 +309,8 @@
         ],
         "name": "Probabilidad y Estadística",
         "formal": "Probabilidad y Estadística",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "94.44",
@@ -288,14 +319,16 @@
         ],
         "name": "Proyecto Interdisciplinario",
         "formal": "Proyecto Interdisciplinario",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "94.51",
         "parent": [],
         "name": "Inglés I",
         "formal": "Inglés I",
-        "semester": 6
+        "semester": 6,
+        "credits": 0
     },
     {
         "code": "11.15",
@@ -304,7 +337,8 @@
         ],
         "name": "Organización Industrial",
         "formal": "Organización Industrial",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "22.10",
@@ -314,7 +348,8 @@
         ],
         "name": "Electrónica e Instrumentación",
         "formal": "Electrónica e Instrumentación",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "30.49",
@@ -323,7 +358,8 @@
         ],
         "name": "Máquinas Térmicas e Hidráulicas",
         "formal": "Máquinas Térmicas e Hidráulicas",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "32.54",
@@ -333,7 +369,8 @@
         ],
         "name": "Construcción Naval",
         "formal": "Construcción Naval",
-        "semester": 7
+        "semester": 7,
+        "credits": 6
     },
     {
         "code": "61.27",
@@ -342,14 +379,16 @@
         ],
         "name": "Análisis de Coyuntura Económica",
         "formal": "Análisis de Coyuntura Económica",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "12.83",
         "parent": [],
         "name": "Seguridad Ocupacional y Ambiental",
         "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "30.45",
@@ -360,7 +399,8 @@
         ],
         "name": "Diseño Mecánico IV",
         "formal": "Diseño Mecánico IV",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "32.03",
@@ -369,7 +409,8 @@
         ],
         "name": "Motores Marinos",
         "formal": "Motores Marinos",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "32.56",
@@ -380,14 +421,16 @@
         ],
         "name": "Alistamiento Naval",
         "formal": "Alistamiento Naval",
-        "semester": 8
+        "semester": 8,
+        "credits": 6
     },
     {
         "code": "61.31",
         "parent": [],
         "name": "Derecho para Ingenieros",
         "formal": "Derecho para Ingenieros",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "32.49",
@@ -396,7 +439,8 @@
         ],
         "name": "Estructura de Buques",
         "formal": "Estructura de Buques",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "32.64",
@@ -407,7 +451,8 @@
         ],
         "name": "Plantas Propulsoras Marinas",
         "formal": "Plantas Propulsoras Marinas",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "32.72",
@@ -419,21 +464,24 @@
         ],
         "name": "Proyecto de Buques",
         "formal": "Proyecto de Buques",
-        "semester": 9
+        "semester": 9,
+        "credits": 6
     },
     {
         "code": "32.05",
         "parent": [],
         "name": "Astilleros y Mantenimiento de Buques",
         "formal": "Astilleros y Mantenimiento de Buques",
-        "semester": 10
+        "semester": 10,
+        "credits": 4
     },
     {
         "code": "32.70",
         "parent": [],
         "name": "Práctica de Embarque",
         "formal": "Práctica de Embarque",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     },
     {
         "code": "32.71",
@@ -445,7 +493,8 @@
         ],
         "name": "Proyecto de Embarcaciones de Trabajo",
         "formal": "Proyecto de Embarcaciones de Trabajo",
-        "semester": 10
+        "semester": 10,
+        "credits": 4
     },
     {
         "code": "32.73",
@@ -454,7 +503,8 @@
         ],
         "name": "Proyecto Final (Anual)",
         "formal": "Proyecto Final (Anual)",
-        "semester": 10
+        "semester": 10,
+        "credits": 3
     },
     {
         "code": "94.52",
@@ -463,13 +513,15 @@
         ],
         "name": "Inglés II",
         "formal": "Inglés II",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     },
     {
         "code": "94.65",
         "parent": [],
         "name": "Practica Profesional supervisada",
         "formal": "Practica Profesional supervisada",
-        "semester": 10
+        "semester": 10,
+        "credits": 0
     }
 ]
