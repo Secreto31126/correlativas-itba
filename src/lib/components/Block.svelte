@@ -35,7 +35,7 @@
 	let finished_animation = true;
 
 	async function animate() {
-		const splitted = subject.formal.split('');
+		const splitted = `${subject.formal} (${subject.credits} créditos)`.split('');
 
 		// Fake animation if user prefers reduced motion
 		// Or there's no mouse (mobiles)

@@ -17,12 +17,13 @@
 // @ts-nocheck
 
 class Subject {
-    constructor(code, name, parents, year, semester) {
+    constructor(code, name, parents, year, semester, credits) {
         this.code = code;
         this.parent = parents;
         this.name = name;
         this.formal = name;
         this.semester = (year - 1) * 2 + (semester * 1);
+        this.credits = credits
     }
 }
 
@@ -42,6 +43,7 @@ $("tr:not(:has(table)):has(td > a)").each(function () {
 
     const data = $(this).children("td");
     const [code, name] = data.first().text().split(" - ");
+    const credits = data.eq(1).text() * 1;
     const parents = data
         .last()
         .text()
@@ -49,7 +51,7 @@ $("tr:not(:has(table)):has(td > a)").each(function () {
         .split(" ")
         .filter(e => !!e)
         .map(e => e.trim());
-    db.push(new Subject(code, name, parents, year, semester));
+    db.push(new Subject(code, name, parents, year, semester, credits));
 });
 
 console.log(JSON.stringify(db, null, 4));

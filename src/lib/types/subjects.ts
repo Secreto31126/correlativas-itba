@@ -4,6 +4,7 @@ export interface Subject {
 	name: string;
 	formal: string;
 	semester: number;
+	credits: number;
 	parentc?: string[];
 	codec?: string;
 }

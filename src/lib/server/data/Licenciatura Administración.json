@@ -4,42 +4,48 @@
         "parent": [],
         "name": "Introducción a la Administración",
         "formal": "Introducción a la Administración",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "81.07",
         "parent": [],
         "name": "Sistemas Contables",
         "formal": "Sistemas Contables",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.21",
         "parent": [],
         "name": "Álgebra",
         "formal": "Álgebra",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.20",
         "parent": [],
         "name": "Análisis Matemático",
         "formal": "Análisis Matemático",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "94.60",
         "parent": [],
         "name": "Panorama Histórico Global",
         "formal": "Panorama Histórico Global",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "94.61",
         "parent": [],
         "name": "Filosofía",
         "formal": "Filosofía",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "61.81",
@@ -48,7 +54,8 @@
         ],
         "name": "Microeconomía",
         "formal": "Microeconomía",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "81.11",
@@ -57,7 +64,8 @@
         ],
         "name": "Contabilidad Gerencial",
         "formal": "Contabilidad Gerencial",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.39",
@@ -67,14 +75,16 @@
         ],
         "name": "Estadística",
         "formal": "Estadística",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "94.62",
         "parent": [],
         "name": "Ética en los Negocios",
         "formal": "Ética en los Negocios",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "61.12",
@@ -84,7 +94,8 @@
         ],
         "name": "Gestión Financiera",
         "formal": "Gestión Financiera",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "61.82",
@@ -93,7 +104,8 @@
         ],
         "name": "Macroeconomía",
         "formal": "Macroeconomía",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "71.88",
@@ -103,7 +115,8 @@
         ],
         "name": "Gestión de Datos",
         "formal": "Gestión de Datos",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "81.20",
@@ -112,7 +125,8 @@
         ],
         "name": "Comercialización",
         "formal": "Comercialización",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "94.63",
@@ -121,14 +135,16 @@
         ],
         "name": "Epistemología y Heurística",
         "formal": "Epistemología y Heurística",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "94.90",
         "parent": [],
         "name": "Inglés I (analista)",
         "formal": "Inglés I (analista)",
-        "semester": 4
+        "semester": 4,
+        "credits": 0
     },
     {
         "code": "11.83",
@@ -138,7 +154,8 @@
         ],
         "name": "Gestión de Operaciones",
         "formal": "Gestión de Operaciones",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "81.21",
@@ -147,7 +164,8 @@
         ],
         "name": "Gestión de Ventas",
         "formal": "Gestión de Ventas",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "94.40",
@@ -156,7 +174,8 @@
         ],
         "name": "Estructura de las Organizaciones",
         "formal": "Estructura de las Organizaciones",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "11.84",
@@ -166,7 +185,8 @@
         ],
         "name": "Gestión de Proyectos",
         "formal": "Gestión de Proyectos",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "11.85",
@@ -176,6 +196,7 @@
         ],
         "name": "Toma de Decisiones",
         "formal": "Toma de Decisiones",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     }
 ]

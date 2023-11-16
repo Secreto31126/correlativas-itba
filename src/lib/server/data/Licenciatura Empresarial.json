@@ -4,35 +4,40 @@
         "parent": [],
         "name": "Utilitarios en Informática",
         "formal": "Utilitarios en Informática",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "81.06",
         "parent": [],
         "name": "Introducción a la Administración",
         "formal": "Introducción a la Administración",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.20",
         "parent": [],
         "name": "Análisis Matemático",
         "formal": "Análisis Matemático",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "93.21",
         "parent": [],
         "name": "Álgebra",
         "formal": "Álgebra",
-        "semester": 1
+        "semester": 1,
+        "credits": 6
     },
     {
         "code": "71.20",
         "parent": [],
         "name": "Informática General",
         "formal": "Informática General",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "82.15",
@@ -42,28 +47,32 @@
         ],
         "name": "Matemática Aplicada",
         "formal": "Matemática Aplicada",
-        "semester": 2
+        "semester": 2,
+        "credits": 6
     },
     {
         "code": "93.16",
         "parent": [],
         "name": "Matemática Discreta",
         "formal": "Matemática Discreta",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "94.24",
         "parent": [],
         "name": "Metodología del Aprendizaje",
         "formal": "Metodología del Aprendizaje",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "94.60",
         "parent": [],
         "name": "Panorama Histórico Global",
         "formal": "Panorama Histórico Global",
-        "semester": 2
+        "semester": 2,
+        "credits": 3
     },
     {
         "code": "61.81",
@@ -72,7 +81,8 @@
         ],
         "name": "Microeconomía",
         "formal": "Microeconomía",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "71.45",
@@ -81,7 +91,8 @@
         ],
         "name": "Estructura de Datos y Programación",
         "formal": "Estructura de Datos y Programación",
-        "semester": 3
+        "semester": 3,
+        "credits": 6
     },
     {
         "code": "93.36",
@@ -91,21 +102,24 @@
         ],
         "name": "Probabilidad",
         "formal": "Probabilidad",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "94.61",
         "parent": [],
         "name": "Filosofía",
         "formal": "Filosofía",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "94.62",
         "parent": [],
         "name": "Ética en los Negocios",
         "formal": "Ética en los Negocios",
-        "semester": 3
+        "semester": 3,
+        "credits": 3
     },
     {
         "code": "11.67",
@@ -114,7 +128,8 @@
         ],
         "name": "Estadística Aplicada",
         "formal": "Estadística Aplicada",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "71.88",
@@ -123,7 +138,8 @@
         ],
         "name": "Gestión de Datos",
         "formal": "Gestión de Datos",
-        "semester": 4
+        "semester": 4,
+        "credits": 6
     },
     {
         "code": "72.74",
@@ -132,7 +148,8 @@
         ],
         "name": "Visualización de Información",
         "formal": "Visualización de Información",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "94.40",
@@ -141,14 +158,16 @@
         ],
         "name": "Estructura de las Organizaciones",
         "formal": "Estructura de las Organizaciones",
-        "semester": 4
+        "semester": 4,
+        "credits": 3
     },
     {
         "code": "94.90",
         "parent": [],
         "name": "Inglés I (analista)",
         "formal": "Inglés I (analista)",
-        "semester": 4
+        "semester": 4,
+        "credits": 0
     },
     {
         "code": "61.82",
@@ -157,21 +176,24 @@
         ],
         "name": "Macroeconomía",
         "formal": "Macroeconomía",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "61.87",
         "parent": [],
         "name": "Derecho Público y Privado I",
         "formal": "Derecho Público y Privado I",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "82.01",
         "parent": [],
         "name": "Proyecto I",
         "formal": "Proyecto I",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "82.03",
@@ -180,7 +202,8 @@
         ],
         "name": "Gestión del Ciclo de Vida de la Información",
         "formal": "Gestión del Ciclo de Vida de la Información",
-        "semester": 5
+        "semester": 5,
+        "credits": 3
     },
     {
         "code": "82.04",
@@ -189,7 +212,8 @@
         ],
         "name": "Analítica Descriptiva",
         "formal": "Analítica Descriptiva",
-        "semester": 5
+        "semester": 5,
+        "credits": 6
     },
     {
         "code": "11.86",
@@ -200,7 +224,8 @@
         ],
         "name": "Investigación de Operaciones I",
         "formal": "Investigación de Operaciones I",
-        "semester": 6
+        "semester": 6,
+        "credits": 3
     },
     {
         "code": "82.05",
@@ -209,7 +234,8 @@
         ],
         "name": "Análisis Predictivo",
         "formal": "Análisis Predictivo",
-        "semester": 6
+        "semester": 6,
+        "credits": 6
     },
     {
         "code": "11.87",
@@ -219,7 +245,8 @@
         ],
         "name": "Investigación de Operaciones II",
         "formal": "Investigación de Operaciones II",
-        "semester": 7
+        "semester": 7,
+        "credits": 3
     },
     {
         "code": "11.63",
@@ -228,7 +255,8 @@
         ],
         "name": "Simulación",
         "formal": "Simulación",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "82.02",
@@ -242,7 +270,8 @@
         ],
         "name": "Proyecto Final",
         "formal": "Proyecto Final",
-        "semester": 8
+        "semester": 8,
+        "credits": 3
     },
     {
         "code": "94.91",
@@ -251,6 +280,7 @@
         ],
         "name": "Inglés II (licenciado)",
         "formal": "Inglés II (licenciado)",
-        "semester": 8
+        "semester": 8,
+        "credits": 0
     }
 ]
