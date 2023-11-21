@@ -9,6 +9,7 @@
 	export let show: string[];
 	export let highlighted: string[];
 	export let tabindex: number;
+	export let strike: boolean;
 
 	type Events = {
 		in: string;
@@ -16,6 +17,7 @@
 		toggle: string;
 		tick: void;
 		ready: void;
+		crossout: string;
 	};
 
 	const dispatch = createEventDispatcher<Events>();
@@ -26,8 +28,10 @@
 	$: im_famous = famous === subject.codec;
 
 	function event(type: keyof Events) {
-		if ((mouse && type === 'toggle') || (!mouse && type !== 'toggle')) return;
-		dispatch(type, subject.codec);
+		if (type === 'crossout') dispatch(type, subject.codec);
+		else if (mouse && type === 'toggle') return;
+		else if (!mouse && type !== 'toggle') return;
+		else dispatch(type, subject.codec);
 	}
 
 	let full_name = [] as string[];
@@ -97,12 +101,13 @@
 	data-parents={subject.parentc.join(' ')}
 	style="min-width: {width}px; min-height: {height}px;"
 	class="flex flex-col justify-center touch-none
-		border-2 md:border-4 rounded-xl md:rounded-2xl border-[--color] outline-none
+		border-2 md:border-4 rounded-xl md:rounded-2xl outline-none
 		p-1 md:p-2 md:max-w-[15%]
 		transition-all duration-500 ease-in-out"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
+	class:strike
 	title={subject.name}
 	role="cell"
 	{tabindex}
@@ -111,6 +116,7 @@
 	on:focusout={() => event('out')}
 	on:mouseleave={() => event('out')}
 	on:click={() => event('toggle')}
+	on:contextmenu|preventDefault={() => event('crossout')}
 	bind:this={div}
 >
 	<p class="m-0 select-none text-sm md:text-2xl">
@@ -119,6 +125,10 @@
 </div>
 
 <style lang="postcss">
+	div {
+		border-color: var(--color);
+	}
+
 	.hide {
 		opacity: 0.3;
 	}
@@ -130,5 +140,29 @@
 
 	.famous {
 		z-index: 99999;
+	}
+
+	.strike {
+		position: relative;
+	}
+
+	.strike::after {
+		content: ' ';
+		position: absolute;
+		top: 50%;
+		left: -3%;
+		width: 0;
+		height: 10px;
+		opacity: 80%;
+		transform: translateY(-50%);
+		background: repeat-x
+			url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAKAQMAAAByjsdvAAAABlBMVEUAAADdMzNrjRuKAAAAAXRSTlMAQObYZgAAADdJREFUCNdj+MMABP8ZGCQY/h9g+MHw/AHzDwbGD+w/GBhq6h8wMNj/b2BgkP8HVMMPUsn+gQEAsTkQNRVnI4cAAAAASUVORK5CYII=);
+		animation: strike 0.3s linear 0s 1 forwards;
+	}
+
+	@keyframes strike {
+		to {
+			width: 106%;
+		}
 	}
 </style>
