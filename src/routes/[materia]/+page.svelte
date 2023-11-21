@@ -16,6 +16,10 @@
 	 */
 	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a - b);
 
+	/**
+	 * All the striked subjects
+	 */
+	let striked = [] as string[];
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
 	$: highlighted = famous ? [...show, ...getChilds(famous)] : [];
@@ -84,6 +88,13 @@
 		// Toggle famous
 		if (famous) defaultView();
 		else highlight(e);
+	}
+
+	function contextMenu(e: CustomEvent<string>) {
+		striked.includes(e.detail)
+			? striked.splice(striked.indexOf(e.detail), 1)
+			: striked.push(e.detail);
+		striked = [...striked];
 	}
 
 	// function dragMoveListener(event: Interact.DragEvent) {
@@ -155,9 +166,11 @@
 					{show}
 					{highlighted}
 					tabindex={all.indexOf(subject.codec) + 1}
+					strike={striked.includes(subject.codec)}
 					on:in={highlight}
 					on:out={defaultView}
 					on:toggle={touchScreen}
+					on:crossout={contextMenu}
 					on:tick={() => updateLines()}
 					on:ready={() => updateLines()}
 				/>
