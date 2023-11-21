@@ -28,10 +28,12 @@
 	$: im_famous = famous === subject.codec;
 
 	function event(type: keyof Events) {
-		if (type === 'crossout') dispatch(type, subject.codec);
-		else if (mouse && type === 'toggle') return;
-		else if (!mouse && type !== 'toggle') return;
-		else dispatch(type, subject.codec);
+		return () => {
+			if (type === 'crossout') dispatch(type, subject.codec);
+			else if (mouse && type === 'toggle') return;
+			else if (!mouse && type !== 'toggle') return;
+			else dispatch(type, subject.codec);
+		};
 	}
 
 	let full_name = [] as string[];
@@ -111,12 +113,12 @@
 	title={subject.name}
 	role="cell"
 	{tabindex}
-	on:focusin={() => event('in')}
-	on:mouseenter={() => event('in')}
-	on:focusout={() => event('out')}
-	on:mouseleave={() => event('out')}
-	on:click={() => event('toggle')}
-	on:contextmenu|preventDefault={() => event('crossout')}
+	on:focusin={event('in')}
+	on:mouseenter={event('in')}
+	on:focusout={event('out')}
+	on:mouseleave={event('out')}
+	on:click={event('toggle')}
+	on:contextmenu|preventDefault={event('crossout')}
 	bind:this={div}
 >
 	<p class="m-0 select-none text-sm md:text-2xl">
