@@ -1,25 +1,25 @@
 [
     {
-        "code": "12.01",
+        "code": "12.67",
         "parent": [],
-        "name": "Química I",
-        "formal": "Química I",
+        "name": "Química General",
+        "formal": "Química General",
         "semester": 1,
         "credits": 6
     },
     {
-        "code": "31.08",
+        "code": "71.58",
         "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
+        "name": "Informática General",
+        "formal": "Informática General",
         "semester": 1,
         "credits": 3
     },
     {
-        "code": "93.17",
+        "code": "92.01",
         "parent": [],
-        "name": "Matemática I",
-        "formal": "Matemática I",
+        "name": "Análisis Matemático I",
+        "formal": "Análisis Matemático I",
         "semester": 1,
         "credits": 6
     },
@@ -32,46 +32,54 @@
         "credits": 6
     },
     {
-        "code": "94.21",
+        "code": "94.33",
         "parent": [],
-        "name": "Formación General I",
-        "formal": "Formación General I",
+        "name": "Tecnología y Sociedad",
+        "formal": "Tecnología y Sociedad",
         "semester": 1,
         "credits": 3
     },
     {
-        "code": "12.02",
+        "code": "12.34",
         "parent": [
-            "12.01"
+            "12.67"
         ],
-        "name": "Química II",
-        "formal": "Química II",
+        "name": "Química Orgánica para Petroleo",
+        "formal": "Química Orgánica para Petroleo",
         "semester": 2,
         "credits": 6
     },
     {
-        "code": "71.58",
+        "code": "31.08",
         "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
+        "name": "Sistemas de Representación",
+        "formal": "Sistemas de Representación",
         "semester": 2,
         "credits": 3
     },
     {
-        "code": "93.02",
+        "code": "46.01",
+        "parent": [],
+        "name": "Introducción a la Ingeniería en Petróleo",
+        "formal": "Introducción a la Ingeniería en Petróleo",
+        "semester": 2,
+        "credits": 3
+    },
+    {
+        "code": "92.02",
         "parent": [
-            "93.18",
-            "93.17"
+            "92.01",
+            "93.18"
         ],
-        "name": "Matemática II",
-        "formal": "Matemática II",
+        "name": "Análisis Matemático II",
+        "formal": "Análisis Matemático II",
         "semester": 2,
         "credits": 6
     },
     {
         "code": "93.41",
         "parent": [
-            "93.17"
+            "92.01"
         ],
         "name": "Física I",
         "formal": "Física I",
@@ -79,50 +87,40 @@
         "credits": 6
     },
     {
-        "code": "94.24",
-        "parent": [],
-        "name": "Metodología del Aprendizaje",
-        "formal": "Metodología del Aprendizaje",
-        "semester": 2,
-        "credits": 3
-    },
-    {
-        "code": "31.19",
+        "code": "71.59",
         "parent": [
-            "93.02",
-            "93.41",
-            "31.08"
+            "71.58"
         ],
-        "name": "Estática y Resistencia de Materiales",
-        "formal": "Estática y Resistencia de Materiales",
+        "name": "Estructura de Datos y Programación",
+        "formal": "Estructura de Datos y Programación",
         "semester": 3,
         "credits": 6
     },
     {
-        "code": "71.56",
+        "code": "92.03",
         "parent": [
-            "71.58"
+            "92.01",
+            "93.18"
         ],
-        "name": "Programación Básica",
-        "formal": "Programación Básica",
+        "name": "Análisis Matemático III",
+        "formal": "Análisis Matemático III",
         "semester": 3,
-        "credits": 3
+        "credits": 6
     },
     {
-        "code": "93.03",
+        "code": "93.24",
         "parent": [
-            "93.18",
-            "93.17"
+            "92.02"
         ],
-        "name": "Matemática III",
-        "formal": "Matemática III",
+        "name": "Probabilidad y Estadística",
+        "formal": "Probabilidad y Estadística",
         "semester": 3,
         "credits": 6
     },
     {
         "code": "93.42",
         "parent": [
-            "93.02"
+            "92.02"
         ],
         "name": "Física II",
         "formal": "Física II",
@@ -130,66 +128,67 @@
         "credits": 6
     },
     {
-        "code": "41.33",
+        "code": "16.55",
         "parent": [
-            "31.19"
+            "94.33"
         ],
-        "name": "Metalurgia Física I",
-        "formal": "Metalurgia Física I",
+        "name": "Biología",
+        "formal": "Biología",
         "semester": 4,
         "credits": 3
     },
     {
-        "code": "93.22",
+        "code": "31.19",
         "parent": [
-            "93.02"
+            "92.03",
+            "31.08"
         ],
-        "name": "Probabilidad y Estadística",
-        "formal": "Probabilidad y Estadística",
+        "name": "Estática y Resistencia de Materiales",
+        "formal": "Estática y Resistencia de Materiales",
         "semester": 4,
         "credits": 6
     },
     {
+        "code": "46.21",
+        "parent": [
+            "46.01",
+            "93.42"
+        ],
+        "name": "Geología I",
+        "formal": "Geología I",
+        "semester": 4,
+        "credits": 3
+    },
+    {
+        "code": "92.05",
+        "parent": [
+            "92.02",
+            "92.03"
+        ],
+        "name": "Análisis Matemático IV",
+        "formal": "Análisis Matemático IV",
+        "semester": 4,
+        "credits": 4
+    },
+    {
+        "code": "93.07",
+        "parent": [
+            "92.03"
+        ],
+        "name": "Métodos Numéricos",
+        "formal": "Métodos Numéricos",
+        "semester": 4,
+        "credits": 3
+    },
+    {
         "code": "93.43",
         "parent": [
-            "93.03",
+            "92.03",
             "93.41"
         ],
         "name": "Física III",
         "formal": "Física III",
         "semester": 4,
-        "credits": 6
-    },
-    {
-        "code": "93.51",
-        "parent": [
-            "93.03",
-            "93.41"
-        ],
-        "name": "Mecánica General",
-        "formal": "Mecánica General",
-        "semester": 4,
-        "credits": 6
-    },
-    {
-        "code": "93.65",
-        "parent": [
-            "93.02",
-            "93.03"
-        ],
-        "name": "Matemática IV",
-        "formal": "Matemática IV",
-        "semester": 4,
-        "credits": 6
-    },
-    {
-        "code": "12.34",
-        "parent": [
-            "12.02"
-        ],
-        "name": "Química Orgánica para Petroleo",
-        "formal": "Química Orgánica para Petroleo",
-        "semester": 5,
         "credits": 6
     },
     {
@@ -203,9 +202,19 @@
         "credits": 3
     },
     {
+        "code": "31.21",
+        "parent": [
+            "93.42"
+        ],
+        "name": "Termodinámica",
+        "formal": "Termodinámica",
+        "semester": 5,
+        "credits": 6
+    },
+    {
         "code": "31.22",
         "parent": [
-            "93.65"
+            "92.03"
         ],
         "name": "Mecánica de Fluidos",
         "formal": "Mecánica de Fluidos",
@@ -213,74 +222,104 @@
         "credits": 6
     },
     {
-        "code": "41.32",
+        "code": "46.22",
         "parent": [
-            "12.02",
-            "93.42"
+            "46.21"
         ],
-        "name": "Geología para Ingenieros",
-        "formal": "Geología para Ingenieros",
+        "name": "Geofísica de Reservorios",
+        "formal": "Geofísica de Reservorios",
         "semester": 5,
-        "credits": 5
+        "credits": 3
     },
     {
-        "code": "93.44",
+        "code": "93.61",
         "parent": [
-            "93.42",
             "93.43"
         ],
         "name": "Física IV",
         "formal": "Física IV",
         "semester": 5,
-        "credits": 6
+        "credits": 4
     },
     {
-        "code": "21.07",
-        "parent": [
-            "21.06"
-        ],
-        "name": "Máquinas e Instalaciones Eléctricas",
-        "formal": "Máquinas e Instalaciones Eléctricas",
-        "semester": 6,
-        "credits": 6
+        "code": "94.43",
+        "parent": [],
+        "name": "Metodología del Diseño",
+        "formal": "Metodología del Diseño",
+        "semester": 5,
+        "credits": 3
     },
     {
-        "code": "31.21",
+        "code": "11.15",
         "parent": [
-            "93.41"
+            "93.24"
         ],
-        "name": "Termodinámica",
-        "formal": "Termodinámica",
-        "semester": 6,
-        "credits": 6
-    },
-    {
-        "code": "41.03",
-        "parent": [
-            "41.32"
-        ],
-        "name": "Perforación Petrolera I",
-        "formal": "Perforación Petrolera I",
+        "name": "Organización Industrial",
+        "formal": "Organización Industrial",
         "semester": 6,
         "credits": 3
     },
     {
-        "code": "41.08",
+        "code": "12.83",
         "parent": [
-            "41.32"
+            "12.34",
+            "16.55"
         ],
-        "name": "Petrofísica y Fluidos de Reservorios",
-        "formal": "Petrofísica y Fluidos de Reservorios",
+        "name": "Seguridad Ocupacional y Ambiental",
+        "formal": "Seguridad Ocupacional y Ambiental",
+        "semester": 6,
+        "credits": 3
+    },
+    {
+        "code": "21.09",
+        "parent": [
+            "21.06"
+        ],
+        "name": "Máquinas Eléctricas",
+        "formal": "Máquinas Eléctricas",
+        "semester": 6,
+        "credits": 3
+    },
+    {
+        "code": "30.70",
+        "parent": [
+            "31.19"
+        ],
+        "name": "Introducción a Mecánica de Rocas",
+        "formal": "Introducción a Mecánica de Rocas",
+        "semester": 6,
+        "credits": 3
+    },
+    {
+        "code": "46.41",
+        "parent": [
+            "31.21",
+            "31.22",
+            "46.21"
+        ],
+        "name": "Petrofísica y Fluidos de Reservorio",
+        "formal": "Petrofísica y Fluidos de Reservorio",
         "semester": 6,
         "credits": 6
     },
     {
-        "code": "93.07",
+        "code": "46.61",
         "parent": [
-            "93.03"
+            "46.21",
+            "31.19"
         ],
-        "name": "Métodos Numéricos",
-        "formal": "Métodos Numéricos",
+        "name": "Ingeniería de Perforación I",
+        "formal": "Ingeniería de Perforación I",
+        "semester": 6,
+        "credits": 3
+    },
+    {
+        "code": "94.44",
+        "parent": [
+            "94.43"
+        ],
+        "name": "Proyecto Interdisciplinario",
+        "formal": "Proyecto Interdisciplinario",
         "semester": 6,
         "credits": 3
     },
@@ -293,39 +332,33 @@
         "credits": 0
     },
     {
-        "code": "11.15",
+        "code": "46.23",
         "parent": [
-            "93.22"
+            "46.22",
+            "46.41"
         ],
-        "name": "Organización Industrial",
-        "formal": "Organización Industrial",
+        "name": "Geología II",
+        "formal": "Geología II",
         "semester": 7,
         "credits": 3
     },
     {
-        "code": "41.04",
+        "code": "46.42",
         "parent": [
-            "41.03"
+            "93.61",
+            "46.41"
         ],
-        "name": "Perforación Petrolera II",
-        "formal": "Perforación Petrolera II",
+        "name": "Registros de Pozo I",
+        "formal": "Registros de Pozo I",
         "semester": 7,
         "credits": 6
     },
     {
-        "code": "41.09",
+        "code": "46.44",
         "parent": [
-            "41.08"
-        ],
-        "name": "Ingeniería de Reservorios",
-        "formal": "Ingeniería de Reservorios",
-        "semester": 7,
-        "credits": 9
-    },
-    {
-        "code": "41.16",
-        "parent": [
-            "93.65"
+            "30.70",
+            "92.05",
+            "46.41"
         ],
         "name": "Análisis de Transientes de Presión",
         "formal": "Análisis de Transientes de Presión",
@@ -333,148 +366,141 @@
         "credits": 3
     },
     {
-        "code": "41.21",
+        "code": "46.46",
         "parent": [
-            "41.03"
+            "46.41"
         ],
-        "name": "Práctica de Campo I",
-        "formal": "Práctica de Campo I",
-        "semester": 7,
-        "credits": 0
-    },
-    {
-        "code": "41.24",
-        "parent": [
-            "41.08"
-        ],
-        "name": "Registros de Pozo",
-        "formal": "Registros de Pozo",
+        "name": "Ingeniería de Reservorios",
+        "formal": "Ingeniería de Reservorios",
         "semester": 7,
         "credits": 6
     },
     {
-        "code": "41.05",
+        "code": "46.63",
         "parent": [
-            "41.24"
+            "46.61"
         ],
-        "name": "Geología del Petróleo",
-        "formal": "Geología del Petróleo",
-        "semester": 8,
+        "name": "Ingeniería de Workover I",
+        "formal": "Ingeniería de Workover I",
+        "semester": 7,
         "credits": 3
     },
     {
-        "code": "41.10",
+        "code": "46.65",
         "parent": [
-            "41.09"
+            "31.21",
+            "12.34",
+            "46.61"
         ],
-        "name": "Recuperación Asistida de Petróleo",
-        "formal": "Recuperación Asistida de Petróleo",
-        "semester": 8,
-        "credits": 6
-    },
-    {
-        "code": "41.18",
-        "parent": [
-            "41.32",
-            "93.42"
-        ],
-        "name": "Geofísica de Reservorios",
-        "formal": "Geofísica de Reservorios",
-        "semester": 8,
+        "name": "Instalaciones de Superficie",
+        "formal": "Instalaciones de Superficie",
+        "semester": 7,
         "credits": 3
     },
     {
-        "code": "41.25",
-        "parent": [
-            "41.04"
-        ],
-        "name": "Terminación y Reparación de Pozos de Petróleo y Gas",
-        "formal": "Terminación y Reparación de Pozos de Petróleo y Gas",
-        "semester": 8,
-        "credits": 6
-    },
-    {
-        "code": "41.27",
-        "parent": [
-            "41.03"
-        ],
-        "name": "Producción de Petróleo",
-        "formal": "Producción de Petróleo",
-        "semester": 8,
-        "credits": 6
-    },
-    {
-        "code": "61.23",
-        "parent": [
-            "93.22"
-        ],
-        "name": "Economía para Ingenieros",
-        "formal": "Economía para Ingenieros",
-        "semester": 8,
-        "credits": 3
-    },
-    {
-        "code": "12.83",
-        "parent": [
-            "21.06"
-        ],
-        "name": "Seguridad Ocupacional y Ambiental",
-        "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 9,
-        "credits": 3
-    },
-    {
-        "code": "41.12",
-        "parent": [
-            "41.27"
-        ],
-        "name": "Proyecto de Instalaciones de Superficie",
-        "formal": "Proyecto de Instalaciones de Superficie",
-        "semester": 9,
-        "credits": 6
-    },
-    {
-        "code": "41.22",
-        "parent": [
-            "41.25",
-            "41.27"
-        ],
-        "name": "Práctica de Campo II",
-        "formal": "Práctica de Campo II",
-        "semester": 9,
+        "code": "71.90",
+        "parent": [],
+        "name": "Certificaciones tecnológicas",
+        "formal": "Certificaciones tecnológicas",
+        "semester": 7,
         "credits": 0
     },
     {
-        "code": "41.34",
+        "code": "46.66",
         "parent": [
-            "41.05",
-            "41.18",
-            "41.09"
+            "46.65"
+        ],
+        "name": "Gas y Gasolina Natural",
+        "formal": "Gas y Gasolina Natural",
+        "semester": 8,
+        "credits": 3
+    },
+    {
+        "code": "46.67",
+        "parent": [
+            "46.65",
+            "46.41",
+            "21.09"
+        ],
+        "name": "Ingeniería de Producción I",
+        "formal": "Ingeniería de Producción I",
+        "semester": 8,
+        "credits": 6
+    },
+    {
+        "code": "46.81",
+        "parent": [
+            "12.83"
+        ],
+        "name": "Gestión Ambiental en la Industria",
+        "formal": "Gestión Ambiental en la Industria",
+        "semester": 8,
+        "credits": 3
+    },
+    {
+        "code": "46.82",
+        "parent": [
+            "46.46"
+        ],
+        "name": "Evaluación de Proyectos",
+        "formal": "Evaluación de Proyectos",
+        "semester": 8,
+        "credits": 3
+    },
+    {
+        "code": "61.27",
+        "parent": [
+            "11.15"
+        ],
+        "name": "Análisis de Coyuntura Económica",
+        "formal": "Análisis de Coyuntura Económica",
+        "semester": 8,
+        "credits": 3
+    },
+    {
+        "code": "94.52",
+        "parent": [
+            "94.51"
+        ],
+        "name": "Inglés II",
+        "formal": "Inglés II",
+        "semester": 8,
+        "credits": 0
+    },
+    {
+        "code": "46.69",
+        "parent": [
+            "46.66",
+            "46.67"
+        ],
+        "name": "Transporte y Cadena de Valor de los Hidrocarburos",
+        "formal": "Transporte y Cadena de Valor de los Hidrocarburos",
+        "semester": 9,
+        "credits": 3
+    },
+    {
+        "code": "46.83",
+        "parent": [
+            "46.23",
+            "46.66",
+            "46.82",
+            "46.67",
+            "46.42"
         ],
         "name": "Desarrollo de Yacimientos",
         "formal": "Desarrollo de Yacimientos",
         "semester": 9,
-        "credits": 4
-    },
-    {
-        "code": "41.35",
-        "parent": [
-            "41.09"
-        ],
-        "name": "Simulación de Reservorios",
-        "formal": "Simulación de Reservorios",
-        "semester": 9,
         "credits": 3
     },
     {
-        "code": "41.38",
+        "code": "61.16",
         "parent": [
-            "61.23"
+            "61.27"
         ],
-        "name": "Formación General II",
-        "formal": "Formación General II",
+        "name": "Introducción a las Finanzas",
+        "formal": "Introducción a las Finanzas",
         "semester": 9,
-        "credits": 2
+        "credits": 3
     },
     {
         "code": "61.31",
@@ -485,58 +511,37 @@
         "credits": 3
     },
     {
-        "code": "12.30",
+        "code": "46.02",
         "parent": [
-            "12.34"
+            "46.21",
+            "46.41",
+            "46.67"
         ],
-        "name": "Industrialización y Economía Petrolera",
-        "formal": "Industrialización y Economía Petrolera",
-        "semester": 10,
-        "credits": 4
-    },
-    {
-        "code": "41.15",
-        "parent": [
-            "31.21",
-            "31.22"
-        ],
-        "name": "Gas y Gasolina Natural",
-        "formal": "Gas y Gasolina Natural",
-        "semester": 10,
-        "credits": 3
-    },
-    {
-        "code": "41.19",
-        "parent": [
-            "61.23"
-        ],
-        "name": "Desarrollo de Negocios",
-        "formal": "Desarrollo de Negocios",
-        "semester": 10,
-        "credits": 3
-    },
-    {
-        "code": "41.40",
-        "parent": [],
-        "name": "Práctica Laboral",
-        "formal": "Práctica Laboral",
+        "name": "Práctica de Campo I",
+        "formal": "Práctica de Campo I",
         "semester": 10,
         "credits": 0
     },
     {
-        "code": "94.23",
-        "parent": [],
-        "name": "Formación General III",
-        "formal": "Formación General III",
-        "semester": 10,
-        "credits": 3
-    },
-    {
-        "code": "94.53",
-        "parent": [],
-        "name": "Ingles III",
-        "formal": "Ingles III",
+        "code": "46.03",
+        "parent": [
+            "46.02",
+            "46.63",
+            "46.46"
+        ],
+        "name": "Práctica de Campo II",
+        "formal": "Práctica de Campo II",
         "semester": 10,
         "credits": 0
+    },
+    {
+        "code": "46.70",
+        "parent": [
+            "46.69"
+        ],
+        "name": "Industrialización y Economía de los Hidrocarburos",
+        "formal": "Industrialización y Economía de los Hidrocarburos",
+        "semester": 10,
+        "credits": 3
     }
 ]
