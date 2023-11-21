@@ -217,7 +217,6 @@
     {
         "code": "72.07",
         "parent": [
-            "93.24",
             "72.11"
         ],
         "name": "Protos",
@@ -293,7 +292,6 @@
     {
         "code": "72.40",
         "parent": [
-            "72.11",
             "72.35"
         ],
         "name": "Software II",
@@ -358,7 +356,6 @@
     {
         "code": "72.43",
         "parent": [
-            "72.40",
             "61.23"
         ],
         "name": "Gestión de Proyectos",
@@ -385,20 +382,22 @@
         "credits": 3
     },
     {
-        "code": "72.45",
-        "parent": [],
-        "name": "Proyecto Final",
-        "formal": "Proyecto Final",
-        "semester": 9,
-        "credits": 12
-    },
-    {
         "code": "72.20",
-        "parent": [],
+        "parent": [
+            "72.07"
+        ],
         "name": "Redes",
         "formal": "Redes de Información",
         "semester": 9,
         "credits": 6
+    },
+    {
+        "code": "72.45",
+        "parent": [],
+        "name": "Proyecto Final",
+        "formal": "Proyecto Final ",
+        "semester": 9,
+        "credits": 12
     },
     {
         "code": "72.98",
