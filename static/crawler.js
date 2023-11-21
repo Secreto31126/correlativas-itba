@@ -28,6 +28,7 @@ class Subject {
 }
 
 const db = [];
+const old = null;
 
 $("tr:not(:has(table)):has(td > a)").each(function () {
     const title = $(this)
@@ -53,5 +54,11 @@ $("tr:not(:has(table)):has(td > a)").each(function () {
         .map(e => e.trim());
     db.push(new Subject(code, name, parents, year, semester, credits));
 });
+
+if (old) {
+    db.forEach(e => {
+        e.name = old.find(o => o.code === e.code)?.name ?? e.name;
+    });
+}
 
 console.log(JSON.stringify(db, null, 4));
