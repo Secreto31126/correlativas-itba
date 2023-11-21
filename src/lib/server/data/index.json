@@ -14,7 +14,7 @@
     {
         "plan": "E 11A",
         "name": "Ingeniería Electricista",
-        "file": "Electricista.json",
+        "file": "Electrisista.json",
         "cute": "pikachu"
     },
     {
@@ -32,7 +32,7 @@
     {
         "plan": "P22",
         "name": "Ingeniería en Petróleo",
-        "file": "Petróleo.json",
+        "file": "Petroleo.json",
         "cute": "nafta"
     },
     {
@@ -44,7 +44,7 @@
     {
         "plan": "M22",
         "name": "Ingeniería Mecánica",
-        "file": "Mecánica.json",
+        "file": "Mecanica.json",
         "cute": "cars"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "plan": "L09T",
-        "name": "Lic.en Administración y Sistemas",
+        "name": "Lic. en Administración y Sistemas",
         "file": "Licenciatura Administración.json",
         "cute": "admin"
     },
