@@ -8,7 +8,9 @@
 <div class="flex flex-col justify-center text-xl">
 	{#each data.careers as career}
 		{#if career}
-			<a href="/{career.url}" class="underline text-blue-500 mb-1">{career.og}</a>
+			<a href="/{career.cute}" class="underline text-blue-500 mb-1">
+				{career.name} (Plan {career.plan})
+			</a>
 		{/if}
 	{/each}
 </div>

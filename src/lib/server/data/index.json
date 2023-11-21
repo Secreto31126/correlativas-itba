@@ -1,0 +1,80 @@
+[
+    {
+        "plan": "BIO 22",
+        "name": "Bioingeniería",
+        "file": "Bioingeniería.json",
+        "cute": "bio"
+    },
+    {
+        "plan": "C23",
+        "name": "Ingeniería Civil",
+        "file": "Civil.json",
+        "cute": "puentes"
+    },
+    {
+        "plan": "E 11A",
+        "name": "Ingeniería Electricista",
+        "file": "Electrisista.json",
+        "cute": "pikachu"
+    },
+    {
+        "plan": "K22",
+        "name": "Ingeniería Electrónica",
+        "file": "Electrónica.json",
+        "cute": "arduino"
+    },
+    {
+        "plan": "S10-Rev23",
+        "name": "Ingeniería en Informática",
+        "file": "Informática.json",
+        "cute": "linux"
+    },
+    {
+        "plan": "P22",
+        "name": "Ingeniería en Petróleo",
+        "file": "Petroleo.json",
+        "cute": "nafta"
+    },
+    {
+        "plan": "I22",
+        "name": "Ingeniería Industrial",
+        "file": "Industrial.json",
+        "cute": "industrial"
+    },
+    {
+        "plan": "M22",
+        "name": "Ingeniería Mecánica",
+        "file": "Mecanica.json",
+        "cute": "cars"
+    },
+    {
+        "plan": "N22",
+        "name": "Ingeniería Naval",
+        "file": "Naval.json",
+        "cute": "barquitos"
+    },
+    {
+        "plan": "Q22",
+        "name": "Ingeniería Química",
+        "file": "Química.json",
+        "cute": "oppenheimer"
+    },
+    {
+        "plan": "L09T",
+        "name": "Lic. en Administración y Sistemas",
+        "file": "Licenciatura Administración.json",
+        "cute": "admin"
+    },
+    {
+        "plan": "A22",
+        "name": "Licenciatura en Analítica Empresarial y Social",
+        "file": "Licenciatura Empresarial.json",
+        "cute": "empresarial"
+    },
+    {
+        "plan": "L20",
+        "name": "Licenciatura en Negocios",
+        "file": "Licenciatura Negocios.json",
+        "cute": "negocios"
+    }
+]
