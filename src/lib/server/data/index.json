@@ -1,0 +1,67 @@
+[
+    {
+        "plan": "BIO 22",
+        "name": "Bioingeniería",
+        "file": "Bioingeniería.json"
+    },
+    {
+        "plan": "C23",
+        "name": "Ingeniería Civil",
+        "file": "Civil.json"
+    },
+    {
+        "plan": "E 11A",
+        "name": "Ingeniería Electricista",
+        "file": "Electricista.json"
+    },
+    {
+        "plan": "K22",
+        "name": "Ingeniería Electrónica",
+        "file": "Electrónica.json"
+    },
+    {
+        "plan": "S10-Rev23",
+        "name": "Ingeniería en Informática",
+        "file": "Informática.json"
+    },
+    {
+        "plan": "P22",
+        "name": "Ingeniería en Petróleo",
+        "file": "Petróleo.json"
+    },
+    {
+        "plan": "I22",
+        "name": "Ingeniería Industrial",
+        "file": "Industrial.json"
+    },
+    {
+        "plan": "M22",
+        "name": "Ingeniería Mecánica",
+        "file": "Mecánica.json"
+    },
+    {
+        "plan": "N22",
+        "name": "Ingeniería Naval",
+        "file": "Naval.json"
+    },
+    {
+        "plan": "Q22",
+        "name": "Ingeniería Química",
+        "file": "Química.json"
+    },
+    {
+        "plan": "L09T",
+        "name": "Lic.en Administración y Sistemas",
+        "file": "Licenciatura Administración.json"
+    },
+    {
+        "plan": "A22",
+        "name": "Licenciatura en Analítica Empresarial y Social",
+        "file": "Licenciatura Empresarial.json"
+    },
+    {
+        "plan": "L20",
+        "name": "Licenciatura en Negocios",
+        "file": "Licenciatura Negocios.json"
+    }
+]
