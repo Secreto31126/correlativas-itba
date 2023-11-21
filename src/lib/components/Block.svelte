@@ -146,6 +146,8 @@
 
 	.strike {
 		position: relative;
+		--color: rgb(60, 60, 60);
+		--b-color: rgb(60, 60, 60, 0.4);
 	}
 
 	.strike::after {
