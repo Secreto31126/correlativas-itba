@@ -3,6 +3,8 @@
 
 	import { onDestroy, onMount, tick } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
+	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
+	import { UserData } from '$lib/types/documents';
 	// import interact from 'interactjs';
 
 	export let data: PageData;
@@ -16,10 +18,11 @@
 	 */
 	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a - b);
 
-	/**
-	 * All the striked subjects
-	 */
-	let striked = [] as string[];
+	const db_store = data.user_data
+		? getDocumentStore(UserData, data.user_data as UserData)
+		: undefined;
+	$: db = $db_store ?? { subjects: [] as string[] };
+
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
 	$: highlighted = famous ? [...show, ...getChilds(famous)] : [];
@@ -91,10 +94,11 @@
 	}
 
 	function contextMenu(e: CustomEvent<string>) {
-		striked.includes(e.detail)
-			? striked.splice(striked.indexOf(e.detail), 1)
-			: striked.push(e.detail);
-		striked = [...striked];
+		db.subjects.includes(e.detail)
+			? db.subjects.splice(db.subjects.indexOf(e.detail), 1)
+			: db.subjects.push(e.detail);
+		if (db instanceof UserData) saveDocument(db);
+		else db = db;
 	}
 
 	// function dragMoveListener(event: Interact.DragEvent) {
@@ -166,7 +170,7 @@
 					{show}
 					{highlighted}
 					tabindex={all.indexOf(subject.codec) + 1}
-					strike={striked.includes(subject.codec)}
+					strike={db.subjects.includes(subject.codec)}
 					on:in={highlight}
 					on:out={defaultView}
 					on:toggle={touchScreen}
