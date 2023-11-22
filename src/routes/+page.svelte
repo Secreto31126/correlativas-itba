@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import { signInWith, signOut } from '$lib/modules/firebase';
+
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -13,4 +16,15 @@
 			</a>
 		{/if}
 	{/each}
+</div>
+
+<div class="absolute bottom-0 w-full my-4 flex justify-center">
+	<button on:click={() => ($page.data.userSession ? signOut() : signInWith('google'))}>
+		<img
+			src={$page.data.userSession?.picture ??
+				'https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA'}
+			alt="Logout"
+			class="h-12 rounded-full"
+		/>
+	</button>
 </div>
