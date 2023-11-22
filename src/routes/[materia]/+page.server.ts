@@ -22,6 +22,7 @@ export const load = (async ({ params, locals }) => {
 	}
 	// #endregion
 
+	// #region DB Data
 	let user_data: UserData | null = null;
 	if (locals.userSession) {
 		const { uid } = locals.userSession;
@@ -34,6 +35,7 @@ export const load = (async ({ params, locals }) => {
 			user_data = docs[0];
 		}
 	}
+	// #endregion
 
 	return {
 		user_data,
