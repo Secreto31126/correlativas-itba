@@ -19,7 +19,7 @@
 	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a - b);
 
 	const db_store = data.user_data
-		? getDocumentStore(UserData, data.user_data as UserData)
+		? getDocumentStore(UserData, new UserData(data.user_data))
 		: undefined;
 	$: db = $db_store ?? { subjects: [] as string[] };
 

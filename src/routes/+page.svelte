@@ -1,26 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
-	import { initializeFirebase, signInWith, signOut } from '$lib/modules/firebase';
+	import { signInWith, signOut } from '$lib/modules/firebase';
 
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-
-	if (browser) {
-		try {
-			initializeFirebase({
-				apiKey: 'AIzaSyBYq_krHmwalCZOw1qQW24k1dfzGpIgm0A',
-				authDomain: 'correlativas-itba.firebaseapp.com',
-				projectId: 'correlativas-itba',
-				storageBucket: 'correlativas-itba.appspot.com',
-				messagingSenderId: '224247360201',
-				appId: '1:224247360201:web:942f53e0e448293ac1fb18'
-			});
-		} catch (e) {
-			console.error(e);
-		}
-	}
 </script>
 
 <h1 class="text-4xl md:text-6xl my-3">Correlativas de...</h1>
