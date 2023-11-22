@@ -76,5 +76,11 @@
         "name": "Licenciatura en Negocios",
         "file": "Licenciatura Negocios.json",
         "cute": "negocios"
+    },
+    {
+        "plan": "Tutorial",
+        "name": "Ayuda",
+        "file": "ayuda.json",
+        "cute": "noob"
     }
 ]
