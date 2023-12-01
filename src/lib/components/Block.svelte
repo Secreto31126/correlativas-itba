@@ -134,9 +134,11 @@
 <style lang="postcss">
 	div {
 		border-color: var(--color);
+		z-index: 1;
 	}
 
 	.hide {
+		z-index: -1;
 		opacity: 0.3;
 	}
 
