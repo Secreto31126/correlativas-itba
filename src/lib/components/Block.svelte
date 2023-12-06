@@ -109,8 +109,7 @@
 	style="min-width: {width}px; min-height: {height}px;"
 	class="flex flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-none
-		p-1 md:p-2 md:max-w-[15%]
-		transition-all duration-500 ease-in-out"
+		p-1 md:p-2 md:max-w-[15%]"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}

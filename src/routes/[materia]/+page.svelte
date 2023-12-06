@@ -5,7 +5,7 @@
 	import Block from '$lib/components/Block.svelte';
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
 	import { UserData } from '$lib/types/documents';
-	// import interact from 'interactjs';
+	import interact from 'interactjs';
 
 	export let data: PageData;
 
@@ -103,37 +103,38 @@
 		else db = db;
 	}
 
-	// function dragMoveListener(event: Interact.DragEvent) {
-	// 	let target = event.target;
-	// 	// keep the dragged position in the data-x/data-y attributes
-	// 	let x = parseFloat(target.getAttribute('data-x') || '0') + event.dx;
-	// 	let y = parseFloat(target.getAttribute('data-y') || '0') + event.dy;
+	async function dragMoveListener(event: Interact.DragEvent) {
+		const target = event.target;
 
-	// 	// translate the element
-	// 	target.style.transform = `translate(${x}px, ${y}px)`;
+		// keep the dragged position in the data-x/data-y attributes
+		const x = parseFloat(target.getAttribute('data-x') || '0') + event.dx;
+		const y = parseFloat(target.getAttribute('data-y') || '0') + event.dy;
 
-	// 	// update the posiion attributes
-	// 	target.setAttribute('data-x', `${x}`);
-	// 	target.setAttribute('data-y', `${y}`);
+		// translate the element
+		target.style.transform = `translate(${x}px, ${y}px)`;
 
-	// 	// Make the arrow follow the box
-	// 	lines[target.id]?.forEach((line) => line.position());
-	// }
+		// update the position attributes
+		target.setAttribute('data-x', `${x}`);
+		target.setAttribute('data-y', `${y}`);
+
+		// Make the arrow follow the box
+		lines[target.id]?.forEach((line) => line.position());
+	}
 
 	onMount(async () => {
-		// interact('.cuatrimestre > div').draggable({
-		// 	inertia: true,
-		// 	autoScroll: false,
-		// 	modifiers: [
-		// 		interact.modifiers.restrictRect({
-		// 			restriction: document.body,
-		// 			endOnly: true
-		// 		})
-		// 	],
-		// 	listeners: {
-		// 		move: dragMoveListener
-		// 	}
-		// });
+		interact('.cuatrimestre > div').draggable({
+			inertia: true,
+			autoScroll: false,
+			modifiers: [
+				interact.modifiers.restrictRect({
+					restriction: document.body,
+					endOnly: true
+				})
+			],
+			listeners: {
+				move: dragMoveListener
+			}
+		});
 
 		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
 
