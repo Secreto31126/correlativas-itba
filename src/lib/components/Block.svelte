@@ -78,7 +78,7 @@
 			if (splitted[i] === subject.name[i]) continue;
 
 			// Make the animation always last 500ms (approx)
-			duration ||= (500 / (subject.formal.length - parseInt(i))) | 0;
+			duration ||= (500 / (splitted.length - parseInt(i))) | 0;
 
 			tick_animation = !tick_animation;
 			await new Promise((r) => setTimeout(r, duration));
