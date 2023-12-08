@@ -355,9 +355,7 @@
     },
     {
         "code": "72.43",
-        "parent": [
-            "61.23"
-        ],
+        "parent": [],
         "name": "Gestión de Proyectos",
         "formal": "Gestión de Proyectos Informáticos",
         "semester": 8,
