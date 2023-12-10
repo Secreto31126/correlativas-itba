@@ -138,9 +138,9 @@
 
 		all.forEach((id) => {
 			const origin = document.getElementById(id)!;
-			const bounds = origin.getBoundingClientRect();
-			const startSocket =
-				bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
+			// const bounds = origin.getBoundingClientRect();
+			// const startSocket =
+			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
 
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
 				if (!lines[id]) lines[id] = [];
@@ -148,8 +148,7 @@
 					new LeaderLine(origin, target, {
 						dash: { animation: true },
 						path: 'magnet',
-						hide: true,
-						startSocket
+						hide: true
 					})
 				);
 			});
