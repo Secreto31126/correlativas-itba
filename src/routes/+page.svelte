@@ -8,7 +8,7 @@
 </script>
 
 <h1 class="text-4xl md:text-6xl my-3">Correlativas de...</h1>
-<div class="flex flex-col justify-center text-xl">
+<div class="flex flex-col justify-center text-xl mb-24">
 	{#each data.careers as career}
 		{#if career}
 			<a href="/{career.cute}" class="underline text-blue-500 mb-1">
@@ -18,7 +18,7 @@
 	{/each}
 </div>
 
-<div class="absolute bottom-0 w-full my-4 flex justify-center">
+<div class="fixed bottom-0 w-full pt-2 pb-4 flex justify-center bg-white">
 	<button on:click={() => ($page.data.userSession ? signOut() : signInWith('google'))}>
 		<img
 			src={$page.data.userSession?.picture ??

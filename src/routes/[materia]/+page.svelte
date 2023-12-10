@@ -9,8 +9,6 @@
 
 	export let data: PageData;
 
-	let innerWidth: number;
-
 	/**
 	 * All the subjects codes codified
 	 */
@@ -140,9 +138,9 @@
 
 		all.forEach((id) => {
 			const origin = document.getElementById(id)!;
-			const bounds = origin.getBoundingClientRect();
-			const startSocket =
-				bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
+			// const bounds = origin.getBoundingClientRect();
+			// const startSocket =
+			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
 
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
 				if (!lines[id]) lines[id] = [];
@@ -150,8 +148,7 @@
 					new LeaderLine(origin, target, {
 						dash: { animation: true },
 						path: 'magnet',
-						hide: true,
-						startSocket
+						hide: true
 					})
 				);
 			});
@@ -164,8 +161,6 @@
 			.forEach((l) => l.remove());
 	});
 </script>
-
-<svelte:window bind:innerWidth />
 
 <div
 	class="flex flex-col md:justify-around gap-6 md:gap-2 w-full min-h-[90vh] md:min-h-screen py-2"
