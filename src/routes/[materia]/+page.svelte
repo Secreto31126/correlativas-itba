@@ -9,8 +9,6 @@
 
 	export let data: PageData;
 
-	let innerWidth: number;
-
 	/**
 	 * All the subjects codes codified
 	 */
@@ -164,8 +162,6 @@
 			.forEach((l) => l.remove());
 	});
 </script>
-
-<svelte:window bind:innerWidth />
 
 <div
 	class="flex flex-col md:justify-around gap-6 md:gap-2 w-full min-h-[90vh] md:min-h-screen py-2"
