@@ -1,8 +1,10 @@
 import { inject } from '@vercel/analytics';
 import { dev, browser } from '$app/environment';
 import { initializeFirebase } from '$lib/modules/firebase';
+import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 inject({ mode: dev ? 'development' : 'production' });
+injectSpeedInsights();
 
 if (browser) {
 	try {
