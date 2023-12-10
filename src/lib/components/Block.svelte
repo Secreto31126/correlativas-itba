@@ -62,7 +62,7 @@
 		finished_animation = false;
 		full_name = [];
 
-		let duration: number | undefined;
+		let duration: number;
 
 		for (const i in splitted) {
 			// Racing condition detected
