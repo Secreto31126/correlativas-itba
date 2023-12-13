@@ -76,6 +76,7 @@
 			if (full_name.length.toString() !== i) {
 				console.log('racing condition detected', full_name.length, i);
 				finished_animation = true;
+				full_name = splitted;
 				return;
 			}
 
@@ -106,6 +107,7 @@
 
 	onMount(() => {
 		width = div.offsetWidth;
+		height = div.offsetHeight;
 	});
 </script>
 
