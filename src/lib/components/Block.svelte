@@ -41,12 +41,19 @@
 	let finished_animation = true;
 
 	async function animate() {
-		const credits_string = subject.credits
-			? subject.credits === 1
-				? ` (1 crédito)`
-				: ` (${subject.credits} créditos)`
-			: '';
-		const splitted = `${subject.formal}${credits_string}`.split('');
+		const comments = [] as string[];
+
+		if (subject.credits) {
+			if (subject.credits === 1) comments.push('1 crédito');
+			else comments.push(`${subject.credits} créditos`);
+		}
+
+		if (subject.requires) {
+			comments.push(`${subject.requires} requeridos`);
+		}
+
+		const comments_string = comments.length ? ` (${comments.join(', ')})` : '';
+		const splitted = `${subject.formal}${comments_string}`.split('');
 
 		// Fake animation if user prefers reduced motion
 		// Or there's no mouse (mobiles)
