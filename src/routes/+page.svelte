@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { signInWith, signOut } from '$lib/modules/firebase';
+	import GoogleButton from '$lib/components/GoogleButton.svelte';
 
 	import type { PageData } from './$types';
 
@@ -21,16 +20,9 @@
 	{/each}
 </main>
 
-<footer class="fixed bottom-0 w-full pt-2 pb-4 flex justify-center gap-3 bg-white">
-	<button on:click={() => ($page.data.userSession ? signOut() : signInWith('google'))}>
-		<img
-			src={$page.data.userSession?.picture ??
-				'https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA'}
-			alt={$page.data.userSession ? 'Logout' : 'Login'}
-			class="h-12 rounded-full"
-		/>
-	</button>
+<footer class="fixed bottom-0 w-full h-16 md:h-20 pt-2 pb-4 flex justify-center gap-3 bg-white">
+	<GoogleButton logged={!!data.userSession} picture={data.userSession?.picture} />
 	<a href="https://github.com/Secreto31126/correlativas-itba">
-		<img src="github.png" alt="View Source Code" class="h-12 rounded-full" />
+		<img src="github.png" alt="View Source Code" class="h-full rounded-full" />
 	</a>
 </footer>
