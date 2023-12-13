@@ -99,6 +99,7 @@
 
 	onMount(() => {
 		width = div.offsetWidth;
+		height = div.offsetHeight;
 	});
 </script>
 
