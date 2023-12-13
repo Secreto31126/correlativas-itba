@@ -3,6 +3,7 @@
 
 	import { onDestroy, onMount, tick } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
+	import GoogleButton from '$lib/components/GoogleButton.svelte';
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
 	import { UserData } from '$lib/types/documents';
 	import interact from 'interactjs';
@@ -162,32 +163,42 @@
 	});
 </script>
 
-<div
-	class="flex flex-col md:justify-around gap-6 md:gap-2 w-full min-h-[90vh] md:min-h-screen py-2"
->
-	{#each semesters as semester}
-		<div class="flex flex-wrap justify-around items-center gap-1 md:gap-4 h-full cuatrimestre">
-			{#each data.career.filter((e) => e.semester === semester) as subject}
-				<Block
-					{subject}
-					{famous}
-					{show}
-					{highlighted}
-					tabindex={all.indexOf(subject.codec) + 1}
-					strike={db.subjects.includes(subject.codec)}
-					on:in={highlight}
-					on:out={defaultView}
-					on:toggle={touchScreen}
-					on:crossout={contextMenu}
-					on:tick={() => updateLines()}
-					on:ready={() => updateLines()}
-				/>
-			{/each}
-		</div>
-	{/each}
+<div class="grid w-full md:min-h-screen pt-2">
+	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
+		<a href="/">
+			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
+		</a>
+		<GoogleButton logged={!!data.userSession} picture={data.userSession?.picture} />
+	</header>
+	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
+		{#each semesters as semester}
+			<div class="flex flex-wrap justify-around items-center gap-1 md:gap-4 h-full cuatrimestre">
+				{#each data.career.filter((e) => e.semester === semester) as subject}
+					<Block
+						{subject}
+						{famous}
+						{show}
+						{highlighted}
+						tabindex={all.indexOf(subject.codec) + 1}
+						strike={db.subjects.includes(subject.codec)}
+						on:in={highlight}
+						on:out={defaultView}
+						on:toggle={touchScreen}
+						on:crossout={contextMenu}
+						on:tick={() => updateLines()}
+						on:ready={() => updateLines()}
+					/>
+				{/each}
+			</div>
+		{/each}
+	</main>
 </div>
 
 <style lang="postcss">
+	div.grid {
+		grid-template-rows: auto 1fr;
+	}
+
 	.cuatrimestre:nth-child(5n + 1) {
 		--color: rgb(0, 155, 255);
 		--b-color: rgba(0, 155, 255, 0.4);

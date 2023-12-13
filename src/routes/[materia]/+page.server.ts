@@ -9,7 +9,8 @@ import { createDocument, getDocuments } from '$lib/server/modules/firebase';
 
 export const load = (async ({ params, locals }) => {
 	// #region Career Content
-	const filename = Careers.find((c) => params.materia === c.cute)?.file;
+	const career_data = Careers.find((c) => params.materia === c.cute);
+	const filename = career_data?.file;
 	if (!filename) throw error(404, `Materia ${params.materia} not found`);
 
 	let data: Subject[];
@@ -39,6 +40,7 @@ export const load = (async ({ params, locals }) => {
 
 	return {
 		user_data,
+		career_data,
 		career: data.map((e) => {
 			e.codec = codify(e.code);
 			e.parentc = e.parent.map(codify);
