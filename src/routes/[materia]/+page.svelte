@@ -22,7 +22,7 @@
 	const db_store = data.user_data
 		? getDocumentStore(UserData, new UserData(data.user_data))
 		: undefined;
-	$: db = $db_store ?? { subjects: [] as string[] };
+	$: db = $db_store ?? { subjects: [] as string[], options: { credits: true, requires: true } };
 
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
