@@ -36,12 +36,15 @@
 </script>
 
 <div class="flex flex-col">
+	<button on:click={() => redirect(303, '/')}>Volver al inicio</button>
 	<button on:click={signOut}>Log out</button>
-	<button on:click={bye}>Delete data</button>
 	<button on:click={toggle_credits}>
 		{db.options.credits ? 'Ocultar' : 'Mostrar'} créditos
 	</button>
 	<button on:click={toggle_requires}>
 		{db.options.requires ? 'Ocultar' : 'Mostrar'} requisitos
+	</button>
+	<button on:click={bye} class="hover:bg-red-500 transition-colors duration-700">
+		Delete data
 	</button>
 </div>
