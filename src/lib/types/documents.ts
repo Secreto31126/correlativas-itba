@@ -21,9 +21,18 @@ export class Document {
 
 export class UserData extends Document {
 	subjects: string[] = [];
+	options: {
+		credits: boolean;
+		requires: boolean;
+		visited_account: boolean;
+	} = {
+		credits: true,
+		requires: true,
+		visited_account: false
+	};
 
 	constructor(data: unknown = {}) {
-		super(data, 'user_data', 'subjects');
+		super(data, 'user_data', 'subjects', 'options');
 		this._load(data);
 	}
 }

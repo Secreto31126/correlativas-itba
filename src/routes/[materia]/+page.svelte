@@ -22,7 +22,7 @@
 	const db_store = data.user_data
 		? getDocumentStore(UserData, new UserData(data.user_data))
 		: undefined;
-	$: db = $db_store ?? { subjects: [] as string[] };
+	$: db = $db_store ?? new UserData();
 
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
@@ -98,7 +98,7 @@
 		db.subjects.includes(e.detail)
 			? db.subjects.splice(db.subjects.indexOf(e.detail), 1)
 			: db.subjects.push(e.detail);
-		if (db instanceof UserData) saveDocument(db);
+		if (db.uid) saveDocument(db);
 		else db = db;
 	}
 
@@ -168,7 +168,11 @@
 		<a href="/">
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
-		<GoogleButton logged={!!data.userSession} picture={data.userSession?.picture} />
+		<GoogleButton
+			logged={!!data.userSession}
+			picture={data.userSession?.picture}
+			ping={!db.options.visited_account}
+		/>
 	</header>
 	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
 		{#each semesters as semester}
