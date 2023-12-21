@@ -10,7 +10,7 @@
 	<h1 class="text-4xl md:text-6xl my-3">Correlativas de...</h1>
 </header>
 
-<main class="flex flex-col justify-center text-xl mb-24">
+<main class="flex flex-col items-center text-xl mb-24">
 	{#each data.careers as career}
 		{#if career}
 			<a href="/{career.cute}" class="underline text-blue-500 mb-1">
