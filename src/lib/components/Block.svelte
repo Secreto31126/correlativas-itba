@@ -10,6 +10,8 @@
 	export let highlighted: string[];
 	export let tabindex: number;
 	export let strike: boolean;
+	export let credits: boolean;
+	export let requires: boolean;
 
 	type Events = {
 		in: string;
@@ -43,12 +45,12 @@
 	async function animate() {
 		const comments = [] as string[];
 
-		if (subject.credits) {
+		if (credits && subject.credits) {
 			if (subject.credits === 1) comments.push('1 crédito');
 			else comments.push(`${subject.credits} créditos`);
 		}
 
-		if (subject.requires) {
+		if (requires && subject.requires) {
 			comments.push(`${subject.requires} requeridos`);
 		}
 
