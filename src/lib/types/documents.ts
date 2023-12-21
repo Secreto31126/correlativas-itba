@@ -24,9 +24,11 @@ export class UserData extends Document {
 	options: {
 		credits: boolean;
 		requires: boolean;
+		visited_account: boolean;
 	} = {
 		credits: true,
-		requires: true
+		requires: true,
+		visited_account: false
 	};
 
 	constructor(data: unknown = {}) {

@@ -2,6 +2,7 @@
 	import { deleteDocument, getDocumentStore, saveDocument, signOut } from '$lib/modules/firebase';
 	import { redirect } from '@sveltejs/kit';
 	import { UserData } from '$lib/types/documents';
+	import { onMount } from 'svelte';
 
 	import type { PageData } from './$types';
 
@@ -25,6 +26,13 @@
 		db.options.requires = !db.options.requires;
 		saveDocument(db);
 	}
+
+	onMount(() => {
+		if (!db.options.visited_account) {
+			db.options.visited_account = true;
+			saveDocument(db);
+		}
+	});
 </script>
 
 <div class="flex flex-col">
