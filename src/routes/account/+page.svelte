@@ -65,7 +65,7 @@
 		/>
 	</label>
 
-	<!-- <label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex items-center cursor-pointer w-fit">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar requisitos</span
 		>
 		<input
@@ -83,7 +83,7 @@
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-green-600"
 		/>
-	</label> -->
+	</label>
 
 	<div class="mt-4">
 		<button
