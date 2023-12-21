@@ -5,7 +5,8 @@
         "name": "Tap me si estás en celular",
         "formal": "¡Muy bien! Ahora seguí la flecha y abrí esa materia",
         "semester": 1,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "1",
@@ -13,7 +14,8 @@
         "name": "Acercá el mouse si estás en compu",
         "formal": "¡Excelente! Probá seguir la flecha y abrí esa materia",
         "semester": 1,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "2",
@@ -24,7 +26,8 @@
         "name": "Follow the 🔀",
         "formal": "Los padres de esta materia están resaltados y las flechas apuntan a las hijas. El nivel y color indican el cuatri al que pertenecen.",
         "semester": 2,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "3",
@@ -34,7 +37,8 @@
         "name": "Team celu",
         "formal": "En el celular, si mantenés apretada una materia se marca como completada",
         "semester": 3,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "4",
@@ -44,7 +48,8 @@
         "name": "Team compu",
         "formal": "En la compu, si apretás botón derecho sobre una materia se marca como completada",
         "semester": 3,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "5",
@@ -55,7 +60,8 @@
         "name": "Pro tip 1",
         "formal": "Pro tip 1: Podés reordenar las materias arrastrándolas y soltándolas en otro lugar",
         "semester": 4,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "6",
@@ -66,7 +72,8 @@
         "name": "Pro tip 2",
         "formal": "Pro tip 2: Podés iniciar sesión con tu cuenta del ITBA para guardar tu progreso haciendo click en el logo de Google arriba a la derecha",
         "semester": 4,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "7",
@@ -77,7 +84,8 @@
         "name": "Bonus: ¿Cómo vuelvo al inicio?",
         "formal": "Hacé click en el código de la materia arriba a la izquierda, en este caso 'Tutorial'",
         "semester": 5,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "8",
@@ -87,7 +95,8 @@
         "name": "Bonus: ¿Qué datos se guardan cuando inicie sesión?",
         "formal": "Lo mínimo y esencial: email, foto de perfil y las materias que marques como completadas",
         "semester": 5,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "9",
@@ -97,6 +106,7 @@
         "name": "Bonus: ¿Puedo borrar mi cuenta si me retracto?",
         "formal": "No",
         "semester": 5,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     }
 ]

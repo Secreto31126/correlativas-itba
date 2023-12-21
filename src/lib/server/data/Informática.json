@@ -5,7 +5,8 @@
         "name": "Sistemas",
         "formal": "Sistemas de Representación",
         "semester": 1,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.03",
@@ -13,7 +14,8 @@
         "name": "Intro Info",
         "formal": "Introducción a la Informática",
         "semester": 1,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "93.26",
@@ -21,7 +23,8 @@
         "name": "Análisis I",
         "formal": "Análisis Matemático I",
         "semester": 1,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.58",
@@ -29,7 +32,8 @@
         "name": "Álgebra",
         "formal": "Álgebra",
         "semester": 1,
-        "credits": 9
+        "credits": 9,
+        "requires": 0
     },
     {
         "code": "94.24",
@@ -37,7 +41,8 @@
         "name": "Metodología",
         "formal": "Metodología del Aprendizaje",
         "semester": 1,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.31",
@@ -48,7 +53,8 @@
         "name": "PI",
         "formal": "Programación Imperativa",
         "semester": 2,
-        "credits": 9
+        "credits": 9,
+        "requires": 0
     },
     {
         "code": "93.28",
@@ -59,7 +65,8 @@
         "name": "Análisis II",
         "formal": "Análisis Matemático II",
         "semester": 2,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.41",
@@ -69,7 +76,8 @@
         "name": "Física I",
         "formal": "Física I",
         "semester": 2,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.59",
@@ -79,7 +87,8 @@
         "name": "Mate Discreta",
         "formal": "Matemática Discreta",
         "semester": 2,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "12.09",
@@ -87,7 +96,8 @@
         "name": "Química",
         "formal": "Química",
         "semester": 3,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.32",
@@ -97,7 +107,8 @@
         "name": "XML",
         "formal": "Diseño y Procesamiento de Documentos XML",
         "semester": 3,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.33",
@@ -107,7 +118,8 @@
         "name": "POO",
         "formal": "Programación Orientada a Objetos",
         "semester": 3,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.35",
@@ -117,7 +129,8 @@
         "name": "Lógica",
         "formal": "Lógica Computacional",
         "semester": 3,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.43",
@@ -128,7 +141,8 @@
         "name": "Física III",
         "formal": "Física III",
         "semester": 3,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.08",
@@ -138,7 +152,8 @@
         "name": "Arqui",
         "formal": "Arquitectura de Computadoras",
         "semester": 4,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.34",
@@ -149,7 +164,8 @@
         "name": "EDA",
         "formal": "Estructura de Datos y Algoritmos",
         "semester": 4,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.24",
@@ -159,7 +175,8 @@
         "name": "Proba",
         "formal": "Probabilidad y Estadística",
         "semester": 4,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.42",
@@ -169,7 +186,8 @@
         "name": "Física II",
         "formal": "Física II",
         "semester": 4,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.11",
@@ -180,7 +198,8 @@
         "name": "SO",
         "formal": "Sistemas Operativos",
         "semester": 5,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.35",
@@ -190,7 +209,8 @@
         "name": "Software I",
         "formal": "Ingenieria de Software I",
         "semester": 5,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.36",
@@ -201,7 +221,8 @@
         "name": "HCI",
         "formal": "Interacción Hombre-Computadora (HCI)",
         "semester": 5,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.37",
@@ -212,7 +233,8 @@
         "name": "Base de Datos I",
         "formal": "Base de Datos I",
         "semester": 5,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.07",
@@ -222,7 +244,8 @@
         "name": "Protos",
         "formal": "Protocolos de Comunicación",
         "semester": 6,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.38",
@@ -235,7 +258,8 @@
         "name": "PAW",
         "formal": "Proyecto de Aplicaciones Web",
         "semester": 6,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.39",
@@ -245,7 +269,8 @@
         "name": "TLA",
         "formal": "Autómatas, Teoría de Lenguajes y Compiladores",
         "semester": 6,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "93.07",
@@ -255,7 +280,8 @@
         "name": "Métodos Numéricos",
         "formal": "Métodos Numéricos",
         "semester": 6,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "94.21",
@@ -263,7 +289,8 @@
         "name": "Formación General I",
         "formal": "Formación General I",
         "semester": 6,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "94.51",
@@ -271,7 +298,8 @@
         "name": "Inglés I",
         "formal": "Inglés I",
         "semester": 6,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     },
     {
         "code": "61.23",
@@ -279,7 +307,8 @@
         "name": "Economía",
         "formal": "Economía para Ingenieros",
         "semester": 7,
-        "credits": 3
+        "credits": 3,
+        "requires": 120
     },
     {
         "code": "61.32",
@@ -287,7 +316,8 @@
         "name": "Derecho",
         "formal": "Derecho para Ingenieros",
         "semester": 7,
-        "credits": 3
+        "credits": 3,
+        "requires": 120
     },
     {
         "code": "72.40",
@@ -297,7 +327,8 @@
         "name": "Software II",
         "formal": "Ingenieria del Software II",
         "semester": 7,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.41",
@@ -308,7 +339,8 @@
         "name": "Base de Datos II",
         "formal": "Base de Datos II",
         "semester": 7,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.42",
@@ -319,7 +351,8 @@
         "name": "POD",
         "formal": "Programación de Objetos Distribuidos",
         "semester": 7,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "93.75",
@@ -329,7 +362,8 @@
         "name": "MNA",
         "formal": "Métodos Numéricos Avanzados",
         "semester": 7,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "72.25",
@@ -337,10 +371,11 @@
             "72.34",
             "93.07"
         ],
-        "name": "Simulación de Sistemas",
+        "name": "Simulación",
         "formal": "Simulación de Sistemas",
         "semester": 8,
-        "credits": 6
+        "credits": 6,
+        "requires": 140
     },
     {
         "code": "72.27",
@@ -351,7 +386,8 @@
         "name": "SIA",
         "formal": "Sistemas de Inteligencia Artificial",
         "semester": 8,
-        "credits": 6
+        "credits": 6,
+        "requires": 120
     },
     {
         "code": "72.43",
@@ -359,7 +395,8 @@
         "name": "Gestión de Proyectos",
         "formal": "Gestión de Proyectos Informáticos",
         "semester": 8,
-        "credits": 3
+        "credits": 3,
+        "requires": 0
     },
     {
         "code": "72.44",
@@ -369,7 +406,8 @@
         "name": "Criptografía",
         "formal": "Criptografía y Seguridad",
         "semester": 8,
-        "credits": 6
+        "credits": 6,
+        "requires": 0
     },
     {
         "code": "12.83",
@@ -377,7 +415,8 @@
         "name": "Seguridad Ocupacional",
         "formal": "Seguridad Ocupacional y Ambiental",
         "semester": 9,
-        "credits": 3
+        "credits": 3,
+        "requires": 140
     },
     {
         "code": "72.20",
@@ -387,7 +426,8 @@
         "name": "Redes",
         "formal": "Redes de Información",
         "semester": 9,
-        "credits": 6
+        "credits": 6,
+        "requires": 140
     },
     {
         "code": "72.45",
@@ -395,7 +435,8 @@
         "name": "Proyecto Final",
         "formal": "Proyecto Final ",
         "semester": 9,
-        "credits": 12
+        "credits": 12,
+        "requires": 160
     },
     {
         "code": "72.98",
@@ -403,7 +444,8 @@
         "name": "Práctica Laboral",
         "formal": "Práctica Laboral",
         "semester": 10,
-        "credits": 0
+        "credits": 0,
+        "requires": 144
     },
     {
         "code": "94.23",
@@ -411,7 +453,8 @@
         "name": "Formación General III",
         "formal": "Formación General III",
         "semester": 10,
-        "credits": 3
+        "credits": 3,
+        "requires": 168
     },
     {
         "code": "94.52",
@@ -419,6 +462,7 @@
         "name": "Inglés II",
         "formal": "Inglés II",
         "semester": 10,
-        "credits": 0
+        "credits": 0,
+        "requires": 0
     }
 ]

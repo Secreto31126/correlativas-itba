@@ -185,6 +185,8 @@
 						{highlighted}
 						tabindex={all.indexOf(subject.codec) + 1}
 						strike={db.subjects.includes(subject.codec)}
+						credits={db.options.credits}
+						requires={db.options.requires}
 						on:in={highlight}
 						on:out={defaultView}
 						on:toggle={touchScreen}
