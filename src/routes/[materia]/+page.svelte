@@ -22,7 +22,7 @@
 	const db_store = data.user_data
 		? getDocumentStore(UserData, new UserData(data.user_data))
 		: undefined;
-	$: db = $db_store ?? { subjects: [] as string[], options: { credits: true, requires: true } };
+	$: db = $db_store ?? new UserData();
 
 	let famous: string | undefined;
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
@@ -98,7 +98,7 @@
 		db.subjects.includes(e.detail)
 			? db.subjects.splice(db.subjects.indexOf(e.detail), 1)
 			: db.subjects.push(e.detail);
-		if (db instanceof UserData) saveDocument(db);
+		if (db.uid) saveDocument(db);
 		else db = db;
 	}
 
