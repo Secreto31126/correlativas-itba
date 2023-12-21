@@ -7,7 +7,7 @@
 </script>
 
 {#if logged}
-	<a href="/account" class="relative">
+	<a href="/account" class="relative h-full">
 		<img src={picture} alt="Your Account" class="h-full rounded-full" />
 		{#if ping}
 			<span class="absolute top-0 right-0 flex h-3 w-3">
