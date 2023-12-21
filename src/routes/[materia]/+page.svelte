@@ -168,7 +168,11 @@
 		<a href="/">
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
-		<GoogleButton logged={!!data.userSession} picture={data.userSession?.picture} />
+		<GoogleButton
+			logged={!!data.userSession}
+			picture={data.userSession?.picture}
+			ping={!db.options.visited_account}
+		/>
 	</header>
 	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
 		{#each semesters as semester}
