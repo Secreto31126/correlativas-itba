@@ -14,22 +14,7 @@ export class Document {
 
 	protected _load(data: unknown) {
 		if (data) {
-			for (const key in data) {
-				const value = (data as Record<string, unknown>)[key];
-				const is_an_object = typeof value === 'object' && value !== null && !Array.isArray(value);
-
-				Object.defineProperty(this, key, {
-					value: is_an_object
-						? {
-								...value,
-								// Avoids overwriting default values if not defined in the data
-								...((this as Record<string, unknown>)[key] as object)
-						  }
-						: value,
-					configurable: true,
-					enumerable: true
-				});
-			}
+			Object.assign(this, data);
 		}
 	}
 }
