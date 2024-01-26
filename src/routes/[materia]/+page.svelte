@@ -185,6 +185,7 @@
 						{highlighted}
 						tabindex={all.indexOf(subject.codec) + 1}
 						strike={db.subjects.includes(subject.codec)}
+						code={db.options.code}
 						credits={db.options.credits}
 						requires={db.options.requires}
 						on:in={highlight}

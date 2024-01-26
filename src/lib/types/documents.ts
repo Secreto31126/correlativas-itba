@@ -22,10 +22,12 @@ export class Document {
 export class UserData extends Document {
 	subjects: string[] = [];
 	options: {
+		code: boolean;
 		credits: boolean;
 		requires: boolean;
 		visited_account: boolean;
 	} = {
+		code: true,
 		credits: true,
 		requires: true,
 		visited_account: false
