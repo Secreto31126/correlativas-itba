@@ -7,6 +7,7 @@
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
 	import { UserData } from '$lib/types/documents';
 	import interact from 'interactjs';
+	import { page } from '$app/stores';
 
 	export let data: PageData;
 
@@ -185,6 +186,7 @@
 						{highlighted}
 						tabindex={all.indexOf(subject.codec) + 1}
 						strike={db.subjects.includes(subject.codec)}
+						code={db.options.code && $page.params.materia !== 'noob'}
 						credits={db.options.credits}
 						requires={db.options.requires}
 						on:in={highlight}
