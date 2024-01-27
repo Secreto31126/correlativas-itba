@@ -21,9 +21,9 @@ export class Document {
 				Object.defineProperty(this, key, {
 					value: is_an_object
 						? {
-								...value,
 								// Avoids overwriting default values if not defined in the data
-								...((this as Record<string, unknown>)[key] as object)
+								...((this as Record<string, unknown>)[key] as object),
+								...value
 						  }
 						: value,
 					configurable: true,
