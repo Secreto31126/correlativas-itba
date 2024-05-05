@@ -44,6 +44,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Correlativas ITBA - Cuenta</title>
+</svelte:head>
+
 <header class="md:ml-2 my-3 md:mt-1 md:w-fit">
 	<a href="/">
 		<h1 class="text-2xl md:text-4xl font-bold">Ajustes</h1>
