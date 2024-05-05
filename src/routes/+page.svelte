@@ -6,6 +6,14 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Correlativas ITBA</title>
+	<meta
+		name="description"
+		content="Explora todas las carreras que ofrece el Instituto Tecnológico Buenos Aires y descubre el plan de estudio de cada una con el mapa interactivo"
+	/>
+</svelte:head>
+
 <header>
 	<h1 class="text-4xl md:text-6xl my-3">Correlativas de...</h1>
 </header>

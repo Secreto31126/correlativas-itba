@@ -164,6 +164,15 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Correlativas de {data.career_data.name} en el ITBA</title>
+	<meta
+		name="description"
+		content="Explora el plan de estudio de {data.career_data
+			.name} en el ITBA con el mapa interactivo"
+	/>
+</svelte:head>
+
 <div class="grid w-full md:min-h-screen pt-2">
 	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
 		<a href="/">
