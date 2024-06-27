@@ -12,10 +12,10 @@ import {
 } from 'firebase/firestore';
 import {
 	getAuth,
-	signInWithRedirect,
 	signOut as _signOut,
 	GoogleAuthProvider,
-	onIdTokenChanged
+	onIdTokenChanged,
+	signInWithPopup
 } from 'firebase/auth';
 
 import { readable } from 'svelte/store';
@@ -139,7 +139,7 @@ function providerFor(name: string) {
 export async function signInWith(name: string) {
 	const auth = getAuth(app);
 	const provider = providerFor(name);
-	await signInWithRedirect(auth, provider);
+	await signInWithPopup(auth, provider);
 }
 
 export async function signOut() {
