@@ -40,11 +40,13 @@ export class UserData extends Document {
 		code: boolean;
 		credits: boolean;
 		requires: boolean;
+		progress: boolean;
 		visited_account: boolean;
 	} = {
 		code: true,
 		credits: true,
 		requires: true,
+		progress: true,
 		visited_account: false
 	};
 

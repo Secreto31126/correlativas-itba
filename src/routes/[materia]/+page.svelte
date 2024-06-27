@@ -29,6 +29,8 @@
 	$: show = famous ? [famous, ...getAllParents([famous])] : [];
 	$: highlighted = famous ? [...show, ...getChilds(famous)] : [];
 
+	$: passed = data.career.filter((e) => db.subjects.includes(e.codec));
+
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore - LeaderLine is not typed
 	type LeaderLineType = typeof import('leader-line');
@@ -121,6 +123,11 @@
 		lines[target.id]?.forEach((line) => line.position());
 	}
 
+	let counter_type = 'credits' as 'credits' | 'subjects';
+	function toggleCounter() {
+		counter_type = counter_type === 'credits' ? 'subjects' : 'credits';
+	}
+
 	onMount(async () => {
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
@@ -178,11 +185,25 @@
 		<a href="/">
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
-		<GoogleButton
-			logged={!!data.userSession}
-			picture={data.userSession?.picture}
-			ping={!db.options.visited_account}
-		/>
+		<div class="flex h-full gap-2 md:gap-4">
+			{#if db.options.progress}
+				<button on:click={toggleCounter}>
+					{#if counter_type === 'credits'}
+						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)} / {data.career.reduce(
+							(acc, s) => (acc += s.credits),
+							0
+						)} créditos
+					{:else}
+						{passed.length} / {all.length} materias
+					{/if}
+				</button>
+			{/if}
+			<GoogleButton
+				logged={!!data.userSession}
+				picture={data.userSession?.picture}
+				ping={!db.options.visited_account}
+			/>
+		</div>
 	</header>
 	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
 		{#each semesters as semester}
