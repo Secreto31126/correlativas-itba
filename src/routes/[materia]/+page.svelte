@@ -186,16 +186,18 @@
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
 		<div class="flex h-full gap-2 md:gap-4">
-			<button on:click={toggleCounter}>
-				{#if counter_type === 'credits'}
-					{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)} / {data.career.reduce(
-						(acc, s) => (acc += s.credits),
-						0
-					)} créditos
-				{:else}
-					{passed.length} / {all.length} materias
-				{/if}
-			</button>
+			{#if db.options.progress}
+				<button on:click={toggleCounter}>
+					{#if counter_type === 'credits'}
+						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)} / {data.career.reduce(
+							(acc, s) => (acc += s.credits),
+							0
+						)} créditos
+					{:else}
+						{passed.length} / {all.length} materias
+					{/if}
+				</button>
+			{/if}
 			<GoogleButton
 				logged={!!data.userSession}
 				picture={data.userSession?.picture}
