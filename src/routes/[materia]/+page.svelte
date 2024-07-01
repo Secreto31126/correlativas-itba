@@ -216,7 +216,7 @@
 		<a href="/">
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
-		<div class="flex h-full gap-2 md:gap-4">
+		<div class="flex h-full gap-4">
 			{#if db.options.progress}
 				<button on:click={toggleCounter}>
 					{#if counter_type === 'credits'}
@@ -229,7 +229,7 @@
 				</button>
 			{/if}
 			{#if selected.length}
-				<div class="flex md:pr-2 [&>*]:w-5 md:[&>*]:w-6 gap-2 md:gap-4">
+				<div class="flex md:pr-2 [&>*]:w-5 md:[&>*]:w-6 gap-4">
 					<button on:click={complete_selected_subjects} title="Marcar como completadas">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
