@@ -8,6 +8,7 @@
 	export let famous: string | undefined;
 	export let show: string[];
 	export let highlighted: string[];
+	export let selected: boolean;
 	export let tabindex: number;
 	export let strike: boolean;
 	export let code: boolean;
@@ -20,7 +21,7 @@
 		toggle: string;
 		tick: void;
 		ready: void;
-		crossout: string;
+		contextmenu: string;
 	};
 
 	const dispatch = createEventDispatcher<Events>();
@@ -32,7 +33,7 @@
 
 	function event(type: keyof Events) {
 		return () => {
-			if (type === 'crossout') dispatch(type, subject.codec);
+			if (type === 'contextmenu') dispatch(type, subject.codec);
 			else if (mouse && type === 'toggle') return;
 			else if (!mouse && type !== 'toggle') return;
 			else dispatch(type, subject.codec);
@@ -123,7 +124,7 @@
 	id={subject.codec}
 	data-parents={subject.parentc.join(' ')}
 	style="min-width: {width}px; min-height: {height}px;"
-	class="flex flex-col justify-center touch-none
+	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-none
 		p-1 md:p-2 md:max-w-[15%]
 		transition-colors duration-500 ease-in-out"
@@ -139,10 +140,26 @@
 	on:focusout={event('out')}
 	on:mouseleave={event('out')}
 	on:click={event('toggle')}
-	on:contextmenu|preventDefault={event('crossout')}
+	on:contextmenu|preventDefault={event('contextmenu')}
 	bind:this={div}
 >
-	<p class="m-0 select-none text-sm md:text-2xl">
+	{#if selected}
+		<span class="absolute translate-x-1/2 translate-y-[-50%] top-0 right-0 w-4 h-4 md:w-6 md:h-6">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="#0D0"
+				class="size-6 bg-white rounded-xl"
+			>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+				/>
+			</svg>
+		</span>
+	{/if}
+	<p class="m-0 select-none text-sm md:text-2xl will-change-contents transform-gpu">
 		{im_famous ? full_name.join('') : subject.name}
 	</p>
 </div>
