@@ -8,6 +8,7 @@
 	export let famous: string | undefined;
 	export let show: string[];
 	export let highlighted: string[];
+	export let selecting: boolean;
 	export let selected: boolean;
 	export let tabindex: number;
 	export let strike: boolean;
@@ -139,7 +140,7 @@
 	on:mouseenter={event('in')}
 	on:focusout={event('out')}
 	on:mouseleave={event('out')}
-	on:click={event('toggle')}
+	on:click={event(selecting ? 'contextmenu' : 'toggle')}
 	on:contextmenu|preventDefault={event('contextmenu')}
 	bind:this={div}
 >

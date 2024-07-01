@@ -279,6 +279,7 @@
 						{famous}
 						{show}
 						{highlighted}
+						selecting={!!selected.length}
 						selected={selected.includes(subject.codec)}
 						tabindex={all.indexOf(subject.codec) + 1}
 						strike={db.subjects.includes(subject.codec)}
