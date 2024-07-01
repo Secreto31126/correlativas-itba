@@ -1,0 +1,11 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/src/lib/server/data/*.json",
+                "!/src/lib/server/data/index.json"
+            ],
+            "url": "/subjects.schema.json"
+        }
+    ]
+}

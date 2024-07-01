@@ -35,7 +35,7 @@
             "2"
         ],
         "name": "Team celu",
-        "formal": "En el celular, si mantenés apretada una materia se marca como completada",
+        "formal": "En el celular, mantené apretada una materia para seleccionarla y ejecutar acciones como marcarla como completada",
         "semester": 3,
         "credits": 0,
         "requires": 0
@@ -46,7 +46,7 @@
             "2"
         ],
         "name": "Team compu",
-        "formal": "En la compu, si apretás botón derecho sobre una materia se marca como completada",
+        "formal": "En la compu, apretá botón derecho sobre una materia para seleccionarla y ejecutar acciones como marcarla como completada",
         "semester": 3,
         "credits": 0,
         "requires": 0
@@ -85,6 +85,17 @@
         "formal": "Pro tip 3: Hacé click en el contador de arriba a la derecha para cambiar entre materias y créditos aprobados (no incluye electivas)",
         "semester": 4,
         "credits": 3,
+        "requires": 0
+    },
+    {
+        "code": "11",
+        "parent": [
+            "4"
+        ],
+        "name": "Pro tip 4",
+        "formal": "Pro tip 4: Hacé doble click derecho en una materia para marcarla como completada rápidamente (solo PC)",
+        "semester": 4,
+        "credits": 0,
         "requires": 0
     },
     {

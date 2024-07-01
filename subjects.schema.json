@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Carrera",
+    "description": "Una carrera del ITBA con múltiples materias",
+    "type": "array",
+    "items": {
+        "$ref": "#/$defs/subject"
+    },
+    "$defs": {
+        "subject": {
+            "description": "Una materia del ITBA",
+            "type": "object",
+            "properties": {
+                "code": {
+                    "description": "Código de la materia",
+                    "type": "string"
+                },
+                "parent": {
+                    "description": "Códigos de los padres de la materia",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                },
+                "name": {
+                    "description": "Nombre abreviado de la materia",
+                    "type": "string"
+                },
+                "formal": {
+                    "description": "Nombre formal de la materia",
+                    "type": "string"
+                },
+                "semester": {
+                    "description": "Número de cuatrimestre al que corresponde",
+                    "type": "number"
+                },
+                "credits": {
+                    "description": "Número de créditos de la materia",
+                    "type": "number"
+                },
+                "requires": {
+                    "description": "Número de créditos requeridos para cursar la materia",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "code",
+                "parent",
+                "name",
+                "formal",
+                "semester",
+                "credits",
+                "requires"
+            ]
+        }
+    }
+}
