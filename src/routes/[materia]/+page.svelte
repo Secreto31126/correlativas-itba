@@ -204,8 +204,20 @@
 
 <svelte:head>
 	<title>Correlativas de {data.career_data.name} en el ITBA</title>
+	<meta name="og:title" content="Correlativas de {data.career_data.name} en el ITBA" />
+	<meta name="twitter:title" content="Correlativas de {data.career_data.name} en el ITBA" />
 	<meta
 		name="description"
+		content="Explora el plan de estudio de {data.career_data
+			.name} en el ITBA con el mapa interactivo"
+	/>
+	<meta
+		name="og:description"
+		content="Explora el plan de estudio de {data.career_data
+			.name} en el ITBA con el mapa interactivo"
+	/>
+	<meta
+		name="twitter:description"
 		content="Explora el plan de estudio de {data.career_data
 			.name} en el ITBA con el mapa interactivo"
 	/>

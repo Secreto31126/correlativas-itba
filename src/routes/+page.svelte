@@ -8,8 +8,18 @@
 
 <svelte:head>
 	<title>Correlativas ITBA</title>
+	<meta name="og:title" content="Correlativas ITBA" />
+	<meta name="twitter:title" content="Correlativas ITBA" />
 	<meta
 		name="description"
+		content="Explora todas las carreras que ofrece el Instituto Tecnológico Buenos Aires y descubre el plan de estudio de cada una con el mapa interactivo"
+	/>
+	<meta
+		name="og:description"
+		content="Explora todas las carreras que ofrece el Instituto Tecnológico Buenos Aires y descubre el plan de estudio de cada una con el mapa interactivo"
+	/>
+	<meta
+		name="twitter:description"
 		content="Explora todas las carreras que ofrece el Instituto Tecnológico Buenos Aires y descubre el plan de estudio de cada una con el mapa interactivo"
 	/>
 </svelte:head>
