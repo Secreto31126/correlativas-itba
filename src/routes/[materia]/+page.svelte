@@ -137,6 +137,8 @@
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
+		if (!db.options.movement) return;
+
 		const target = event.target;
 
 		// keep the dragged position in the data-x/data-y attributes
