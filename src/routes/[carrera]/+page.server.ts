@@ -9,9 +9,9 @@ import { createDocument, getDocuments } from '$lib/server/modules/firebase';
 
 export const load = (async ({ params, locals }) => {
 	// #region Career Content
-	const career_data = Careers.find((c) => params.materia === c.cute);
+	const career_data = Careers.find((c) => params.carrera === c.cute);
 	const filename = career_data?.file;
-	if (!filename) throw error(404, `Materia ${params.materia} not found`);
+	if (!filename) throw error(404, `Materia ${params.carrera} not found`);
 
 	let data: Subject[];
 	try {
