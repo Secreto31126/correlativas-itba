@@ -15,9 +15,14 @@ export const load = (async ({ params, locals }) => {
 
 	let data: Subject[];
 	try {
-		const files = import.meta.glob('$lib/server/data/*.json', { as: 'raw' });
+		const files = import.meta.glob('$lib/server/data/*.json', {
+			query: '?json',
+			import: 'default'
+		});
+
 		const path = Object.keys(files).find((e) => e.endsWith(filename)) ?? 'LOL no.';
-		data = JSON.parse(await files[path]()) as Subject[];
+
+		data = (await files[path]()) as Subject[];
 	} catch (e) {
 		error(500, 'Failed to open file');
 	}

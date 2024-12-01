@@ -6,10 +6,14 @@
 
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const db_store = getDocumentStore(UserData, new UserData(data.user_data));
-	$: db = $db_store;
+	let db = $derived($db_store);
 
 	function ok_byeeeee() {
 		if (
@@ -67,7 +71,7 @@
 <div class="flex flex-col items-center gap-2">
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar código</span>
-		<input type="checkbox" checked={db.options.code} on:change={toggle_code} class="sr-only peer" />
+		<input type="checkbox" checked={db.options.code} onchange={toggle_code} class="sr-only peer" />
 		<div
 			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
 			peer-focus:ring-yellow-300 dark:peer-focus:ring-yellow-800 rounded-full
@@ -76,7 +80,7 @@
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-yellow-600"
-		/>
+		></div>
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
@@ -84,7 +88,7 @@
 		<input
 			type="checkbox"
 			checked={db.options.credits}
-			on:change={toggle_credits}
+			onchange={toggle_credits}
 			class="sr-only peer"
 		/>
 		<div
@@ -95,7 +99,7 @@
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-blue-600"
-		/>
+		></div>
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
@@ -104,7 +108,7 @@
 		<input
 			type="checkbox"
 			checked={db.options.requires}
-			on:change={toggle_requires}
+			onchange={toggle_requires}
 			class="sr-only peer"
 		/>
 		<div
@@ -115,7 +119,7 @@
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-green-600"
-		/>
+		></div>
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
@@ -123,7 +127,7 @@
 		<input
 			type="checkbox"
 			checked={db.options.progress}
-			on:change={toggle_progress}
+			onchange={toggle_progress}
 			class="sr-only peer"
 		/>
 		<div
@@ -134,15 +138,16 @@
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-violet-600"
-		/>
+		></div>
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Arrastrar materias</span>
+		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Arrastrar materias</span
+		>
 		<input
 			type="checkbox"
 			checked={db.options.movement}
-			on:change={toggle_movement}
+			onchange={toggle_movement}
 			class="sr-only peer"
 		/>
 		<div
@@ -153,12 +158,12 @@
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 			dark:border-gray-600 peer-checked:bg-pink-600"
-		/>
+		></div>
 	</label>
 
 	<div class="mt-4">
 		<button
-			on:click={signOut}
+			onclick={signOut}
 			class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600
 			text-white text-sm font-medium rounded-md transition-all duration-500 w-fit"
 		>
@@ -180,7 +185,7 @@
 		</button>
 
 		<button
-			on:click={ok_byeeeee}
+			onclick={ok_byeeeee}
 			class="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700
 			text-white text-sm font-medium rounded-md transition-all duration-500 w-fit"
 		>

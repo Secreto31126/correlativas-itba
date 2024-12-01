@@ -8,8 +8,13 @@
 	import { UserData } from '$lib/types/documents';
 	import interact from 'interactjs';
 	import { page } from '$app/stores';
+	import { writable } from 'svelte/store';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	/**
 	 * All the subjects codes codified
@@ -20,18 +25,17 @@
 	 */
 	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a - b);
 
-	const db_store = data.user_data
+	const db = data.user_data
 		? getDocumentStore(UserData, new UserData(data.user_data))
-		: undefined;
-	$: db = $db_store ?? new UserData();
+		: writable<UserData>(new UserData());
 
-	let famous: string | undefined;
-	$: show = famous ? [famous, ...getAllParents([famous])] : [];
-	$: highlighted = famous ? [...show, ...getChilds(famous)] : [];
+	let famous: string | undefined = $state();
+	let show = $derived(famous ? [famous, ...getAllParents([famous])] : []);
+	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
 
-	let selected = [] as typeof all;
-	$: passed = data.career.filter((e) =>
-		(selected.length ? selected : db.subjects).includes(e.codec)
+	let selected: typeof all = $state([]);
+	let passed = $derived(
+		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
 
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -66,11 +70,11 @@
 		return data.career.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
-	async function highlight(e: CustomEvent<string>) {
+	async function highlight(e: string) {
 		// If someone is already being highlighted, return
 		if (famous) return;
 
-		famous = e.detail;
+		famous = e;
 		await tick();
 		showLines();
 	}
@@ -94,22 +98,22 @@
 		lines[subject]?.forEach((l) => l.position());
 	}
 
-	function touchScreen(e: CustomEvent<string>) {
+	function touchScreen(e: string) {
 		// Toggle famous
 		if (famous) defaultView();
 		else highlight(e);
 	}
 
-	let timeout: NodeJS.Timeout;
+	let timeout: ReturnType<typeof setTimeout>;
 	let complete_shortcut = false;
-	function context_menu(e: CustomEvent<string>) {
-		if (selected.includes(e.detail)) {
+	function context_menu(e: string) {
+		if (selected.includes(e)) {
 			if (complete_shortcut) {
 				clearTimeout(timeout);
 				complete_selected_subjects();
 				complete_shortcut = false;
 			} else {
-				selected = selected.filter((s) => s !== e.detail);
+				selected = selected.filter((s) => s !== e);
 			}
 		} else {
 			if (!selected.length) {
@@ -117,27 +121,28 @@
 				complete_shortcut = true;
 			}
 
-			selected = [...selected, e.detail];
+			selected = [...selected, e];
 		}
 	}
 
 	function complete_selected_subjects() {
 		for (const e of selected) {
-			if (db.subjects.includes(e)) {
-				db.subjects.splice(db.subjects.indexOf(e), 1);
+			if ($db.subjects.includes(e)) {
+				$db.subjects.splice($db.subjects.indexOf(e), 1);
 			} else {
-				db.subjects.push(e);
+				$db.subjects.push(e);
 			}
 		}
 
-		if (db.uid) saveDocument(db);
-		else db = db;
+		if ($db.uid) saveDocument($db);
+		// @ts-ignore - If the db doesn't have a uid, it's a local writable store
+		else db.set($db);
 
 		selected = [];
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
-		if (!db.options.movement) return;
+		if (!$db.options.movement) return;
 
 		const target = event.target;
 
@@ -156,7 +161,7 @@
 		lines[target.id]?.forEach((line) => line.position());
 	}
 
-	let counter_type = 'credits' as 'credits' | 'subjects';
+	let counter_type: 'credits' | 'subjects' = $state('credits');
 	function toggleCounter() {
 		counter_type = counter_type === 'credits' ? 'subjects' : 'credits';
 	}
@@ -231,8 +236,8 @@
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
 		<div class="flex h-full gap-4">
-			{#if db.options.progress}
-				<button on:click={toggleCounter}>
+			{#if $db.options.progress}
+				<button onclick={toggleCounter}>
 					{#if counter_type === 'credits'}
 						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)}
 						{!selected.length ? `/ ${data.career.reduce((acc, s) => (acc += s.credits), 0)}` : ''} créditos
@@ -244,7 +249,11 @@
 			{/if}
 			{#if selected.length}
 				<div class="flex md:pr-2 [&>*]:w-5 md:[&>*]:w-6 gap-4">
-					<button on:click={complete_selected_subjects} title="Marcar como completadas">
+					<button
+						onclick={complete_selected_subjects}
+						title="Marcar como completadas"
+						aria-label="Completar"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -262,7 +271,12 @@
 							/>
 						</svg>
 					</button>
-					<button on:click={() => (selected = [])} title="Cancelar" class="grow">
+					<button
+						onclick={() => (selected = [])}
+						title="Cancelar"
+						aria-label="Cancelar"
+						class="grow"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -279,7 +293,7 @@
 				<GoogleButton
 					logged={!!data.userSession}
 					picture={data.userSession?.picture}
-					ping={!db.options.visited_account}
+					ping={!$db.options.visited_account}
 				/>
 			{/if}
 		</div>
@@ -296,16 +310,16 @@
 						selecting={!!selected.length}
 						selected={selected.includes(subject.codec)}
 						tabindex={all.indexOf(subject.codec) + 1}
-						strike={db.subjects.includes(subject.codec)}
-						code={db.options.code && $page.params.carrera !== 'noob'}
-						credits={db.options.credits}
-						requires={db.options.requires}
-						on:in={highlight}
-						on:out={defaultView}
-						on:toggle={touchScreen}
-						on:contextmenu={context_menu}
-						on:tick={() => updateLines()}
-						on:ready={() => updateLines()}
+						strike={$db.subjects.includes(subject.codec)}
+						code={$db.options.code && $page.params.carrera !== 'noob'}
+						credits={$db.options.credits}
+						requires={$db.options.requires}
+						onin={highlight}
+						onout={defaultView}
+						ontoggle={touchScreen}
+						oncontextmenu={context_menu}
+						ontick={() => updateLines()}
+						onready={() => updateLines()}
 					/>
 				{/each}
 			</div>
