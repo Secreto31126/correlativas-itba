@@ -2,48 +2,69 @@
 	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { browser } from '$app/environment';
-	import { createEventDispatcher, onMount, tick } from 'svelte';
+	import { onMount, tick } from 'svelte';
 
-	export let subject: FilledSubject;
-	export let famous: string | undefined;
-	export let show: string[];
-	export let highlighted: string[];
-	export let selecting: boolean;
-	export let selected: boolean;
-	export let tabindex: number;
-	export let strike: boolean;
-	export let code: boolean;
-	export let credits: boolean;
-	export let requires: boolean;
+	interface Props {
+		subject: FilledSubject;
+		famous: string | undefined;
+		show: string[];
+		highlighted: string[];
+		selecting: boolean;
+		selected: boolean;
+		tabindex: number;
+		strike: boolean;
+		code: boolean;
+		credits: boolean;
+		requires: boolean;
+		onin: (code: string) => void;
+		onout: (code: string) => void;
+		ontoggle: (code: string) => void;
+		ontick: () => void;
+		onready: () => void;
+		oncontextmenu: (code: string) => void;
+	}
 
-	type Events = {
-		in: string;
-		out: string;
-		toggle: string;
-		tick: void;
-		ready: void;
-		contextmenu: string;
-	};
-
-	const dispatch = createEventDispatcher<Events>();
+	let {
+		subject,
+		famous,
+		show,
+		highlighted,
+		selecting,
+		selected,
+		tabindex,
+		strike,
+		code,
+		credits,
+		requires,
+		onin,
+		onout,
+		ontoggle,
+		ontick,
+		onready,
+		oncontextmenu
+	}: Props = $props();
 
 	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : undefined;
 	const animation = browser ? !window.matchMedia('(prefers-reduced-motion)').matches : undefined;
 
-	$: im_famous = famous === subject.codec;
+	let im_famous = $derived(famous === subject.codec);
 
-	function event(type: keyof Events) {
-		return () => {
-			if (type === 'contextmenu') dispatch(type, subject.codec);
-			else if (mouse && type === 'toggle') return;
-			else if (!mouse && type !== 'toggle') return;
-			else dispatch(type, subject.codec);
+	function event(type: 'in' | 'out' | 'toggle' | 'contextmenu') {
+		if (type === 'contextmenu') return (e: Event) => {
+			e.preventDefault();
+			oncontextmenu(subject.codec)
 		};
+
+		if (type === 'in' && mouse) return () => onin(subject.codec);
+		if (type === 'out' && mouse) return () => onout(subject.codec);
+		if (type === 'toggle' && !mouse) return () => ontoggle(subject.codec);
+
+		return () => {};
 	}
 
-	let full_name = [] as string[];
-	let tick_animation = true;
-	let finished_animation = true;
+	let full_name = $state([] as string[]);
+	let tick_animation = $state(true);
+	let finished_animation = $state(true);
 
 	async function animate() {
 		const comments = [] as string[];
@@ -105,10 +126,18 @@
 		finished_animation = true;
 	}
 
-	$: if (!im_famous) full_name = [];
-	else animate();
-	$: if (finished_animation) dispatch('ready');
-	$: if ((tick_animation || !tick_animation) && im_famous) dispatch('tick');
+	$effect(() => {
+		if (!im_famous) full_name = [];
+		else animate();
+	});
+
+	$effect(() => {
+		if (finished_animation) onready();
+	});
+
+	$effect(() => {
+		if ((tick_animation || !tick_animation) && im_famous) ontick();
+	});
 
 	let div: HTMLDivElement;
 	let width: number;
@@ -120,7 +149,7 @@
 	});
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
 <div
 	id={subject.codec}
 	data-parents={subject.parentc.join(' ')}
@@ -136,12 +165,12 @@
 	title={subject.name}
 	role="cell"
 	{tabindex}
-	on:focusin={event('in')}
-	on:mouseenter={event('in')}
-	on:focusout={event('out')}
-	on:mouseleave={event('out')}
-	on:click={event(selecting ? 'contextmenu' : 'toggle')}
-	on:contextmenu|preventDefault={event('contextmenu')}
+	onfocusin={event('in')}
+	onmouseenter={event('in')}
+	onfocusout={event('out')}
+	onmouseleave={event('out')}
+	onclick={event(selecting ? 'contextmenu' : 'toggle')}
+	oncontextmenu={event('contextmenu')}
 	bind:this={div}
 >
 	{#if selected}
