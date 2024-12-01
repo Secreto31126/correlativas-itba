@@ -11,7 +11,7 @@ export const load = (async ({ params, locals }) => {
 	// #region Career Content
 	const career_data = Careers.find((c) => params.carrera === c.cute);
 	const filename = career_data?.file;
-	if (!filename) throw error(404, `Materia ${params.carrera} not found`);
+	if (!filename) error(404, `Materia ${params.carrera} not found`);
 
 	let data: Subject[];
 	try {
@@ -19,7 +19,7 @@ export const load = (async ({ params, locals }) => {
 		const path = Object.keys(files).find((e) => e.endsWith(filename)) ?? 'LOL no.';
 		data = JSON.parse(await files[path]()) as Subject[];
 	} catch (e) {
-		throw error(500, 'Failed to open file');
+		error(500, 'Failed to open file');
 	}
 	// #endregion
 
