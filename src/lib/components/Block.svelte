@@ -44,13 +44,14 @@
 		oncontextmenu
 	}: Props = $props();
 
+	const webkit = 'webkitConvertPointFromNodeToPage' in window;
 	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : undefined;
 	const animation = browser ? !window.matchMedia('(prefers-reduced-motion)').matches : undefined;
 
 	let im_famous = $derived(famous === subject.codec);
 
 	function event(type: 'in' | 'out' | 'toggle' | 'contextmenu') {
-		if (type === 'contextmenu')
+		if (type === 'contextmenu' && !webkit)
 			return (e: Event) => {
 				e.preventDefault();
 				oncontextmenu(subject.codec);
@@ -144,8 +145,7 @@
 	let touchStartY: number;
 	let safariTimeout: ReturnType<typeof setTimeout>;
 	function safariContextMenu(type: 'start' | 'end' | 'move') {
-		const appleExclusiveDeprecatedFeature = 'webkitConvertPointFromNodeToPage' in window;
-		if (!browser || mouse || !appleExclusiveDeprecatedFeature) {
+		if (!browser || mouse || !webkit) {
 			return () => {};
 		}
 
