@@ -144,7 +144,8 @@
 	let touchStartY: number;
 	let safariTimeout: ReturnType<typeof setTimeout>;
 	function safariContextMenu(type: 'start' | 'end' | 'move') {
-		if (!browser || !window.navigator.userAgent.includes('Safari')) {
+		const appleExclusiveDeprecatedFeature = 'webkitConvertPointFromNodeToPage' in window;
+		if (!browser || mouse || !appleExclusiveDeprecatedFeature) {
 			return () => {};
 		}
 
