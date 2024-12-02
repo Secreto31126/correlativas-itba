@@ -50,10 +50,11 @@
 	let im_famous = $derived(famous === subject.codec);
 
 	function event(type: 'in' | 'out' | 'toggle' | 'contextmenu') {
-		if (type === 'contextmenu') return (e: Event) => {
-			e.preventDefault();
-			oncontextmenu(subject.codec)
-		};
+		if (type === 'contextmenu')
+			return (e: Event) => {
+				e.preventDefault();
+				oncontextmenu(subject.codec);
+			};
 
 		if (type === 'in' && mouse) return () => onin(subject.codec);
 		if (type === 'out' && mouse) return () => onout(subject.codec);
@@ -139,6 +140,42 @@
 		if ((tick_animation || !tick_animation) && im_famous) ontick();
 	});
 
+	let touchStartX: number;
+	let touchStartY: number;
+	let safariTimeout: ReturnType<typeof setTimeout>;
+	function safariContextMenu(type: 'start' | 'end' | 'move') {
+		if (!browser || !window.navigator.userAgent.includes('Safari')) {
+			return () => {};
+		}
+
+		if (type === 'start') {
+			return (e: TouchEvent) => {
+				touchStartX = e.touches[0].clientX;
+				touchStartY = e.touches[0].clientY;
+
+				safariTimeout = setTimeout(() => {
+					oncontextmenu(subject.codec);
+				}, 500);
+			};
+		}
+
+		if (type === 'end') {
+			return () => clearTimeout(safariTimeout);
+		}
+
+		if (type === 'move') {
+			return (e: TouchEvent) => {
+				const moveX = e.touches[0].clientX;
+				const moveY = e.touches[0].clientY;
+
+				// Cancel long-press if the touch moves significantly
+				if (Math.abs(moveX - touchStartX) > 10 || Math.abs(moveY - touchStartY) > 10) {
+					clearTimeout(safariTimeout);
+				}
+			};
+		}
+	}
+
 	let div: HTMLDivElement;
 	let width = $state(0);
 	let height = $state(0);
@@ -171,6 +208,9 @@
 	onmouseleave={event('out')}
 	onclick={event(selecting ? 'contextmenu' : 'toggle')}
 	oncontextmenu={event('contextmenu')}
+	ontouchstart={safariContextMenu('start')}
+	ontouchend={safariContextMenu('end')}
+	ontouchmove={safariContextMenu('move')}
 	bind:this={div}
 >
 	{#if selected}
