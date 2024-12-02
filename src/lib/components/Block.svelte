@@ -156,7 +156,7 @@
 	style="min-width: {width}px; min-height: {height}px;"
 	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-none
-		p-1 md:p-2 md:max-w-[15%]
+		p-1 md:p-2 md:max-w-[15%] cursor-pointer
 		transition-colors duration-500 ease-in-out"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}

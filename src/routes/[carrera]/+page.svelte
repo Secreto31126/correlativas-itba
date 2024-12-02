@@ -178,6 +178,9 @@
 			],
 			listeners: {
 				move: dragMoveListener
+			},
+			cursorChecker() {
+				return '';
 			}
 		});
 
