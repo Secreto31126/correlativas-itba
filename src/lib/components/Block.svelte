@@ -140,8 +140,8 @@
 	});
 
 	let div: HTMLDivElement;
-	let width: number;
-	let height: number;
+	let width = $state(0);
+	let height = $state(0);
 
 	onMount(() => {
 		width = div.offsetWidth;
