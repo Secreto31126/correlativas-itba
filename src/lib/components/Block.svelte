@@ -44,7 +44,7 @@
 		oncontextmenu
 	}: Props = $props();
 
-	const webkit = 'webkitConvertPointFromNodeToPage' in window;
+	const webkit = browser ? 'webkitConvertPointFromNodeToPage' in window : undefined;
 	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : undefined;
 	const animation = browser ? !window.matchMedia('(prefers-reduced-motion)').matches : undefined;
 
