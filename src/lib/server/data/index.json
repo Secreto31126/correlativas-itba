@@ -3,13 +3,15 @@
         "plan": "BIO 22",
         "name": "Bioingeniería",
         "file": "Bioingeniería.json",
-        "cute": "bio"
+        "cute": "bio",
+        "itba": "BIO"
     },
     {
         "plan": "C23",
         "name": "Ingeniería Civil",
         "file": "Civil.json",
-        "cute": "puentes"
+        "cute": "puentes",
+        "itba": "C"
     },
     {
         "plan": "E 11A",
@@ -21,61 +23,71 @@
         "plan": "K22",
         "name": "Ingeniería Electrónica",
         "file": "Electrónica.json",
-        "cute": "arduino"
+        "cute": "arduino",
+        "itba": "K"
     },
     {
         "plan": "S10-Rev23",
         "name": "Ingeniería en Informática",
         "file": "Informática.json",
-        "cute": "linux"
+        "cute": "linux",
+        "itba": "S"
     },
     {
         "plan": "P22",
         "name": "Ingeniería en Petróleo",
         "file": "Petroleo.json",
-        "cute": "nafta"
+        "cute": "nafta",
+        "itba": "P"
     },
     {
         "plan": "I22",
         "name": "Ingeniería Industrial",
         "file": "Industrial.json",
-        "cute": "industrial"
+        "cute": "industrial",
+        "itba": "I"
     },
     {
         "plan": "M22",
         "name": "Ingeniería Mecánica",
         "file": "Mecanica.json",
-        "cute": "cars"
+        "cute": "cars",
+        "itba": "M"
     },
     {
         "plan": "N22",
         "name": "Ingeniería Naval",
         "file": "Naval.json",
-        "cute": "barquitos"
+        "cute": "barquitos",
+        "itba": "N"
     },
     {
         "plan": "Q22",
         "name": "Ingeniería Química",
         "file": "Química.json",
-        "cute": "oppenheimer"
+        "cute": "oppenheimer",
+        "itba": "Q"
     },
     {
         "plan": "L09T",
         "name": "Lic. en Administración y Sistemas",
         "file": "Licenciatura Administración.json",
-        "cute": "admin"
+        "cute": "admin",
+        "itba": "L"
     },
     {
         "plan": "A22",
         "name": "Licenciatura en Analítica Empresarial y Social",
         "file": "Licenciatura Empresarial.json",
-        "cute": "empresarial"
+        "cute": "empresarial",
+        "itba": "LAES"
     },
     {
         "plan": "L20",
         "name": "Licenciatura en Negocios",
         "file": "Licenciatura Negocios.json",
-        "cute": "negocios"
+        "cute": "negocios",
+        "itba": "LN"
     },
     {
         "plan": "Tutorial",
