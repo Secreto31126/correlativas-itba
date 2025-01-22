@@ -28,4 +28,19 @@
 		font-family: 'Roboto', sans-serif;
 		text-align: center;
 	}
+
+	:global(body) {
+		@apply transition-colors;
+	}
+
+	:global(body:has(.dark)) {
+		@apply bg-zinc-900;
+
+		& h1,
+		& p,
+		& button,
+		& svg {
+			@apply text-gray-200;
+		}
+	}
 </style>
