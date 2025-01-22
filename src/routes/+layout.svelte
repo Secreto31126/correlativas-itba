@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 
-	import { getTheme, setTheme } from '$lib/stores/theme.svelte';
+	import { getTheme } from '$lib/stores/theme.svelte';
 	import { onMount } from 'svelte';
 
 	interface Props {
