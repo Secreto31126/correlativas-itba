@@ -1,11 +1,18 @@
 import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark';
+
+if (browser) {
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+		setTheme(event.matches ? 'dark' : 'light');
+	});
+}
+
 let store: Theme = $state(
-	(browser
+	browser
 		? ((localStorage.getItem('theme') as Theme | null) ??
-			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : null))
-		: null) ?? 'light'
+				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+		: 'light'
 );
 
 export function getTheme() {

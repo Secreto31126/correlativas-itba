@@ -2,6 +2,7 @@
 	import '../app.css';
 
 	import { getTheme, setTheme } from '$lib/stores/theme.svelte';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -10,9 +11,13 @@
 	let { children }: Props = $props();
 
 	let dark = $derived(getTheme() === 'dark');
+
+	onMount(() => {
+		document.body.removeAttribute('data-loading');
+	});
 </script>
 
-<div class="contents dark:bg-black" class:dark>
+<div class="contents" class:dark>
 	{@render children?.()}
 </div>
 
