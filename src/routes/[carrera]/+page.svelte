@@ -368,25 +368,50 @@
 	.cuatrimestre:nth-child(5n + 1) {
 		--color: rgb(0, 155, 255);
 		--b-color: rgba(0, 155, 255, 0.4);
+
+		:global(body:has(.dark) &) {
+			--color: rgb(0, 100, 225);
+			--b-color: rgba(0, 100, 225, 0.4);
+		}
 	}
 
 	.cuatrimestre:nth-child(5n + 2) {
 		--color: rgb(255, 220, 190);
 		--b-color: rgba(255, 220, 190, 0.4);
+
+		:global(body:has(.dark) &) {
+			--color: rgb(255, 180, 150);
+			--b-color: rgba(255, 180, 150, 0.4);
+		}
 	}
 
 	.cuatrimestre:nth-child(5n + 3) {
 		--color: rgb(130, 255, 120);
 		--b-color: rgba(130, 255, 120, 0.4);
+
+		:global(body:has(.dark) &) {
+			--color: rgb(100, 205, 90);
+			--b-color: rgba(100, 205, 90, 0.4);
+		}
 	}
 
 	.cuatrimestre:nth-child(5n + 4) {
 		--color: rgb(255, 60, 60);
 		--b-color: rgba(255, 60, 60, 0.4);
+
+		:global(body:has(.dark) &) {
+			--color: rgb(235, 30, 30);
+			--b-color: rgba(235, 30, 30, 0.4);
+		}
 	}
 
 	.cuatrimestre:nth-child(5n + 5) {
 		--color: rgb(225, 150, 255);
 		--b-color: rgba(225, 150, 255, 0.4);
+
+		:global(body:has(.dark) &) {
+			--color: rgb(195, 120, 225);
+			--b-color: rgba(195, 120, 225, 0.4);
+		}
 	}
 </style>
