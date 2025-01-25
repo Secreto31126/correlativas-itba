@@ -220,7 +220,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 				fill="#0D0"
-				class="size-6 bg-white dark:bg-zinc-900 rounded-xl"
+				class="size-4 md:size-6 bg-white dark:bg-zinc-900 rounded-xl"
 			>
 				<path
 					fill-rule="evenodd"
