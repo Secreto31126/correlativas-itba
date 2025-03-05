@@ -242,7 +242,7 @@
 			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
 		</a>
 		<div class="flex h-full gap-4">
-			{#if $db.options.progress}
+			{#if $db.options.progress || selected.length}
 				<button onclick={toggleCounter}>
 					{#if counter_type === 'credits'}
 						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)}
