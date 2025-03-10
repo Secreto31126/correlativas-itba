@@ -73,7 +73,7 @@
         "parent": [
             "93.26"
         ],
-        "name": "Física I",
+        "name": "F1",
         "formal": "Física I",
         "semester": 2,
         "credits": 6,
@@ -138,7 +138,7 @@
             "93.28",
             "93.41"
         ],
-        "name": "Física III",
+        "name": "F3",
         "formal": "Física III",
         "semester": 3,
         "credits": 6,
@@ -183,7 +183,7 @@
         "parent": [
             "93.28"
         ],
-        "name": "Física II",
+        "name": "F2",
         "formal": "Física II",
         "semester": 4,
         "credits": 6,
@@ -206,7 +206,7 @@
         "parent": [
             "72.33"
         ],
-        "name": "Software I",
+        "name": "Ingesoft",
         "formal": "Ingenieria de Software I",
         "semester": 5,
         "credits": 6,
@@ -230,7 +230,7 @@
             "72.34",
             "93.35"
         ],
-        "name": "Base de Datos I",
+        "name": "BD",
         "formal": "Base de Datos I",
         "semester": 5,
         "credits": 6,
@@ -277,7 +277,7 @@
         "parent": [
             "93.28"
         ],
-        "name": "Métodos Numéricos",
+        "name": "MN",
         "formal": "Métodos Numéricos",
         "semester": 6,
         "credits": 3,
@@ -286,7 +286,7 @@
     {
         "code": "94.21",
         "parent": [],
-        "name": "Formación General I",
+        "name": "Forma",
         "formal": "Formación General I",
         "semester": 6,
         "credits": 3,
@@ -304,7 +304,7 @@
     {
         "code": "61.23",
         "parent": [],
-        "name": "Economía",
+        "name": "Eco",
         "formal": "Economía para Ingenieros",
         "semester": 7,
         "credits": 3,
@@ -324,7 +324,7 @@
         "parent": [
             "72.35"
         ],
-        "name": "Software II",
+        "name": "Inge 2",
         "formal": "Ingenieria del Software II",
         "semester": 7,
         "credits": 3,
@@ -336,7 +336,7 @@
             "72.11",
             "72.37"
         ],
-        "name": "Base de Datos II",
+        "name": "BD2",
         "formal": "Base de Datos II",
         "semester": 7,
         "credits": 6,
@@ -371,7 +371,7 @@
             "72.34",
             "93.07"
         ],
-        "name": "Simulación",
+        "name": "Sims",
         "formal": "Simulación de Sistemas",
         "semester": 8,
         "credits": 6,
@@ -392,7 +392,7 @@
     {
         "code": "72.43",
         "parent": [],
-        "name": "Gestión de Proyectos",
+        "name": "GPI",
         "formal": "Gestión de Proyectos Informáticos",
         "semester": 8,
         "credits": 3,
@@ -403,7 +403,7 @@
         "parent": [
             "72.07"
         ],
-        "name": "Criptografía",
+        "name": "Cripto",
         "formal": "Criptografía y Seguridad",
         "semester": 8,
         "credits": 6,
@@ -412,7 +412,7 @@
     {
         "code": "12.83",
         "parent": [],
-        "name": "Seguridad Ocupacional",
+        "name": "SOA",
         "formal": "Seguridad Ocupacional y Ambiental",
         "semester": 9,
         "credits": 3,
