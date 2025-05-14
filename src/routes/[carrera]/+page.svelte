@@ -254,7 +254,7 @@
 				</button>
 			{/if}
 			{#if selected.length}
-				<div class="flex md:pr-2 [&>*]:w-5 md:[&>*]:w-6 gap-4">
+				<div class="flex md:pr-2 *:w-5 md:*:w-6 gap-4">
 					<!-- https://heroicons.com/solid -->
 					{#if data.career_data.itba}
 						<a

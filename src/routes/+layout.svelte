@@ -23,6 +23,7 @@
 
 <style lang="postcss">
 	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	@reference "tailwindcss";
 
 	:global(h1, p, a) {
 		font-family: 'Roboto', sans-serif;
