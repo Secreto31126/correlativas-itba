@@ -79,7 +79,7 @@
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-yellow-600"
+			dark:border-gray-600 peer-checked:bg-yellow-600 dark:peer-checked:bg-yellow-600"
 		></div>
 	</label>
 
@@ -98,7 +98,7 @@
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-blue-600"
+			dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
 		></div>
 	</label>
 
@@ -118,7 +118,7 @@
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-green-600"
+			dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
 		></div>
 	</label>
 
@@ -137,7 +137,7 @@
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-violet-600"
+			dark:border-gray-600 peer-checked:bg-violet-600 dark:peer-checked:bg-violet-600"
 		></div>
 	</label>
 
@@ -157,7 +157,7 @@
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-pink-600"
+			dark:border-gray-600 peer-checked:bg-pink-600 dark:peer-checked:bg-pink-600"
 		></div>
 	</label>
 
