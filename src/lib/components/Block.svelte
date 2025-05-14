@@ -193,7 +193,7 @@
 	data-parents={subject.parentc.join(' ')}
 	style="min-width: {width}px; min-height: {height}px;"
 	class="flex relative flex-col justify-center touch-none
-		border-2 md:border-4 rounded-xl md:rounded-2xl outline-none
+		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
 		p-1 md:p-2 md:max-w-[15%]
 		transition-colors duration-500 ease-in-out"
 	class:famous={im_famous}

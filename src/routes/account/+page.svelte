@@ -73,9 +73,9 @@
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar código</span>
 		<input type="checkbox" checked={db.options.code} onchange={toggle_code} class="sr-only peer" />
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
+			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
 			peer-focus:ring-yellow-300 dark:peer-focus:ring-yellow-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
@@ -92,9 +92,9 @@
 			class="sr-only peer"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
+			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
 			peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
@@ -112,9 +112,9 @@
 			class="sr-only peer"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
+			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
 			peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
@@ -131,9 +131,9 @@
 			class="sr-only peer"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
+			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
 			peer-focus:ring-violet-300 dark:peer-focus:ring-violet-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
@@ -151,9 +151,9 @@
 			class="sr-only peer"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4
+			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
 			peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
 			peer-checked:after:border-white after:content-[''] after:absolute
 			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
 			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
