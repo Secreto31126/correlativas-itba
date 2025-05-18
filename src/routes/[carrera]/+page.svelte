@@ -7,7 +7,7 @@
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
 	import { UserData } from '$lib/types/documents';
 	import interact from 'interactjs';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { writable } from 'svelte/store';
 
 	let { data }: PageProps = $props();
@@ -340,7 +340,7 @@
 						selected={selected.includes(subject.codec)}
 						tabindex={all.indexOf(subject.codec) + 1}
 						strike={$db.subjects.includes(subject.codec)}
-						code={$db.options.code && $page.params.carrera !== 'noob'}
+						code={$db.options.code && page.params.carrera !== 'noob'}
 						credits={$db.options.credits}
 						requires={$db.options.requires}
 						onin={highlight}
