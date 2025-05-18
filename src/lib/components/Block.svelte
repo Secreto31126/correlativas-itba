@@ -2,11 +2,12 @@
 	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { browser } from '$app/environment';
-	import { onMount, tick } from 'svelte';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		subject: FilledSubject;
 		famous: string | undefined;
+		expanded: boolean;
 		show: string[];
 		highlighted: string[];
 		selecting: boolean;
@@ -19,14 +20,14 @@
 		onin: (code: string) => void;
 		onout: (code: string) => void;
 		ontoggle: (code: string) => void;
-		ontick: () => void;
-		onready: () => void;
+		onexpand: () => void;
 		oncontextmenu: (code: string) => void;
 	}
 
 	let {
 		subject,
 		famous,
+		expanded,
 		show,
 		highlighted,
 		selecting,
@@ -39,14 +40,12 @@
 		onin,
 		onout,
 		ontoggle,
-		ontick,
-		onready,
+		onexpand,
 		oncontextmenu
 	}: Props = $props();
 
 	const webkit = browser ? 'webkitConvertPointFromNodeToPage' in window : undefined;
 	const mouse = browser ? window.matchMedia('(pointer: fine)').matches : undefined;
-	const animation = browser ? !window.matchMedia('(prefers-reduced-motion)').matches : undefined;
 
 	let im_famous = $derived(famous === subject.codec);
 
@@ -60,15 +59,12 @@
 		if (type === 'in' && mouse) return () => onin(subject.codec);
 		if (type === 'out' && mouse) return () => onout(subject.codec);
 		if (type === 'toggle' && !mouse) return () => ontoggle(subject.codec);
+		if (type === 'toggle' && mouse) return () => onexpand();
 
 		return () => {};
 	}
 
-	let full_name = $state([] as string[]);
-	let tick_animation = $state(true);
-	let finished_animation = $state(true);
-
-	async function animate() {
+	function fullInfo(): string {
 		const comments = [] as string[];
 
 		if (code) {
@@ -84,62 +80,8 @@
 			comments.push(`${subject.requires} requeridos`);
 		}
 
-		const comments_string = comments.length ? ` (${comments.join(', ')})` : '';
-		const splitted = `${subject.formal}${comments_string}`.split('');
-
-		// Fake animation if user prefers reduced motion
-		// Or there's no mouse (mobiles)
-		if (!animation || !mouse) {
-			full_name = splitted;
-			return;
-		}
-
-		await tick();
-		// NEVER overwrite if there's full_name progress
-		if (!finished_animation || full_name.length) return;
-
-		finished_animation = false;
-		full_name = [];
-
-		let duration: number;
-
-		for (const i in splitted) {
-			// Racing condition detected
-			if (full_name.length.toString() !== i) {
-				console.log('racing condition detected', full_name.length, i);
-				finished_animation = true;
-				full_name = splitted;
-				return;
-			}
-
-			full_name = [...full_name, splitted[i]];
-
-			// If the letters match, skip animation
-			if (splitted[i] === subject.name[i]) continue;
-
-			// Make the animation always last 500ms (approx)
-			duration ||= (500 / (splitted.length - parseInt(i))) | 0;
-
-			tick_animation = !tick_animation;
-			await new Promise((r) => setTimeout(r, duration));
-		}
-
-		await tick();
-		finished_animation = true;
+		return subject.formal + (comments.length ? ` (${comments.join(', ')})` : '');
 	}
-
-	$effect(() => {
-		if (!im_famous) full_name = [];
-		else animate();
-	});
-
-	$effect(() => {
-		if (finished_animation) onready();
-	});
-
-	$effect(() => {
-		if ((tick_animation || !tick_animation) && im_famous) ontick();
-	});
 
 	let touchStartX: number;
 	let touchStartY: number;
@@ -231,7 +173,7 @@
 		</span>
 	{/if}
 	<p class="m-0 select-none text-sm md:text-2xl will-change-contents transform-gpu">
-		{im_famous ? full_name.join('') : subject.name}
+		{im_famous && expanded ? fullInfo() : subject.name}
 	</p>
 </div>
 
