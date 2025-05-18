@@ -4,13 +4,9 @@
 	import { UserData } from '$lib/types/documents';
 	import { onMount } from 'svelte';
 
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
+	let { data }: PageProps = $props();
 
 	const db_store = getDocumentStore(UserData, new UserData(data.user_data));
 	let db = $derived($db_store);

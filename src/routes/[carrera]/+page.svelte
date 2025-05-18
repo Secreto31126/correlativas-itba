@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
 	import { onDestroy, onMount, tick } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
@@ -10,11 +10,7 @@
 	import { page } from '$app/stores';
 	import { writable } from 'svelte/store';
 
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
+	let { data }: PageProps = $props();
 
 	/**
 	 * All the subjects codes codified

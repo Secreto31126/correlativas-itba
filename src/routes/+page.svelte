@@ -2,13 +2,9 @@
 	import GoogleButton from '$lib/components/GoogleButton.svelte';
 	import { getTheme, toggleTheme } from '$lib/stores/theme.svelte';
 
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
+	let { data }: PageProps = $props();
 </script>
 
 <svelte:head>

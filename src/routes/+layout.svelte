@@ -4,11 +4,9 @@
 	import { getTheme } from '$lib/stores/theme.svelte';
 	import { onMount } from 'svelte';
 
-	interface Props {
-		children?: import('svelte').Snippet;
-	}
+	import type { LayoutProps } from './$types';
 
-	let { children }: Props = $props();
+	let { children }: LayoutProps = $props();
 
 	let dark = $derived(getTheme() === 'dark');
 
