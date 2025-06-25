@@ -246,7 +246,7 @@
 		</a>
 		<div class="flex h-full gap-4">
 			{#if $db.options.progress || selected.length}
-				<button onclick={toggleCounter}>
+				<button onclick={toggleCounter} class="cursor-pointer">
 					{#if counter_type === 'credits'}
 						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)}
 						{!selected.length ? `/ ${data.career.reduce((acc, s) => (acc += s.credits), 0)}` : ''} créditos
@@ -289,6 +289,7 @@
 						onclick={complete_selected_subjects}
 						title="Marcar como completadas"
 						aria-label="Completar"
+						class="cursor-pointer"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +312,7 @@
 						onclick={() => (selected = [])}
 						title="Cancelar"
 						aria-label="Cancelar"
-						class="grow"
+						class="grow cursor-pointer"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

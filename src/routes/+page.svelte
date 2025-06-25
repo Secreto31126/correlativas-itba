@@ -40,7 +40,7 @@
 </main>
 
 <footer class="fixed bottom-0 w-full h-16 md:h-20 pt-2 pb-4 flex justify-center gap-3 bg-none">
-	<button onclick={toggleTheme} class="h-full">
+	<button onclick={toggleTheme} class="h-full cursor-pointer">
 		{#if getTheme() === 'dark'}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
