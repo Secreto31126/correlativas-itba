@@ -27,6 +27,7 @@
 		: writable<UserData>(new UserData());
 
 	let famous: string | undefined = $state();
+	let expanded: boolean = $state(false);
 	let show = $derived(famous ? [famous, ...getAllParents([famous])] : []);
 	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
 
@@ -78,13 +79,13 @@
 		if (famous) return;
 
 		famous = e;
-		await tick();
 		showLines();
 	}
 
 	async function defaultView() {
 		if (!famous) return;
 
+		expanded = false;
 		lines[famous]?.forEach((l) => l.hide('draw'));
 		famous = undefined;
 	}
@@ -93,6 +94,12 @@
 		if (!subject) return;
 
 		lines[subject]?.forEach((l) => l.position().show('draw'));
+	}
+
+	async function toggleExpanded() {
+		expanded = !expanded;
+		await tick();
+		updateLines();
 	}
 
 	function updateLines(subject = famous) {
@@ -376,6 +383,7 @@
 					<Block
 						{subject}
 						{famous}
+						{expanded}
 						{show}
 						{highlighted}
 						selecting={!!selected.length}
@@ -388,9 +396,8 @@
 						onin={highlight}
 						onout={defaultView}
 						ontoggle={touchScreen}
+						onexpand={toggleExpanded}
 						oncontextmenu={context_menu}
-						ontick={() => updateLines()}
-						onready={() => updateLines()}
 					/>
 				{/each}
 			</div>

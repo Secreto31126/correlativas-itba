@@ -11,7 +11,7 @@
     {
         "code": "1",
         "parent": [],
-        "name": "Acercá el mouse si estás en compu",
+        "name": "Hacé click con el mouse si estás en compu",
         "formal": "¡Excelente! Probá seguir la flecha y abrí esa materia",
         "semester": 1,
         "credits": 0,
@@ -117,7 +117,7 @@
             "6"
         ],
         "name": "Bonus: ¿Cómo vuelvo al inicio?",
-        "formal": "Hacé click en el código de la materia arriba a la izquierda, en este caso 'Tutorial'",
+        "formal": "Hacé click en el código de la carrera arriba a la izquierda, en este caso 'Tutorial'",
         "semester": 5,
         "credits": 0,
         "requires": 0
