@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Carrera",
-    "description": "Una carrera del ITBA con múltiples materias",
+    "description": "Una carrera del ITBA con múltiples materias mandatorias y electivas",
     "type": "object",
     "required": [
         "credits",
@@ -17,6 +17,19 @@
             "description": "Materias obligatorias de la carrera",
             "items": {
                 "$ref": "#/$defs/subject"
+            }
+        },
+        "optatives": {
+            "type": "object",
+            "description": "Materias electivas de la carrera, agrupadas por especialización",
+            "patternProperties": {
+                "^[a-zA-Z0-9_]+$": {
+                    "type": "array",
+                    "description": "Materias electivas de la especialización",
+                    "items": {
+                        "$ref": "#/$defs/subject"
+                    }
+                }
             }
         }
     },
