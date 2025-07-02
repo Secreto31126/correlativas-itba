@@ -51,6 +51,9 @@
 	let LeaderLine: LeaderLineType;
 	const lines: Record<string, LineType[]> = {};
 
+	let clientWidth = $state(0);
+	let clientHeight = $state(0);
+
 	function getAllParents(ids: string[]) {
 		const dependecies = [] as string[];
 
@@ -126,10 +129,13 @@
 	}
 
 	function animateConfetti(end: number) {
+		const wider = clientWidth > clientHeight;
+		const y = wider ? 1 : 0.35;
+
 		const options = {
 			particleCount: 8,
-			spread: 55,
-			startVelocity: 90,
+			spread: wider ? 55 : 120,
+			startVelocity: wider ? 90 : 25,
 			colors: ['#ff0', '#f00', '#0f0', '#00f', '#f0f', '#0ff'],
 			disableForReducedMotion: true
 		} satisfies confetti.Options;
@@ -137,12 +143,12 @@
 		confetti({
 			...options,
 			angle: 60,
-			origin: { x: 0, y: 1 }
+			origin: { x: 0, y }
 		});
 		confetti({
 			...options,
 			angle: 120,
-			origin: { x: 1, y: 1 }
+			origin: { x: 1, y }
 		});
 
 		if (Date.now() < end) {
@@ -264,6 +270,8 @@
 			.name} en el ITBA con el mapa interactivo"
 	/>
 </svelte:head>
+
+<svelte:body bind:clientWidth bind:clientHeight />
 
 <div class="grid w-full md:min-h-screen pt-2">
 	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
