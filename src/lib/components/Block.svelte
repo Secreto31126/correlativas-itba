@@ -118,22 +118,12 @@
 			};
 		}
 	}
-
-	let div: HTMLDivElement;
-	let width = $state(0);
-	let height = $state(0);
-
-	onMount(() => {
-		width = div.offsetWidth;
-		height = div.offsetHeight;
-	});
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <div
 	id={subject.codec}
 	data-parents={subject.parentc.join(' ')}
-	style="min-width: {width}px; min-height: {height}px;"
 	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
 		p-1 md:p-2 md:max-w-[15%]
@@ -142,6 +132,8 @@
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
 	class:strike
+	class:cursor-default!={!im_famous && expanded}
+	class:cursor-pointer!={im_famous && expanded}
 	title={subject.name}
 	role="cell"
 	{tabindex}
@@ -154,7 +146,6 @@
 	ontouchstart={safariContextMenu('start')}
 	ontouchend={safariContextMenu('end')}
 	ontouchmove={safariContextMenu('move')}
-	bind:this={div}
 >
 	{#if selected}
 		<span class="absolute translate-x-1/2 translate-y-[-50%] top-0 right-0 w-4 h-4 md:w-6 md:h-6">
@@ -190,11 +181,11 @@
 
 	.show {
 		background-color: var(--b-color);
-		z-index: 99998;
+		z-index: 1;
 	}
 
 	.famous {
-		z-index: 99999;
+		z-index: 2;
 	}
 
 	.strike {

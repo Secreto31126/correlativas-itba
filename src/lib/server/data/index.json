@@ -27,6 +27,12 @@
         "itba": "K"
     },
     {
+        "plan": "B",
+        "name": "Ingeniería en Biotecnología",
+        "file": "Biotecnología.json",
+        "cute": "cyborgs"
+    },
+    {
         "plan": "S10-Rev23",
         "name": "Ingeniería en Informática",
         "file": "Informática.json",

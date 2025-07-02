@@ -1,368 +1,373 @@
-[
-    {
-        "code": "12.67",
-        "parent": [],
-        "name": "Química General",
-        "formal": "Química General",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.58",
-        "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.01",
-        "parent": [],
-        "name": "Análisis Matemático I",
-        "formal": "Análisis Matemático I",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.18",
-        "parent": [],
-        "name": "Álgebra Lineal",
-        "formal": "Álgebra Lineal",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.33",
-        "parent": [],
-        "name": "Tecnología y Sociedad",
-        "formal": "Tecnología y Sociedad",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.55",
-        "parent": [],
-        "name": "Biología",
-        "formal": "Biología",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "30.26",
-        "parent": [
-            "12.67"
-        ],
-        "name": "Ciencia de Materiales I",
-        "formal": "Ciencia de Materiales I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.51",
-        "parent": [],
-        "name": "Introducción a la Ingeniería Mecánica",
-        "formal": "Introducción a la Ingeniería Mecánica",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "31.08",
-        "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.90",
-        "parent": [],
-        "name": "Certificaciones tecnológicas",
-        "formal": "Certificaciones tecnológicas",
-        "semester": 2,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "92.02",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático II",
-        "formal": "Análisis Matemático II",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.41",
-        "parent": [
-            "92.01"
-        ],
-        "name": "Física I",
-        "formal": "Física I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.41",
-        "parent": [
-            "93.41",
-            "30.26",
-            "31.08"
-        ],
-        "name": "Diseño Mecánico I",
-        "formal": "Diseño Mecánico I",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.46",
-        "parent": [
-            "93.41",
-            "31.08",
-            "30.26"
-        ],
-        "name": "Laboratorio de Diseño Mecánico",
-        "formal": "Laboratorio de Diseño Mecánico",
-        "semester": 3,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.59",
-        "parent": [
-            "71.58",
-            "71.90"
-        ],
-        "name": "Estructura de Datos y Programación",
-        "formal": "Estructura de Datos y Programación",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.03",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático III",
-        "formal": "Análisis Matemático III",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.42",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Física II",
-        "formal": "Física II",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.42",
-        "parent": [
-            "92.02",
-            "92.03",
-            "93.41"
-        ],
-        "name": "Diseño Mecánico II",
-        "formal": "Diseño Mecánico II",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "31.21",
-        "parent": [
-            "93.42",
-            "93.41"
-        ],
-        "name": "Termodinámica",
-        "formal": "Termodinámica",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.04",
-        "parent": [
-            "92.02",
-            "92.03"
-        ],
-        "name": "Análisis Matemàtico IV",
-        "formal": "Análisis Matemàtico IV",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.07",
-        "parent": [
-            "71.58",
-            "92.03"
-        ],
-        "name": "Métodos Numéricos",
-        "formal": "Métodos Numéricos",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.43",
-        "parent": [
-            "92.03",
-            "93.41"
-        ],
-        "name": "Física III",
-        "formal": "Física III",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "21.08",
-        "parent": [
-            "93.43"
-        ],
-        "name": "Electrotecnia",
-        "formal": "Electrotecnia",
-        "semester": 5,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.25",
-        "parent": [
-            "30.26"
-        ],
-        "name": "Ciencia de Materiales II",
-        "formal": "Ciencia de Materiales II",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "30.43",
-        "parent": [
-            "30.42",
-            "92.03",
-            "93.07",
-            "92.04"
-        ],
-        "name": "Diseño Mecánico III A",
-        "formal": "Diseño Mecánico III A",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "30.44",
-        "parent": [
-            "92.03",
-            "30.42",
-            "93.07",
-            "92.04"
-        ],
-        "name": "Diseño Mecánico III B",
-        "formal": "Diseño Mecánico III B",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "93.61",
-        "parent": [
-            "93.42",
-            "93.43"
-        ],
-        "name": "Física IV",
-        "formal": "Física IV",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "94.43",
-        "parent": [],
-        "name": "Metodología del Diseño",
-        "formal": "Metodología del Diseño",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "30.45",
-        "parent": [
-            "30.43",
-            "30.25",
-            "30.44"
-        ],
-        "name": "Diseño Mecánico IV",
-        "formal": "Diseño Mecánico IV",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "30.47",
-        "parent": [
-            "31.21",
-            "92.03",
-            "93.42",
-            "93.41"
-        ],
-        "name": "Termofluidos I",
-        "formal": "Termofluidos I",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.24",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Probabilidad y Estadística",
-        "formal": "Probabilidad y Estadística",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.44",
-        "parent": [
-            "94.43"
-        ],
-        "name": "Proyecto Interdisciplinario",
-        "formal": "Proyecto Interdisciplinario",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.51",
-        "parent": [],
-        "name": "Inglés I",
-        "formal": "Inglés I",
-        "semester": 6,
-        "credits": 0,
-        "requires": 0
-    }
-]
+{
+    "credits": 240,
+    "mandatories": [
+        {
+            "code": "12.67",
+            "parent": [],
+            "name": "Química General",
+            "formal": "Química General",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.58",
+            "parent": [],
+            "name": "Informática General",
+            "formal": "Informática General",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.01",
+            "parent": [],
+            "name": "Análisis Matemático I",
+            "formal": "Análisis Matemático I",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.18",
+            "parent": [],
+            "name": "Álgebra Lineal",
+            "formal": "Álgebra Lineal",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.33",
+            "parent": [],
+            "name": "Tecnología y Sociedad",
+            "formal": "Tecnología y Sociedad",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.55",
+            "parent": [],
+            "name": "Biología",
+            "formal": "Biología",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "30.26",
+            "parent": [
+                "12.67"
+            ],
+            "name": "Ciencia de Materiales I",
+            "formal": "Ciencia de Materiales I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.51",
+            "parent": [],
+            "name": "Introducción a la Ingeniería Mecánica",
+            "formal": "Introducción a la Ingeniería Mecánica",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "31.08",
+            "parent": [],
+            "name": "Sistemas de Representación",
+            "formal": "Sistemas de Representación",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.90",
+            "parent": [],
+            "name": "Certificaciones tecnológicas",
+            "formal": "Certificaciones tecnológicas",
+            "semester": 2,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "92.02",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático II",
+            "formal": "Análisis Matemático II",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.41",
+            "parent": [
+                "92.01"
+            ],
+            "name": "Física I",
+            "formal": "Física I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.41",
+            "parent": [
+                "93.41",
+                "30.26",
+                "31.08"
+            ],
+            "name": "Diseño Mecánico I",
+            "formal": "Diseño Mecánico I",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.46",
+            "parent": [
+                "93.41",
+                "31.08",
+                "30.26"
+            ],
+            "name": "Laboratorio de Diseño Mecánico",
+            "formal": "Laboratorio de Diseño Mecánico",
+            "semester": 3,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.59",
+            "parent": [
+                "71.58",
+                "71.90"
+            ],
+            "name": "Estructura de Datos y Programación",
+            "formal": "Estructura de Datos y Programación",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.03",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático III",
+            "formal": "Análisis Matemático III",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.42",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Física II",
+            "formal": "Física II",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.42",
+            "parent": [
+                "92.02",
+                "92.03",
+                "93.41"
+            ],
+            "name": "Diseño Mecánico II",
+            "formal": "Diseño Mecánico II",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "31.21",
+            "parent": [
+                "93.42",
+                "93.41"
+            ],
+            "name": "Termodinámica",
+            "formal": "Termodinámica",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.04",
+            "parent": [
+                "92.02",
+                "92.03"
+            ],
+            "name": "Análisis Matemàtico IV",
+            "formal": "Análisis Matemàtico IV",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.07",
+            "parent": [
+                "71.58",
+                "92.03"
+            ],
+            "name": "Métodos Numéricos",
+            "formal": "Métodos Numéricos",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.43",
+            "parent": [
+                "92.03",
+                "93.41"
+            ],
+            "name": "Física III",
+            "formal": "Física III",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "21.08",
+            "parent": [
+                "93.43"
+            ],
+            "name": "Electrotecnia",
+            "formal": "Electrotecnia",
+            "semester": 5,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.25",
+            "parent": [
+                "30.26"
+            ],
+            "name": "Ciencia de Materiales II",
+            "formal": "Ciencia de Materiales II",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "30.43",
+            "parent": [
+                "30.42",
+                "92.03",
+                "93.07",
+                "92.04"
+            ],
+            "name": "Diseño Mecánico III A",
+            "formal": "Diseño Mecánico III A",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "30.44",
+            "parent": [
+                "92.03",
+                "30.42",
+                "93.07",
+                "92.04"
+            ],
+            "name": "Diseño Mecánico III B",
+            "formal": "Diseño Mecánico III B",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "93.61",
+            "parent": [
+                "93.42",
+                "93.43"
+            ],
+            "name": "Física IV",
+            "formal": "Física IV",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "94.43",
+            "parent": [],
+            "name": "Metodología del Diseño",
+            "formal": "Metodología del Diseño",
+            "semester": 5,
+            "credits": 3,
+            "requires": 72
+        },
+        {
+            "code": "30.45",
+            "parent": [
+                "30.41",
+                "30.43",
+                "30.25",
+                "30.44"
+            ],
+            "name": "Diseño Mecánico IV",
+            "formal": "Diseño Mecánico IV",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "30.47",
+            "parent": [
+                "31.21",
+                "92.03",
+                "93.42",
+                "93.41"
+            ],
+            "name": "Termofluidos I",
+            "formal": "Termofluidos I",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.24",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Probabilidad y Estadística",
+            "formal": "Probabilidad y Estadística",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.44",
+            "parent": [
+                "94.43"
+            ],
+            "name": "Proyecto Interdisciplinario",
+            "formal": "Proyecto Interdisciplinario",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.51",
+            "parent": [],
+            "name": "Inglés I",
+            "formal": "Inglés I",
+            "semester": 6,
+            "credits": 0,
+            "requires": 0
+        }
+    ],
+    "optatives": {}
+}

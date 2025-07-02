@@ -1,10 +1,38 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Carrera",
-    "description": "Una carrera del ITBA con múltiples materias",
-    "type": "array",
-    "items": {
-        "$ref": "#/$defs/subject"
+    "description": "Una carrera del ITBA con múltiples materias mandatorias y electivas",
+    "type": "object",
+    "required": [
+        "credits",
+        "mandatories",
+        "optatives"
+    ],
+    "properties": {
+        "credits": {
+            "type": "number",
+            "description": "Número total de créditos de la carrera"
+        },
+        "mandatories": {
+            "type": "array",
+            "description": "Materias obligatorias de la carrera",
+            "items": {
+                "$ref": "#/$defs/subject"
+            }
+        },
+        "optatives": {
+            "type": "object",
+            "description": "Materias electivas de la carrera, agrupadas por especialización",
+            "patternProperties": {
+                "^[a-zA-Z0-9_]+$": {
+                    "type": "array",
+                    "description": "Materias electivas de la especialización",
+                    "items": {
+                        "$ref": "#/$defs/subject"
+                    }
+                }
+            }
+        }
     },
     "$defs": {
         "subject": {
@@ -49,7 +77,6 @@
                 "parent",
                 "name",
                 "formal",
-                "semester",
                 "credits",
                 "requires"
             ]

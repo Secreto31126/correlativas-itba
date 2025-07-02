@@ -1,467 +1,1300 @@
-[
-    {
-        "code": "12.67",
-        "parent": [],
-        "name": "Química General",
-        "formal": "Química General",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.58",
-        "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.01",
-        "parent": [],
-        "name": "Análisis Matemático I",
-        "formal": "Análisis Matemático I",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.18",
-        "parent": [],
-        "name": "Álgebra Lineal",
-        "formal": "Álgebra Lineal",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.33",
-        "parent": [],
-        "name": "Tecnología y Sociedad",
-        "formal": "Tecnología y Sociedad",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "13.02",
-        "parent": [
-            "12.67"
-        ],
-        "name": "Fundamentos de Química Orgánica",
-        "formal": "Fundamentos de Química Orgánica",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.55",
-        "parent": [],
-        "name": "Biología",
-        "formal": "Biología",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "31.08",
-        "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.02",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático II",
-        "formal": "Análisis Matemático II",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.41",
-        "parent": [
-            "92.01"
-        ],
-        "name": "Física I",
-        "formal": "Física I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.51",
-        "parent": [],
-        "name": "Inglés I",
-        "formal": "Inglés I",
-        "semester": 2,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "16.01",
-        "parent": [
-            "13.02",
-            "16.55"
-        ],
-        "name": "Biología Molecular y Celular",
-        "formal": "Biología Molecular y Celular",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.59",
-        "parent": [
-            "71.58"
-        ],
-        "name": "Estructura de Datos y Programación",
-        "formal": "Estructura de Datos y Programación",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.03",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático III",
-        "formal": "Análisis Matemático III",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.42",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Física II",
-        "formal": "Física II",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.02",
-        "parent": [
-            "16.01"
-        ],
-        "name": "Histología y Anatomía",
-        "formal": "Histología y Anatomía",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.04",
-        "parent": [
-            "92.02",
-            "92.03"
-        ],
-        "name": "Análisis Matemàtico IV",
-        "formal": "Análisis Matemàtico IV",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.24",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Probabilidad y Estadística",
-        "formal": "Probabilidad y Estadística",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.43",
-        "parent": [
-            "92.03",
-            "93.41"
-        ],
-        "name": "Física III",
-        "formal": "Física III",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.52",
-        "parent": [
-            "94.51"
-        ],
-        "name": "Inglés II",
-        "formal": "Inglés II",
-        "semester": 4,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "16.03",
-        "parent": [
-            "16.01"
-        ],
-        "name": "Fisiología",
-        "formal": "Fisiología",
-        "semester": 5,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.64",
-        "parent": [
-            "16.02",
-            "93.41"
-        ],
-        "name": "Mecánica de biomateriales y tejidos",
-        "formal": "Mecánica de biomateriales y tejidos",
-        "semester": 5,
-        "credits": 8,
-        "requires": 0
-    },
-    {
-        "code": "21.06",
-        "parent": [
-            "93.43"
-        ],
-        "name": "Electrotecnia",
-        "formal": "Electrotecnia",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.61",
-        "parent": [
-            "93.42",
-            "93.43"
-        ],
-        "name": "Física IV",
-        "formal": "Física IV",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "94.43",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Metodología del Diseño",
-        "formal": "Metodología del Diseño",
-        "semester": 5,
-        "credits": 3,
-        "requires": 72
-    },
-    {
-        "code": "16.24",
-        "parent": [
-            "16.03"
-        ],
-        "name": "Ingeniería de Rehabilitación",
-        "formal": "Ingeniería de Rehabilitación",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.44",
-        "parent": [
-            "93.61"
-        ],
-        "name": "Física Médica",
-        "formal": "Física Médica",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.68",
-        "parent": [
-            "92.04"
-        ],
-        "name": "Señales y Sistemas",
-        "formal": "Señales y Sistemas",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "23.02",
-        "parent": [
-            "71.59",
-            "21.06",
-            "92.04"
-        ],
-        "name": "Electrónica Analógica y Digital",
-        "formal": "Electrónica Analógica y Digital",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.54",
-        "parent": [
-            "71.59",
-            "92.03"
-        ],
-        "name": "Métodos Numéricos",
-        "formal": "Métodos Numéricos",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.44",
-        "parent": [
-            "94.43"
-        ],
-        "name": "Proyecto Interdisciplinario",
-        "formal": "Proyecto Interdisciplinario",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "11.15",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Organización Industrial",
-        "formal": "Organización Industrial",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "12.83",
-        "parent": [
-            "21.06"
-        ],
-        "name": "Seguridad Ocupacional y Ambiental",
-        "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.17",
-        "parent": [
-            "16.68",
-            "23.02"
-        ],
-        "name": "Instrumentación Biomédica I",
-        "formal": "Instrumentación Biomédica I",
-        "semester": 7,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.63",
-        "parent": [
-            "16.68"
-        ],
-        "name": "Procesamiento de Señales e Imágenes Biomédicas",
-        "formal": "Procesamiento de Señales e Imágenes Biomédicas",
-        "semester": 7,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "23.16",
-        "parent": [
-            "16.68"
-        ],
-        "name": "Sistemas de Control",
-        "formal": "Sistemas de Control",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.18",
-        "parent": [
-            "16.17"
-        ],
-        "name": "Instrumentación Biomédica II",
-        "formal": "Instrumentación Biomédica II",
-        "semester": 8,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.25",
-        "parent": [
-            "16.17"
-        ],
-        "name": "Ingeniería Clínica",
-        "formal": "Ingeniería Clínica",
-        "semester": 8,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "61.16",
-        "parent": [
-            "11.15"
-        ],
-        "name": "Introducción a las Finanzas",
-        "formal": "Introducción a las Finanzas",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.27",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Análisis de Coyuntura Económica",
-        "formal": "Análisis de Coyuntura Económica",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.31",
-        "parent": [],
-        "name": "Derecho para Ingenieros",
-        "formal": "Derecho para Ingenieros",
-        "semester": 8,
-        "credits": 3,
-        "requires": 120
-    },
-    {
-        "code": "16.30",
-        "parent": [
-            "16.63",
-            "16.18"
-        ],
-        "name": "Proyecto Final de Carrera (Anual)",
-        "formal": "Proyecto Final de Carrera (Anual)",
-        "semester": 9,
-        "credits": 6,
-        "requires": 192
-    },
-    {
-        "code": "94.65",
-        "parent": [],
-        "name": "Practica Profesional supervisada",
-        "formal": "Practica Profesional supervisada",
-        "semester": 10,
-        "credits": 0,
-        "requires": 144
+{
+    "credits": 240,
+    "mandatories": [
+        {
+            "code": "12.67",
+            "parent": [],
+            "name": "Química General",
+            "formal": "Química General",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.58",
+            "parent": [],
+            "name": "Informática General",
+            "formal": "Informática General",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.01",
+            "parent": [],
+            "name": "Análisis Matemático I",
+            "formal": "Análisis Matemático I",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.18",
+            "parent": [],
+            "name": "Álgebra Lineal",
+            "formal": "Álgebra Lineal",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.33",
+            "parent": [],
+            "name": "Tecnología y Sociedad",
+            "formal": "Tecnología y Sociedad",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "13.02",
+            "parent": [
+                "12.67"
+            ],
+            "name": "Fundamentos de Química Orgánica",
+            "formal": "Fundamentos de Química Orgánica",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.55",
+            "parent": [],
+            "name": "Biología",
+            "formal": "Biología",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "31.08",
+            "parent": [],
+            "name": "Sistemas de Representación",
+            "formal": "Sistemas de Representación",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.02",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático II",
+            "formal": "Análisis Matemático II",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.41",
+            "parent": [
+                "92.01"
+            ],
+            "name": "Física I",
+            "formal": "Física I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.51",
+            "parent": [],
+            "name": "Inglés I",
+            "formal": "Inglés I",
+            "semester": 2,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "16.01",
+            "parent": [
+                "13.02",
+                "16.55"
+            ],
+            "name": "Biología Molecular y Celular",
+            "formal": "Biología Molecular y Celular",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.59",
+            "parent": [
+                "71.58"
+            ],
+            "name": "Estructura de Datos y Programación",
+            "formal": "Estructura de Datos y Programación",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.03",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático III",
+            "formal": "Análisis Matemático III",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.42",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Física II",
+            "formal": "Física II",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.02",
+            "parent": [
+                "16.01"
+            ],
+            "name": "Histología y Anatomía",
+            "formal": "Histología y Anatomía",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.04",
+            "parent": [
+                "92.02",
+                "92.03"
+            ],
+            "name": "Análisis Matemàtico IV",
+            "formal": "Análisis Matemàtico IV",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.24",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Probabilidad y Estadística",
+            "formal": "Probabilidad y Estadística",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.43",
+            "parent": [
+                "92.03",
+                "93.41"
+            ],
+            "name": "Física III",
+            "formal": "Física III",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.52",
+            "parent": [
+                "94.51"
+            ],
+            "name": "Inglés II",
+            "formal": "Inglés II",
+            "semester": 4,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "16.03",
+            "parent": [
+                "16.02"
+            ],
+            "name": "Fisiología",
+            "formal": "Fisiología",
+            "semester": 5,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.64",
+            "parent": [
+                "16.02",
+                "93.41"
+            ],
+            "name": "Mecánica de biomateriales y tejidos",
+            "formal": "Mecánica de biomateriales y tejidos",
+            "semester": 5,
+            "credits": 8,
+            "requires": 0
+        },
+        {
+            "code": "21.06",
+            "parent": [
+                "93.43"
+            ],
+            "name": "Electrotecnia",
+            "formal": "Electrotecnia",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.61",
+            "parent": [
+                "93.42",
+                "93.43"
+            ],
+            "name": "Física IV",
+            "formal": "Física IV",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "94.43",
+            "parent": [],
+            "name": "Metodología del Diseño",
+            "formal": "Metodología del Diseño",
+            "semester": 5,
+            "credits": 3,
+            "requires": 72
+        },
+        {
+            "code": "16.24",
+            "parent": [
+                "16.03"
+            ],
+            "name": "Ingeniería de Rehabilitación",
+            "formal": "Ingeniería de Rehabilitación",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.44",
+            "parent": [
+                "93.61"
+            ],
+            "name": "Física Médica",
+            "formal": "Física Médica",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.68",
+            "parent": [
+                "92.04"
+            ],
+            "name": "Señales y Sistemas",
+            "formal": "Señales y Sistemas",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "23.02",
+            "parent": [
+                "71.59",
+                "21.06",
+                "92.04"
+            ],
+            "name": "Electrónica Analógica y Digital",
+            "formal": "Electrónica Analógica y Digital",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.54",
+            "parent": [
+                "71.59",
+                "92.03"
+            ],
+            "name": "Métodos Numéricos",
+            "formal": "Métodos Numéricos",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.44",
+            "parent": [
+                "94.43"
+            ],
+            "name": "Proyecto Interdisciplinario",
+            "formal": "Proyecto Interdisciplinario",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "11.15",
+            "parent": [
+                "93.24"
+            ],
+            "name": "Organización Industrial",
+            "formal": "Organización Industrial",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.17",
+            "parent": [
+                "16.68",
+                "23.02"
+            ],
+            "name": "Instrumentación Biomédica I",
+            "formal": "Instrumentación Biomédica I",
+            "semester": 7,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.63",
+            "parent": [
+                "16.68"
+            ],
+            "name": "Procesamiento de Señales e Imágenes Biomédicas",
+            "formal": "Procesamiento de Señales e Imágenes Biomédicas",
+            "semester": 7,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "23.16",
+            "parent": [
+                "16.68"
+            ],
+            "name": "Sistemas de Control",
+            "formal": "Sistemas de Control",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.27",
+            "parent": [
+                "93.24"
+            ],
+            "name": "Análisis de Coyuntura Económica",
+            "formal": "Análisis de Coyuntura Económica",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "12.83",
+            "parent": [
+                "21.06"
+            ],
+            "name": "Seguridad Ocupacional y Ambiental",
+            "formal": "Seguridad Ocupacional y Ambiental",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.18",
+            "parent": [
+                "16.17"
+            ],
+            "name": "Instrumentación Biomédica II",
+            "formal": "Instrumentación Biomédica II",
+            "semester": 8,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.25",
+            "parent": [
+                "16.17"
+            ],
+            "name": "Ingeniería Clínica",
+            "formal": "Ingeniería Clínica",
+            "semester": 8,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "61.16",
+            "parent": [
+                "11.15",
+                "61.27"
+            ],
+            "name": "Introducción a las Finanzas",
+            "formal": "Introducción a las Finanzas",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.31",
+            "parent": [],
+            "name": "Derecho para Ingenieros",
+            "formal": "Derecho para Ingenieros",
+            "semester": 8,
+            "credits": 3,
+            "requires": 120
+        },
+        {
+            "code": "16.30",
+            "parent": [
+                "16.63"
+            ],
+            "name": "Proyecto Final de Carrera (Anual)",
+            "formal": "Proyecto Final de Carrera (Anual)",
+            "semester": 9,
+            "credits": 6,
+            "requires": 192
+        },
+        {
+            "code": "94.65",
+            "parent": [],
+            "name": "Practica Profesional supervisada",
+            "formal": "Practica Profesional supervisada",
+            "semester": 10,
+            "credits": 0,
+            "requires": 144
+        }
+    ],
+    "optatives": {
+        "ELECTIVAS": [
+            {
+                "code": "10.07",
+                "parent": [],
+                "name": "Creatividad",
+                "formal": "Creatividad",
+                "credits": 3,
+                "requires": 120
+            },
+            {
+                "code": "10.08",
+                "parent": [],
+                "name": "Energías Renovables",
+                "formal": "Energías Renovables",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "10.09",
+                "parent": [],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 144
+            },
+            {
+                "code": "11.19",
+                "parent": [],
+                "name": "Prototipado e Impresión 3D",
+                "formal": "Prototipado e Impresión 3D",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.76",
+                "parent": [
+                    "11.15"
+                ],
+                "name": "Gestión de Calidad",
+                "formal": "Gestión de Calidad",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "14.72",
+                "parent": [],
+                "name": "Analytics",
+                "formal": "Analytics",
+                "credits": 1,
+                "requires": 72
+            },
+            {
+                "code": "16.04",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Neurociencias y Desarrollo Productivo",
+                "formal": "Neurociencias y Desarrollo Productivo",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.09",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Ventilación Mecánica",
+                "formal": "Ventilación Mecánica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.14",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Fisiología Cuantitativa",
+                "formal": "Fisiología Cuantitativa",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.19",
+                "parent": [
+                    "23.02"
+                ],
+                "name": "Biosensores",
+                "formal": "Biosensores",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.20",
+                "parent": [
+                    "71.59",
+                    "16.01"
+                ],
+                "name": "Biomedicina Estructural y Computacional",
+                "formal": "Biomedicina Estructural y Computacional",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.21",
+                "parent": [
+                    "71.59",
+                    "16.01"
+                ],
+                "name": "Bioinformática",
+                "formal": "Bioinformática",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.22",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Informática Médica",
+                "formal": "Informática Médica",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.23",
+                "parent": [
+                    "16.14",
+                    "16.64"
+                ],
+                "name": "Órganos Artificiales",
+                "formal": "Órganos Artificiales",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.27",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Ingeniería de Tejidos",
+                "formal": "Ingeniería de Tejidos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.29",
+                "parent": [
+                    "16.20",
+                    "16.01"
+                ],
+                "name": "Diseño de Fármacos",
+                "formal": "Diseño de Fármacos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.32",
+                "parent": [
+                    "93.24"
+                ],
+                "name": "Redes Neuronales en Bioingeniería",
+                "formal": "Redes Neuronales en Bioingeniería",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.43",
+                "parent": [
+                    "93.24"
+                ],
+                "name": "Bioestadística",
+                "formal": "Bioestadística",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.45",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Edición Genética",
+                "formal": "Edición Genética",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.46",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Reprogramación celular y epigenética",
+                "formal": "Reprogramación celular y epigenética",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.51",
+                "parent": [],
+                "name": "Int. a la Ciencia de Datos Aplicados a la Salud",
+                "formal": "Int. a la Ciencia de Datos Aplicados a la Salud",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.52",
+                "parent": [
+                    "16.03",
+                    "16.01"
+                ],
+                "name": "Inmunología Biológica",
+                "formal": "Inmunología Biológica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.53",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Biotecnología aplicada",
+                "formal": "Biotecnología aplicada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.54",
+                "parent": [
+                    "16.25"
+                ],
+                "name": "Regulaciones Biomédicas",
+                "formal": "Regulaciones Biomédicas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.57",
+                "parent": [
+                    "23.16"
+                ],
+                "name": "Robótica Bioinspirada",
+                "formal": "Robótica Bioinspirada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.58",
+                "parent": [
+                    "16.63",
+                    "16.64"
+                ],
+                "name": "Biomecánica del Deporte",
+                "formal": "Biomecánica del Deporte",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.59",
+                "parent": [
+                    "93.41"
+                ],
+                "name": "Microfluídica",
+                "formal": "Microfluídica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.65",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Genética del Comportamiento",
+                "formal": "Genética del Comportamiento",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.66",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Reprogramación Celular",
+                "formal": "Reprogramación Celular",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.67",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Inmunología Biológica y Evasión Inmune",
+                "formal": "Inmunología Biológica y Evasión Inmune",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.69",
+                "parent": [
+                    "16.01"
+                ],
+                "name": "Nanotecnología en Medicina y Cuidado de la Salud",
+                "formal": "Nanotecnología en Medicina y Cuidado de la Salud",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.71",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Ingeniería del Cerebro y el Comportamiento",
+                "formal": "Ingeniería del Cerebro y el Comportamiento",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.72",
+                "parent": [
+                    "16.63"
+                ],
+                "name": "Análisis y Tratamiento de Imágenes",
+                "formal": "Análisis y Tratamiento de Imágenes",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.73",
+                "parent": [
+                    "16.63"
+                ],
+                "name": "Sistemas de Imágenes en Diagnóstico Médico",
+                "formal": "Sistemas de Imágenes en Diagnóstico Médico",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.74",
+                "parent": [
+                    "16.63"
+                ],
+                "name": "Interfaces Cerebro Computadora y Neurorobótica",
+                "formal": "Interfaces Cerebro Computadora y Neurorobótica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.75",
+                "parent": [
+                    "16.25"
+                ],
+                "name": "Gestión de Procesos Hospitalarios",
+                "formal": "Gestión de Procesos Hospitalarios",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.76",
+                "parent": [
+                    "16.64"
+                ],
+                "name": "Bases Fisicomatemáticas de la Biomecánica del Deporte",
+                "formal": "Bases Fisicomatemáticas de la Biomecánica del Deporte",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.77",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Tecnologías emergentes en plantas con aplicaciones terapéuticas",
+                "formal": "Tecnologías emergentes en plantas con aplicaciones terapéuticas",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.78",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Enfermedades del Sistema Nervioso: Implicancias e innovaciones",
+                "formal": "Enfermedades del Sistema Nervioso: Implicancias e innovaciones",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.79",
+                "parent": [],
+                "name": "Neurociencias",
+                "formal": "Neurociencias",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.80",
+                "parent": [
+                    "23.02",
+                    "16.64"
+                ],
+                "name": "Microfluídica",
+                "formal": "Microfluídica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.81",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Neurobiología del Aprendizaje y Control del Movimiento",
+                "formal": "Neurobiología del Aprendizaje y Control del Movimiento",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.82",
+                "parent": [
+                    "71.59",
+                    "92.03",
+                    "93.24"
+                ],
+                "name": "Neurociencia Computacional",
+                "formal": "Neurociencia Computacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.83",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Introducción a cultivos celulares derivados de tejido nervioso",
+                "formal": "Introducción a cultivos celulares derivados de tejido nervioso",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.84",
+                "parent": [
+                    "16.02",
+                    "16.03"
+                ],
+                "name": "Informática en Salud",
+                "formal": "Informática en Salud",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.85",
+                "parent": [
+                    "16.63"
+                ],
+                "name": "Procesamiento Avanzado de Imágenes en Biología y Biomedicina",
+                "formal": "Procesamiento Avanzado de Imágenes en Biología y Biomedicina",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.87",
+                "parent": [
+                    "16.01",
+                    "92.04",
+                    "93.61"
+                ],
+                "name": "Microfabricación",
+                "formal": "Microfabricación",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "17.15",
+                "parent": [
+                    "12.83"
+                ],
+                "name": "Introducción a la Ingeniería Ambiental",
+                "formal": "Introducción a la Ingeniería Ambiental",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "17.16",
+                "parent": [
+                    "93.42",
+                    "16.64"
+                ],
+                "name": "Introducción a la Nanotecnología",
+                "formal": "Introducción a la Nanotecnología",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "22.57",
+                "parent": [
+                    "23.02"
+                ],
+                "name": "Microprocesadores y Control",
+                "formal": "Microprocesadores y Control",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.94",
+                "parent": [
+                    "22.57"
+                ],
+                "name": "Control Discreto",
+                "formal": "Control Discreto",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "23.05",
+                "parent": [
+                    "92.04"
+                ],
+                "name": "Acústica para Ingenieros",
+                "formal": "Acústica para Ingenieros",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "23.08",
+                "parent": [
+                    "23.16"
+                ],
+                "name": "Control Avanzado",
+                "formal": "Control Avanzado",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "23.15",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Realidad Virtual",
+                "formal": "Realidad Virtual",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.88",
+                "parent": [
+                    "16.32"
+                ],
+                "name": "Redes Neuronales III",
+                "formal": "Redes Neuronales III",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.41",
+                "parent": [
+                    "93.41",
+                    "16.64",
+                    "31.08"
+                ],
+                "name": "Diseño Mecánico I",
+                "formal": "Diseño Mecánico I",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "30.63",
+                "parent": [
+                    "12.83"
+                ],
+                "name": "Cadenas de Valor Circulares",
+                "formal": "Cadenas de Valor Circulares",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.64",
+                "parent": [
+                    "12.83"
+                ],
+                "name": "Bioenergía",
+                "formal": "Bioenergía",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "31.25",
+                "parent": [],
+                "name": "Termodinámica",
+                "formal": "Termodinámica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "61.05",
+                "parent": [
+                    "61.27"
+                ],
+                "name": "Economía de la Salud",
+                "formal": "Economía de la Salud",
+                "credits": 3,
+                "requires": 120
+            },
+            {
+                "code": "71.22",
+                "parent": [
+                    "71.59",
+                    "93.24"
+                ],
+                "name": "Sistemas de Inteligencia Artificial",
+                "formal": "Sistemas de Inteligencia Artificial",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "71.38",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Programación web",
+                "formal": "Programación web",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "71.94",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Introducción al Diseño de Bases de Datos Relacionales y No-Relacionales",
+                "formal": "Introducción al Diseño de Bases de Datos Relacionales y No-Relacionales",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.37",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Base de Datos I",
+                "formal": "Base de Datos I",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.75",
+                "parent": [
+                    "93.24",
+                    "92.04"
+                ],
+                "name": "Aprendizaje Automático (Machine Learning)",
+                "formal": "Aprendizaje Automático (Machine Learning)",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.87",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Diseño Sonoro para Animación y Videojuegos",
+                "formal": "Diseño Sonoro para Animación y Videojuegos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.90",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Internet de las Cosas (IoT)",
+                "formal": "Internet de las Cosas (IoT)",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.96",
+                "parent": [
+                    "71.38"
+                ],
+                "name": "Proyecto de Aplicaciones Móviles",
+                "formal": "Proyecto de Aplicaciones Móviles",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.61",
+                "parent": [
+                    "93.54",
+                    "92.04"
+                ],
+                "name": "Neurorobótica",
+                "formal": "Neurorobótica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.66",
+                "parent": [
+                    "93.43"
+                ],
+                "name": "Procesamiento de Imágenes Satelitales",
+                "formal": "Procesamiento de Imágenes Satelitales",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "81.75",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Fundamentos del desarrollo de software y análisis de datos en Python",
+                "formal": "Fundamentos del desarrollo de software y análisis de datos en Python",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "82.12",
+                "parent": [
+                    "81.75"
+                ],
+                "name": "Análisis de Información Biomédica",
+                "formal": "Análisis de Información Biomédica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "82.19",
+                "parent": [],
+                "name": "Analítica del Deporte",
+                "formal": "Analítica del Deporte",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "92.07",
+                "parent": [
+                    "92.04"
+                ],
+                "name": "Análisis Matemático V",
+                "formal": "Análisis Matemático V",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "92.08",
+                "parent": [
+                    "93.24"
+                ],
+                "name": "Procesos Estocásticos",
+                "formal": "Procesos Estocásticos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "92.09",
+                "parent": [],
+                "name": "Complementos de Análisis Matemático IV",
+                "formal": "Complementos de Análisis Matemático IV",
+                "credits": 0,
+                "requires": 0
+            },
+            {
+                "code": "92.90",
+                "parent": [],
+                "name": "Complementos de Matemática",
+                "formal": "Complementos de Matemática",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "92.92",
+                "parent": [],
+                "name": "Complementos de Física de la Relatividad",
+                "formal": "Complementos de Física de la Relatividad",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "92.97",
+                "parent": [],
+                "name": "Complementos de Matemática V",
+                "formal": "Complementos de Matemática V",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "93.75",
+                "parent": [
+                    "93.54"
+                ],
+                "name": "Métodos Numéricos Avanzados",
+                "formal": "Métodos Numéricos Avanzados",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "94.19",
+                "parent": [
+                    "11.15"
+                ],
+                "name": "Comportamiento Organizacional",
+                "formal": "Comportamiento Organizacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.24",
+                "parent": [],
+                "name": "Metodología del Aprendizaje",
+                "formal": "Metodología del Aprendizaje",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.40",
+                "parent": [
+                    "94.19"
+                ],
+                "name": "Estructura de las Organizaciones",
+                "formal": "Estructura de las Organizaciones",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.42",
+                "parent": [],
+                "name": "Comunicación Estratégica",
+                "formal": "Comunicación Estratégica",
+                "credits": 3,
+                "requires": 120
+            }
+        ]
     }
-]
+}
