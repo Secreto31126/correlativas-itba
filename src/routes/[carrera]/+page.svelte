@@ -34,6 +34,9 @@
 		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
 
+	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+	let total_credits = $derived(data.career.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore - LeaderLine is not typed
 	type LeaderLineType = typeof import('leader-line');
@@ -241,8 +244,8 @@
 			{#if $db.options.progress || selected.length}
 				<button onclick={toggleCounter} class="cursor-pointer">
 					{#if counter_type === 'credits'}
-						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)}
-						{!selected.length ? `/ ${data.career.reduce((acc, s) => (acc += s.credits), 0)}` : ''} créditos
+						{passed_credits}
+						{!selected.length ? `/ ${total_credits}` : ''} créditos
 					{:else}
 						{passed.length}
 						{!selected.length ? `/ ${all.length}` : ''} materias
