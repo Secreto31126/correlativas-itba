@@ -435,7 +435,7 @@
 		{#each Object.entries(data.optatives) as [name, subjects]}
 			<div class="flex flex-col gap-2 w-full text-center">
 				<hr />
-				<button onclick={() => toggleVisibleOptative(name)}>
+				<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer">
 					{name}
 				</button>
 			</div>
