@@ -441,9 +441,9 @@
 			{@render subjects_row(data.career.filter((e) => e.semester === semester))}
 		{/each}
 		{#each Object.entries(data.optatives) as [name, subjects]}
-			<div class="flex flex-col gap-2 w-full text-center">
+			<div class="flex flex-col w-full text-center">
 				<hr />
-				<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer">
+				<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer py-2">
 					{name}
 				</button>
 			</div>
