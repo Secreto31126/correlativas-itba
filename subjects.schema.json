@@ -2,9 +2,23 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Carrera",
     "description": "Una carrera del ITBA con múltiples materias",
-    "type": "array",
-    "items": {
-        "$ref": "#/$defs/subject"
+    "type": "object",
+    "required": [
+        "credits",
+        "mandatories"
+    ],
+    "properties": {
+        "credits": {
+            "type": "number",
+            "description": "Número total de créditos de la carrera"
+        },
+        "mandatories": {
+            "type": "array",
+            "description": "Materias obligatorias de la carrera",
+            "items": {
+                "$ref": "#/$defs/subject"
+            }
+        }
     },
     "$defs": {
         "subject": {

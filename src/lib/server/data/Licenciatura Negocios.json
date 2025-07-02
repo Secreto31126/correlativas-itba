@@ -1,368 +1,371 @@
-[
-    {
-        "code": "71.20",
-        "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.30",
-        "parent": [],
-        "name": "Introducción a la tecnología informática",
-        "formal": "Introducción a la tecnología informática",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.90",
-        "parent": [],
-        "name": "Certificaciones tecnológicas",
-        "formal": "Certificaciones tecnológicas",
-        "semester": 1,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "81.06",
-        "parent": [],
-        "name": "Introducción a la Administración",
-        "formal": "Introducción a la Administración",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.07",
-        "parent": [],
-        "name": "Sistemas Contables",
-        "formal": "Sistemas Contables",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.21",
-        "parent": [],
-        "name": "Álgebra",
-        "formal": "Álgebra",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.38",
-        "parent": [
-            "71.30"
-        ],
-        "name": "Programación web",
-        "formal": "Programación web",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.11",
-        "parent": [
-            "81.07"
-        ],
-        "name": "Contabilidad Gerencial",
-        "formal": "Contabilidad Gerencial",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.53",
-        "parent": [
-            "71.30",
-            "81.06"
-        ],
-        "name": "Negocios en Internet",
-        "formal": "Negocios en Internet",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.20",
-        "parent": [],
-        "name": "Análisis Matemático",
-        "formal": "Análisis Matemático",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.60",
-        "parent": [],
-        "name": "Panorama Histórico Global",
-        "formal": "Panorama Histórico Global",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.61",
-        "parent": [],
-        "name": "Filosofía",
-        "formal": "Filosofía",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.12",
-        "parent": [
-            "81.07",
-            "93.21"
-        ],
-        "name": "Gestión Financiera",
-        "formal": "Gestión Financiera",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "61.81",
-        "parent": [
-            "93.20"
-        ],
-        "name": "Microeconomía",
-        "formal": "Microeconomía",
-        "semester": 3,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.88",
-        "parent": [
-            "71.30",
-            "71.20"
-        ],
-        "name": "Gestión de Datos",
-        "formal": "Gestión de Datos",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.20",
-        "parent": [
-            "81.06"
-        ],
-        "name": "Comercialización",
-        "formal": "Comercialización",
-        "semester": 3,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.39",
-        "parent": [
-            "71.20",
-            "93.20"
-        ],
-        "name": "Estadística",
-        "formal": "Estadística",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "61.82",
-        "parent": [
-            "93.20"
-        ],
-        "name": "Macroeconomía",
-        "formal": "Macroeconomía",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.87",
-        "parent": [
-            "94.60",
-            "94.61"
-        ],
-        "name": "Derecho Público y Privado I",
-        "formal": "Derecho Público y Privado I",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.29",
-        "parent": [
-            "81.06",
-            "71.20"
-        ],
-        "name": "Gestión organizacional basada en procesos de negocio",
-        "formal": "Gestión organizacional basada en procesos de negocio",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.32",
-        "parent": [
-            "71.20"
-        ],
-        "name": "Análisis funcional de aplicaciones informáticas",
-        "formal": "Análisis funcional de aplicaciones informáticas",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.63",
-        "parent": [
-            "94.61"
-        ],
-        "name": "Epistemología y Heurística",
-        "formal": "Epistemología y Heurística",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.64",
-        "parent": [],
-        "name": "Prácticas Expositivas",
-        "formal": "Prácticas Expositivas",
-        "semester": 4,
-        "credits": 3,
-        "requires": 24
-    },
-    {
-        "code": "11.85",
-        "parent": [
-            "93.39",
-            "81.06"
-        ],
-        "name": "Toma de Decisiones",
-        "formal": "Toma de Decisiones",
-        "semester": 5,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.47",
-        "parent": [
-            "81.11",
-            "61.82",
-            "61.87"
-        ],
-        "name": "Impuestos para la toma de decisiones I",
-        "formal": "Impuestos para la toma de decisiones I",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.57",
-        "parent": [
-            "81.32",
-            "71.88",
-            "81.53"
-        ],
-        "name": "Arquitectura de soluciones digitales",
-        "formal": "Arquitectura de soluciones digitales",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.40",
-        "parent": [
-            "81.06"
-        ],
-        "name": "Estructura de las Organizaciones",
-        "formal": "Estructura de las Organizaciones",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "11.83",
-        "parent": [
-            "93.39",
-            "81.06"
-        ],
-        "name": "Gestión de Operaciones",
-        "formal": "Gestión de Operaciones",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "81.21",
-        "parent": [
-            "81.20"
-        ],
-        "name": "Gestión de Ventas",
-        "formal": "Gestión de Ventas",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.48",
-        "parent": [
-            "81.47"
-        ],
-        "name": "Impuestos para la toma de decisiones II",
-        "formal": "Impuestos para la toma de decisiones II",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.68",
-        "parent": [
-            "81.11",
-            "81.29"
-        ],
-        "name": "Sistemas Integrados de Gestión I",
-        "formal": "Sistemas Integrados de Gestión I",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.27",
-        "parent": [
-            "61.87"
-        ],
-        "name": "Administración de Recursos Humanos",
-        "formal": "Administración de Recursos Humanos",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.34",
-        "parent": [
-            "81.57",
-            "81.29"
-        ],
-        "name": "Arquitectura empresarial",
-        "formal": "Arquitectura empresarial",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "81.42",
-        "parent": [],
-        "name": "Estrategia Empresarial",
-        "formal": "Estrategia Empresarial",
-        "semester": 7,
-        "credits": 3,
-        "requires": 144
-    }
-]
+{
+    "credits": 192,
+    "mandatories": [
+        {
+            "code": "71.20",
+            "parent": [],
+            "name": "Informática General",
+            "formal": "Informática General",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.30",
+            "parent": [],
+            "name": "Introducción a la tecnología informática",
+            "formal": "Introducción a la tecnología informática",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.90",
+            "parent": [],
+            "name": "Certificaciones tecnológicas",
+            "formal": "Certificaciones tecnológicas",
+            "semester": 1,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "81.06",
+            "parent": [],
+            "name": "Introducción a la Administración",
+            "formal": "Introducción a la Administración",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.07",
+            "parent": [],
+            "name": "Sistemas Contables",
+            "formal": "Sistemas Contables",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.21",
+            "parent": [],
+            "name": "Álgebra",
+            "formal": "Álgebra",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.38",
+            "parent": [
+                "71.30"
+            ],
+            "name": "Programación web",
+            "formal": "Programación web",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.11",
+            "parent": [
+                "81.07"
+            ],
+            "name": "Contabilidad Gerencial",
+            "formal": "Contabilidad Gerencial",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.53",
+            "parent": [
+                "71.30",
+                "81.06"
+            ],
+            "name": "Negocios en Internet",
+            "formal": "Negocios en Internet",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.20",
+            "parent": [],
+            "name": "Análisis Matemático",
+            "formal": "Análisis Matemático",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.60",
+            "parent": [],
+            "name": "Panorama Histórico Global",
+            "formal": "Panorama Histórico Global",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.61",
+            "parent": [],
+            "name": "Filosofía",
+            "formal": "Filosofía",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.12",
+            "parent": [
+                "81.07",
+                "93.21"
+            ],
+            "name": "Gestión Financiera",
+            "formal": "Gestión Financiera",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "61.81",
+            "parent": [
+                "93.20"
+            ],
+            "name": "Microeconomía",
+            "formal": "Microeconomía",
+            "semester": 3,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.88",
+            "parent": [
+                "71.30",
+                "71.20"
+            ],
+            "name": "Gestión de Datos",
+            "formal": "Gestión de Datos",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.20",
+            "parent": [
+                "81.06"
+            ],
+            "name": "Comercialización",
+            "formal": "Comercialización",
+            "semester": 3,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.39",
+            "parent": [
+                "71.20",
+                "93.20"
+            ],
+            "name": "Estadística",
+            "formal": "Estadística",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "61.82",
+            "parent": [
+                "93.20"
+            ],
+            "name": "Macroeconomía",
+            "formal": "Macroeconomía",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.87",
+            "parent": [
+                "94.60",
+                "94.61"
+            ],
+            "name": "Derecho Público y Privado I",
+            "formal": "Derecho Público y Privado I",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.29",
+            "parent": [
+                "81.06",
+                "71.20"
+            ],
+            "name": "Gestión organizacional basada en procesos de negocio",
+            "formal": "Gestión organizacional basada en procesos de negocio",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.32",
+            "parent": [
+                "71.20"
+            ],
+            "name": "Análisis funcional de aplicaciones informáticas",
+            "formal": "Análisis funcional de aplicaciones informáticas",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.63",
+            "parent": [
+                "94.61"
+            ],
+            "name": "Epistemología y Heurística",
+            "formal": "Epistemología y Heurística",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.64",
+            "parent": [],
+            "name": "Prácticas Expositivas",
+            "formal": "Prácticas Expositivas",
+            "semester": 4,
+            "credits": 3,
+            "requires": 24
+        },
+        {
+            "code": "11.85",
+            "parent": [
+                "93.39",
+                "81.06"
+            ],
+            "name": "Toma de Decisiones",
+            "formal": "Toma de Decisiones",
+            "semester": 5,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.47",
+            "parent": [
+                "81.11",
+                "61.82",
+                "61.87"
+            ],
+            "name": "Impuestos para la toma de decisiones I",
+            "formal": "Impuestos para la toma de decisiones I",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.57",
+            "parent": [
+                "81.32",
+                "71.88",
+                "81.53"
+            ],
+            "name": "Arquitectura de soluciones digitales",
+            "formal": "Arquitectura de soluciones digitales",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.40",
+            "parent": [
+                "81.06"
+            ],
+            "name": "Estructura de las Organizaciones",
+            "formal": "Estructura de las Organizaciones",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "11.83",
+            "parent": [
+                "93.39",
+                "81.06"
+            ],
+            "name": "Gestión de Operaciones",
+            "formal": "Gestión de Operaciones",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "81.21",
+            "parent": [
+                "81.20"
+            ],
+            "name": "Gestión de Ventas",
+            "formal": "Gestión de Ventas",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.48",
+            "parent": [
+                "81.47"
+            ],
+            "name": "Impuestos para la toma de decisiones II",
+            "formal": "Impuestos para la toma de decisiones II",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.68",
+            "parent": [
+                "81.11",
+                "81.29"
+            ],
+            "name": "Sistemas Integrados de Gestión I",
+            "formal": "Sistemas Integrados de Gestión I",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.27",
+            "parent": [
+                "61.87"
+            ],
+            "name": "Administración de Recursos Humanos",
+            "formal": "Administración de Recursos Humanos",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.34",
+            "parent": [
+                "81.57",
+                "81.29"
+            ],
+            "name": "Arquitectura empresarial",
+            "formal": "Arquitectura empresarial",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "81.42",
+            "parent": [],
+            "name": "Estrategia Empresarial",
+            "formal": "Estrategia Empresarial",
+            "semester": 7,
+            "credits": 3,
+            "requires": 144
+        }
+    ]
+}

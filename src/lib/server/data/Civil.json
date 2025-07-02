@@ -1,541 +1,544 @@
-[
-    {
-        "code": "12.67",
-        "parent": [],
-        "name": "Química General",
-        "formal": "Química General",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.58",
-        "parent": [],
-        "name": "Informática General",
-        "formal": "Informática General",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.01",
-        "parent": [],
-        "name": "Análisis Matemático I",
-        "formal": "Análisis Matemático I",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.18",
-        "parent": [],
-        "name": "Álgebra Lineal",
-        "formal": "Álgebra Lineal",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.33",
-        "parent": [],
-        "name": "Tecnología y Sociedad",
-        "formal": "Tecnología y Sociedad",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "16.55",
-        "parent": [],
-        "name": "Biología",
-        "formal": "Biología",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "31.08",
-        "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.04",
-        "parent": [],
-        "name": "Instrucción a la temática social",
-        "formal": "Instrucción a la temática social",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "71.90",
-        "parent": [],
-        "name": "Certificaciones tecnológicas",
-        "formal": "Certificaciones tecnológicas",
-        "semester": 2,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "92.02",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático II",
-        "formal": "Análisis Matemático II",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.41",
-        "parent": [
-            "92.01"
-        ],
-        "name": "Física I",
-        "formal": "Física I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.02",
-        "parent": [
-            "93.18",
-            "93.41"
-        ],
-        "name": "Estática",
-        "formal": "Estática",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.03",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático III",
-        "formal": "Análisis Matemático III",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.22",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Probabilidad y Estadística",
-        "formal": "Probabilidad y Estadística",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.42",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Física II",
-        "formal": "Física II",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.51",
-        "parent": [],
-        "name": "Inglés I",
-        "formal": "Inglés I",
-        "semester": 3,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "31.22",
-        "parent": [
-            "92.03",
-            "93.41"
-        ],
-        "name": "Mecánica de Fluidos",
-        "formal": "Mecánica de Fluidos",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.01",
-        "parent": [
-            "93.41",
-            "12.67"
-        ],
-        "name": "Tecnología de materiales",
-        "formal": "Tecnología de materiales",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.03",
-        "parent": [
-            "67.02"
-        ],
-        "name": "Resistencia de Materiales",
-        "formal": "Resistencia de Materiales",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.43",
-        "parent": [
-            "92.03",
-            "93.41"
-        ],
-        "name": "Física III",
-        "formal": "Física III",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "11.15",
-        "parent": [],
-        "name": "Organización Industrial",
-        "formal": "Organización Industrial",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.05",
-        "parent": [
-            "67.01",
-            "93.22"
-        ],
-        "name": "Tecnología del Hormigón",
-        "formal": "Tecnología del Hormigón",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.06",
-        "parent": [
-            "67.01"
-        ],
-        "name": "Construcciones",
-        "formal": "Construcciones",
-        "semester": 5,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.08",
-        "parent": [
-            "67.03"
-        ],
-        "name": "Análisis Estructural",
-        "formal": "Análisis Estructural",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "93.07",
-        "parent": [
-            "71.58",
-            "92.03"
-        ],
-        "name": "Métodos Numéricos",
-        "formal": "Métodos Numéricos",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.43",
-        "parent": [],
-        "name": "Metodología del Diseño",
-        "formal": "Metodología del Diseño",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "46.21",
-        "parent": [
-            "93.42"
-        ],
-        "name": "Geología I",
-        "formal": "Geología I",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.07",
-        "parent": [
-            "93.18",
-            "93.42",
-            "93.22"
-        ],
-        "name": "Geotopografía",
-        "formal": "Geotopografía",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.09",
-        "parent": [
-            "67.06"
-        ],
-        "name": "Instalaciones",
-        "formal": "Instalaciones",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.10",
-        "parent": [
-            "67.03",
-            "67.06",
-            "67.05"
-        ],
-        "name": "Hormigón I",
-        "formal": "Hormigón I",
-        "semester": 6,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "94.44",
-        "parent": [
-            "94.43"
-        ],
-        "name": "Proyecto Interdisciplinario",
-        "formal": "Proyecto Interdisciplinario",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.52",
-        "parent": [
-            "94.51"
-        ],
-        "name": "Inglés II",
-        "formal": "Inglés II",
-        "semester": 6,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "61.27",
-        "parent": [
-            "93.22"
-        ],
-        "name": "Análisis de Coyuntura Económica",
-        "formal": "Análisis de Coyuntura Económica",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.31",
-        "parent": [
-            "94.33"
-        ],
-        "name": "Derecho para Ingenieros",
-        "formal": "Derecho para Ingenieros",
-        "semester": 7,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.11",
-        "parent": [
-            "16.55",
-            "12.67",
-            "67.06"
-        ],
-        "name": "Evaluación de Impacto Ambiental y Social",
-        "formal": "Evaluación de Impacto Ambiental y Social",
-        "semester": 7,
-        "credits": 2,
-        "requires": 0
-    },
-    {
-        "code": "67.12",
-        "parent": [
-            "31.22",
-            "67.03",
-            "67.07"
-        ],
-        "name": "Geotecnia",
-        "formal": "Geotecnia",
-        "semester": 7,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.13",
-        "parent": [
-            "67.03",
-            "31.22",
-            "67.07"
-        ],
-        "name": "Hidrología y obras hidráulicas",
-        "formal": "Hidrología y obras hidráulicas",
-        "semester": 7,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "67.14",
-        "parent": [
-            "67.10",
-            "93.07",
-            "67.08"
-        ],
-        "name": "Hormigón II",
-        "formal": "Hormigón II",
-        "semester": 8,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "67.15",
-        "parent": [
-            "94.33",
-            "61.31",
-            "67.07",
-            "67.06",
-            "67.11"
-        ],
-        "name": "Planeamiento territorial y urbano",
-        "formal": "Planeamiento territorial y urbano",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.16",
-        "parent": [
-            "67.07",
-            "67.12",
-            "67.06",
-            "67.05",
-            "67.13"
-        ],
-        "name": "Vías de Comunicación",
-        "formal": "Vías de Comunicación",
-        "semester": 8,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "67.17",
-        "parent": [
-            "94.33",
-            "67.06"
-        ],
-        "name": "Higiene y Seguridad en Obras Civiles",
-        "formal": "Higiene y Seguridad en Obras Civiles",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "17.20",
-        "parent": [
-            "67.09",
-            "67.12",
-            "67.13"
-        ],
-        "name": "Agua y Efluentes Líquidos",
-        "formal": "Agua y Efluentes Líquidos",
-        "semester": 9,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.18",
-        "parent": [],
-        "name": "Proyecto Final",
-        "formal": "Proyecto Final",
-        "semester": 9,
-        "credits": 6,
-        "requires": 144
-    },
-    {
-        "code": "67.19",
-        "parent": [
-            "67.10",
-            "67.08",
-            "67.12",
-            "67.13"
-        ],
-        "name": "Cimentaciones",
-        "formal": "Cimentaciones",
-        "semester": 9,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "67.20",
-        "parent": [
-            "67.10",
-            "67.08"
-        ],
-        "name": "Estructuras Metálicas y de Madera",
-        "formal": "Estructuras Metálicas y de Madera",
-        "semester": 9,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "67.21",
-        "parent": [
-            "11.15",
-            "67.10",
-            "67.09",
-            "67.12",
-            "67.06"
-        ],
-        "name": "Organización y conducción de obras",
-        "formal": "Organización y conducción de obras",
-        "semester": 9,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "67.22",
-        "parent": [
-            "67.11"
-        ],
-        "name": "Auditorías ambientales",
-        "formal": "Auditorías ambientales",
-        "semester": 9,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.65",
-        "parent": [],
-        "name": "Practica Profesional supervisada",
-        "formal": "Practica Profesional supervisada",
-        "semester": 10,
-        "credits": 0,
-        "requires": 144
-    }
-]
+{
+    "credits": 221,
+    "mandatories": [
+        {
+            "code": "12.67",
+            "parent": [],
+            "name": "Química General",
+            "formal": "Química General",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.58",
+            "parent": [],
+            "name": "Informática General",
+            "formal": "Informática General",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.01",
+            "parent": [],
+            "name": "Análisis Matemático I",
+            "formal": "Análisis Matemático I",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.18",
+            "parent": [],
+            "name": "Álgebra Lineal",
+            "formal": "Álgebra Lineal",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.33",
+            "parent": [],
+            "name": "Tecnología y Sociedad",
+            "formal": "Tecnología y Sociedad",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "16.55",
+            "parent": [],
+            "name": "Biología",
+            "formal": "Biología",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "31.08",
+            "parent": [],
+            "name": "Sistemas de Representación",
+            "formal": "Sistemas de Representación",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.04",
+            "parent": [],
+            "name": "Instrucción a la temática social",
+            "formal": "Instrucción a la temática social",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "71.90",
+            "parent": [],
+            "name": "Certificaciones tecnológicas",
+            "formal": "Certificaciones tecnológicas",
+            "semester": 2,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "92.02",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático II",
+            "formal": "Análisis Matemático II",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.41",
+            "parent": [
+                "92.01"
+            ],
+            "name": "Física I",
+            "formal": "Física I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.02",
+            "parent": [
+                "93.18",
+                "93.41"
+            ],
+            "name": "Estática",
+            "formal": "Estática",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.03",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático III",
+            "formal": "Análisis Matemático III",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.22",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Probabilidad y Estadística",
+            "formal": "Probabilidad y Estadística",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.42",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Física II",
+            "formal": "Física II",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.51",
+            "parent": [],
+            "name": "Inglés I",
+            "formal": "Inglés I",
+            "semester": 3,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "31.22",
+            "parent": [
+                "92.03",
+                "93.41"
+            ],
+            "name": "Mecánica de Fluidos",
+            "formal": "Mecánica de Fluidos",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.01",
+            "parent": [
+                "93.41",
+                "12.67"
+            ],
+            "name": "Tecnología de materiales",
+            "formal": "Tecnología de materiales",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.03",
+            "parent": [
+                "67.02"
+            ],
+            "name": "Resistencia de Materiales",
+            "formal": "Resistencia de Materiales",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.43",
+            "parent": [
+                "92.03",
+                "93.41"
+            ],
+            "name": "Física III",
+            "formal": "Física III",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "11.15",
+            "parent": [],
+            "name": "Organización Industrial",
+            "formal": "Organización Industrial",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.05",
+            "parent": [
+                "67.01",
+                "93.22"
+            ],
+            "name": "Tecnología del Hormigón",
+            "formal": "Tecnología del Hormigón",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.06",
+            "parent": [
+                "67.01"
+            ],
+            "name": "Construcciones",
+            "formal": "Construcciones",
+            "semester": 5,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.08",
+            "parent": [
+                "67.03"
+            ],
+            "name": "Análisis Estructural",
+            "formal": "Análisis Estructural",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "93.07",
+            "parent": [
+                "71.58",
+                "92.03"
+            ],
+            "name": "Métodos Numéricos",
+            "formal": "Métodos Numéricos",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.43",
+            "parent": [],
+            "name": "Metodología del Diseño",
+            "formal": "Metodología del Diseño",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "46.21",
+            "parent": [
+                "93.42"
+            ],
+            "name": "Geología I",
+            "formal": "Geología I",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.07",
+            "parent": [
+                "93.18",
+                "93.42",
+                "93.22"
+            ],
+            "name": "Geotopografía",
+            "formal": "Geotopografía",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.09",
+            "parent": [
+                "67.06"
+            ],
+            "name": "Instalaciones",
+            "formal": "Instalaciones",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.10",
+            "parent": [
+                "67.03",
+                "67.06",
+                "67.05"
+            ],
+            "name": "Hormigón I",
+            "formal": "Hormigón I",
+            "semester": 6,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "94.44",
+            "parent": [
+                "94.43"
+            ],
+            "name": "Proyecto Interdisciplinario",
+            "formal": "Proyecto Interdisciplinario",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.52",
+            "parent": [
+                "94.51"
+            ],
+            "name": "Inglés II",
+            "formal": "Inglés II",
+            "semester": 6,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "61.27",
+            "parent": [
+                "93.22"
+            ],
+            "name": "Análisis de Coyuntura Económica",
+            "formal": "Análisis de Coyuntura Económica",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.31",
+            "parent": [
+                "94.33"
+            ],
+            "name": "Derecho para Ingenieros",
+            "formal": "Derecho para Ingenieros",
+            "semester": 7,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.11",
+            "parent": [
+                "16.55",
+                "12.67",
+                "67.06"
+            ],
+            "name": "Evaluación de Impacto Ambiental y Social",
+            "formal": "Evaluación de Impacto Ambiental y Social",
+            "semester": 7,
+            "credits": 2,
+            "requires": 0
+        },
+        {
+            "code": "67.12",
+            "parent": [
+                "31.22",
+                "67.03",
+                "67.07"
+            ],
+            "name": "Geotecnia",
+            "formal": "Geotecnia",
+            "semester": 7,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.13",
+            "parent": [
+                "67.03",
+                "31.22",
+                "67.07"
+            ],
+            "name": "Hidrología y obras hidráulicas",
+            "formal": "Hidrología y obras hidráulicas",
+            "semester": 7,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "67.14",
+            "parent": [
+                "67.10",
+                "93.07",
+                "67.08"
+            ],
+            "name": "Hormigón II",
+            "formal": "Hormigón II",
+            "semester": 8,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "67.15",
+            "parent": [
+                "94.33",
+                "61.31",
+                "67.07",
+                "67.06",
+                "67.11"
+            ],
+            "name": "Planeamiento territorial y urbano",
+            "formal": "Planeamiento territorial y urbano",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.16",
+            "parent": [
+                "67.07",
+                "67.12",
+                "67.06",
+                "67.05",
+                "67.13"
+            ],
+            "name": "Vías de Comunicación",
+            "formal": "Vías de Comunicación",
+            "semester": 8,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "67.17",
+            "parent": [
+                "94.33",
+                "67.06"
+            ],
+            "name": "Higiene y Seguridad en Obras Civiles",
+            "formal": "Higiene y Seguridad en Obras Civiles",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "17.20",
+            "parent": [
+                "67.09",
+                "67.12",
+                "67.13"
+            ],
+            "name": "Agua y Efluentes Líquidos",
+            "formal": "Agua y Efluentes Líquidos",
+            "semester": 9,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.18",
+            "parent": [],
+            "name": "Proyecto Final",
+            "formal": "Proyecto Final",
+            "semester": 9,
+            "credits": 6,
+            "requires": 144
+        },
+        {
+            "code": "67.19",
+            "parent": [
+                "67.10",
+                "67.08",
+                "67.12",
+                "67.13"
+            ],
+            "name": "Cimentaciones",
+            "formal": "Cimentaciones",
+            "semester": 9,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "67.20",
+            "parent": [
+                "67.10",
+                "67.08"
+            ],
+            "name": "Estructuras Metálicas y de Madera",
+            "formal": "Estructuras Metálicas y de Madera",
+            "semester": 9,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "67.21",
+            "parent": [
+                "11.15",
+                "67.10",
+                "67.09",
+                "67.12",
+                "67.06"
+            ],
+            "name": "Organización y conducción de obras",
+            "formal": "Organización y conducción de obras",
+            "semester": 9,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "67.22",
+            "parent": [
+                "67.11"
+            ],
+            "name": "Auditorías ambientales",
+            "formal": "Auditorías ambientales",
+            "semester": 9,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.65",
+            "parent": [],
+            "name": "Practica Profesional supervisada",
+            "formal": "Practica Profesional supervisada",
+            "semester": 10,
+            "credits": 0,
+            "requires": 144
+        }
+    ]
+}

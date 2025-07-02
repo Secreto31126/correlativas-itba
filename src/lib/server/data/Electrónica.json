@@ -1,543 +1,546 @@
-[
-    {
-        "code": "12.67",
-        "parent": [],
-        "name": "Química General",
-        "formal": "Química General",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "71.93",
-        "parent": [],
-        "name": "Principios de Informática",
-        "formal": "Principios de Informática",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.01",
-        "parent": [],
-        "name": "Análisis Matemático I",
-        "formal": "Análisis Matemático I",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.18",
-        "parent": [],
-        "name": "Álgebra Lineal",
-        "formal": "Álgebra Lineal",
-        "semester": 1,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.33",
-        "parent": [],
-        "name": "Tecnología y Sociedad",
-        "formal": "Tecnología y Sociedad",
-        "semester": 1,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.01",
-        "parent": [
-            "71.93"
-        ],
-        "name": "Fundamentos de Electrónica",
-        "formal": "Fundamentos de Electrónica",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.02",
-        "parent": [
-            "71.93"
-        ],
-        "name": "Programación I",
-        "formal": "Programación I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "31.08",
-        "parent": [],
-        "name": "Sistemas de Representación",
-        "formal": "Sistemas de Representación",
-        "semester": 2,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.02",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático II",
-        "formal": "Análisis Matemático II",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.41",
-        "parent": [
-            "92.01"
-        ],
-        "name": "Física I",
-        "formal": "Física I",
-        "semester": 2,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.03",
-        "parent": [
-            "25.02"
-        ],
-        "name": "Algoritmos y Estructuras de Datos",
-        "formal": "Algoritmos y Estructuras de Datos",
-        "semester": 3,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.03",
-        "parent": [
-            "92.01",
-            "93.18"
-        ],
-        "name": "Análisis Matemático III",
-        "formal": "Análisis Matemático III",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.16",
-        "parent": [
-            "93.18"
-        ],
-        "name": "Matemática Discreta",
-        "formal": "Matemática Discreta",
-        "semester": 3,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.24",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Probabilidad y Estadística",
-        "formal": "Probabilidad y Estadística",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.42",
-        "parent": [
-            "92.02"
-        ],
-        "name": "Física II",
-        "formal": "Física II",
-        "semester": 3,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "16.55",
-        "parent": [],
-        "name": "Biología",
-        "formal": "Biología",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.10",
-        "parent": [
-            "92.03",
-            "25.01"
-        ],
-        "name": "Teoría de Circuitos 1",
-        "formal": "Teoría de Circuitos 1",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "92.04",
-        "parent": [
-            "92.02",
-            "92.03"
-        ],
-        "name": "Análisis Matemàtico IV",
-        "formal": "Análisis Matemàtico IV",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "93.07",
-        "parent": [
-            "92.03",
-            "93.24"
-        ],
-        "name": "Métodos Numéricos",
-        "formal": "Métodos Numéricos",
-        "semester": 4,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "93.43",
-        "parent": [
-            "92.03",
-            "93.41"
-        ],
-        "name": "Física III",
-        "formal": "Física III",
-        "semester": 4,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.12",
-        "parent": [
-            "93.42",
-            "25.10"
-        ],
-        "name": "Tecnología de Materiales Electrónicos",
-        "formal": "Tecnología de Materiales Electrónicos",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "25.13",
-        "parent": [
-            "25.10"
-        ],
-        "name": "Laboratorio de Electrónica 1",
-        "formal": "Laboratorio de Electrónica 1",
-        "semester": 5,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.18",
-        "parent": [
-            "92.04",
-            "25.10"
-        ],
-        "name": "Física Electrónica",
-        "formal": "Física Electrónica",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "92.07",
-        "parent": [
-            "92.04"
-        ],
-        "name": "Análisis Matemático V",
-        "formal": "Análisis Matemático V",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "93.61",
-        "parent": [
-            "93.42",
-            "93.43"
-        ],
-        "name": "Física IV",
-        "formal": "Física IV",
-        "semester": 5,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "94.43",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Metodología del Diseño",
-        "formal": "Metodología del Diseño",
-        "semester": 5,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.14",
-        "parent": [
-            "25.10",
-            "25.12"
-        ],
-        "name": "Teoría de Circuitos 2",
-        "formal": "Teoría de Circuitos 2",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.15",
-        "parent": [
-            "25.18"
-        ],
-        "name": "Electrónica I",
-        "formal": "Electrónica I",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.16",
-        "parent": [
-            "25.13"
-        ],
-        "name": "Laboratorio de Electrónica 2",
-        "formal": "Laboratorio de Electrónica 2",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.17",
-        "parent": [
-            "25.13"
-        ],
-        "name": "Electrónica II",
-        "formal": "Electrónica II",
-        "semester": 6,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "94.44",
-        "parent": [
-            "94.43"
-        ],
-        "name": "Proyecto Interdisciplinario",
-        "formal": "Proyecto Interdisciplinario",
-        "semester": 6,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "94.51",
-        "parent": [],
-        "name": "Inglés I",
-        "formal": "Inglés I",
-        "semester": 6,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "25.20",
-        "parent": [
-            "25.14"
-        ],
-        "name": "Análisis de Señales y Sistemas Digitales",
-        "formal": "Análisis de Señales y Sistemas Digitales",
-        "semester": 7,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.21",
-        "parent": [
-            "25.15"
-        ],
-        "name": "Electrónica III",
-        "formal": "Electrónica III",
-        "semester": 7,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "25.22",
-        "parent": [
-            "93.43",
-            "92.07"
-        ],
-        "name": "Electromagnetismo",
-        "formal": "Electromagnetismo",
-        "semester": 7,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "25.23",
-        "parent": [
-            "92.07"
-        ],
-        "name": "Sistemas de Control",
-        "formal": "Sistemas de Control",
-        "semester": 7,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.24",
-        "parent": [
-            "25.16"
-        ],
-        "name": "Laboratorio de Electrónica 3",
-        "formal": "Laboratorio de Electrónica 3",
-        "semester": 7,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "11.15",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Organización Industrial",
-        "formal": "Organización Industrial",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "25.26",
-        "parent": [
-            "25.22",
-            "25.20"
-        ],
-        "name": "Transmisión de la Información",
-        "formal": "Transmisión de la Información",
-        "semester": 8,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.27",
-        "parent": [
-            "25.17",
-            "25.16",
-            "25.20"
-        ],
-        "name": "Sistemas Embebidos",
-        "formal": "Sistemas Embebidos",
-        "semester": 8,
-        "credits": 6,
-        "requires": 0
-    },
-    {
-        "code": "25.28",
-        "parent": [
-            "25.24",
-            "25.23",
-            "25.12"
-        ],
-        "name": "Electrónica IV",
-        "formal": "Electrónica IV",
-        "semester": 8,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "61.27",
-        "parent": [
-            "93.24"
-        ],
-        "name": "Análisis de Coyuntura Económica",
-        "formal": "Análisis de Coyuntura Económica",
-        "semester": 8,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "12.83",
-        "parent": [],
-        "name": "Seguridad Ocupacional y Ambiental",
-        "formal": "Seguridad Ocupacional y Ambiental",
-        "semester": 9,
-        "credits": 3,
-        "requires": 120
-    },
-    {
-        "code": "25.30",
-        "parent": [
-            "25.27"
-        ],
-        "name": "Electrónica V",
-        "formal": "Electrónica V",
-        "semester": 9,
-        "credits": 4,
-        "requires": 0
-    },
-    {
-        "code": "25.31",
-        "parent": [],
-        "name": "Proyectos Electrónicos",
-        "formal": "Proyectos Electrónicos",
-        "semester": 9,
-        "credits": 4,
-        "requires": 168
-    },
-    {
-        "code": "25.32",
-        "parent": [],
-        "name": "Proyecto Integrador (anual) (Anual)",
-        "formal": "Proyecto Integrador (anual) (Anual)",
-        "semester": 9,
-        "credits": 6,
-        "requires": 168
-    },
-    {
-        "code": "61.16",
-        "parent": [
-            "11.15",
-            "61.27"
-        ],
-        "name": "Introducción a las Finanzas",
-        "formal": "Introducción a las Finanzas",
-        "semester": 9,
-        "credits": 3,
-        "requires": 0
-    },
-    {
-        "code": "61.31",
-        "parent": [],
-        "name": "Derecho para Ingenieros",
-        "formal": "Derecho para Ingenieros",
-        "semester": 10,
-        "credits": 3,
-        "requires": 144
-    },
-    {
-        "code": "94.52",
-        "parent": [
-            "94.51"
-        ],
-        "name": "Inglés II",
-        "formal": "Inglés II",
-        "semester": 10,
-        "credits": 0,
-        "requires": 0
-    },
-    {
-        "code": "94.65",
-        "parent": [],
-        "name": "Practica Profesional supervisada",
-        "formal": "Practica Profesional supervisada",
-        "semester": 10,
-        "credits": 0,
-        "requires": 144
-    }
-]
+{
+    "credits": 240,
+    "mandatories": [
+        {
+            "code": "12.67",
+            "parent": [],
+            "name": "Química General",
+            "formal": "Química General",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "71.93",
+            "parent": [],
+            "name": "Principios de Informática",
+            "formal": "Principios de Informática",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.01",
+            "parent": [],
+            "name": "Análisis Matemático I",
+            "formal": "Análisis Matemático I",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.18",
+            "parent": [],
+            "name": "Álgebra Lineal",
+            "formal": "Álgebra Lineal",
+            "semester": 1,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.33",
+            "parent": [],
+            "name": "Tecnología y Sociedad",
+            "formal": "Tecnología y Sociedad",
+            "semester": 1,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.01",
+            "parent": [
+                "71.93"
+            ],
+            "name": "Fundamentos de Electrónica",
+            "formal": "Fundamentos de Electrónica",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.02",
+            "parent": [
+                "71.93"
+            ],
+            "name": "Programación I",
+            "formal": "Programación I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "31.08",
+            "parent": [],
+            "name": "Sistemas de Representación",
+            "formal": "Sistemas de Representación",
+            "semester": 2,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.02",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático II",
+            "formal": "Análisis Matemático II",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.41",
+            "parent": [
+                "92.01"
+            ],
+            "name": "Física I",
+            "formal": "Física I",
+            "semester": 2,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.03",
+            "parent": [
+                "25.02"
+            ],
+            "name": "Algoritmos y Estructuras de Datos",
+            "formal": "Algoritmos y Estructuras de Datos",
+            "semester": 3,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.03",
+            "parent": [
+                "92.01",
+                "93.18"
+            ],
+            "name": "Análisis Matemático III",
+            "formal": "Análisis Matemático III",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.16",
+            "parent": [
+                "93.18"
+            ],
+            "name": "Matemática Discreta",
+            "formal": "Matemática Discreta",
+            "semester": 3,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.24",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Probabilidad y Estadística",
+            "formal": "Probabilidad y Estadística",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.42",
+            "parent": [
+                "92.02"
+            ],
+            "name": "Física II",
+            "formal": "Física II",
+            "semester": 3,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "16.55",
+            "parent": [],
+            "name": "Biología",
+            "formal": "Biología",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.10",
+            "parent": [
+                "92.03",
+                "25.01"
+            ],
+            "name": "Teoría de Circuitos 1",
+            "formal": "Teoría de Circuitos 1",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "92.04",
+            "parent": [
+                "92.02",
+                "92.03"
+            ],
+            "name": "Análisis Matemàtico IV",
+            "formal": "Análisis Matemàtico IV",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "93.07",
+            "parent": [
+                "92.03",
+                "93.24"
+            ],
+            "name": "Métodos Numéricos",
+            "formal": "Métodos Numéricos",
+            "semester": 4,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "93.43",
+            "parent": [
+                "92.03",
+                "93.41"
+            ],
+            "name": "Física III",
+            "formal": "Física III",
+            "semester": 4,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.12",
+            "parent": [
+                "93.42",
+                "25.10"
+            ],
+            "name": "Tecnología de Materiales Electrónicos",
+            "formal": "Tecnología de Materiales Electrónicos",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "25.13",
+            "parent": [
+                "25.10"
+            ],
+            "name": "Laboratorio de Electrónica 1",
+            "formal": "Laboratorio de Electrónica 1",
+            "semester": 5,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.18",
+            "parent": [
+                "92.04",
+                "25.10"
+            ],
+            "name": "Física Electrónica",
+            "formal": "Física Electrónica",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "92.07",
+            "parent": [
+                "92.04"
+            ],
+            "name": "Análisis Matemático V",
+            "formal": "Análisis Matemático V",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "93.61",
+            "parent": [
+                "93.42",
+                "93.43"
+            ],
+            "name": "Física IV",
+            "formal": "Física IV",
+            "semester": 5,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "94.43",
+            "parent": [
+                "93.24"
+            ],
+            "name": "Metodología del Diseño",
+            "formal": "Metodología del Diseño",
+            "semester": 5,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.14",
+            "parent": [
+                "25.10",
+                "25.12"
+            ],
+            "name": "Teoría de Circuitos 2",
+            "formal": "Teoría de Circuitos 2",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.15",
+            "parent": [
+                "25.18"
+            ],
+            "name": "Electrónica I",
+            "formal": "Electrónica I",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.16",
+            "parent": [
+                "25.13"
+            ],
+            "name": "Laboratorio de Electrónica 2",
+            "formal": "Laboratorio de Electrónica 2",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.17",
+            "parent": [
+                "25.13"
+            ],
+            "name": "Electrónica II",
+            "formal": "Electrónica II",
+            "semester": 6,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "94.44",
+            "parent": [
+                "94.43"
+            ],
+            "name": "Proyecto Interdisciplinario",
+            "formal": "Proyecto Interdisciplinario",
+            "semester": 6,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "94.51",
+            "parent": [],
+            "name": "Inglés I",
+            "formal": "Inglés I",
+            "semester": 6,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "25.20",
+            "parent": [
+                "25.14"
+            ],
+            "name": "Análisis de Señales y Sistemas Digitales",
+            "formal": "Análisis de Señales y Sistemas Digitales",
+            "semester": 7,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.21",
+            "parent": [
+                "25.15"
+            ],
+            "name": "Electrónica III",
+            "formal": "Electrónica III",
+            "semester": 7,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "25.22",
+            "parent": [
+                "93.43",
+                "92.07"
+            ],
+            "name": "Electromagnetismo",
+            "formal": "Electromagnetismo",
+            "semester": 7,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "25.23",
+            "parent": [
+                "92.07"
+            ],
+            "name": "Sistemas de Control",
+            "formal": "Sistemas de Control",
+            "semester": 7,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.24",
+            "parent": [
+                "25.16"
+            ],
+            "name": "Laboratorio de Electrónica 3",
+            "formal": "Laboratorio de Electrónica 3",
+            "semester": 7,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "11.15",
+            "parent": [
+                "93.24"
+            ],
+            "name": "Organización Industrial",
+            "formal": "Organización Industrial",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "25.26",
+            "parent": [
+                "25.22",
+                "25.20"
+            ],
+            "name": "Transmisión de la Información",
+            "formal": "Transmisión de la Información",
+            "semester": 8,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.27",
+            "parent": [
+                "25.17",
+                "25.16",
+                "25.20"
+            ],
+            "name": "Sistemas Embebidos",
+            "formal": "Sistemas Embebidos",
+            "semester": 8,
+            "credits": 6,
+            "requires": 0
+        },
+        {
+            "code": "25.28",
+            "parent": [
+                "25.24",
+                "25.23",
+                "25.12"
+            ],
+            "name": "Electrónica IV",
+            "formal": "Electrónica IV",
+            "semester": 8,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "61.27",
+            "parent": [
+                "93.24"
+            ],
+            "name": "Análisis de Coyuntura Económica",
+            "formal": "Análisis de Coyuntura Económica",
+            "semester": 8,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "12.83",
+            "parent": [],
+            "name": "Seguridad Ocupacional y Ambiental",
+            "formal": "Seguridad Ocupacional y Ambiental",
+            "semester": 9,
+            "credits": 3,
+            "requires": 120
+        },
+        {
+            "code": "25.30",
+            "parent": [
+                "25.27"
+            ],
+            "name": "Electrónica V",
+            "formal": "Electrónica V",
+            "semester": 9,
+            "credits": 4,
+            "requires": 0
+        },
+        {
+            "code": "25.31",
+            "parent": [],
+            "name": "Proyectos Electrónicos",
+            "formal": "Proyectos Electrónicos",
+            "semester": 9,
+            "credits": 4,
+            "requires": 168
+        },
+        {
+            "code": "25.32",
+            "parent": [],
+            "name": "Proyecto Integrador (anual) (Anual)",
+            "formal": "Proyecto Integrador (anual) (Anual)",
+            "semester": 9,
+            "credits": 6,
+            "requires": 168
+        },
+        {
+            "code": "61.16",
+            "parent": [
+                "11.15",
+                "61.27"
+            ],
+            "name": "Introducción a las Finanzas",
+            "formal": "Introducción a las Finanzas",
+            "semester": 9,
+            "credits": 3,
+            "requires": 0
+        },
+        {
+            "code": "61.31",
+            "parent": [],
+            "name": "Derecho para Ingenieros",
+            "formal": "Derecho para Ingenieros",
+            "semester": 10,
+            "credits": 3,
+            "requires": 144
+        },
+        {
+            "code": "94.52",
+            "parent": [
+                "94.51"
+            ],
+            "name": "Inglés II",
+            "formal": "Inglés II",
+            "semester": 10,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "94.65",
+            "parent": [],
+            "name": "Practica Profesional supervisada",
+            "formal": "Practica Profesional supervisada",
+            "semester": 10,
+            "credits": 0,
+            "requires": 144
+        }
+    ]
+}
