@@ -53,7 +53,11 @@ $('tr:not(:has(table)):has(td > a)').each(function () {
 	const [year, semester] = !specialization ? title.match(/\d/g) : [null, null];
 
 	const data = $(this).children('td');
-	const [code, name] = data.first().text().split(' - ');
+	const [code, name] = data
+		.first()
+		.text()
+		.split(' - ')
+		.map((e) => e.trim());
 	const credits = data.eq(1).text() * 1;
 	const requires = data.eq(2).text() * 1;
 	const parents = data
