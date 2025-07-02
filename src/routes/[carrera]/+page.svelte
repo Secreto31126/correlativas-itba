@@ -102,16 +102,30 @@
 		});
 	}
 
-	async function toggleExpanded() {
+	function toggleExpanded() {
 		expanded = !expanded;
-		await tick();
 		updateLines();
 	}
 
-	function updateLines(subject = famous) {
+	function toggleVisibleOptative(name: string) {
+		visible_optatives[name] = !visible_optatives[name];
+		updateLines();
+	}
+
+	async function updateLines(subject = famous) {
 		if (!subject) return;
 
-		lines[subject]?.forEach(({ l }) => l.position());
+		await tick();
+		lines[subject]?.forEach(({ l, s }) => {
+			l.position();
+			if (!s.optative) return;
+
+			if (visible_optatives[s.optative]) {
+				l.show('draw');
+			} else {
+				l.hide('none');
+			}
+		});
 	}
 
 	function touchScreen(e: string) {
@@ -419,10 +433,12 @@
 			{@render subjects_row(data.career.filter((e) => e.semester === semester))}
 		{/each}
 		{#each Object.entries(data.optatives) as [name, subjects]}
-			<hr />
-			<button onclick={() => (visible_optatives[name] = !visible_optatives[name])}>
-				{name}
-			</button>
+			<div class="flex flex-col gap-2 w-full text-center">
+				<hr />
+				<button onclick={() => toggleVisibleOptative(name)}>
+					{name}
+				</button>
+			</div>
 			{@render subjects_row(subjects, !visible_optatives[name])}
 		{/each}
 	</main>
