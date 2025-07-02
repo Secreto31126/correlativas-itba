@@ -212,12 +212,16 @@
         },
         {
             "code": "82.01",
-            "parent": [],
+            "parent": [
+                "11.67",
+                "71.88",
+                "72.74"
+            ],
             "name": "Proyecto I",
             "formal": "Proyecto I",
             "semester": 5,
             "credits": 3,
-            "requires": 96
+            "requires": 0
         },
         {
             "code": "82.03",
@@ -233,6 +237,7 @@
         {
             "code": "82.04",
             "parent": [
+                "11.67",
                 "71.88"
             ],
             "name": "Analítica Descriptiva",
@@ -244,9 +249,7 @@
         {
             "code": "11.86",
             "parent": [
-                "11.67",
-                "93.20",
-                "93.21"
+                "11.67"
             ],
             "name": "Investigación de Operaciones I",
             "formal": "Investigación de Operaciones I",
@@ -268,8 +271,7 @@
         {
             "code": "11.87",
             "parent": [
-                "11.67",
-                "11.86"
+                "11.67"
             ],
             "name": "Investigación de Operaciones II",
             "formal": "Investigación de Operaciones II",
@@ -280,6 +282,7 @@
         {
             "code": "11.63",
             "parent": [
+                "11.86",
                 "11.87"
             ],
             "name": "Simulación",
@@ -292,6 +295,7 @@
             "code": "82.02",
             "parent": [
                 "82.05",
+                "11.86",
                 "72.74",
                 "82.04",
                 "11.87",

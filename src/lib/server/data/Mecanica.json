@@ -307,11 +307,12 @@
             "formal": "Metodología del Diseño",
             "semester": 5,
             "credits": 3,
-            "requires": 0
+            "requires": 72
         },
         {
             "code": "30.45",
             "parent": [
+                "30.41",
                 "30.43",
                 "30.25",
                 "30.44"

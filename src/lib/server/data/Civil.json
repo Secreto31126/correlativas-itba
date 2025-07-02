@@ -67,8 +67,8 @@
         {
             "code": "67.04",
             "parent": [],
-            "name": "Instrucción a la temática social",
-            "formal": "Instrucción a la temática social",
+            "name": "Introducción a la temática social",
+            "formal": "Introducción a la temática social",
             "semester": 2,
             "credits": 3,
             "requires": 0
@@ -130,7 +130,7 @@
             "requires": 0
         },
         {
-            "code": "93.22",
+            "code": "93.24",
             "parent": [
                 "92.02"
             ],
@@ -269,7 +269,7 @@
             "formal": "Metodología del Diseño",
             "semester": 5,
             "credits": 3,
-            "requires": 0
+            "requires": 72
         },
         {
             "code": "46.21",

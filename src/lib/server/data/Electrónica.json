@@ -280,13 +280,14 @@
             "formal": "Metodología del Diseño",
             "semester": 5,
             "credits": 3,
-            "requires": 0
+            "requires": 72
         },
         {
             "code": "25.14",
             "parent": [
                 "25.10",
-                "25.12"
+                "25.12",
+                "92.07"
             ],
             "name": "Teoría de Circuitos 2",
             "formal": "Teoría de Circuitos 2",
@@ -350,6 +351,7 @@
         {
             "code": "25.20",
             "parent": [
+                "93.24",
                 "25.14"
             ],
             "name": "Análisis de Señales y Sistemas Digitales",
@@ -431,7 +433,7 @@
             "parent": [
                 "25.17",
                 "25.16",
-                "25.20"
+                "25.03"
             ],
             "name": "Sistemas Embebidos",
             "formal": "Sistemas Embebidos",

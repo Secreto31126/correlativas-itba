@@ -294,7 +294,9 @@
         },
         {
             "code": "94.44",
-            "parent": [],
+            "parent": [
+                "94.43"
+            ],
             "name": "Proyecto Interdisciplinario",
             "formal": "Proyecto Interdisciplinario",
             "semester": 6,
@@ -394,7 +396,12 @@
         },
         {
             "code": "10.01",
-            "parent": [],
+            "parent": [
+                "94.44",
+                "11.51",
+                "61.09",
+                "11.20"
+            ],
             "name": "Proyecto Final de Ingeniería Industrial (Anual)",
             "formal": "Proyecto Final de Ingeniería Industrial (Anual)",
             "semester": 9,
