@@ -24,7 +24,7 @@ export class Document {
 								// Avoids overwriting default values if not defined in the data
 								...((this as Record<string, unknown>)[key] as object),
 								...value
-						  }
+							}
 						: value,
 					configurable: true,
 					enumerable: true
@@ -42,6 +42,7 @@ export class UserData extends Document {
 		requires: boolean;
 		progress: boolean;
 		movement: boolean;
+		optatives: boolean;
 		visited_account: boolean;
 	} = {
 		code: true,
@@ -49,6 +50,7 @@ export class UserData extends Document {
 		requires: true,
 		progress: true,
 		movement: true,
+		optatives: true,
 		visited_account: false
 	};
 
