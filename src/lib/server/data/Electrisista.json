@@ -575,5 +575,19 @@
             "credits": 0,
             "requires": 0
         }
-    ]
+    ],
+    "optatives": {
+        "Electivas": [
+            {
+                "code": "94.23",
+                "parent": [
+                    "94.21"
+                ],
+                "name": "Formación General III",
+                "formal": "Formación General III",
+                "credits": 3,
+                "requires": 0
+            }
+        ]
+    }
 }

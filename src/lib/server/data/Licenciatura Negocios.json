@@ -368,5 +368,999 @@
             "credits": 3,
             "requires": 144
         }
-    ]
+    ],
+    "optatives": {
+        "Electivas Gestión": [
+            {
+                "code": "10.07",
+                "parent": [],
+                "name": "Creatividad",
+                "formal": "Creatividad",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "10.09",
+                "parent": [
+                    "94.40"
+                ],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "10.15",
+                "parent": [
+                    "61.82"
+                ],
+                "name": "Agroindustria",
+                "formal": "Agroindustria",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "10.23",
+                "parent": [],
+                "name": "Agroindustria II",
+                "formal": "Agroindustria II",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.79",
+                "parent": [
+                    "93.39",
+                    "81.06"
+                ],
+                "name": "Sistemas y Modelos",
+                "formal": "Sistemas y Modelos",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "11.84",
+                "parent": [
+                    "93.39",
+                    "81.06"
+                ],
+                "name": "Gestión de Proyectos",
+                "formal": "Gestión de Proyectos",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "14.24",
+                "parent": [],
+                "name": "La Evolución de la Calidad y la Mejora Continua",
+                "formal": "La Evolución de la Calidad y la Mejora Continua",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.46",
+                "parent": [],
+                "name": "Lean Manufacturing",
+                "formal": "Lean Manufacturing",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.59",
+                "parent": [],
+                "name": "Lean Six Sigma White Belt",
+                "formal": "Lean Six Sigma White Belt",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.90",
+                "parent": [],
+                "name": "Neurociencia y Liderazgo",
+                "formal": "Neurociencia y Liderazgo",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.94",
+                "parent": [],
+                "name": "Business Model Implementation",
+                "formal": "Business Model Implementation",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.95",
+                "parent": [],
+                "name": "Economía de la Innovación y la Producción",
+                "formal": "Economía de la Innovación y la Producción",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.96",
+                "parent": [],
+                "name": "Herramientas para Ganar Productividad",
+                "formal": "Herramientas para Ganar Productividad",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "14.97",
+                "parent": [],
+                "name": "Diseño Circular: Sustentabilidad e Innovación en la Cadena de Valor.",
+                "formal": "Diseño Circular: Sustentabilidad e Innovación en la Cadena de Valor.",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "15.06",
+                "parent": [
+                    "94.64"
+                ],
+                "name": "Storytelling aplicado a los negocios",
+                "formal": "Storytelling aplicado a los negocios",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "15.09",
+                "parent": [],
+                "name": "Agile, Lean y Lean Six Sigma",
+                "formal": "Agile, Lean y Lean Six Sigma",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "17.22",
+                "parent": [],
+                "name": "Cálculo de Huella de Carbono en Organizaciones",
+                "formal": "Cálculo de Huella de Carbono en Organizaciones",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "17.23",
+                "parent": [],
+                "name": "Triple Impacto: Estrategias para el Desarrollo Sostenible",
+                "formal": "Triple Impacto: Estrategias para el Desarrollo Sostenible",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.04",
+                "parent": [
+                    "61.82"
+                ],
+                "name": "Sistema Monetario y Financiero en Argentina",
+                "formal": "Sistema Monetario y Financiero en Argentina",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.05",
+                "parent": [],
+                "name": "Economía de la Salud",
+                "formal": "Economía de la Salud",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.07",
+                "parent": [
+                    "61.12"
+                ],
+                "name": "Mercado de Capitales",
+                "formal": "Mercado de Capitales",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "61.08",
+                "parent": [
+                    "61.87"
+                ],
+                "name": "Derecho Digital",
+                "formal": "Derecho Digital",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.11",
+                "parent": [
+                    "61.87"
+                ],
+                "name": "Derecho Laboral y Seguridad Social en la Empresa",
+                "formal": "Derecho Laboral y Seguridad Social en la Empresa",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.13",
+                "parent": [
+                    "61.87"
+                ],
+                "name": "Práctica Contractual",
+                "formal": "Práctica Contractual",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.14",
+                "parent": [
+                    "61.82",
+                    "61.12"
+                ],
+                "name": "Economía Internacional Real",
+                "formal": "Economía Internacional Real",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.15",
+                "parent": [
+                    "61.82",
+                    "61.12"
+                ],
+                "name": "Economía Internacional Monetaria",
+                "formal": "Economía Internacional Monetaria",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.30",
+                "parent": [
+                    "93.39",
+                    "61.82"
+                ],
+                "name": "Econometría Aplicada",
+                "formal": "Econometría Aplicada",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.34",
+                "parent": [
+                    "61.12"
+                ],
+                "name": "Valuación de Empresas",
+                "formal": "Valuación de Empresas",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "61.88",
+                "parent": [
+                    "61.87"
+                ],
+                "name": "Derecho Público y Privado II",
+                "formal": "Derecho Público y Privado II",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.92",
+                "parent": [
+                    "81.26",
+                    "61.87"
+                ],
+                "name": "Derecho Aduanero",
+                "formal": "Derecho Aduanero",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "61.93",
+                "parent": [
+                    "61.12"
+                ],
+                "name": "Estrategia Financiera",
+                "formal": "Estrategia Financiera",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.04",
+                "parent": [
+                    "61.82",
+                    "61.81"
+                ],
+                "name": "Teoría de Juegos y Estrategia",
+                "formal": "Teoría de Juegos y Estrategia",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.05",
+                "parent": [],
+                "name": "Responsabilidad Social Empresaria",
+                "formal": "Responsabilidad Social Empresaria",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.13",
+                "parent": [],
+                "name": "Futuros Posibles",
+                "formal": "Futuros Posibles",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.14",
+                "parent": [
+                    "81.53"
+                ],
+                "name": "Product Management",
+                "formal": "Product Management",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.16",
+                "parent": [],
+                "name": "Negociación",
+                "formal": "Negociación",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.17",
+                "parent": [],
+                "name": "Finanzas y Programación",
+                "formal": "Finanzas y Programación",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.18",
+                "parent": [
+                    "81.20"
+                ],
+                "name": "Taller de Simulación Comercial",
+                "formal": "Taller de Simulación Comercial",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.24",
+                "parent": [],
+                "name": "Internacionalización de la Empresa",
+                "formal": "Internacionalización de la Empresa",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.26",
+                "parent": [],
+                "name": "Comercio Exterior",
+                "formal": "Comercio Exterior",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.43",
+                "parent": [],
+                "name": "Ciclo de charlas sobre estrategia empresarial",
+                "formal": "Ciclo de charlas sobre estrategia empresarial",
+                "credits": 3,
+                "requires": 144
+            },
+            {
+                "code": "81.46",
+                "parent": [
+                    "81.29"
+                ],
+                "name": "Auditoría General y de Sistemas",
+                "formal": "Auditoría General y de Sistemas",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.49",
+                "parent": [
+                    "81.20"
+                ],
+                "name": "Branding y Comunicación",
+                "formal": "Branding y Comunicación",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.51",
+                "parent": [
+                    "81.06"
+                ],
+                "name": "Gestión de Empresas Familiares",
+                "formal": "Gestión de Empresas Familiares",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.58",
+                "parent": [
+                    "81.29"
+                ],
+                "name": "Service Design",
+                "formal": "Service Design",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.59",
+                "parent": [
+                    "81.29"
+                ],
+                "name": "Gestión de Servicios",
+                "formal": "Gestión de Servicios",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.64",
+                "parent": [
+                    "11.83"
+                ],
+                "name": "Gestión y Sistemas de Información de la Logística Internacional",
+                "formal": "Gestión y Sistemas de Información de la Logística Internacional",
+                "credits": 6,
+                "requires": 48
+            },
+            {
+                "code": "81.65",
+                "parent": [
+                    "11.83"
+                ],
+                "name": "Logística Internacional",
+                "formal": "Logística Internacional",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.66",
+                "parent": [
+                    "11.83",
+                    "81.26"
+                ],
+                "name": "Logística Internacional Aplicada",
+                "formal": "Logística Internacional Aplicada",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.67",
+                "parent": [
+                    "11.83"
+                ],
+                "name": "Logística E-commerce",
+                "formal": "Logística E-commerce",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.71",
+                "parent": [
+                    "81.20"
+                ],
+                "name": "Marketing avanzado",
+                "formal": "Marketing avanzado",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.82",
+                "parent": [],
+                "name": "Growth Hacking",
+                "formal": "Growth Hacking",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.94",
+                "parent": [],
+                "name": "Experiencia Inmersiva de Innovación Tecnológica",
+                "formal": "Experiencia Inmersiva de Innovación Tecnológica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "82.80",
+                "parent": [],
+                "name": "Servicios de excelencia. Lean aplicado a los Servicios y principios de Lean Office",
+                "formal": "Servicios de excelencia. Lean aplicado a los Servicios y principios de Lean Office",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.88",
+                "parent": [],
+                "name": "Estudio de Casos con Grandes Volúmenes de Datos",
+                "formal": "Estudio de Casos con Grandes Volúmenes de Datos",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.89",
+                "parent": [],
+                "name": "Framing: How Politicians Debate",
+                "formal": "Framing: How Politicians Debate",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.91",
+                "parent": [],
+                "name": "Responsible Innovation: Ethics, Safety and Technology",
+                "formal": "Responsible Innovation: Ethics, Safety and Technology",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.92",
+                "parent": [],
+                "name": "An Introduction to Credit Risk Management",
+                "formal": "An Introduction to Credit Risk Management",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.93",
+                "parent": [],
+                "name": "Diseño de Producto",
+                "formal": "Diseño de Producto",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.94",
+                "parent": [],
+                "name": "Demand Forecasting",
+                "formal": "Demand Forecasting",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.95",
+                "parent": [],
+                "name": "Analytics",
+                "formal": "Analytics",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.96",
+                "parent": [],
+                "name": "Negocios en la era de internet",
+                "formal": "Negocios en la era de internet",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.97",
+                "parent": [],
+                "name": "Introducción a Estrategia",
+                "formal": "Introducción a Estrategia",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.98",
+                "parent": [],
+                "name": "Introducción a la Consultoría",
+                "formal": "Introducción a la Consultoría",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "82.99",
+                "parent": [],
+                "name": "Gestión de la Innovación",
+                "formal": "Gestión de la Innovación",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "94.07",
+                "parent": [],
+                "name": "Cultura Latinoamericana",
+                "formal": "Cultura Latinoamericana",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "94.09",
+                "parent": [],
+                "name": "Cultura, Identidad y Política",
+                "formal": "Cultura, Identidad y Política",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "94.11",
+                "parent": [],
+                "name": "Sociología Política",
+                "formal": "Sociología Política",
+                "credits": 6,
+                "requires": 48
+            },
+            {
+                "code": "94.13",
+                "parent": [
+                    "81.06"
+                ],
+                "name": "Gestión de Organizaciones Sociales",
+                "formal": "Gestión de Organizaciones Sociales",
+                "credits": 6,
+                "requires": 48
+            },
+            {
+                "code": "94.19",
+                "parent": [
+                    "94.40"
+                ],
+                "name": "Comportamiento Organizacional",
+                "formal": "Comportamiento Organizacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.62",
+                "parent": [],
+                "name": "Ética en los Negocios",
+                "formal": "Ética en los Negocios",
+                "credits": 3,
+                "requires": 48
+            }
+        ],
+        "Electivas Proyecto Final": [
+            {
+                "code": "81.95",
+                "parent": [
+                    "81.48",
+                    "11.83",
+                    "61.12",
+                    "81.57",
+                    "81.42"
+                ],
+                "name": "Proyecto de lanzamiento de productos o servicios (Trabajo Final)",
+                "formal": "Proyecto de lanzamiento de productos o servicios (Trabajo Final)",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.96",
+                "parent": [
+                    "81.48",
+                    "11.83",
+                    "61.12",
+                    "81.57",
+                    "81.42"
+                ],
+                "name": "Diagnóstico Empresario y Plan de Implementación de Sistemas ( Trabajo Final )",
+                "formal": "Diagnóstico Empresario y Plan de Implementación de Sistemas ( Trabajo Final )",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.97",
+                "parent": [
+                    "81.48",
+                    "11.83",
+                    "81.57",
+                    "61.12",
+                    "81.42"
+                ],
+                "name": "Diagnóstico Empresario y Plan de Acción ( Trabajo Final )",
+                "formal": "Diagnóstico Empresario y Plan de Acción ( Trabajo Final )",
+                "credits": 3,
+                "requires": 0
+            }
+        ],
+        "Electivas Sistemas y Tecnología": [
+            {
+                "code": "23.15",
+                "parent": [
+                    "71.45",
+                    "81.28",
+                    "93.21"
+                ],
+                "name": "Realidad Virtual",
+                "formal": "Realidad Virtual",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "71.22",
+                "parent": [
+                    "71.20"
+                ],
+                "name": "Sistemas de Inteligencia Artificial",
+                "formal": "Sistemas de Inteligencia Artificial",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "71.45",
+                "parent": [
+                    "71.20"
+                ],
+                "name": "Estructura de Datos y Programación",
+                "formal": "Estructura de Datos y Programación",
+                "credits": 6,
+                "requires": 48
+            },
+            {
+                "code": "71.79",
+                "parent": [],
+                "name": "Introducción a las bases de datos",
+                "formal": "Introducción a las bases de datos",
+                "credits": 6,
+                "requires": 48
+            },
+            {
+                "code": "72.74",
+                "parent": [
+                    "71.20"
+                ],
+                "name": "Visualización de Información",
+                "formal": "Visualización de Información",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "72.80",
+                "parent": [
+                    "71.88"
+                ],
+                "name": "Big Data",
+                "formal": "Big Data",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "73.84",
+                "parent": [
+                    "71.22"
+                ],
+                "name": "Ciencia de Datos Aplicada",
+                "formal": "Ciencia de Datos Aplicada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.19",
+                "parent": [
+                    "81.20"
+                ],
+                "name": "Marketing Digital",
+                "formal": "Marketing Digital",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.23",
+                "parent": [
+                    "81.53"
+                ],
+                "name": "Comercio Electrónico",
+                "formal": "Comercio Electrónico",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.28",
+                "parent": [],
+                "name": "Tecnologías exponenciales",
+                "formal": "Tecnologías exponenciales",
+                "credits": 3,
+                "requires": 120
+            },
+            {
+                "code": "81.33",
+                "parent": [
+                    "81.32"
+                ],
+                "name": "Diseño de aplicaciones informáticas",
+                "formal": "Diseño de aplicaciones informáticas",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.38",
+                "parent": [
+                    "71.30",
+                    "71.20",
+                    "81.29"
+                ],
+                "name": "Integración de Procesos de Negocios y Aplicaciones Informáticas",
+                "formal": "Integración de Procesos de Negocios y Aplicaciones Informáticas",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.54",
+                "parent": [
+                    "71.30"
+                ],
+                "name": "Aplicaciones en Internet",
+                "formal": "Aplicaciones en Internet",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.69",
+                "parent": [
+                    "61.12",
+                    "81.68"
+                ],
+                "name": "Sistemas Integrados de Gestión Empresaria II",
+                "formal": "Sistemas Integrados de Gestión Empresaria II",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.72",
+                "parent": [],
+                "name": "Introducción a la realidad virtual",
+                "formal": "Introducción a la realidad virtual",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.73",
+                "parent": [],
+                "name": "Introducción a la IOT",
+                "formal": "Introducción a la IOT",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.74",
+                "parent": [],
+                "name": "Introducción a la realidad aumentada",
+                "formal": "Introducción a la realidad aumentada",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.75",
+                "parent": [],
+                "name": "Fundamentos del desarrollo de software y análisis de datos en Python",
+                "formal": "Fundamentos del desarrollo de software y análisis de datos en Python",
+                "credits": 1,
+                "requires": 71
+            },
+            {
+                "code": "81.83",
+                "parent": [],
+                "name": "Tecnología e Innovación Aplicada a la Industria",
+                "formal": "Tecnología e Innovación Aplicada a la Industria",
+                "credits": 1,
+                "requires": 48
+            },
+            {
+                "code": "81.84",
+                "parent": [
+                    "81.11",
+                    "81.29"
+                ],
+                "name": "ERP Action Lab",
+                "formal": "ERP Action Lab",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.85",
+                "parent": [
+                    "81.21",
+                    "81.29"
+                ],
+                "name": "CRM Action Lab",
+                "formal": "CRM Action Lab",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.87",
+                "parent": [],
+                "name": "Taller de Sistemas Integrados de Gestión Empresaria",
+                "formal": "Taller de Sistemas Integrados de Gestión Empresaria",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.88",
+                "parent": [],
+                "name": "Taller de modelado Avanzado",
+                "formal": "Taller de modelado Avanzado",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.89",
+                "parent": [],
+                "name": "Taller de Sistemas Integrados de Gestión Empresaria II",
+                "formal": "Taller de Sistemas Integrados de Gestión Empresaria II",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "82.06",
+                "parent": [
+                    "71.38"
+                ],
+                "name": "Plataformas de Computación Cognitiva",
+                "formal": "Plataformas de Computación Cognitiva",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "82.07",
+                "parent": [
+                    "81.53"
+                ],
+                "name": "Blockchain (Moneda digital descentralizada)",
+                "formal": "Blockchain (Moneda digital descentralizada)",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "82.08",
+                "parent": [],
+                "name": "Cloud Computing",
+                "formal": "Cloud Computing",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "82.21",
+                "parent": [],
+                "name": "Factibilidad de Proyectos Data Driven",
+                "formal": "Factibilidad de Proyectos Data Driven",
+                "credits": 3,
+                "requires": 140
+            },
+            {
+                "code": "82.22",
+                "parent": [
+                    "81.57"
+                ],
+                "name": "Inteligencia Artificial Generativa",
+                "formal": "Inteligencia Artificial Generativa",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "94.15",
+                "parent": [
+                    "81.53",
+                    "61.87"
+                ],
+                "name": "Propiedad Intelectual y Nuevas Tecnologías",
+                "formal": "Propiedad Intelectual y Nuevas Tecnologías",
+                "credits": 3,
+                "requires": 48
+            }
+        ],
+        "Electivas Skills Complementarios": [
+            {
+                "code": "94.90",
+                "parent": [],
+                "name": "Inglés I (analista)",
+                "formal": "Inglés I (analista)",
+                "credits": 0,
+                "requires": 0
+            },
+            {
+                "code": "94.91",
+                "parent": [
+                    "94.90"
+                ],
+                "name": "Inglés II (licenciado)",
+                "formal": "Inglés II (licenciado)",
+                "credits": 0,
+                "requires": 0
+            }
+        ]
+    }
 }

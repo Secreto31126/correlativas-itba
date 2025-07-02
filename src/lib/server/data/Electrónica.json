@@ -544,5 +544,480 @@
             "credits": 0,
             "requires": 144
         }
-    ]
+    ],
+    "optatives": {
+        "ELECTIVAS": [
+            {
+                "code": "10.09",
+                "parent": [],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.34",
+                "parent": [],
+                "name": "Taller de Modelización de Productos",
+                "formal": "Taller de Modelización de Productos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "12.02",
+                "parent": [],
+                "name": "Química II",
+                "formal": "Química II",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "15.79",
+                "parent": [],
+                "name": "Metodología de la Investigación",
+                "formal": "Metodología de la Investigación",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.04",
+                "parent": [],
+                "name": "Neurociencias y Desarrollo Productivo",
+                "formal": "Neurociencias y Desarrollo Productivo",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "22.22",
+                "parent": [],
+                "name": "Antenas y Radiopropagacion",
+                "formal": "Antenas y Radiopropagacion",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.29",
+                "parent": [],
+                "name": "Microondas",
+                "formal": "Microondas",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.46",
+                "parent": [],
+                "name": "Procesamiento Adaptativo de Señales",
+                "formal": "Procesamiento Adaptativo de Señales",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.47",
+                "parent": [],
+                "name": "Procesamiento de Voz",
+                "formal": "Procesamiento de Voz",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "22.48",
+                "parent": [],
+                "name": "Procesamiento de Imágenes",
+                "formal": "Procesamiento de Imágenes",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "22.64",
+                "parent": [],
+                "name": "Comunicaciones Digitales",
+                "formal": "Comunicaciones Digitales",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.66",
+                "parent": [],
+                "name": "Redes Digitales",
+                "formal": "Redes Digitales",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.88",
+                "parent": [],
+                "name": "Sensores y Actuadores",
+                "formal": "Sensores y Actuadores",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.90",
+                "parent": [],
+                "name": "Automación Industrial",
+                "formal": "Automación Industrial",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.93",
+                "parent": [],
+                "name": "Control Automático",
+                "formal": "Control Automático",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "23.10",
+                "parent": [],
+                "name": "Formación General II",
+                "formal": "Formación General II",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.04",
+                "parent": [],
+                "name": "Computación Cuántica",
+                "formal": "Computación Cuántica",
+                "credits": 6,
+                "requires": 144
+            },
+            {
+                "code": "25.51",
+                "parent": [],
+                "name": "Electrónica aplicada a Movilidad Eléctrica",
+                "formal": "Electrónica aplicada a Movilidad Eléctrica",
+                "credits": 4,
+                "requires": 96
+            },
+            {
+                "code": "25.52",
+                "parent": [
+                    "25.28"
+                ],
+                "name": "Electrónica de Potencia",
+                "formal": "Electrónica de Potencia",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "25.53",
+                "parent": [
+                    "25.26"
+                ],
+                "name": "Señales Aleatorias",
+                "formal": "Señales Aleatorias",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "25.55",
+                "parent": [
+                    "25.17",
+                    "25.15"
+                ],
+                "name": "Microelectrónica",
+                "formal": "Microelectrónica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.56",
+                "parent": [
+                    "25.55"
+                ],
+                "name": "Diseño Físico de Circuitos Integrados",
+                "formal": "Diseño Físico de Circuitos Integrados",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.57",
+                "parent": [
+                    "25.56"
+                ],
+                "name": "Diseño Analógico de Circuitos Integrados (Anual)",
+                "formal": "Diseño Analógico de Circuitos Integrados (Anual)",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.59",
+                "parent": [
+                    "25.56"
+                ],
+                "name": "Dispositivos Lógicos Programables",
+                "formal": "Dispositivos Lógicos Programables",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.60",
+                "parent": [
+                    "25.23"
+                ],
+                "name": "Control Avanzado",
+                "formal": "Control Avanzado",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.61",
+                "parent": [],
+                "name": "Tecnologías para el agro",
+                "formal": "Tecnologías para el agro",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "25.62",
+                "parent": [],
+                "name": "Electrónica Aeroespacial",
+                "formal": "Electrónica Aeroespacial",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "25.63",
+                "parent": [],
+                "name": "Redes Neuronales",
+                "formal": "Redes Neuronales",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "25.64",
+                "parent": [],
+                "name": "Deep Learning",
+                "formal": "Deep Learning",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "25.65",
+                "parent": [
+                    "93.18",
+                    "25.03"
+                ],
+                "name": "Realidad Virtual",
+                "formal": "Realidad Virtual",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.66",
+                "parent": [
+                    "92.07"
+                ],
+                "name": "Acústica para Ingenieros",
+                "formal": "Acústica para Ingenieros",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.67",
+                "parent": [
+                    "25.17",
+                    "25.20"
+                ],
+                "name": "Laboratorio de Dsp_fpga",
+                "formal": "Laboratorio de Dsp_fpga",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.68",
+                "parent": [
+                    "25.28"
+                ],
+                "name": "Electrónica aplicada a Energías alternativas",
+                "formal": "Electrónica aplicada a Energías alternativas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.70",
+                "parent": [
+                    "25.56"
+                ],
+                "name": "Diseño analógico de circuitos integrados",
+                "formal": "Diseño analógico de circuitos integrados",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.71",
+                "parent": [
+                    "25.70"
+                ],
+                "name": "Diseño analógico de Sistemas integrados",
+                "formal": "Diseño analógico de Sistemas integrados",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.72",
+                "parent": [
+                    "25.56"
+                ],
+                "name": "Diseño digital de circuitos integrados",
+                "formal": "Diseño digital de circuitos integrados",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.73",
+                "parent": [
+                    "25.72"
+                ],
+                "name": "Verificación de Circuitos Digitales Integrados",
+                "formal": "Verificación de Circuitos Digitales Integrados",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "25.80",
+                "parent": [],
+                "name": "Introducción a la programación orientada a objetos",
+                "formal": "Introducción a la programación orientada a objetos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.81",
+                "parent": [],
+                "name": "Principios de Electrotecnia",
+                "formal": "Principios de Electrotecnia",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "25.82",
+                "parent": [],
+                "name": "Circuitos de Audio",
+                "formal": "Circuitos de Audio",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "25.83",
+                "parent": [],
+                "name": "Guías de ondas",
+                "formal": "Guías de ondas",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "25.84",
+                "parent": [],
+                "name": "Convertidores de potencia",
+                "formal": "Convertidores de potencia",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "25.85",
+                "parent": [],
+                "name": "Programación en bajo nivel",
+                "formal": "Programación en bajo nivel",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "25.86",
+                "parent": [
+                    "25.53"
+                ],
+                "name": "Procesamiento Avanzado de Señales",
+                "formal": "Procesamiento Avanzado de Señales",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.87",
+                "parent": [
+                    "25.63"
+                ],
+                "name": "Redes Neuronales II",
+                "formal": "Redes Neuronales II",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.88",
+                "parent": [
+                    "25.63"
+                ],
+                "name": "Redes Neuronales III",
+                "formal": "Redes Neuronales III",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.89",
+                "parent": [],
+                "name": "Laboratorio de simulaciones de señales aleatorias",
+                "formal": "Laboratorio de simulaciones de señales aleatorias",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "31.81",
+                "parent": [],
+                "name": "Tecnología de Máquinas",
+                "formal": "Tecnología de Máquinas",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "31.99",
+                "parent": [],
+                "name": "Mecatrónica Aplicada",
+                "formal": "Mecatrónica Aplicada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "92.92",
+                "parent": [],
+                "name": "Complementos de Física de la Relatividad",
+                "formal": "Complementos de Física de la Relatividad",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "92.97",
+                "parent": [],
+                "name": "Complementos de Matemática V",
+                "formal": "Complementos de Matemática V",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "92.99",
+                "parent": [],
+                "name": "Complementos de Análisis Matemático IV",
+                "formal": "Complementos de Análisis Matemático IV",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "94.24",
+                "parent": [],
+                "name": "Metodología del Aprendizaje",
+                "formal": "Metodología del Aprendizaje",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.42",
+                "parent": [],
+                "name": "Comunicación Estratégica",
+                "formal": "Comunicación Estratégica",
+                "credits": 3,
+                "requires": 96
+            }
+        ]
+    }
 }

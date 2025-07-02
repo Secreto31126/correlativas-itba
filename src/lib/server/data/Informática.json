@@ -467,5 +467,881 @@
             "credits": 0,
             "requires": 0
         }
-    ]
+    ],
+    "optatives": {
+        "Electivas": [
+            {
+                "code": "10.07",
+                "parent": [],
+                "name": "Creatividad",
+                "formal": "Creatividad",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "10.09",
+                "parent": [],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "11.36",
+                "parent": [],
+                "name": "Innovación y Competitividad",
+                "formal": "Innovación y Competitividad",
+                "credits": 3,
+                "requires": 192
+            },
+            {
+                "code": "16.04",
+                "parent": [],
+                "name": "Neurociencias y Desarrollo Productivo",
+                "formal": "Neurociencias y Desarrollo Productivo",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.50",
+                "parent": [
+                    "72.37"
+                ],
+                "name": "Introducción a la Bioinformática",
+                "formal": "Introducción a la Bioinformática",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.57",
+                "parent": [
+                    "72.08"
+                ],
+                "name": "Robótica Bioinspirada",
+                "formal": "Robótica Bioinspirada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.82",
+                "parent": [
+                    "93.28",
+                    "72.34",
+                    "93.24"
+                ],
+                "name": "Neurociencia Computacional",
+                "formal": "Neurociencia Computacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "22.09",
+                "parent": [],
+                "name": "Fundamentos Electrónicos de la Informática",
+                "formal": "Fundamentos Electrónicos de la Informática",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "22.48",
+                "parent": [
+                    "93.75"
+                ],
+                "name": "Procesamiento de Imágenes",
+                "formal": "Procesamiento de Imágenes",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "23.15",
+                "parent": [
+                    "93.58",
+                    "72.34"
+                ],
+                "name": "Realidad Virtual",
+                "formal": "Realidad Virtual",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "25.04",
+                "parent": [],
+                "name": "Computación Cuántica",
+                "formal": "Computación Cuántica",
+                "credits": 6,
+                "requires": 144
+            },
+            {
+                "code": "61.08",
+                "parent": [
+                    "61.32"
+                ],
+                "name": "Derecho Digital",
+                "formal": "Derecho Digital",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.11",
+                "parent": [
+                    "61.32"
+                ],
+                "name": "Derecho Laboral y Seguridad Social en la Empresa",
+                "formal": "Derecho Laboral y Seguridad Social en la Empresa",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.13",
+                "parent": [
+                    "61.32"
+                ],
+                "name": "Práctica Contractual",
+                "formal": "Práctica Contractual",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "61.50",
+                "parent": [
+                    "61.23"
+                ],
+                "name": "Finanzas de la Empresa",
+                "formal": "Finanzas de la Empresa",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.02",
+                "parent": [],
+                "name": "Organización Básica de la Computadora",
+                "formal": "Organización Básica de la Computadora",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.18",
+                "parent": [],
+                "name": "Programación Funcional",
+                "formal": "Programación Funcional",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "72.22",
+                "parent": [],
+                "name": "Sistemas Tolerantes a Fallas",
+                "formal": "Sistemas Tolerantes a Fallas",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.23",
+                "parent": [],
+                "name": "Diseño y Construcción de Compiladores",
+                "formal": "Diseño y Construcción de Compiladores",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.28",
+                "parent": [],
+                "name": "Topología de Internet: Análisis y Modelado",
+                "formal": "Topología de Internet: Análisis y Modelado",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.29",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Tipos para Lenguajes de Programación",
+                "formal": "Tipos para Lenguajes de Programación",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.46",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Robótica Basada en Comportamiento",
+                "formal": "Robótica Basada en Comportamiento",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.49",
+                "parent": [
+                    "72.42"
+                ],
+                "name": "Sistemas Tolerantes a Fallas",
+                "formal": "Sistemas Tolerantes a Fallas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.50",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Introducción al Desarrollo de Videojuegos",
+                "formal": "Introducción al Desarrollo de Videojuegos",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.51",
+                "parent": [
+                    "72.42"
+                ],
+                "name": "Tecnologías para Web 2.0 y Redes Sociales",
+                "formal": "Tecnologías para Web 2.0 y Redes Sociales",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.52",
+                "parent": [
+                    "93.75",
+                    "72.34"
+                ],
+                "name": "Análisis y Tratamiento de Imágenes",
+                "formal": "Análisis y Tratamiento de Imágenes",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.53",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Visión Computacional 3D",
+                "formal": "Visión Computacional 3D",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.54",
+                "parent": [
+                    "93.24",
+                    "72.41"
+                ],
+                "name": "OLAP y Explotación de Datos",
+                "formal": "OLAP y Explotación de Datos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.55",
+                "parent": [
+                    "72.32",
+                    "72.37"
+                ],
+                "name": "Ontologías en la Web",
+                "formal": "Ontologías en la Web",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.56",
+                "parent": [],
+                "name": "Automatización e Integración de Sistemas de Información",
+                "formal": "Automatización e Integración de Sistemas de Información",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.57",
+                "parent": [],
+                "name": "Sistemas Embebidos",
+                "formal": "Sistemas Embebidos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.58",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Computación Gráfica",
+                "formal": "Computación Gráfica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.59",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Sistemas de Inteligencia Artificial II",
+                "formal": "Sistemas de Inteligencia Artificial II",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.60",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Programación Funcional",
+                "formal": "Programación Funcional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.61",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Taller de Diseño de Videojuegos",
+                "formal": "Taller de Diseño de Videojuegos",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "72.65",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Desarrollo de Videojuegos 2D en iPhone OS",
+                "formal": "Desarrollo de Videojuegos 2D en iPhone OS",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.66",
+                "parent": [],
+                "name": "Sistemas Embebidos",
+                "formal": "Sistemas Embebidos",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.67",
+                "parent": [],
+                "name": "Robótica Cinemática Computacional",
+                "formal": "Robótica Cinemática Computacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.68",
+                "parent": [],
+                "name": "Arte y Ciencia Interactivos",
+                "formal": "Arte y Ciencia Interactivos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.69",
+                "parent": [],
+                "name": "Seguridad de Software basada en Flujo de Información",
+                "formal": "Seguridad de Software basada en Flujo de Información",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "72.70",
+                "parent": [],
+                "name": "Modelos e Imágenes Fractales",
+                "formal": "Modelos e Imágenes Fractales",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "72.71",
+                "parent": [
+                    "72.07",
+                    "72.37",
+                    "72.35"
+                ],
+                "name": "Integración de Sistemas de Información",
+                "formal": "Integración de Sistemas de Información",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.72",
+                "parent": [],
+                "name": "Análisis y Verificación de Modelos y Códigos",
+                "formal": "Análisis y Verificación de Modelos y Códigos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.73",
+                "parent": [],
+                "name": "Aprendizaje por Refuerzo en Robótica",
+                "formal": "Aprendizaje por Refuerzo en Robótica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.74",
+                "parent": [
+                    "72.31"
+                ],
+                "name": "Visualización de Información",
+                "formal": "Visualización de Información",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.75",
+                "parent": [
+                    "93.75",
+                    "72.34",
+                    "93.24"
+                ],
+                "name": "Aprendizaje Automático (Machine Learning)",
+                "formal": "Aprendizaje Automático (Machine Learning)",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.77",
+                "parent": [],
+                "name": "Técnicas Automáticas para  Testing de Software",
+                "formal": "Técnicas Automáticas para  Testing de Software",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.78",
+                "parent": [],
+                "name": "OLAP Espacial",
+                "formal": "OLAP Espacial",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.79",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Sistemas Multiagente I",
+                "formal": "Sistemas Multiagente I",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.80",
+                "parent": [
+                    "72.41"
+                ],
+                "name": "Big Data",
+                "formal": "Big Data",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.81",
+                "parent": [],
+                "name": "Simulación y Animación de Sistemas Multipartículas",
+                "formal": "Simulación y Animación de Sistemas Multipartículas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.82",
+                "parent": [
+                    "72.41"
+                ],
+                "name": "Tópicos de NOSQL",
+                "formal": "Tópicos de NOSQL",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.83",
+                "parent": [],
+                "name": "Técnicas Avanzadas de HCI con Uso de Rastreadores de Ojos y Manos",
+                "formal": "Técnicas Avanzadas de HCI con Uso de Rastreadores de Ojos y Manos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.84",
+                "parent": [
+                    "72.37"
+                ],
+                "name": "Base de Datos Espaciales y Sistemas de Información Geográfica",
+                "formal": "Base de Datos Espaciales y Sistemas de Información Geográfica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.85",
+                "parent": [
+                    "72.32",
+                    "72.37"
+                ],
+                "name": "Análisis de Datos en la Web Semántica",
+                "formal": "Análisis de Datos en la Web Semántica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.86",
+                "parent": [
+                    "72.97"
+                ],
+                "name": "Técnicas Avanzadas en Videojuegos",
+                "formal": "Técnicas Avanzadas en Videojuegos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.87",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Diseño Sonoro para Animación y Videojuegos",
+                "formal": "Diseño Sonoro para Animación y Videojuegos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.88",
+                "parent": [
+                    "93.75",
+                    "93.24",
+                    "72.34"
+                ],
+                "name": "Introducción a la Neurociencia Computacional",
+                "formal": "Introducción a la Neurociencia Computacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.89",
+                "parent": [
+                    "72.44"
+                ],
+                "name": "Moneda Digital Descentralizada",
+                "formal": "Moneda Digital Descentralizada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.90",
+                "parent": [
+                    "93.07",
+                    "93.43"
+                ],
+                "name": "Internet de las Cosas (IoT)",
+                "formal": "Internet de las Cosas (IoT)",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.92",
+                "parent": [
+                    "72.41"
+                ],
+                "name": "El Paradigma NoSQL",
+                "formal": "El Paradigma NoSQL",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.94",
+                "parent": [
+                    "72.08"
+                ],
+                "name": "Introducción a los Sistemas Embebidos",
+                "formal": "Introducción a los Sistemas Embebidos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.95",
+                "parent": [],
+                "name": "Proyecto de Innovación Científico-Tecnológico",
+                "formal": "Proyecto de Innovación Científico-Tecnológico",
+                "credits": 12,
+                "requires": 0
+            },
+            {
+                "code": "72.96",
+                "parent": [
+                    "72.38"
+                ],
+                "name": "Proyecto de Aplicaciones Móviles",
+                "formal": "Proyecto de Aplicaciones Móviles",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "72.97",
+                "parent": [
+                    "72.34"
+                ],
+                "name": "Introducción a la Programación de Videojuegos",
+                "formal": "Introducción a la Programación de Videojuegos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.21",
+                "parent": [
+                    "72.38"
+                ],
+                "name": "Desarrollo de Aplicaciones Móviles Multiplataforma",
+                "formal": "Desarrollo de Aplicaciones Móviles Multiplataforma",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.22",
+                "parent": [
+                    "72.35"
+                ],
+                "name": "Fundamentos de DevOps",
+                "formal": "Fundamentos de DevOps",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.30",
+                "parent": [
+                    "72.35"
+                ],
+                "name": "Desarrollo profesional de software: del código al producto",
+                "formal": "Desarrollo profesional de software: del código al producto",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.40",
+                "parent": [
+                    "72.07",
+                    "72.35"
+                ],
+                "name": "ARQUITECTURA DE MICROSERVICIOS",
+                "formal": "ARQUITECTURA DE MICROSERVICIOS",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.60",
+                "parent": [],
+                "name": "Introducción a la Robótica Empresarial",
+                "formal": "Introducción a la Robótica Empresarial",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.61",
+                "parent": [],
+                "name": "Neurorobótica",
+                "formal": "Neurorobótica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.62",
+                "parent": [
+                    "72.33",
+                    "72.11"
+                ],
+                "name": "Introducción a la Programación Paralela",
+                "formal": "Introducción a la Programación Paralela",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.64",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Temas Avanzados en Deep Learning",
+                "formal": "Temas Avanzados en Deep Learning",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "73.66",
+                "parent": [],
+                "name": "Procesamiento de Imágenes Satelitales",
+                "formal": "Procesamiento de Imágenes Satelitales",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.80",
+                "parent": [
+                    "72.44"
+                ],
+                "name": "SEGURIDAD OFENSIVA",
+                "formal": "SEGURIDAD OFENSIVA",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.82",
+                "parent": [
+                    "72.37"
+                ],
+                "name": "Bases de Datos Espaciales y de Movilidad",
+                "formal": "Bases de Datos Espaciales y de Movilidad",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.84",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Ciencia de Datos Aplicada",
+                "formal": "Ciencia de Datos Aplicada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.89",
+                "parent": [
+                    "72.44"
+                ],
+                "name": "Introducción a Blockchain y Criptomonedas",
+                "formal": "Introducción a Blockchain y Criptomonedas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "73.98",
+                "parent": [
+                    "72.97"
+                ],
+                "name": "Desarrollo Integral de Videojuegos",
+                "formal": "Desarrollo Integral de Videojuegos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.13",
+                "parent": [],
+                "name": "Futuros Posibles",
+                "formal": "Futuros Posibles",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "81.14",
+                "parent": [],
+                "name": "Product Management",
+                "formal": "Product Management",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.16",
+                "parent": [],
+                "name": "Negociación",
+                "formal": "Negociación",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "81.57",
+                "parent": [
+                    "72.07",
+                    "72.37",
+                    "72.35"
+                ],
+                "name": "Arquitectura de soluciones digitales",
+                "formal": "Arquitectura de soluciones digitales",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "81.74",
+                "parent": [],
+                "name": "Introducción a la realidad aumentada",
+                "formal": "Introducción a la realidad aumentada",
+                "credits": 1,
+                "requires": 51
+            },
+            {
+                "code": "82.08",
+                "parent": [
+                    "72.32"
+                ],
+                "name": "Cloud Computing",
+                "formal": "Cloud Computing",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "82.18",
+                "parent": [
+                    "93.07"
+                ],
+                "name": "Procesamiento del Lenguaje Natural",
+                "formal": "Procesamiento del Lenguaje Natural",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "82.21",
+                "parent": [
+                    "61.23"
+                ],
+                "name": "Factibilidad de Proyectos Data Driven",
+                "formal": "Factibilidad de Proyectos Data Driven",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.26",
+                "parent": [],
+                "name": "Comunicación Organizacional",
+                "formal": "Comunicación Organizacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.42",
+                "parent": [],
+                "name": "Comunicación Estratégica",
+                "formal": "Comunicación Estratégica",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.62",
+                "parent": [],
+                "name": "Ética en los Negocios",
+                "formal": "Ética en los Negocios",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.64",
+                "parent": [],
+                "name": "Prácticas Expositivas",
+                "formal": "Prácticas Expositivas",
+                "credits": 3,
+                "requires": 120
+            },
+            {
+                "code": "94.65",
+                "parent": [],
+                "name": "Practica Profesional supervisada",
+                "formal": "Practica Profesional supervisada",
+                "credits": 0,
+                "requires": 144
+            },
+            {
+                "code": "94.92",
+                "parent": [],
+                "name": "Escritura Académica",
+                "formal": "Escritura Académica",
+                "credits": 3,
+                "requires": 0
+            }
+        ]
+    }
 }

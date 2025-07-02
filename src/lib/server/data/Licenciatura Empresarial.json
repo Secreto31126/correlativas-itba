@@ -319,5 +319,698 @@
             "credits": 0,
             "requires": 0
         }
-    ]
+    ],
+    "optatives": {
+        "Electivas Analytics": [
+            {
+                "code": "81.17",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Finanzas y Programación",
+                "formal": "Finanzas y Programación",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.09",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica en Redes de Telecomunicaciones",
+                "formal": "Analítica en Redes de Telecomunicaciones",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.10",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica en Transporte y Logística",
+                "formal": "Analítica en Transporte y Logística",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.11",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica en Venta Minorista",
+                "formal": "Analítica en Venta Minorista",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.12",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Análisis de Información Biomédica",
+                "formal": "Análisis de Información Biomédica",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.13",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica de Redes Sociales",
+                "formal": "Analítica de Redes Sociales",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.14",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica en Recursos Humanos",
+                "formal": "Analítica en Recursos Humanos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.16",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica de Ciudades",
+                "formal": "Analítica de Ciudades",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.17",
+                "parent": [
+                    "11.67",
+                    "71.45"
+                ],
+                "name": "Análisis Multivariado",
+                "formal": "Análisis Multivariado",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.19",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica del Deporte",
+                "formal": "Analítica del Deporte",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.20",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Análisis Predictivo Avanzado",
+                "formal": "Análisis Predictivo Avanzado",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.21",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Factibilidad de Proyectos Data Driven",
+                "formal": "Factibilidad de Proyectos Data Driven",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.23",
+                "parent": [],
+                "name": "Marketing Analytics",
+                "formal": "Marketing Analytics",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.81",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica de Big Data con Spark",
+                "formal": "Analítica de Big Data con Spark",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.82",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica de medios sociales",
+                "formal": "Analítica de medios sociales",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.83",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Analítica en Marketing",
+                "formal": "Analítica en Marketing",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.84",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Gestión de Innovación con enfoque cuantitativo",
+                "formal": "Gestión de Innovación con enfoque cuantitativo",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.85",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Aplicaciones de analítica de redes sociales",
+                "formal": "Aplicaciones de analítica de redes sociales",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.86",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Análisis Estratégico Cuantitativo",
+                "formal": "Análisis Estratégico Cuantitativo",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "82.87",
+                "parent": [
+                    "82.05",
+                    "82.04"
+                ],
+                "name": "Conocimiento del cliente en analítica",
+                "formal": "Conocimiento del cliente en analítica",
+                "credits": 1,
+                "requires": 96
+            }
+        ],
+        "Electivas Gestíon": [
+            {
+                "code": "10.09",
+                "parent": [],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 115
+            },
+            {
+                "code": "10.10",
+                "parent": [
+                    "11.79"
+                ],
+                "name": "Gestión de Sistemas Complejos",
+                "formal": "Gestión de Sistemas Complejos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.79",
+                "parent": [
+                    "93.36"
+                ],
+                "name": "Sistemas y Modelos",
+                "formal": "Sistemas y Modelos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.83",
+                "parent": [
+                    "81.06",
+                    "93.36"
+                ],
+                "name": "Gestión de Operaciones",
+                "formal": "Gestión de Operaciones",
+                "credits": 6,
+                "requires": 96
+            },
+            {
+                "code": "11.84",
+                "parent": [],
+                "name": "Gestión de Proyectos",
+                "formal": "Gestión de Proyectos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "17.22",
+                "parent": [],
+                "name": "Cálculo de Huella de Carbono en Organizaciones",
+                "formal": "Cálculo de Huella de Carbono en Organizaciones",
+                "credits": 1,
+                "requires": 96
+            },
+            {
+                "code": "17.23",
+                "parent": [],
+                "name": "Triple Impacto: Estrategias para el Desarrollo Sostenible",
+                "formal": "Triple Impacto: Estrategias para el Desarrollo Sostenible",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.30",
+                "parent": [
+                    "61.82",
+                    "11.67"
+                ],
+                "name": "Econometría Aplicada",
+                "formal": "Econometría Aplicada",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.04",
+                "parent": [],
+                "name": "Teoría de Juegos y Estrategia",
+                "formal": "Teoría de Juegos y Estrategia",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.19",
+                "parent": [],
+                "name": "Marketing Digital",
+                "formal": "Marketing Digital",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.20",
+                "parent": [],
+                "name": "Comercialización",
+                "formal": "Comercialización",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.23",
+                "parent": [],
+                "name": "Comercio Electrónico",
+                "formal": "Comercio Electrónico",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.28",
+                "parent": [],
+                "name": "Tecnologías exponenciales",
+                "formal": "Tecnologías exponenciales",
+                "credits": 3,
+                "requires": 115
+            },
+            {
+                "code": "81.41",
+                "parent": [],
+                "name": "Estrategia Empresaria",
+                "formal": "Estrategia Empresaria",
+                "credits": 6,
+                "requires": 115
+            },
+            {
+                "code": "81.42",
+                "parent": [],
+                "name": "Estrategia Empresarial",
+                "formal": "Estrategia Empresarial",
+                "credits": 3,
+                "requires": 144
+            },
+            {
+                "code": "81.58",
+                "parent": [],
+                "name": "Service Design",
+                "formal": "Service Design",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.70",
+                "parent": [],
+                "name": "Service Analysis",
+                "formal": "Service Analysis",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.90",
+                "parent": [],
+                "name": "Estadística para los Negocios",
+                "formal": "Estadística para los Negocios",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.27",
+                "parent": [
+                    "61.87"
+                ],
+                "name": "Administración de Recursos Humanos",
+                "formal": "Administración de Recursos Humanos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.64",
+                "parent": [],
+                "name": "Prácticas Expositivas",
+                "formal": "Prácticas Expositivas",
+                "credits": 3,
+                "requires": 96
+            }
+        ],
+        "Electivas Informática": [
+            {
+                "code": "10.16",
+                "parent": [
+                    "82.15"
+                ],
+                "name": "Machine Learning para Negocios",
+                "formal": "Machine Learning para Negocios",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "71.22",
+                "parent": [
+                    "71.20",
+                    "82.15"
+                ],
+                "name": "Sistemas de Inteligencia Artificial",
+                "formal": "Sistemas de Inteligencia Artificial",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "71.38",
+                "parent": [
+                    "71.20"
+                ],
+                "name": "Programación web",
+                "formal": "Programación web",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "71.92",
+                "parent": [
+                    "71.45",
+                    "93.16"
+                ],
+                "name": "Base de Datos I",
+                "formal": "Base de Datos I",
+                "credits": 6,
+                "requires": 96
+            },
+            {
+                "code": "72.41",
+                "parent": [
+                    "71.88"
+                ],
+                "name": "Base de Datos II",
+                "formal": "Base de Datos II",
+                "credits": 6,
+                "requires": 96
+            },
+            {
+                "code": "72.92",
+                "parent": [
+                    "72.41"
+                ],
+                "name": "El Paradigma NoSQL",
+                "formal": "El Paradigma NoSQL",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "73.89",
+                "parent": [],
+                "name": "Introducción a Blockchain y Criptomonedas",
+                "formal": "Introducción a Blockchain y Criptomonedas",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.56",
+                "parent": [],
+                "name": "Arquitectura de la Tecnología Informática",
+                "formal": "Arquitectura de la Tecnología Informática",
+                "credits": 6,
+                "requires": 96
+            },
+            {
+                "code": "81.57",
+                "parent": [],
+                "name": "Arquitectura de soluciones digitales",
+                "formal": "Arquitectura de soluciones digitales",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.06",
+                "parent": [],
+                "name": "Plataformas de Computación Cognitiva",
+                "formal": "Plataformas de Computación Cognitiva",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.08",
+                "parent": [],
+                "name": "Cloud Computing",
+                "formal": "Cloud Computing",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.18",
+                "parent": [
+                    "11.67",
+                    "71.45"
+                ],
+                "name": "Procesamiento del Lenguaje Natural",
+                "formal": "Procesamiento del Lenguaje Natural",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "82.22",
+                "parent": [
+                    "82.05"
+                ],
+                "name": "Inteligencia Artificial Generativa",
+                "formal": "Inteligencia Artificial Generativa",
+                "credits": 1,
+                "requires": 0
+            }
+        ],
+        "Electivas Orientación": [
+            {
+                "code": "61.12",
+                "parent": [
+                    "81.07",
+                    "93.21"
+                ],
+                "name": "Gestión Financiera",
+                "formal": "Gestión Financiera",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "81.07",
+                "parent": [],
+                "name": "Sistemas Contables",
+                "formal": "Sistemas Contables",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "81.11",
+                "parent": [
+                    "81.07"
+                ],
+                "name": "Contabilidad Gerencial",
+                "formal": "Contabilidad Gerencial",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "94.11",
+                "parent": [],
+                "name": "Sociología Política",
+                "formal": "Sociología Política",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "94.12",
+                "parent": [],
+                "name": "Antropología",
+                "formal": "Antropología",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "94.13",
+                "parent": [],
+                "name": "Gestión de Organizaciones Sociales",
+                "formal": "Gestión de Organizaciones Sociales",
+                "credits": 6,
+                "requires": 0
+            }
+        ],
+        "Electivas Social": [
+            {
+                "code": "10.07",
+                "parent": [],
+                "name": "Creatividad",
+                "formal": "Creatividad",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "10.11",
+                "parent": [
+                    "61.03"
+                ],
+                "name": "Infraestructuras de Nueva Generación",
+                "formal": "Infraestructuras de Nueva Generación",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.02",
+                "parent": [],
+                "name": "Economía del Mercado Laboral",
+                "formal": "Economía del Mercado Laboral",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.03",
+                "parent": [
+                    "61.82",
+                    "61.81"
+                ],
+                "name": "Economía de las Infraestructuras",
+                "formal": "Economía de las Infraestructuras",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.04",
+                "parent": [
+                    "61.82",
+                    "61.81"
+                ],
+                "name": "Sistema Monetario y Financiero en Argentina",
+                "formal": "Sistema Monetario y Financiero en Argentina",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.05",
+                "parent": [],
+                "name": "Economía de la Salud",
+                "formal": "Economía de la Salud",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.14",
+                "parent": [
+                    "61.82"
+                ],
+                "name": "Economía Internacional Real",
+                "formal": "Economía Internacional Real",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "61.15",
+                "parent": [
+                    "61.82"
+                ],
+                "name": "Economía Internacional Monetaria",
+                "formal": "Economía Internacional Monetaria",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "81.05",
+                "parent": [],
+                "name": "Responsabilidad Social Empresaria",
+                "formal": "Responsabilidad Social Empresaria",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.07",
+                "parent": [],
+                "name": "Cultura Latinoamericana",
+                "formal": "Cultura Latinoamericana",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.09",
+                "parent": [],
+                "name": "Cultura, Identidad y Política",
+                "formal": "Cultura, Identidad y Política",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.14",
+                "parent": [],
+                "name": "Teorías Sociológicas Contemporáneas",
+                "formal": "Teorías Sociológicas Contemporáneas",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "94.15",
+                "parent": [],
+                "name": "Propiedad Intelectual y Nuevas Tecnologías",
+                "formal": "Propiedad Intelectual y Nuevas Tecnologías",
+                "credits": 3,
+                "requires": 96
+            }
+        ]
+    }
 }

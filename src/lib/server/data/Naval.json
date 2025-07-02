@@ -578,5 +578,348 @@
             "credits": 0,
             "requires": 144
         }
-    ]
+    ],
+    "optatives": {
+        "ELECTIVAS AREA GESTIÓN": [
+            {
+                "code": "10.08",
+                "parent": [],
+                "name": "Energías Renovables",
+                "formal": "Energías Renovables",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "10.09",
+                "parent": [
+                    "61.16"
+                ],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "11.20",
+                "parent": [
+                    "11.15"
+                ],
+                "name": "Supply Chain",
+                "formal": "Supply Chain",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "11.73",
+                "parent": [],
+                "name": "Teoría de la Decisión",
+                "formal": "Teoría de la Decisión",
+                "credits": 3,
+                "requires": 144
+            },
+            {
+                "code": "11.76",
+                "parent": [
+                    "93.24"
+                ],
+                "name": "Gestión de Calidad",
+                "formal": "Gestión de Calidad",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "11.84",
+                "parent": [],
+                "name": "Gestión de Proyectos",
+                "formal": "Gestión de Proyectos",
+                "credits": 3,
+                "requires": 160
+            },
+            {
+                "code": "61.09",
+                "parent": [],
+                "name": "Economía Empresaria",
+                "formal": "Economía Empresaria",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "61.16",
+                "parent": [
+                    "11.15",
+                    "61.27"
+                ],
+                "name": "Introducción a las Finanzas",
+                "formal": "Introducción a las Finanzas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "92.92",
+                "parent": [],
+                "name": "Complementos de Física de la Relatividad",
+                "formal": "Complementos de Física de la Relatividad",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "94.40",
+                "parent": [
+                    "94.44"
+                ],
+                "name": "Estructura de las Organizaciones",
+                "formal": "Estructura de las Organizaciones",
+                "credits": 3,
+                "requires": 0
+            }
+        ],
+        "ELECTIVAS AREA TECNOLOGIA": [
+            {
+                "code": "11.34",
+                "parent": [],
+                "name": "Taller de Modelización de Productos",
+                "formal": "Taller de Modelización de Productos",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "12.28",
+                "parent": [
+                    "32.56"
+                ],
+                "name": "Residuos sólidos y residuos peligrosos",
+                "formal": "Residuos sólidos y residuos peligrosos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "12.46",
+                "parent": [
+                    "31.21"
+                ],
+                "name": "Introducción al Proceso de Fabricación de Aceros",
+                "formal": "Introducción al Proceso de Fabricación de Aceros",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "12.87",
+                "parent": [
+                    "32.56"
+                ],
+                "name": "Tratamiento de Efluentes",
+                "formal": "Tratamiento de Efluentes",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "12.94",
+                "parent": [
+                    "12.67"
+                ],
+                "name": "Introducción a la Ingeniería Nuclear",
+                "formal": "Introducción a la Ingeniería Nuclear",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "17.15",
+                "parent": [
+                    "32.56"
+                ],
+                "name": "Introducción a la Ingeniería Ambiental",
+                "formal": "Introducción a la Ingeniería Ambiental",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "21.44",
+                "parent": [
+                    "21.08"
+                ],
+                "name": "Instalaciones Eléctricas",
+                "formal": "Instalaciones Eléctricas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.14",
+                "parent": [
+                    "31.22",
+                    "93.07",
+                    "31.37"
+                ],
+                "name": "Mecánica de Fluidos Computacional",
+                "formal": "Mecánica de Fluidos Computacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.24",
+                "parent": [
+                    "30.25"
+                ],
+                "name": "Metalurgia Física I",
+                "formal": "Metalurgia Física I",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "30.30",
+                "parent": [
+                    "31.22",
+                    "21.08"
+                ],
+                "name": "Transporte Sustentable A",
+                "formal": "Transporte Sustentable A",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.46",
+                "parent": [
+                    "93.41",
+                    "31.08",
+                    "30.26"
+                ],
+                "name": "Laboratorio de Diseño Mecánico",
+                "formal": "Laboratorio de Diseño Mecánico",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.50",
+                "parent": [
+                    "30.42"
+                ],
+                "name": "Mecánica del Continuo",
+                "formal": "Mecánica del Continuo",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "30.52",
+                "parent": [
+                    "92.02",
+                    "92.03",
+                    "93.41",
+                    "93.07"
+                ],
+                "name": "Mecánica Aplicada",
+                "formal": "Mecánica Aplicada",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "30.53",
+                "parent": [
+                    "93.07",
+                    "30.44"
+                ],
+                "name": "Mecánica de Sólidos Computacional",
+                "formal": "Mecánica de Sólidos Computacional",
+                "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "30.54",
+                "parent": [
+                    "31.22",
+                    "30.52",
+                    "30.25"
+                ],
+                "name": "Mecánica de Sólidos Computacional Avanzada",
+                "formal": "Mecánica de Sólidos Computacional Avanzada",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.30",
+                "parent": [
+                    "30.25"
+                ],
+                "name": "Materiales Poliméricos",
+                "formal": "Materiales Poliméricos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.37",
+                "parent": [
+                    "31.22",
+                    "93.07"
+                ],
+                "name": "Transferencia de Calor",
+                "formal": "Transferencia de Calor",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.66",
+                "parent": [
+                    "31.22",
+                    "30.43",
+                    "22.10"
+                ],
+                "name": "Hidráulica, Neumática y PLC",
+                "formal": "Hidráulica, Neumática y PLC",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.68",
+                "parent": [
+                    "31.22",
+                    "30.44"
+                ],
+                "name": "Instalaciones Industriales",
+                "formal": "Instalaciones Industriales",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "31.73",
+                "parent": [
+                    "31.21",
+                    "31.22"
+                ],
+                "name": "Aire Acondicionado y Refrigeración",
+                "formal": "Aire Acondicionado y Refrigeración",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "31.90",
+                "parent": [
+                    "30.25",
+                    "30.44"
+                ],
+                "name": "Integridad Estructural",
+                "formal": "Integridad Estructural",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.94",
+                "parent": [
+                    "30.25",
+                    "30.44"
+                ],
+                "name": "Tecnología de Materiales Compuestos",
+                "formal": "Tecnología de Materiales Compuestos",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "31.95",
+                "parent": [
+                    "30.24"
+                ],
+                "name": "Física y Mecánica de Aceros",
+                "formal": "Física y Mecánica de Aceros",
+                "credits": 3,
+                "requires": 0
+            }
+        ]
+    }
 }
