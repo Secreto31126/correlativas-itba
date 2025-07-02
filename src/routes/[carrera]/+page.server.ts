@@ -44,7 +44,7 @@ export const load = (async ({ params, locals }) => {
 	// #endregion
 
 	const optatives: Record<string, FilledSubject[]> = {};
-	if (user_data?.options.optatives) {
+	if (!user_data || user_data.options.optatives) {
 		Object.keys(data.optatives).forEach((key) => {
 			optatives[key] = data.optatives[key].map((e) => {
 				e.codec = codify(e.code);
