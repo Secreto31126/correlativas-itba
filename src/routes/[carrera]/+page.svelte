@@ -235,6 +235,14 @@
 			.join('&code=')}`
 	);
 
+	function escapeKey(e: KeyboardEvent) {
+		if (e.key === 'Escape') {
+			expanded = false;
+			selected = [];
+			defaultView();
+		}
+	}
+
 	onMount(async () => {
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
@@ -300,7 +308,7 @@
 	/>
 </svelte:head>
 
-<svelte:body bind:clientWidth bind:clientHeight />
+<svelte:body bind:clientWidth bind:clientHeight onkeydown={escapeKey} />
 
 {#snippet subjects_row(subjects: FilledSubject[], collapse = false)}
 	<div
