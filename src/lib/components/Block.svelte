@@ -142,6 +142,8 @@
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
 	class:strike
+	class:cursor-default!={!im_famous && expanded}
+	class:cursor-pointer!={im_famous && expanded}
 	title={subject.name}
 	role="cell"
 	{tabindex}
@@ -190,11 +192,11 @@
 
 	.show {
 		background-color: var(--b-color);
-		z-index: 99998;
+		z-index: 1;
 	}
 
 	.famous {
-		z-index: 99999;
+		z-index: 2;
 	}
 
 	.strike {

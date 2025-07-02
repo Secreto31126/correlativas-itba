@@ -88,9 +88,8 @@
 	}
 
 	async function defaultView() {
-		if (!famous) return;
+		if (!famous || expanded) return;
 
-		expanded = false;
 		lines[famous]?.forEach(({ l }) => l.hide('draw'));
 		famous = undefined;
 	}
@@ -191,7 +190,7 @@
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
-		if (!$db.options.movement) return;
+		if (!$db.options.movement || expanded) return;
 
 		const target = event.target;
 
