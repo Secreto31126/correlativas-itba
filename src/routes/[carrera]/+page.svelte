@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
+	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { onDestroy, onMount, tick } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
@@ -14,13 +15,17 @@
 	let { data }: PageProps = $props();
 
 	/**
+	 * All the subjects
+	 */
+	const all_subjects = [...data.career, ...Object.values(data.optatives).flatMap((e) => e)];
+	/**
 	 * All the subjects codes codified
 	 */
-	const all = Array.from(new Set(data.career.map((e) => e.codec)));
+	const all_codecs = Array.from(new Set(all_subjects.map((e) => e.codec)));
 	/**
 	 * All the semesters numbers sorted
 	 */
-	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a - b);
+	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a! - b!);
 
 	const db = data.user_data
 		? getDocumentStore(UserData, new UserData(data.user_data))
@@ -31,13 +36,13 @@
 	let show = $derived(famous ? [famous, ...getAllParents([famous])] : []);
 	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
 
-	let selected: typeof all = $state([]);
+	let selected: typeof all_codecs = $state([]);
 	let passed = $derived(
 		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
-
 	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
-	let total_credits = $derived(data.career.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+
+	let visible_optatives = $state({}) as Record<string, boolean>;
 
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore - LeaderLine is not typed
@@ -50,7 +55,7 @@
 	};
 
 	let LeaderLine: LeaderLineType;
-	const lines: Record<string, LineType[]> = {};
+	const lines: Record<string, { l: LineType; s: FilledSubject }[]> = {};
 
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
@@ -67,11 +72,11 @@
 	}
 
 	function getParent(id: string) {
-		return data.career.find((e) => e.codec === id)?.parentc || [];
+		return all_subjects.find((e) => e.codec === id)?.parentc || [];
 	}
 
 	function getChilds(id: string) {
-		return data.career.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
+		return all_subjects.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
 	async function highlight(e: string) {
@@ -86,14 +91,16 @@
 		if (!famous) return;
 
 		expanded = false;
-		lines[famous]?.forEach((l) => l.hide('draw'));
+		lines[famous]?.forEach(({ l }) => l.hide('draw'));
 		famous = undefined;
 	}
 
 	function showLines(subject = famous) {
 		if (!subject) return;
 
-		lines[subject]?.forEach((l) => l.position().show('draw'));
+		lines[subject]?.forEach(({ l, s }) => {
+			if (!s.optative || visible_optatives[s.optative]) l.position().show('draw');
+		});
 	}
 
 	async function toggleExpanded() {
@@ -105,7 +112,7 @@
 	function updateLines(subject = famous) {
 		if (!subject) return;
 
-		lines[subject]?.forEach((l) => l.position());
+		lines[subject]?.forEach(({ l }) => l.position());
 	}
 
 	function touchScreen(e: string) {
@@ -178,7 +185,7 @@
 
 		selected = [];
 
-		if (passed.length >= data.career.length && passed_credits >= total_credits) {
+		if (passed_credits >= data.credits) {
 			animateConfetti(Date.now() + 5000);
 		}
 	}
@@ -200,7 +207,7 @@
 		target.setAttribute('data-y', `${y}`);
 
 		// Make the arrow follow the box
-		lines[target.id]?.forEach((line) => line.position());
+		lines[target.id]?.forEach(({ l }) => l.position());
 	}
 
 	let counter_type: 'credits' | 'subjects' = $state('credits');
@@ -231,7 +238,7 @@
 
 		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
 
-		all.forEach((id) => {
+		all_codecs.forEach((id) => {
 			const origin = document.getElementById(id)!;
 			// const bounds = origin.getBoundingClientRect();
 			// const startSocket =
@@ -239,13 +246,14 @@
 
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
 				if (!lines[id]) lines[id] = [];
-				lines[id].push(
-					new LeaderLine(origin, target, {
+				lines[id].push({
+					l: new LeaderLine(origin, target, {
 						dash: { animation: true },
 						path: 'magnet',
 						hide: true
-					})
-				);
+					}),
+					s: all_subjects.find((e) => e.codec === target.id)!
+				});
 			});
 		});
 	});
@@ -253,7 +261,7 @@
 	onDestroy(() => {
 		Object.values(lines)
 			.flat()
-			.forEach((l) => l.remove());
+			.forEach(({ l }) => l.remove());
 	});
 </script>
 
@@ -280,6 +288,36 @@
 
 <svelte:body bind:clientWidth bind:clientHeight />
 
+{#snippet subjects_row(subjects: FilledSubject[], collapse = false)}
+	<div
+		class="flex flex-wrap justify-around items-center h-full gap-1 md:gap-4 cuatrimestre {collapse
+			? 'hidden'
+			: ''}"
+	>
+		{#each subjects as subject}
+			<Block
+				{subject}
+				{famous}
+				{expanded}
+				{show}
+				{highlighted}
+				selecting={!!selected.length}
+				selected={selected.includes(subject.codec)}
+				tabindex={all_codecs.indexOf(subject.codec) + 1}
+				strike={$db.subjects.includes(subject.codec)}
+				code={$db.options.code && page.params.carrera !== 'noob'}
+				credits={$db.options.credits}
+				requires={$db.options.requires}
+				onin={highlight}
+				onout={defaultView}
+				ontoggle={touchScreen}
+				onexpand={toggleExpanded}
+				oncontextmenu={context_menu}
+			/>
+		{/each}
+	</div>
+{/snippet}
+
 <div class="grid w-full md:min-h-screen pt-2">
 	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
 		<a href="/">
@@ -290,10 +328,10 @@
 				<button onclick={toggleCounter} class="cursor-pointer">
 					{#if counter_type === 'credits'}
 						{passed_credits}
-						{!selected.length ? `/ ${total_credits}` : ''} créditos
+						{!selected.length ? `/ ${data.credits}` : ''} créditos
 					{:else}
 						{passed.length}
-						{!selected.length ? `/ ${all.length}` : ''} materias
+						{!selected.length ? `/ ${data.career.length} troncales` : ' materias'}
 					{/if}
 				</button>
 			{/if}
@@ -378,29 +416,14 @@
 	</header>
 	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
 		{#each semesters as semester}
-			<div class="flex flex-wrap justify-around items-center gap-1 md:gap-4 h-full cuatrimestre">
-				{#each data.career.filter((e) => e.semester === semester) as subject}
-					<Block
-						{subject}
-						{famous}
-						{expanded}
-						{show}
-						{highlighted}
-						selecting={!!selected.length}
-						selected={selected.includes(subject.codec)}
-						tabindex={all.indexOf(subject.codec) + 1}
-						strike={$db.subjects.includes(subject.codec)}
-						code={$db.options.code && page.params.carrera !== 'noob'}
-						credits={$db.options.credits}
-						requires={$db.options.requires}
-						onin={highlight}
-						onout={defaultView}
-						ontoggle={touchScreen}
-						onexpand={toggleExpanded}
-						oncontextmenu={context_menu}
-					/>
-				{/each}
-			</div>
+			{@render subjects_row(data.career.filter((e) => e.semester === semester))}
+		{/each}
+		{#each Object.entries(data.optatives) as [name, subjects]}
+			<hr />
+			<button onclick={() => (visible_optatives[name] = !visible_optatives[name])}>
+				{name}
+			</button>
+			{@render subjects_row(subjects, !visible_optatives[name])}
 		{/each}
 	</main>
 </div>

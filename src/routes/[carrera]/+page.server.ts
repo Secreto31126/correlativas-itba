@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 import type { UserData } from '$lib/types/documents';
-import type { Subject, FilledSubject } from '$lib/types/subjects';
+import type { FilledSubject, CareerData } from '$lib/types/subjects';
 
 import { error } from '@sveltejs/kit';
 import { codify } from '$lib/modules/codes';
@@ -13,7 +13,7 @@ export const load = (async ({ params, locals }) => {
 	const filename = career_data?.file;
 	if (!filename) error(404, `Materia ${params.carrera} not found`);
 
-	let data: Subject[];
+	let data: CareerData;
 	try {
 		const files = import.meta.glob('$lib/server/data/*.json', {
 			query: '?json',
@@ -22,7 +22,7 @@ export const load = (async ({ params, locals }) => {
 
 		const path = Object.keys(files).find((e) => e.endsWith(filename)) ?? 'LOL no.';
 
-		data = (await files[path]()) as Subject[];
+		data = (await files[path]()) as CareerData;
 	} catch (e) {
 		error(500, 'Failed to open file');
 	}
@@ -43,13 +43,27 @@ export const load = (async ({ params, locals }) => {
 	}
 	// #endregion
 
+	const optatives: Record<string, FilledSubject[]> = {};
+	if (user_data?.options.optatives) {
+		Object.keys(data.optatives).forEach((key) => {
+			optatives[key] = data.optatives[key].map((e) => {
+				e.codec = codify(e.code);
+				e.parentc = e.parent.map(codify);
+				e.optative = key;
+				return e as FilledSubject;
+			});
+		});
+	}
+
 	return {
 		user_data,
 		career_data,
-		career: data.map((e) => {
+		credits: data.credits,
+		career: data.mandatories.map((e) => {
 			e.codec = codify(e.code);
 			e.parentc = e.parent.map(codify);
 			return e as FilledSubject;
-		})
+		}),
+		optatives
 	};
 }) satisfies PageServerLoad;

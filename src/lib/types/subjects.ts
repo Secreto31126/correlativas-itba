@@ -3,14 +3,21 @@ export interface Subject {
 	parent: string[];
 	name: string;
 	formal: string;
-	semester: number;
+	semester?: number;
 	credits: number;
 	requires: number;
 	parentc?: string[];
 	codec?: string;
+	optative?: string;
 }
 
 export interface FilledSubject extends Subject {
 	parentc: string[];
 	codec: string;
+}
+
+export interface CareerData {
+	credits: number;
+	mandatories: Subject[];
+	optatives: Record<string, Subject[]>;
 }
