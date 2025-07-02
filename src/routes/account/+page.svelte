@@ -104,8 +104,9 @@
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar requisitos</span
-		>
+		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+			Mostrar requisitos
+		</span>
 		<input
 			type="checkbox"
 			checked={db.options.requires}
@@ -143,8 +144,9 @@
 	</label>
 
 	<label class="relative inline-flex items-center cursor-pointer w-fit">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Arrastrar materias</span
-		>
+		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+			Arrastrar materias
+		</span>
 		<input
 			type="checkbox"
 			checked={db.options.movement}
