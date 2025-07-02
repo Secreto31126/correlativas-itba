@@ -9,6 +9,7 @@
 	import interact from 'interactjs';
 	import { page } from '$app/state';
 	import { writable } from 'svelte/store';
+	import confetti from 'canvas-confetti';
 
 	let { data }: PageProps = $props();
 
@@ -34,6 +35,9 @@
 		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
 
+	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+	let total_credits = $derived(data.career.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore - LeaderLine is not typed
 	type LeaderLineType = typeof import('leader-line');
@@ -46,6 +50,9 @@
 
 	let LeaderLine: LeaderLineType;
 	const lines: Record<string, LineType[]> = {};
+
+	let clientWidth = $state(0);
+	let clientHeight = $state(0);
 
 	function getAllParents(ids: string[]) {
 		const dependecies = [] as string[];
@@ -121,6 +128,34 @@
 		}
 	}
 
+	function animateConfetti(end: number) {
+		const wider = clientWidth > clientHeight;
+		const y = wider ? 1 : 0.35;
+
+		const options = {
+			particleCount: 8,
+			spread: wider ? 55 : 120,
+			startVelocity: wider ? 90 : 25,
+			colors: ['#ff0', '#f00', '#0f0', '#00f', '#f0f', '#0ff'],
+			disableForReducedMotion: true
+		} satisfies confetti.Options;
+
+		confetti({
+			...options,
+			angle: 60,
+			origin: { x: 0, y }
+		});
+		confetti({
+			...options,
+			angle: 120,
+			origin: { x: 1, y }
+		});
+
+		if (Date.now() < end) {
+			requestAnimationFrame(animateConfetti.bind(null, end));
+		}
+	}
+
 	function complete_selected_subjects() {
 		for (const e of selected) {
 			if ($db.subjects.includes(e)) {
@@ -135,6 +170,10 @@
 		else db.set($db);
 
 		selected = [];
+
+		if (passed.length >= data.career.length && passed_credits >= total_credits) {
+			animateConfetti(Date.now() + 5000);
+		}
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
@@ -232,6 +271,8 @@
 	/>
 </svelte:head>
 
+<svelte:body bind:clientWidth bind:clientHeight />
+
 <div class="grid w-full md:min-h-screen pt-2">
 	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
 		<a href="/">
@@ -241,8 +282,8 @@
 			{#if $db.options.progress || selected.length}
 				<button onclick={toggleCounter} class="cursor-pointer">
 					{#if counter_type === 'credits'}
-						{passed.reduce((acc, s) => (acc += s.credits ?? 0), 0)}
-						{!selected.length ? `/ ${data.career.reduce((acc, s) => (acc += s.credits), 0)}` : ''} créditos
+						{passed_credits}
+						{!selected.length ? `/ ${total_credits}` : ''} créditos
 					{:else}
 						{passed.length}
 						{!selected.length ? `/ ${all.length}` : ''} materias
