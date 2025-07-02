@@ -116,6 +116,7 @@
 
 	function touchScreen(e: string) {
 		// Toggle famous
+		toggleExpanded();
 		if (famous) defaultView();
 		else highlight(e);
 	}
