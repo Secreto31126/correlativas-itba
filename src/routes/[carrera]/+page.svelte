@@ -9,6 +9,7 @@
 	import interact from 'interactjs';
 	import { page } from '$app/state';
 	import { writable } from 'svelte/store';
+	import confetti from 'canvas-confetti';
 
 	let { data }: PageProps = $props();
 
@@ -124,6 +125,31 @@
 		}
 	}
 
+	function animateConfetti(end: number) {
+		const options = {
+			particleCount: 8,
+			spread: 55,
+			startVelocity: 90,
+			colors: ['#ff0', '#f00', '#0f0', '#00f', '#f0f', '#0ff'],
+			disableForReducedMotion: true
+		} satisfies confetti.Options;
+
+		confetti({
+			...options,
+			angle: 60,
+			origin: { x: 0, y: 1 }
+		});
+		confetti({
+			...options,
+			angle: 120,
+			origin: { x: 1, y: 1 }
+		});
+
+		if (Date.now() < end) {
+			requestAnimationFrame(animateConfetti.bind(null, end));
+		}
+	}
+
 	function complete_selected_subjects() {
 		for (const e of selected) {
 			if ($db.subjects.includes(e)) {
@@ -138,6 +164,10 @@
 		else db.set($db);
 
 		selected = [];
+
+		if (passed.length >= data.career.length && passed_credits >= total_credits) {
+			animateConfetti(Date.now() + 5000);
+		}
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
