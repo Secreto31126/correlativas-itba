@@ -28,27 +28,40 @@ class Subject {
 	}
 }
 
-const db = {
-	credits: 0,
-	mandatories: [],
-	optatives: {}
-};
-
-const old = null;
-
-db.credits = +$('table:last tr:has(td:contains("Principal")) span:last')
+const credits = +$('table:last tr:has(td:contains("Principal")) span:last')
 	.text()
 	.match(/sumar ([0-9]+) créditos/)?.[1];
 
+const orientations = $('tr:has(td:contains("Orientación"))')
+	.find('td:last')
+	.map(function () {
+		return $(this)
+			.text()
+			.match(/Aprobar (.+) \(sumar [0-9]+ créditos\)/)[1];
+	})
+	.get();
+
+const dbs = orientations.reduce((acc, e) => {
+	acc[e] = {
+		credits,
+		mandatories: [],
+		optatives: {}
+	};
+
+	return acc;
+}, {});
+
+let specialization = null;
 $('tr:not(:has(table)):has(td > a)').each(function () {
 	const title = $(this).closest('td').find('h4 > span').first().text().trim();
+	const subtitle = $(this).closest('table:has(table)').find('thead span').eq(1).text();
 
-	let specialization;
-	if (title === 'Contenido:') {
-		specialization = $(this).closest('table:has(table)').find('thead span').eq(1).text();
+	const electives = title === 'Contenido:';
+	if (subtitle in dbs) {
+		specialization = subtitle;
 	}
 
-	const [year, semester] = !specialization ? title.match(/\d/g) : [null, null];
+	const [year, semester] = !electives ? title.match(/\d/g) : [null, null];
 
 	const data = $(this).children('td');
 	const [code, name] = data
@@ -68,34 +81,28 @@ $('tr:not(:has(table)):has(td > a)').each(function () {
 
 	const subject = new Subject(code, name, parents, year, semester, credits, requires);
 
-	if (specialization) {
-		if (!(specialization in db.optatives)) {
-			db.optatives[specialization] = [];
-		}
+	function insert(key) {
+		const db = dbs[key];
 
-		db.optatives[specialization].push(subject);
+		if (electives) {
+			if (!(subtitle in db.optatives)) {
+				db.optatives[subtitle] = [];
+			}
+
+			db.optatives[subtitle].push(subject);
+		} else {
+			db.mandatories.push(subject);
+		}
+	}
+
+	if (specialization) {
+		insert(specialization);
 	} else {
-		db.mandatories.push(subject);
+		orientations.forEach(insert);
 	}
 });
 
-if (old) {
-	db.mandatories.forEach((e) => {
-		e.name = old.mandatories.find((o) => o.code === e.code)?.name ?? e.name;
-	});
-
-	for (const specialization in old.optatives) {
-		if (!(specialization in db.optatives)) {
-			continue;
-		}
-
-		old.optatives[specialization].forEach((e) => {
-			const existing = db.optatives[specialization].find((o) => o.code === e.code);
-			if (existing) {
-				existing.name = e.name;
-			}
-		});
-	}
+for (const key in dbs) {
+	console.log(`\n${key}:\n`);
+	console.log(JSON.stringify(dbs[key], null, 4));
 }
-
-console.log(JSON.stringify(db, null, 4));
