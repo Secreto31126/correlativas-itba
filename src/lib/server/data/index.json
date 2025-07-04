@@ -56,7 +56,7 @@
     {
         "plan": "M22",
         "name": "Ingeniería Mecánica",
-        "file": "Mecanica.json",
+        "file": "Mecánica.json",
         "cute": "cars",
         "specialization": [
             {
