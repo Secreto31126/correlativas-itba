@@ -89,6 +89,12 @@
         "itba": "LAES"
     },
     {
+        "plan": "LCC 25",
+        "name": "Licenciatura en Ciencias del Comportamiento",
+        "file": "Licenciatura Comportamiento.json",
+        "cute": "comportamiento"
+    },
+    {
         "plan": "L20",
         "name": "Licenciatura en Negocios",
         "file": "Licenciatura Negocios.json",
