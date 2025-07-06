@@ -2,7 +2,7 @@
 	import type { PageProps } from './$types';
 	import type { FilledSubject } from '$lib/types/subjects';
 
-	import { onDestroy, onMount, tick } from 'svelte';
+	import { tick, untrack } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
 	import GoogleButton from '$lib/components/GoogleButton.svelte';
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
@@ -11,6 +11,7 @@
 	import { page } from '$app/state';
 	import { writable } from 'svelte/store';
 	import confetti from 'canvas-confetti';
+	import { browser } from '$app/environment';
 
 	let { data }: PageProps = $props();
 
@@ -61,12 +62,47 @@
 		remove: () => void;
 	};
 
-	let LeaderLine: LeaderLineType;
-	onMount(async () => {
-		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
+	let LeaderLine: LeaderLineType = $state();
+	if (browser) {
+		import('$lib/modules/leader-line.min').then((module) => {
+			LeaderLine = module.default;
+		});
+	}
+
+	const lines: Record<string, { l: LineType; s: FilledSubject }[]> = $derived.by(() => {
+		if (!LeaderLine) return {};
+
+		const output = {} as typeof lines;
+		all_codecs.forEach((id) => {
+			const origin = document.getElementById(id)!;
+			// const bounds = origin.getBoundingClientRect();
+			// const startSocket =
+			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
+
+			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
+				output[id] ??= [];
+				output[id].push({
+					l: new LeaderLine(origin, target, {
+						dash: { animation: true },
+						path: 'magnet',
+						hide: true
+					}),
+					s: all_subjects.find((e) => e.codec === target.id)!
+				});
+			});
+		});
+
+		return output;
 	});
 
-	let lines: Record<string, { l: LineType; s: FilledSubject }[]>;
+	$effect.pre(() =>
+		untrack(function destroyLines() {
+			Object.values(lines ?? {})
+				.flat()
+				.forEach(({ l }) => l.remove());
+			return destroyLines;
+		})
+	);
 
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
@@ -254,7 +290,7 @@
 		}
 	}
 
-	$effect.pre(() => {
+	$effect(() => {
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
 			autoScroll: false,
@@ -268,34 +304,6 @@
 				move: dragMoveListener
 			}
 		});
-
-		// Reset the lines on every page
-		lines = {};
-
-		all_codecs.forEach((id) => {
-			const origin = document.getElementById(id)!;
-			// const bounds = origin.getBoundingClientRect();
-			// const startSocket =
-			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
-
-			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
-				lines[id] ??= [];
-				lines[id].push({
-					l: new LeaderLine(origin, target, {
-						dash: { animation: true },
-						path: 'magnet',
-						hide: true
-					}),
-					s: all_subjects.find((e) => e.codec === target.id)!
-				});
-			});
-		});
-
-		return () => {
-			Object.values(lines)
-				.flat()
-				.forEach(({ l }) => l.remove());
-		};
 	});
 </script>
 
