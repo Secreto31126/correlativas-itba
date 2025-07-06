@@ -126,7 +126,7 @@
 		return all_subjects.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
-	async function highlight(e: string) {
+	function highlight(e: string) {
 		// If someone is already being highlighted, return
 		if (famous) return;
 
@@ -134,7 +134,7 @@
 		showLines();
 	}
 
-	async function defaultView() {
+	function defaultView() {
 		if (!famous || expanded) return;
 
 		lines[famous]?.forEach(({ l }) => l.hide('draw'));
