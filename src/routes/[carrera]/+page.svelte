@@ -17,19 +17,26 @@
 	/**
 	 * All the subjects
 	 */
-	const all_subjects = [...data.career, ...Object.values(data.optatives).flatMap((e) => e)];
+	const all_subjects = $derived([
+		...data.career,
+		...Object.values(data.optatives).flatMap((e) => e)
+	]);
 	/**
 	 * All the subjects codes codified
 	 */
-	const all_codecs = Array.from(new Set(all_subjects.map((e) => e.codec)));
+	const all_codecs = $derived(Array.from(new Set(all_subjects.map((e) => e.codec))));
 	/**
 	 * All the semesters numbers sorted
 	 */
-	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a! - b!);
+	const semesters = $derived(
+		Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a! - b!)
+	);
 
-	const db = data.user_data
-		? getDocumentStore(UserData, new UserData(data.user_data))
-		: writable<UserData>(new UserData());
+	const db = $derived(
+		data.user_data
+			? getDocumentStore(UserData, new UserData(data.user_data))
+			: writable<UserData>(new UserData())
+	);
 
 	let famous: string | undefined = $state();
 	let expanded: boolean = $state(false);
