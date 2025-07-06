@@ -141,9 +141,10 @@
 		famous = undefined;
 	}
 
-	function showLines(subject = famous) {
+	async function showLines(subject = famous) {
 		if (!subject) return;
 
+		await tick();
 		lines[subject]?.forEach(({ l, s }) => {
 			if (!s.optative || visible_optatives[s.optative]) l.position().show('draw');
 		});
