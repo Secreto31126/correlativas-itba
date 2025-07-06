@@ -470,6 +470,14 @@
 			</div>
 			{@render subjects_row(subjects, !visible_optatives[name])}
 		{/each}
+		{#each data.career_data.specialization ?? [] as { name, cute }}
+			<div class="flex flex-col w-full text-center">
+				<hr />
+				<a href="/{cute}" class="cursor-pointer py-2">
+					{name}
+				</a>
+			</div>
+		{/each}
 	</main>
 </div>
 
