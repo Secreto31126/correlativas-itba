@@ -253,7 +253,7 @@
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
-		if (!$db.options.movement || expanded) return;
+		if (expanded) return;
 
 		const target = event.target;
 
@@ -292,6 +292,8 @@
 	}
 
 	$effect(() => {
+		if (!$db.options.movement) return;
+
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
 			autoScroll: false,
