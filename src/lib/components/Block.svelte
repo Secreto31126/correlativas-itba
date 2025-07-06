@@ -2,7 +2,6 @@
 	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { browser } from '$app/environment';
-	import { onMount } from 'svelte';
 
 	interface Props {
 		subject: FilledSubject;
