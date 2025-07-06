@@ -62,7 +62,11 @@
 	};
 
 	let LeaderLine: LeaderLineType;
-	const lines: Record<string, { l: LineType; s: FilledSubject }[]> = {};
+	onMount(async () => {
+		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
+	});
+
+	let lines: Record<string, { l: LineType; s: FilledSubject }[]>;
 
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
@@ -250,7 +254,7 @@
 		}
 	}
 
-	onMount(async () => {
+	$effect.pre(() => {
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
 			autoScroll: false,
@@ -265,7 +269,8 @@
 			}
 		});
 
-		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
+		// Reset the lines on every page
+		lines = {};
 
 		all_codecs.forEach((id) => {
 			const origin = document.getElementById(id)!;
@@ -274,7 +279,7 @@
 			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
 
 			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
-				if (!lines[id]) lines[id] = [];
+				lines[id] ??= [];
 				lines[id].push({
 					l: new LeaderLine(origin, target, {
 						dash: { animation: true },
@@ -285,12 +290,12 @@
 				});
 			});
 		});
-	});
 
-	onDestroy(() => {
-		Object.values(lines)
-			.flat()
-			.forEach(({ l }) => l.remove());
+		return () => {
+			Object.values(lines)
+				.flat()
+				.forEach(({ l }) => l.remove());
+		};
 	});
 </script>
 
