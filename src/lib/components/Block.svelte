@@ -2,6 +2,7 @@
 	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { browser } from '$app/environment';
+	import { preventDefault } from '$lib/modules/preventDefault';
 
 	interface Props {
 		subject: FilledSubject;
@@ -49,12 +50,7 @@
 	let im_famous = $derived(famous === subject.codec);
 
 	function event(type: 'in' | 'out' | 'toggle' | 'contextmenu') {
-		if (type === 'contextmenu' && !webkit)
-			return (e: Event) => {
-				e.preventDefault();
-				oncontextmenu(subject.codec);
-			};
-
+		if (type === 'contextmenu' && !webkit) return () => oncontextmenu(subject.codec);
 		if (type === 'in' && mouse) return () => onin(subject.codec);
 		if (type === 'out' && mouse) return () => onout(subject.codec);
 		if (type === 'toggle' && !mouse) return () => ontoggle(subject.codec);
@@ -138,15 +134,15 @@
 	title={subject.name}
 	role="cell"
 	{tabindex}
-	onfocusin={event('in')}
-	onmouseenter={event('in')}
-	onfocusout={event('out')}
-	onmouseleave={event('out')}
-	onclick={event(selecting ? 'contextmenu' : 'toggle')}
-	oncontextmenu={event('contextmenu')}
-	ontouchstart={safariContextMenu('start')}
-	ontouchend={safariContextMenu('end')}
-	ontouchmove={safariContextMenu('move')}
+	onfocusin={preventDefault(event('in'))}
+	onmouseenter={preventDefault(event('in'))}
+	onfocusout={preventDefault(event('out'))}
+	onmouseleave={preventDefault(event('out'))}
+	onclick={preventDefault(event(selecting ? 'contextmenu' : 'toggle'))}
+	oncontextmenu={preventDefault(event('contextmenu'))}
+	ontouchstart={preventDefault(safariContextMenu('start'))}
+	ontouchend={preventDefault(safariContextMenu('end'))}
+	ontouchmove={preventDefault(safariContextMenu('move'))}
 >
 	{#if selected}
 		<span class="absolute translate-x-1/2 translate-y-[-50%] top-0 right-0 w-4 h-4 md:w-6 md:h-6">
