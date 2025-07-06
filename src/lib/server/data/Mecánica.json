@@ -369,5 +369,92 @@
             "requires": 0
         }
     ],
-    "optatives": {}
+    "optatives": {
+        "ELECTIVAS - Área Complementaria": [
+            {
+                "code": "10.09",
+                "parent": [],
+                "name": "Formación para Emprendedores",
+                "formal": "Formación para Emprendedores",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "11.73",
+                "parent": [],
+                "name": "Teoría de la Decisión",
+                "formal": "Teoría de la Decisión",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "61.50",
+                "parent": [],
+                "name": "Finanzas de la Empresa",
+                "formal": "Finanzas de la Empresa",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "94.19",
+                "parent": [
+                    "11.15"
+                ],
+                "name": "Comportamiento Organizacional",
+                "formal": "Comportamiento Organizacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.27",
+                "parent": [],
+                "name": "Administración de Recursos Humanos",
+                "formal": "Administración de Recursos Humanos",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "94.40",
+                "parent": [
+                    "11.15"
+                ],
+                "name": "Estructura de las Organizaciones",
+                "formal": "Estructura de las Organizaciones",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "94.42",
+                "parent": [],
+                "name": "Comunicación Estratégica",
+                "formal": "Comunicación Estratégica",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "94.61",
+                "parent": [],
+                "name": "Filosofía",
+                "formal": "Filosofía",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "94.62",
+                "parent": [],
+                "name": "Ética en los Negocios",
+                "formal": "Ética en los Negocios",
+                "credits": 3,
+                "requires": 72
+            },
+            {
+                "code": "94.63",
+                "parent": [],
+                "name": "Epistemología y Heurística",
+                "formal": "Epistemología y Heurística",
+                "credits": 3,
+                "requires": 72
+            }
+        ]
+    }
 }
