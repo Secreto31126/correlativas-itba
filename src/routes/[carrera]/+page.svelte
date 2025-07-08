@@ -41,9 +41,10 @@
 	);
 
 	let famous: string | undefined = $state();
-	let expanded: boolean = $state(false);
+	let expanded = $state(false);
 	let show = $derived(famous ? [famous, ...getAllParents([famous])] : []);
 	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
+	let dragging = false;
 
 	let selected: typeof all_codecs = $state([]);
 	let passed = $derived(
@@ -131,14 +132,14 @@
 
 	function highlight(e: string) {
 		// If someone is already being highlighted, return
-		if (famous) return;
+		if (famous || dragging) return;
 
 		famous = e;
 		return updateLines(true);
 	}
 
 	function defaultView() {
-		if (!famous || expanded) return;
+		if (!famous || expanded || dragging) return;
 
 		const old = famous;
 		famous = undefined;
@@ -165,6 +166,7 @@
 	}
 
 	function toggleExpanded() {
+		if (dragging) return;
 		expanded = !expanded;
 		return updateLines(!!famous);
 	}
@@ -250,8 +252,17 @@
 		}
 	}
 
+	let draggingCoyoteTime: ReturnType<typeof setTimeout> | null = null;
 	async function dragMoveListener(event: Interact.DragEvent) {
 		if (expanded) return;
+
+		dragging = true;
+
+		if (draggingCoyoteTime) clearTimeout(draggingCoyoteTime);
+		draggingCoyoteTime = setTimeout(() => {
+			dragging = false;
+			draggingCoyoteTime = null;
+		}, 5);
 
 		const target = event.target;
 
