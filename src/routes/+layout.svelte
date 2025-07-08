@@ -37,6 +37,7 @@
 		& h1,
 		& p,
 		& button,
+		& hr,
 		& svg {
 			@apply text-gray-200;
 		}

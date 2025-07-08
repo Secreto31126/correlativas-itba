@@ -486,8 +486,8 @@
 		{#each data.career_data.specialization ?? [] as { name, cute }}
 			<div class="flex flex-col w-full text-center">
 				<hr />
-				<a href="/{cute}" class="cursor-pointer py-2">
-					{name}
+				<a href="/{cute}" class="flex items-center justify-center gap-2 w-full py-2">
+					<p>{name}</p>
 				</a>
 			</div>
 		{/each}
