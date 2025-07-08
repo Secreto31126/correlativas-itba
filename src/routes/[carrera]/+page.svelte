@@ -12,6 +12,7 @@
 	import { writable } from 'svelte/store';
 	import confetti from 'canvas-confetti';
 	import { browser } from '$app/environment';
+	import { beforeNavigate } from '$app/navigation';
 
 	let { data }: PageProps = $props();
 
@@ -96,14 +97,15 @@
 		return output;
 	});
 
-	$effect.pre(() =>
-		untrack(function destroyLines() {
-			Object.values(lines ?? {})
-				.flat()
-				.forEach(({ l }) => l.remove());
-			return destroyLines;
-		})
-	);
+	function destroyLines() {
+		Object.values(lines ?? {})
+			.flat()
+			.forEach(({ l }) => l.remove());
+		return destroyLines;
+	}
+
+	$effect.pre(() => untrack(destroyLines));
+	beforeNavigate(destroyLines);
 
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
