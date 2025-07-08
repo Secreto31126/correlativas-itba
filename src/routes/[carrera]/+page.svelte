@@ -46,6 +46,12 @@
 	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
 	let dragging = false;
 
+	const starred = $derived(
+		Object.values(data.optatives)
+			.flatMap((e) => e)
+			.filter(({ codec }) => $db.starred.includes(codec))
+	);
+
 	let selected: typeof all_codecs = $state([]);
 	let passed = $derived(
 		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
@@ -254,6 +260,22 @@
 		}
 	}
 
+	function starSelected() {
+		for (const subject of selected) {
+			if ($db.starred.includes(subject)) {
+				$db.starred.splice($db.starred.indexOf(subject), 1);
+			} else {
+				$db.starred.push(subject);
+			}
+		}
+
+		if ($db.uid) saveDocument($db);
+		// @ts-ignore - If the db doesn't have a uid, it's a local writable store
+		else db.set($db);
+
+		selected = [];
+	}
+
 	let draggingCoyoteTime: ReturnType<typeof setTimeout> | null = null;
 	async function dragMoveListener(event: Interact.DragEvent) {
 		if (expanded) return;
@@ -443,6 +465,27 @@
 							/>
 						</svg>
 					</button>
+					{#if selected.every((e) => all_subjects.find((s) => s.codec === e)?.optative)}
+						<button
+							onclick={starSelected}
+							title="Fijar electiva"
+							aria-label="Fijar"
+							class="cursor-pointer"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="size-6"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</button>
+					{/if}
 					<button
 						onclick={() => (selected = [])}
 						title="Cancelar"
@@ -471,9 +514,16 @@
 		</div>
 	</header>
 	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
+		<!-- Troncales -->
 		{#each semesters as semester}
 			{@render subjects_row(data.career.filter((e) => e.semester === semester))}
 		{/each}
+		<!-- Pinneadas -->
+		{#if starred.length}
+			{@render subjects_row(starred)}
+		{/if}
+		<div class="md:mb-2"></div>
+		<!-- Electivas -->
 		{#each Object.entries(data.optatives) as [name, subjects]}
 			<div class="flex flex-col w-full text-center">
 				<hr />
@@ -481,8 +531,12 @@
 					{name}
 				</button>
 			</div>
-			{@render subjects_row(subjects, !visible_optatives[name])}
+			{@render subjects_row(
+				subjects.filter((e) => !$db.starred.includes(e.codec)),
+				!visible_optatives[name]
+			)}
 		{/each}
+		<!-- Concentraciones -->
 		{#each data.career_data.specialization ?? [] as { name, cute }}
 			<div class="flex flex-col w-full text-center">
 				<hr />
