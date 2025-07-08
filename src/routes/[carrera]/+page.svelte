@@ -2,7 +2,7 @@
 	import type { PageProps } from './$types';
 	import type { FilledSubject } from '$lib/types/subjects';
 
-	import { onDestroy, onMount, tick } from 'svelte';
+	import { tick, untrack } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
 	import GoogleButton from '$lib/components/GoogleButton.svelte';
 	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
@@ -11,25 +11,34 @@
 	import { page } from '$app/state';
 	import { writable } from 'svelte/store';
 	import confetti from 'canvas-confetti';
+	import { browser } from '$app/environment';
+	import { beforeNavigate } from '$app/navigation';
 
 	let { data }: PageProps = $props();
 
 	/**
 	 * All the subjects
 	 */
-	const all_subjects = [...data.career, ...Object.values(data.optatives).flatMap((e) => e)];
+	const all_subjects = $derived([
+		...data.career,
+		...Object.values(data.optatives).flatMap((e) => e)
+	]);
 	/**
 	 * All the subjects codes codified
 	 */
-	const all_codecs = Array.from(new Set(all_subjects.map((e) => e.codec)));
+	const all_codecs = $derived(Array.from(new Set(all_subjects.map((e) => e.codec))));
 	/**
 	 * All the semesters numbers sorted
 	 */
-	const semesters = Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a! - b!);
+	const semesters = $derived(
+		Array.from(new Set(data.career.map((e) => e.semester))).sort((a, b) => a! - b!)
+	);
 
-	const db = data.user_data
-		? getDocumentStore(UserData, new UserData(data.user_data))
-		: writable<UserData>(new UserData());
+	const db = $derived(
+		data.user_data
+			? getDocumentStore(UserData, new UserData(data.user_data))
+			: writable<UserData>(new UserData())
+	);
 
 	let famous: string | undefined = $state();
 	let expanded: boolean = $state(false);
@@ -54,8 +63,49 @@
 		remove: () => void;
 	};
 
-	let LeaderLine: LeaderLineType;
-	const lines: Record<string, { l: LineType; s: FilledSubject }[]> = {};
+	let LeaderLine: LeaderLineType = $state();
+	if (browser) {
+		import('$lib/modules/leader-line.min').then((module) => {
+			LeaderLine = module.default;
+		});
+	}
+
+	const lines: Record<string, { l: LineType; s: FilledSubject; v: boolean }[]> = $derived.by(() => {
+		if (!LeaderLine) return {};
+
+		const output = {} as typeof lines;
+		all_codecs.forEach((id) => {
+			const origin = document.getElementById(id)!;
+			// const bounds = origin.getBoundingClientRect();
+			// const startSocket =
+			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
+
+			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
+				output[id] ??= [];
+				output[id].push({
+					l: new LeaderLine(origin, target, {
+						dash: { animation: true },
+						path: 'magnet',
+						hide: true
+					}),
+					s: all_subjects.find((e) => e.codec === target.id)!,
+					v: false
+				});
+			});
+		});
+
+		return output;
+	});
+
+	function destroyLines() {
+		Object.values(lines ?? {})
+			.flat()
+			.forEach(({ l }) => l.remove());
+		return destroyLines;
+	}
+
+	$effect.pre(() => untrack(destroyLines));
+	beforeNavigate(destroyLines);
 
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
@@ -79,58 +129,54 @@
 		return all_subjects.filter((e) => e.parentc.includes(id)).map((e) => e.codec);
 	}
 
-	async function highlight(e: string) {
+	function highlight(e: string) {
 		// If someone is already being highlighted, return
 		if (famous) return;
 
 		famous = e;
-		showLines();
+		return updateLines(true);
 	}
 
-	async function defaultView() {
+	function defaultView() {
 		if (!famous || expanded) return;
 
-		lines[famous]?.forEach(({ l }) => l.hide('draw'));
+		const old = famous;
 		famous = undefined;
+		return updateLines(false, old);
 	}
 
-	function showLines(subject = famous) {
+	async function updateLines(visible: boolean, subject = famous) {
 		if (!subject) return;
 
-		lines[subject]?.forEach(({ l, s }) => {
-			if (!s.optative || visible_optatives[s.optative]) l.position().show('draw');
+		await tick();
+		lines[subject]?.forEach((entry) => {
+			const is_optative = !!entry.s.optative;
+			const should_be_rendered = visible && (!is_optative || visible_optatives[entry.s.optative!]);
+
+			if (should_be_rendered && entry.v) entry.l.position();
+			else if (should_be_rendered) entry.l.position().show('draw');
+			else {
+				const fast = visible && is_optative;
+				entry.l.hide(fast ? 'none' : 'draw');
+			}
+
+			entry.v = should_be_rendered;
 		});
 	}
 
 	function toggleExpanded() {
 		expanded = !expanded;
-		updateLines();
+		return updateLines(!!famous);
 	}
 
 	function toggleVisibleOptative(name: string) {
 		visible_optatives[name] = !visible_optatives[name];
-		updateLines();
+		return updateLines(true);
 	}
 
-	async function updateLines(subject = famous) {
-		if (!subject) return;
-
-		await tick();
-		lines[subject]?.forEach(({ l, s }) => {
-			l.position();
-			if (!s.optative) return;
-
-			if (visible_optatives[s.optative]) {
-				l.show('draw');
-			} else {
-				l.hide('none');
-			}
-		});
-	}
-
-	function touchScreen(e: string) {
+	async function touchScreen(e: string) {
 		// Toggle famous
-		toggleExpanded();
+		await toggleExpanded();
 		if (famous) defaultView();
 		else highlight(e);
 	}
@@ -205,7 +251,7 @@
 	}
 
 	async function dragMoveListener(event: Interact.DragEvent) {
-		if (!$db.options.movement || expanded) return;
+		if (expanded) return;
 
 		const target = event.target;
 
@@ -243,7 +289,9 @@
 		}
 	}
 
-	onMount(async () => {
+	$effect(() => {
+		if (!$db.options.movement) return;
+
 		interact('.cuatrimestre > div').draggable({
 			inertia: true,
 			autoScroll: false,
@@ -257,33 +305,6 @@
 				move: dragMoveListener
 			}
 		});
-
-		LeaderLine = (await import('$lib/modules/leader-line.min')).default;
-
-		all_codecs.forEach((id) => {
-			const origin = document.getElementById(id)!;
-			// const bounds = origin.getBoundingClientRect();
-			// const startSocket =
-			// 	bounds.left / innerWidth < 0.1 || bounds.right / innerWidth > 0.9 ? 'bottom' : 'auto';
-
-			document.querySelectorAll(`[data-parents*=${id}]`).forEach((target) => {
-				if (!lines[id]) lines[id] = [];
-				lines[id].push({
-					l: new LeaderLine(origin, target, {
-						dash: { animation: true },
-						path: 'magnet',
-						hide: true
-					}),
-					s: all_subjects.find((e) => e.codec === target.id)!
-				});
-			});
-		});
-	});
-
-	onDestroy(() => {
-		Object.values(lines)
-			.flat()
-			.forEach(({ l }) => l.remove());
 	});
 </script>
 
@@ -448,6 +469,14 @@
 				</button>
 			</div>
 			{@render subjects_row(subjects, !visible_optatives[name])}
+		{/each}
+		{#each data.career_data.specialization ?? [] as { name, cute }}
+			<div class="flex flex-col w-full text-center">
+				<hr />
+				<a href="/{cute}" class="cursor-pointer py-2">
+					{name}
+				</a>
+			</div>
 		{/each}
 	</main>
 </div>

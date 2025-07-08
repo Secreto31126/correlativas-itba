@@ -56,8 +56,70 @@
     {
         "plan": "M22",
         "name": "Ingeniería Mecánica",
-        "file": "Mecanica.json",
+        "file": "Mecánica.json",
         "cute": "cars",
+        "specialization": [
+            {
+                "name": "Concentración - AUTOMOTRIZ",
+                "file": "Mecánica-Automotriz.json",
+                "cute": "cars2"
+            },
+            {
+                "name": "Concentración - DISEÑO MECANICO",
+                "file": "Mecánica-Diseño.json",
+                "cute": "estilistas"
+            },
+            {
+                "name": "Concentración - ENERGIA",
+                "file": "Mecánica-Energía.json",
+                "cute": "roller-coaster"
+            },
+            {
+                "name": "Concentración - INSTALACIONES",
+                "file": "Mecánica-Instalaciones.json",
+                "cute": "instalaciones"
+            },
+            {
+                "name": "Concentración - MATERIALES \"A\"",
+                "file": "Mecánica-Materiales-A.json",
+                "cute": "conductores"
+            },
+            {
+                "name": "Concentración - MATERIALES \"B\"",
+                "file": "Mecánica-Materiales-B.json",
+                "cute": "aislantes"
+            },
+            {
+                "name": "Concentración - MECANICA COMPUTACIONAL",
+                "file": "Mecánica-Computacional.json",
+                "cute": "simuladores"
+            },
+            {
+                "name": "Concentración - MECATRONICA",
+                "file": "Mecánica-Mecatrónica.json",
+                "cute": "robots"
+            },
+            {
+                "name": "Concentración - NAVAL",
+                "file": "Mecánica-Naval.json",
+                "cute": "submarinos"
+            },
+            {
+                "name": "Focalización Automotriz",
+                "file": "Mecánica-Automotriz-Focal.json",
+                "cute": "cars3"
+            },
+            {
+                "name": "Focalización Materiales",
+                "file": "Mecánica-Materiales-Focal.json",
+                "cute": "superconductores"
+            },
+            {
+                "name": "Focalización Mecatrónica",
+                "file": "Mecánica-Mecatrónica-Focal.json",
+                "cute": "robots2"
+            }
+        ],
         "itba": "M"
     },
     {

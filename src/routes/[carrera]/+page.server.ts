@@ -9,9 +9,29 @@ import { createDocument, getDocuments } from '$lib/server/modules/firebase';
 
 export const load = (async ({ params, locals }) => {
 	// #region Career Content
-	const career_data = Careers.find((c) => params.carrera === c.cute);
-	const filename = career_data?.file;
-	if (!filename) error(404, `Materia ${params.carrera} not found`);
+	let career_data = Careers.find((c) => params.carrera === c.cute);
+
+	// Search within specializations if not found
+	if (!career_data) {
+		let specialization: NonNullable<(typeof Careers)[number]['specialization']>[number] | undefined;
+
+		let pointer = Careers.find((c) => {
+			specialization ??= c.specialization?.find((s) => params.carrera === s.cute);
+			return !!specialization;
+		});
+
+		if (pointer && specialization) {
+			career_data = {
+				...pointer,
+				...specialization
+			};
+			delete career_data.specialization;
+		}
+	}
+
+	if (!career_data || !career_data.file) error(404, `Materia ${params.carrera} not found`);
+
+	const filename = career_data.file;
 
 	let data: CareerData;
 	try {

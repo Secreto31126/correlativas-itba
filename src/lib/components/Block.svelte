@@ -2,7 +2,7 @@
 	import type { FilledSubject } from '$lib/types/subjects';
 
 	import { browser } from '$app/environment';
-	import { onMount } from 'svelte';
+	import { preventDefault } from '$lib/modules/preventDefault';
 
 	interface Props {
 		subject: FilledSubject;
@@ -50,12 +50,7 @@
 	let im_famous = $derived(famous === subject.codec);
 
 	function event(type: 'in' | 'out' | 'toggle' | 'contextmenu') {
-		if (type === 'contextmenu' && !webkit)
-			return (e: Event) => {
-				e.preventDefault();
-				oncontextmenu(subject.codec);
-			};
-
+		if (type === 'contextmenu' && !webkit) return () => oncontextmenu(subject.codec);
 		if (type === 'in' && mouse) return () => onin(subject.codec);
 		if (type === 'out' && mouse) return () => onout(subject.codec);
 		if (type === 'toggle' && !mouse) return () => ontoggle(subject.codec);
@@ -117,6 +112,8 @@
 				}
 			};
 		}
+
+		return () => {};
 	}
 </script>
 
@@ -126,7 +123,7 @@
 	data-parents={subject.parentc.join(' ')}
 	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
-		p-1 md:p-2 md:max-w-[15%]
+		p-1 md:p-2 md:max-w-[15%] cursor-pointer
 		transition-colors duration-500 ease-in-out"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
@@ -137,12 +134,12 @@
 	title={subject.name}
 	role="cell"
 	{tabindex}
-	onfocusin={event('in')}
-	onmouseenter={event('in')}
-	onfocusout={event('out')}
-	onmouseleave={event('out')}
-	onclick={event(selecting ? 'contextmenu' : 'toggle')}
-	oncontextmenu={event('contextmenu')}
+	onfocusin={preventDefault(event('in'))}
+	onmouseenter={preventDefault(event('in'))}
+	onfocusout={preventDefault(event('out'))}
+	onmouseleave={preventDefault(event('out'))}
+	onclick={preventDefault(event(selecting ? 'contextmenu' : 'toggle'))}
+	oncontextmenu={preventDefault(event('contextmenu'))}
 	ontouchstart={safariContextMenu('start')}
 	ontouchend={safariContextMenu('end')}
 	ontouchmove={safariContextMenu('move')}
