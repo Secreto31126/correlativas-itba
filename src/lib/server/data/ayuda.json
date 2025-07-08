@@ -113,6 +113,18 @@
             "requires": 0
         },
         {
+            "code": "13",
+            "parent": [
+                "3",
+                "4"
+            ],
+            "name": "Pro tip 6",
+            "formal": "Pro tip 6: Con electivas seleccionadas, podés hacer click en el botón de estrella para destacarlas y verlas arriba de todo",
+            "semester": 4,
+            "credits": 0,
+            "requires": 0
+        },
+        {
             "code": "7",
             "parent": [
                 "5",
