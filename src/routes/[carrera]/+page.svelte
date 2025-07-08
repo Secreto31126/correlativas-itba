@@ -53,7 +53,7 @@
 	);
 
 	let selected: typeof all_codecs = $state([]);
-	let passed = $derived(
+	const passed = $derived(
 		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
 	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
