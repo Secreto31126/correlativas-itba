@@ -186,6 +186,8 @@
 	let timeout: ReturnType<typeof setTimeout>;
 	let complete_shortcut = false;
 	function context_menu(e: string) {
+		if (dragging) return;
+
 		if (selected.includes(e)) {
 			if (complete_shortcut) {
 				clearTimeout(timeout);
