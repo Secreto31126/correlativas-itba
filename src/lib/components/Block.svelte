@@ -124,11 +124,13 @@
 	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
 		p-1 md:p-2 md:max-w-[15%] cursor-pointer backdrop-blur-xs
-		transition-colors duration-500 ease-in-out"
+		transition-[color,background-color,border-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,box-shadow]
+		duration-500 ease-in-out hover:shadow-xl dark:shadow-gray-300/5"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
 	class:strike
+	class:shadow-xl={highlighted.includes(subject.codec)}
 	class:cursor-pointer!={expanded}
 	title={subject.name}
 	role="cell"
