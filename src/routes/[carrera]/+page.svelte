@@ -69,7 +69,7 @@
 		});
 	}
 
-	const lines: Record<string, { l: LineType; s: FilledSubject }[]> = $derived.by(() => {
+	const lines: Record<string, { l: LineType; s: FilledSubject; v: boolean }[]> = $derived.by(() => {
 		if (!LeaderLine) return {};
 
 		const output = {} as typeof lines;
@@ -87,7 +87,8 @@
 						path: 'magnet',
 						hide: true
 					}),
-					s: all_subjects.find((e) => e.codec === target.id)!
+					s: all_subjects.find((e) => e.codec === target.id)!,
+					v: false
 				});
 			});
 		});
@@ -131,54 +132,49 @@
 		if (famous) return;
 
 		famous = e;
-		showLines();
+		return updateLines(true);
 	}
 
 	function defaultView() {
 		if (!famous || expanded) return;
 
-		lines[famous]?.forEach(({ l }) => l.hide('draw'));
+		const old = famous;
 		famous = undefined;
+		return updateLines(false, old);
 	}
 
-	async function showLines(subject = famous) {
+	async function updateLines(visible: boolean, subject = famous) {
 		if (!subject) return;
 
 		await tick();
-		lines[subject]?.forEach(({ l, s }) => {
-			if (!s.optative || visible_optatives[s.optative]) l.position().show('draw');
+		lines[subject]?.forEach((entry) => {
+			const is_optative = !!entry.s.optative;
+			const should_be_rendered = visible && (!is_optative || visible_optatives[entry.s.optative!]);
+
+			if (should_be_rendered && entry.v) entry.l.position();
+			else if (should_be_rendered) entry.l.position().show('draw');
+			else {
+				const fast = visible && is_optative;
+				entry.l.hide(fast ? 'none' : 'draw');
+			}
+
+			entry.v = should_be_rendered;
 		});
 	}
 
 	function toggleExpanded() {
 		expanded = !expanded;
-		updateLines();
+		return updateLines(!!famous);
 	}
 
 	function toggleVisibleOptative(name: string) {
 		visible_optatives[name] = !visible_optatives[name];
-		updateLines();
+		return updateLines(true);
 	}
 
-	async function updateLines(subject = famous) {
-		if (!subject) return;
-
-		await tick();
-		lines[subject]?.forEach(({ l, s }) => {
-			l.position();
-			if (!s.optative) return;
-
-			if (visible_optatives[s.optative]) {
-				l.show('draw');
-			} else {
-				l.hide('none');
-			}
-		});
-	}
-
-	function touchScreen(e: string) {
+	async function touchScreen(e: string) {
 		// Toggle famous
-		toggleExpanded();
+		await toggleExpanded();
 		if (famous) defaultView();
 		else highlight(e);
 	}
