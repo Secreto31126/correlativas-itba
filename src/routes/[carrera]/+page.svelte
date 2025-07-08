@@ -262,7 +262,7 @@
 		draggingCoyoteTime = setTimeout(() => {
 			dragging = false;
 			draggingCoyoteTime = null;
-		}, 5);
+		}, 1);
 
 		const target = event.target;
 
