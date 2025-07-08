@@ -167,6 +167,7 @@
         "plan": "Tutorial",
         "name": "📣❓ Ayuda",
         "file": "ayuda.json",
-        "cute": "noob"
+        "cute": "noob",
+        "hidden": true
     }
 ]

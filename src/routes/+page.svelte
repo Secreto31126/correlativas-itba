@@ -30,10 +30,10 @@
 </header>
 
 <main class="flex flex-col items-center text-xl mb-24">
-	{#each data.careers as career}
-		{#if career}
-			<a href="/{career.cute}" class="underline text-blue-500 mb-1">
-				{career.name} (Plan {career.plan})
+	{#each data.careers as { cute, plan, name, hidden }}
+		{#if !hidden}
+			<a href="/{cute}" class="underline text-blue-500 mb-1">
+				{name} (Plan {plan})
 			</a>
 		{/if}
 	{/each}
@@ -87,6 +87,23 @@
 			{:else}
 				<img src="github.png" alt="View Source Code" class="h-full rounded-full" />
 			{/if}
+		</a>
+		<a href="/noob" aria-label="Tutorial" class="flex items-center justify-between">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-full"
+				class:motion-safe:animate-bounce={!data.user_data}
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+				/>
+			</svg>
 		</a>
 	</div>
 </footer>
