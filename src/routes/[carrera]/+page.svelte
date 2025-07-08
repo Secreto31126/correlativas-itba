@@ -165,8 +165,8 @@
 		});
 	}
 
-	function toggleExpanded() {
-		if (dragging) return;
+	function toggleExpanded(e = famous) {
+		if (dragging || e !== famous) return;
 		expanded = !expanded;
 		return updateLines(!!famous);
 	}

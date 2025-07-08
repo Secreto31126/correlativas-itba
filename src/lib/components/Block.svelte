@@ -20,7 +20,7 @@
 		onin: (code: string) => void;
 		onout: (code: string) => void;
 		ontoggle: (code: string) => void;
-		onexpand: () => void;
+		onexpand: (code: string) => void;
 		oncontextmenu: (code: string) => void;
 	}
 
@@ -54,7 +54,7 @@
 		if (type === 'in' && mouse) return () => onin(subject.codec);
 		if (type === 'out' && mouse) return () => onout(subject.codec);
 		if (type === 'toggle' && !mouse) return () => ontoggle(subject.codec);
-		if (type === 'toggle' && mouse) return () => onexpand();
+		if (type === 'toggle' && mouse) return () => onexpand(subject.codec);
 
 		return () => {};
 	}
@@ -129,8 +129,7 @@
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
 	class:strike
-	class:cursor-default!={!im_famous && expanded}
-	class:cursor-pointer!={im_famous && expanded}
+	class:cursor-pointer!={expanded}
 	title={subject.name}
 	role="cell"
 	{tabindex}
@@ -172,7 +171,7 @@
 	}
 
 	.hide {
-		z-index: -1;
+		z-index: 0;
 		opacity: 0.3;
 	}
 
