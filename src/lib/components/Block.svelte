@@ -140,9 +140,9 @@
 	onmouseleave={preventDefault(event('out'))}
 	onclick={preventDefault(event(selecting ? 'contextmenu' : 'toggle'))}
 	oncontextmenu={preventDefault(event('contextmenu'))}
-	ontouchstart={preventDefault(safariContextMenu('start'))}
-	ontouchend={preventDefault(safariContextMenu('end'))}
-	ontouchmove={preventDefault(safariContextMenu('move'))}
+	ontouchstart={safariContextMenu('start')}
+	ontouchend={safariContextMenu('end')}
+	ontouchmove={safariContextMenu('move')}
 >
 	{#if selected}
 		<span class="absolute translate-x-1/2 translate-y-[-50%] top-0 right-0 w-4 h-4 md:w-6 md:h-6">
