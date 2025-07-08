@@ -123,7 +123,7 @@
 	data-parents={subject.parentc.join(' ')}
 	class="flex relative flex-col justify-center touch-none
 		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
-		p-1 md:p-2 md:max-w-[15%] cursor-pointer
+		p-1 md:p-2 md:max-w-[15%] cursor-pointer backdrop-blur-xs
 		transition-colors duration-500 ease-in-out"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
