@@ -40,7 +40,7 @@
 	);
 
 	let famous: string | undefined = $state();
-	let expanded: boolean = $state(false);
+	let expanded = $state(false);
 	let show = $derived(famous ? [famous, ...getAllParents([famous])] : []);
 	let highlighted = $derived(famous ? [...show, ...getChilds(famous)] : []);
 	let dragging = false;
