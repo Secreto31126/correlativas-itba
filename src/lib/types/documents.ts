@@ -36,6 +36,7 @@ export class Document {
 
 export class UserData extends Document {
 	subjects: string[] = [];
+	starred: string[] = [];
 	options: {
 		code: boolean;
 		credits: boolean;
@@ -55,7 +56,7 @@ export class UserData extends Document {
 	};
 
 	constructor(data: unknown = {}) {
-		super(data, 'user_data', 'subjects', 'options');
+		super(data, 'user_data', 'subjects', 'starred', 'options');
 		this._load(data);
 	}
 }

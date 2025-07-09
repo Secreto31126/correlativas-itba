@@ -107,7 +107,19 @@
                 "4"
             ],
             "name": "Pro tip 5",
-            "formal": "Pro tip 5: Con materias seleccionads, podés hacer click en el botón de calendario para ir al Combinador de Horarios del CEITBA",
+            "formal": "Pro tip 5: Con materias seleccionadas, podés hacer click en el botón de calendario para ir al Combinador de Horarios del CEITBA",
+            "semester": 4,
+            "credits": 0,
+            "requires": 0
+        },
+        {
+            "code": "13",
+            "parent": [
+                "3",
+                "4"
+            ],
+            "name": "Pro tip 6",
+            "formal": "Pro tip 6: Con electivas seleccionadas, podés hacer click en el botón de estrella para destacarlas y verlas arriba de todo",
             "semester": 4,
             "credits": 0,
             "requires": 0
