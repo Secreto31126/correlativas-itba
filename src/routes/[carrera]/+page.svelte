@@ -51,7 +51,7 @@
 
 	let selected: typeof all_codecs = $state([]);
 	const passed = $derived(
-		data.career.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
+		all_subjects.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
 	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
 
@@ -309,7 +309,7 @@
 
 	const scheduler_link = $derived(
 		`https://ceitba.org.ar/scheduler/${data.career_data.itba}?plan=${data.career_data.plan}&code=${selected
-			.map((code) => data.career.find((s) => s.codec === code)?.code)
+			.map((code) => all_subjects.find((s) => s.codec === code)?.code)
 			.join('&code=')}`
 	);
 
