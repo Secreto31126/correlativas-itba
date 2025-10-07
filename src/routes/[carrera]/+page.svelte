@@ -19,10 +19,7 @@
 	/**
 	 * All the subjects
 	 */
-	const all_subjects = $derived([
-		...data.career,
-		...Object.values(data.optatives).flatMap((e) => e)
-	]);
+	const all_subjects = $derived([...data.career, ...Object.values(data.optatives).flat()]);
 	/**
 	 * All the subjects codes codified
 	 */
