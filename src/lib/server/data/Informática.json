@@ -435,7 +435,7 @@
             "code": "72.45",
             "parent": [],
             "name": "Proyecto Final",
-            "formal": "Proyecto Final ",
+            "formal": "Proyecto Final",
             "semester": 9,
             "credits": 12,
             "requires": 160
@@ -1263,6 +1263,14 @@
                 "formal": "Introducción a la realidad aumentada",
                 "credits": 1,
                 "requires": 51
+            },
+            {
+                "code": "81.94",
+                "parent": [],
+                "name": "Experiencia Inmersiva de Innovación Tecnológica",
+                "formal": "Experiencia Inmersiva de Innovación Tecnológica",
+                "credits": 1,
+                "requires": 0
             },
             {
                 "code": "82.08",
