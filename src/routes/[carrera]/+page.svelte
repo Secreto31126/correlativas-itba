@@ -111,6 +111,7 @@
 	$effect.pre(() => untrack(destroyLines));
 	beforeNavigate(destroyLines);
 
+	let scrollY = $state(0);
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
 
@@ -340,6 +341,8 @@
 	});
 </script>
 
+<svelte:window bind:scrollY />
+
 <svelte:head>
 	<title>Correlativas de {data.career_data.name} en el ITBA</title>
 	<meta name="og:title" content="Correlativas de {data.career_data.name} en el ITBA" />
@@ -394,7 +397,8 @@
 {/snippet}
 
 <header
-	class="flex justify-between items-center fixed top-0 z-20 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900"
+	class="flex justify-between items-center fixed top-0 z-20 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
+	class:shadow-md={scrollY > 0}
 >
 	<a href="/">
 		<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
