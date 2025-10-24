@@ -111,6 +111,7 @@
 	$effect.pre(() => untrack(destroyLines));
 	beforeNavigate(destroyLines);
 
+	let scrollY = $state(0);
 	let clientWidth = $state(0);
 	let clientHeight = $state(0);
 
@@ -340,6 +341,8 @@
 	});
 </script>
 
+<svelte:window bind:scrollY />
+
 <svelte:head>
 	<title>Correlativas de {data.career_data.name} en el ITBA</title>
 	<meta name="og:title" content="Correlativas de {data.career_data.name} en el ITBA" />
@@ -393,56 +396,82 @@
 	</div>
 {/snippet}
 
-<div class="grid w-full md:min-h-screen pt-2">
-	<header class="flex justify-between items-center mx-2 h-8 md:h-12">
-		<a href="/">
-			<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
-		</a>
-		<div class="flex h-full gap-4">
-			{#if $db.options.progress || selected.length}
-				<button onclick={toggleCounter} class="cursor-pointer">
-					{#if counter_type === 'credits'}
-						{passed_credits}
-						{!selected.length ? `/ ${data.credits}` : ''} créditos
-					{:else}
-						{passed.length}
-						{!selected.length ? `/ ${data.career.length} troncales` : ' materias'}
-					{/if}
-				</button>
-			{/if}
-			{#if selected.length}
-				<div class="flex md:pr-2 *:w-5 md:*:w-6 gap-4">
-					<!-- https://heroicons.com/solid -->
-					{#if data.career_data.itba}
-						<a
-							href={scheduler_link}
-							title="Ir al planificador"
-							aria-label="Scheduler"
-							class="flex items-center"
-							target="_blank"
-							rel="noopener noreferrer"
+<header
+	class="flex justify-between items-center fixed top-0 z-20 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
+	class:shadow-md={scrollY > 0}
+>
+	<a href="/">
+		<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
+	</a>
+	<div class="flex h-full gap-4">
+		{#if $db.options.progress || selected.length}
+			<button onclick={toggleCounter} class="cursor-pointer">
+				{#if counter_type === 'credits'}
+					{passed_credits}
+					{!selected.length ? `/ ${data.credits}` : ''} créditos
+				{:else}
+					{passed.length}
+					{!selected.length ? `/ ${data.career.length} troncales` : ' materias'}
+				{/if}
+			</button>
+		{/if}
+		{#if selected.length}
+			<div class="flex md:pr-2 *:w-5 md:*:w-6 gap-4">
+				<!-- https://heroicons.com/solid -->
+				{#if data.career_data.itba}
+					<a
+						href={scheduler_link}
+						title="Ir al planificador"
+						aria-label="Scheduler"
+						class="flex items-center"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="size-6"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="currentColor"
-								class="size-6"
-							>
-								<path
-									d="M12 11.993a.75.75 0 0 0-.75.75v.006c0 .414.336.75.75.75h.006a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75H12ZM12 16.494a.75.75 0 0 0-.75.75v.005c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H12ZM8.999 17.244a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.006ZM7.499 16.494a.75.75 0 0 0-.75.75v.005c0 .414.336.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H7.5ZM13.499 14.997a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.005a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.005ZM14.25 16.494a.75.75 0 0 0-.75.75v.006c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75h-.005ZM15.75 14.995a.75.75 0 0 1 .75-.75h.005a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75H16.5a.75.75 0 0 1-.75-.75v-.006ZM13.498 12.743a.75.75 0 0 1 .75-.75h2.25a.75.75 0 1 1 0 1.5h-2.25a.75.75 0 0 1-.75-.75ZM6.748 14.993a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z"
-								/>
-								<path
-									fill-rule="evenodd"
-									d="M18 2.993a.75.75 0 0 0-1.5 0v1.5h-9V2.994a.75.75 0 1 0-1.5 0v1.497h-.752a3 3 0 0 0-3 3v11.252a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3V7.492a3 3 0 0 0-3-3H18V2.993ZM3.748 18.743v-7.5a1.5 1.5 0 0 1 1.5-1.5h13.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-13.5a1.5 1.5 0 0 1-1.5-1.5Z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-						</a>
-					{/if}
+							<path
+								d="M12 11.993a.75.75 0 0 0-.75.75v.006c0 .414.336.75.75.75h.006a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75H12ZM12 16.494a.75.75 0 0 0-.75.75v.005c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H12ZM8.999 17.244a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.006ZM7.499 16.494a.75.75 0 0 0-.75.75v.005c0 .414.336.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H7.5ZM13.499 14.997a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.005a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.005ZM14.25 16.494a.75.75 0 0 0-.75.75v.006c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75h-.005ZM15.75 14.995a.75.75 0 0 1 .75-.75h.005a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75H16.5a.75.75 0 0 1-.75-.75v-.006ZM13.498 12.743a.75.75 0 0 1 .75-.75h2.25a.75.75 0 1 1 0 1.5h-2.25a.75.75 0 0 1-.75-.75ZM6.748 14.993a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z"
+							/>
+							<path
+								fill-rule="evenodd"
+								d="M18 2.993a.75.75 0 0 0-1.5 0v1.5h-9V2.994a.75.75 0 1 0-1.5 0v1.497h-.752a3 3 0 0 0-3 3v11.252a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3V7.492a3 3 0 0 0-3-3H18V2.993ZM3.748 18.743v-7.5a1.5 1.5 0 0 1 1.5-1.5h13.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-13.5a1.5 1.5 0 0 1-1.5-1.5Z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</a>
+				{/if}
+				<button
+					onclick={complete_selected_subjects}
+					title="Marcar como completadas"
+					aria-label="Completar"
+					class="cursor-pointer"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+						class="size-6"
+					>
+						<path
+							d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+						/>
+						<path
+							d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+						/>
+						<path
+							d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+						/>
+					</svg>
+				</button>
+				{#if selected.every((e) => all_subjects.find((s) => s.codec === e)?.optative)}
 					<button
-						onclick={complete_selected_subjects}
-						title="Marcar como completadas"
-						aria-label="Completar"
+						onclick={starSelected}
+						title="Fijar electiva"
+						aria-label="Fijar"
 						class="cursor-pointer"
 					>
 						<svg
@@ -452,118 +481,92 @@
 							class="size-6"
 						>
 							<path
-								d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
-							/>
-							<path
-								d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
-							/>
-							<path
-								d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+								fill-rule="evenodd"
+								d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+								clip-rule="evenodd"
 							/>
 						</svg>
 					</button>
-					{#if selected.every((e) => all_subjects.find((s) => s.codec === e)?.optative)}
-						<button
-							onclick={starSelected}
-							title="Fijar electiva"
-							aria-label="Fijar"
-							class="cursor-pointer"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="currentColor"
-								class="size-6"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-						</button>
-					{/if}
-					<button
-						onclick={() => (selected = [])}
-						title="Cancelar"
-						aria-label="Cancelar"
-						class="grow cursor-pointer"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-			{:else}
-				<GoogleButton
-					logged={!!data.userSession}
-					picture={data.userSession?.picture}
-					ping={!$db.options.visited_account}
-				/>
-			{/if}
-		</div>
-	</header>
-	<main class="flex flex-col md:justify-between gap-5 md:gap-2 w-full h-full py-2">
-		<!-- Troncales -->
-		{#each semesters as semester}
-			{@render subjects_row(data.career.filter((e) => e.semester === semester))}
-		{/each}
-		<!-- Pinneadas -->
-		{#if starred.length}
-			{@render subjects_row(starred)}
-		{/if}
-		<div class="md:mb-2"></div>
-		<!-- Electivas -->
-		{#each Object.entries(data.optatives) as [name, subjects]}
-			<div class="flex flex-col w-full text-center">
-				<hr />
-				<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer py-2">
-					{name}
-				</button>
-			</div>
-			{@render subjects_row(
-				subjects.filter((e) => !$db.starred.includes(e.codec)),
-				!visible_optatives[name]
-			)}
-		{/each}
-		<!-- Concentraciones -->
-		{#each data.career_data.specialization ?? [] as { name, cute }}
-			<div class="flex flex-col w-full text-center">
-				<hr />
-				<a href="/{cute}" class="flex items-center justify-center gap-2 w-full py-2">
-					<p>{name}</p>
+				{/if}
+				<button
+					onclick={() => (selected = [])}
+					title="Cancelar"
+					aria-label="Cancelar"
+					class="grow cursor-pointer"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="size-4"
+						class="size-6"
 					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-						/>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 					</svg>
-				</a>
+				</button>
 			</div>
-		{/each}
-	</main>
-</div>
+		{:else}
+			<GoogleButton
+				logged={!!data.userSession}
+				picture={data.userSession?.picture}
+				ping={!$db.options.visited_account}
+			/>
+		{/if}
+	</div>
+</header>
+
+<main
+	class="flex flex-col md:justify-between gap-5 md:gap-2 w-full md:h-screen pt-12 md:pt-16 pb-2"
+>
+	<!-- Troncales -->
+	{#each semesters as semester}
+		{@render subjects_row(data.career.filter((e) => e.semester === semester))}
+	{/each}
+	<!-- Pinneadas -->
+	{#if starred.length}
+		{@render subjects_row(starred)}
+	{/if}
+	<div class="md:mb-2"></div>
+	<!-- Electivas -->
+	{#each Object.entries(data.optatives) as [name, subjects]}
+		<div class="flex flex-col w-full text-center">
+			<hr />
+			<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer py-2">
+				{name}
+			</button>
+		</div>
+		{@render subjects_row(
+			subjects.filter((e) => !$db.starred.includes(e.codec)),
+			!visible_optatives[name]
+		)}
+	{/each}
+	<!-- Concentraciones -->
+	{#each data.career_data.specialization ?? [] as { name, cute }}
+		<div class="flex flex-col w-full text-center">
+			<hr />
+			<a href="/{cute}" class="flex items-center justify-center gap-2 w-full py-2">
+				<p>{name}</p>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-4"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+					/>
+				</svg>
+			</a>
+		</div>
+	{/each}
+</main>
 
 <style lang="postcss">
-	div.grid {
-		grid-template-rows: auto 1fr;
-	}
-
 	.cuatrimestre:nth-child(5n + 1) {
 		--color: rgb(0, 155, 255);
 		--b-color: rgba(0, 155, 255, 0.4);
