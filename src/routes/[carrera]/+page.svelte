@@ -397,7 +397,7 @@
 {/snippet}
 
 <header
-	class="flex justify-between items-center fixed top-0 -z-10 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
+	class="flex justify-between items-center fixed top-0 z-0 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
 	class:shadow-md={scrollY > 0}
 	class:z-20={scrollY > 0}
 >
