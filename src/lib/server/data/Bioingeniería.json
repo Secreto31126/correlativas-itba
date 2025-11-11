@@ -1098,16 +1098,6 @@
                 "requires": 0
             },
             {
-                "code": "72.37",
-                "parent": [
-                    "71.59"
-                ],
-                "name": "Base de Datos I",
-                "formal": "Base de Datos I",
-                "credits": 6,
-                "requires": 0
-            },
-            {
                 "code": "72.75",
                 "parent": [
                     "93.24",
