@@ -572,6 +572,30 @@
                 "requires": 0
             },
             {
+                "code": "14.72",
+                "parent": [],
+                "name": "Analytics",
+                "formal": "Analytics",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "14.89",
+                "parent": [],
+                "name": "Ventas",
+                "formal": "Ventas",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "15.09",
+                "parent": [],
+                "name": "Agile, Lean y Lean Six Sigma",
+                "formal": "Agile, Lean y Lean Six Sigma",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "15.79",
                 "parent": [],
                 "name": "Metodología de la Investigación",
@@ -586,6 +610,14 @@
                 "formal": "Neurociencias y Desarrollo Productivo",
                 "credits": 3,
                 "requires": 96
+            },
+            {
+                "code": "16.87",
+                "parent": [],
+                "name": "Microfabricación",
+                "formal": "Microfabricación",
+                "credits": 1,
+                "requires": 0
             },
             {
                 "code": "22.22",
@@ -979,6 +1011,14 @@
                 "requires": 0
             },
             {
+                "code": "81.83",
+                "parent": [],
+                "name": "Tecnología e Innovación Aplicada a la Industria",
+                "formal": "Tecnología e Innovación Aplicada a la Industria",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "92.92",
                 "parent": [],
                 "name": "Complementos de Física de la Relatividad",
@@ -991,14 +1031,6 @@
                 "parent": [],
                 "name": "Complementos de Matemática V",
                 "formal": "Complementos de Matemática V",
-                "credits": 2,
-                "requires": 0
-            },
-            {
-                "code": "92.99",
-                "parent": [],
-                "name": "Complementos de Análisis Matemático IV",
-                "formal": "Complementos de Análisis Matemático IV",
                 "credits": 2,
                 "requires": 0
             },
