@@ -801,6 +801,14 @@
                 "requires": 72
             },
             {
+                "code": "15.84",
+                "parent": [],
+                "name": "Gestión de la Operación Diaria a través de DMS y KPIs Estratégicos",
+                "formal": "Gestión de la Operación Diaria a través de DMS y KPIs Estratégicos",
+                "credits": 1,
+                "requires": 72
+            },
+            {
                 "code": "16.04",
                 "parent": [],
                 "name": "Neurociencias y Desarrollo Productivo",
@@ -842,6 +850,14 @@
                 "formal": "Operaciones Offshore",
                 "credits": 3,
                 "requires": 72
+            },
+            {
+                "code": "48.02",
+                "parent": [],
+                "name": "AI: Data Management Course & Digital Transformation",
+                "formal": "AI: Data Management Course & Digital Transformation",
+                "credits": 1,
+                "requires": 0
             },
             {
                 "code": "61.11",
