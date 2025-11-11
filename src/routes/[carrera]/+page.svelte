@@ -344,8 +344,8 @@
 <svelte:window bind:scrollY />
 
 <svelte:head>
-	<title>Correlativas de {data.career_data.name} en el ITBA</title>
-	<meta name="og:title" content="Correlativas de {data.career_data.name} en el ITBA" />
+	<title>{data.career_data.name} en el ITBA</title>
+	<meta name="og:title" content="{data.career_data.name} en el ITBA" />
 	<meta name="twitter:title" content="Correlativas de {data.career_data.name} en el ITBA" />
 	<meta
 		name="description"
