@@ -397,8 +397,9 @@
 {/snippet}
 
 <header
-	class="flex justify-between items-center fixed top-0 z-20 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
+	class="flex justify-between items-center fixed top-0 z-0 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
 	class:shadow-md={scrollY > 0}
+	class:z-20={scrollY > 0}
 >
 	<a href="/">
 		<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
@@ -517,7 +518,7 @@
 </header>
 
 <main
-	class="flex flex-col md:justify-between gap-5 md:gap-2 w-full md:h-screen pt-12 md:pt-16 pb-2"
+	class="flex flex-col md:justify-between gap-5 md:gap-1 w-full md:h-screen pt-12 md:pt-16 pb-2"
 >
 	<!-- Troncales -->
 	{#each semesters as semester}
