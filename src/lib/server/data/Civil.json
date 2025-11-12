@@ -220,7 +220,7 @@
             "code": "67.05",
             "parent": [
                 "67.01",
-                "93.22"
+                "93.24"
             ],
             "name": "Tecnología del Hormigón",
             "formal": "Tecnología del Hormigón",
@@ -287,7 +287,7 @@
             "parent": [
                 "93.18",
                 "93.42",
-                "93.22"
+                "93.24"
             ],
             "name": "Geotopografía",
             "formal": "Geotopografía",
@@ -344,7 +344,7 @@
         {
             "code": "61.27",
             "parent": [
-                "93.22"
+                "93.24"
             ],
             "name": "Análisis de Coyuntura Económica",
             "formal": "Análisis de Coyuntura Económica",
@@ -618,7 +618,7 @@
             {
                 "code": "11.76",
                 "parent": [
-                    "93.22"
+                    "93.24"
                 ],
                 "name": "Gestión de Calidad",
                 "formal": "Gestión de Calidad",
@@ -708,7 +708,7 @@
             {
                 "code": "61.09",
                 "parent": [
-                    "93.22"
+                    "93.24"
                 ],
                 "name": "Economía Empresaria",
                 "formal": "Economía Empresaria",
@@ -791,6 +791,16 @@
                 "name": "Análisis Matemático V",
                 "formal": "Análisis Matemático V",
                 "credits": 4,
+                "requires": 0
+            },
+            {
+                "code": "92.20",
+                "parent": [
+                    "31.08"
+                ],
+                "name": "Representación Gráfica para Ingeniería Civil",
+                "formal": "Representación Gráfica para Ingeniería Civil",
+                "credits": 1,
                 "requires": 0
             },
             {

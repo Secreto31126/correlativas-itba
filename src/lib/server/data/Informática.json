@@ -371,7 +371,7 @@
             "code": "72.25",
             "parent": [
                 "72.34",
-                "93.07"
+                "93.75"
             ],
             "name": "Sims",
             "formal": "Simulación de Sistemas",
@@ -383,7 +383,8 @@
             "code": "72.27",
             "parent": [
                 "93.24",
-                "72.34"
+                "72.34",
+                "93.75"
             ],
             "name": "SIA",
             "formal": "Sistemas de Inteligencia Artificial",
@@ -572,6 +573,14 @@
                 "requires": 144
             },
             {
+                "code": "48.02",
+                "parent": [],
+                "name": "AI: Data Management Course & Digital Transformation",
+                "formal": "AI: Data Management Course & Digital Transformation",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "61.08",
                 "parent": [
                     "61.32"
@@ -640,7 +649,7 @@
                 "parent": [],
                 "name": "Diseño y Construcción de Compiladores",
                 "formal": "Diseño y Construcción de Compiladores",
-                "credits": 6,
+                "credits": 1,
                 "requires": 0
             },
             {
@@ -1153,6 +1162,16 @@
                 "requires": 0
             },
             {
+                "code": "73.63",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Redes Equivariantes",
+                "formal": "Redes Equivariantes",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "73.64",
                 "parent": [
                     "72.27"
@@ -1178,6 +1197,16 @@
                 "name": "SEGURIDAD OFENSIVA",
                 "formal": "SEGURIDAD OFENSIVA",
                 "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.81",
+                "parent": [
+                    "72.44"
+                ],
+                "name": "Ciberseguridad Ofensiva y Defensiva",
+                "formal": "Ciberseguridad Ofensiva y Defensiva",
+                "credits": 3,
                 "requires": 0
             },
             {

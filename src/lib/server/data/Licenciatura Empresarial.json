@@ -323,6 +323,22 @@
     "optatives": {
         "Electivas Analytics": [
             {
+                "code": "10.15",
+                "parent": [],
+                "name": "Agroindustria",
+                "formal": "Agroindustria",
+                "credits": 3,
+                "requires": 96
+            },
+            {
+                "code": "15.12",
+                "parent": [],
+                "name": "Análisis Estratégico del Mercado",
+                "formal": "Análisis Estratégico del Mercado",
+                "credits": 1,
+                "requires": 96
+            },
+            {
                 "code": "81.17",
                 "parent": [
                     "82.05",
@@ -589,6 +605,14 @@
                 "requires": 96
             },
             {
+                "code": "15.09",
+                "parent": [],
+                "name": "Agile, Lean y Lean Six Sigma",
+                "formal": "Agile, Lean y Lean Six Sigma",
+                "credits": 1,
+                "requires": 96
+            },
+            {
                 "code": "17.22",
                 "parent": [],
                 "name": "Cálculo de Huella de Carbono en Organizaciones",
@@ -800,6 +824,14 @@
                 "formal": "Arquitectura de soluciones digitales",
                 "credits": 3,
                 "requires": 96
+            },
+            {
+                "code": "81.75",
+                "parent": [],
+                "name": "Fund. del desarrollo de software y análisis de datos en Python",
+                "formal": "Fund. del desarrollo de software y análisis de datos en Python",
+                "credits": 1,
+                "requires": 0
             },
             {
                 "code": "82.06",

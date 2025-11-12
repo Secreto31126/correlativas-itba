@@ -892,6 +892,16 @@
                 "requires": 0
             },
             {
+                "code": "30.15",
+                "parent": [
+                    "30.47"
+                ],
+                "name": "Tecnologías para Energías Renovables",
+                "formal": "Tecnologías para Energías Renovables",
+                "credits": 3,
+                "requires": 0
+            },
+            {
                 "code": "30.24",
                 "parent": [
                     "30.25"

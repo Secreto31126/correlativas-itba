@@ -853,7 +853,10 @@
             },
             {
                 "code": "16.79",
-                "parent": [],
+                "parent": [
+                    "16.03",
+                    "93.43"
+                ],
                 "name": "Neurociencias",
                 "formal": "Neurociencias",
                 "credits": 3,
@@ -932,6 +935,48 @@
                 ],
                 "name": "Microfabricación",
                 "formal": "Microfabricación",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.88",
+                "parent": [
+                    "16.63",
+                    "16.03"
+                ],
+                "name": "Avances Tecnol. para el estudio del SNC en mod. animales",
+                "formal": "Avances Tecnol. para el estudio del SNC en mod. animales",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.89",
+                "parent": [
+                    "16.79"
+                ],
+                "name": "Laboratorio de Neurobiología de la Memoria",
+                "formal": "Laboratorio de Neurobiología de la Memoria",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.90",
+                "parent": [
+                    "16.52"
+                ],
+                "name": "Laboratorio de Inmunología Biológica",
+                "formal": "Laboratorio de Inmunología Biológica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.91",
+                "parent": [
+                    "71.59",
+                    "23.02"
+                ],
+                "name": "Sistemas Embebidos: Aplicaciones en Biomedicina",
+                "formal": "Sistemas Embebidos: Aplicaciones en Biomedicina",
                 "credits": 1,
                 "requires": 0
             },
@@ -1088,6 +1133,16 @@
                 "requires": 0
             },
             {
+                "code": "71.88",
+                "parent": [
+                    "71.59"
+                ],
+                "name": "Gestión de Datos",
+                "formal": "Gestión de Datos",
+                "credits": 6,
+                "requires": 0
+            },
+            {
                 "code": "71.94",
                 "parent": [
                     "71.59"
@@ -1095,16 +1150,6 @@
                 "name": "Introducción al Diseño de Bases de Datos Relacionales y No-Relacionales",
                 "formal": "Introducción al Diseño de Bases de Datos Relacionales y No-Relacionales",
                 "credits": 3,
-                "requires": 0
-            },
-            {
-                "code": "72.37",
-                "parent": [
-                    "71.59"
-                ],
-                "name": "Base de Datos I",
-                "formal": "Base de Datos I",
-                "credits": 6,
                 "requires": 0
             },
             {
@@ -1156,6 +1201,16 @@
                 ],
                 "name": "Neurorobótica",
                 "formal": "Neurorobótica",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.63",
+                "parent": [
+                    "16.32"
+                ],
+                "name": "Redes Equivariantes",
+                "formal": "Redes Equivariantes",
                 "credits": 1,
                 "requires": 0
             },

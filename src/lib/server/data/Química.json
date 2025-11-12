@@ -553,6 +553,14 @@
     "optatives": {
         "Electivas": [
             {
+                "code": "10.07",
+                "parent": [],
+                "name": "Creatividad",
+                "formal": "Creatividad",
+                "credits": 3,
+                "requires": 76
+            },
+            {
                 "code": "10.08",
                 "parent": [],
                 "name": "Energías Renovables",
@@ -583,6 +591,17 @@
                 "formal": "Agroindustria",
                 "credits": 3,
                 "requires": 72
+            },
+            {
+                "code": "10.16",
+                "parent": [
+                    "92.03",
+                    "93.24"
+                ],
+                "name": "Machine Learning para Negocios",
+                "formal": "Machine Learning para Negocios",
+                "credits": 3,
+                "requires": 0
             },
             {
                 "code": "10.23",
@@ -833,6 +852,16 @@
                 "requires": 0
             },
             {
+                "code": "16.87",
+                "parent": [
+                    "30.62"
+                ],
+                "name": "Microfabricación",
+                "formal": "Microfabricación",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "17.08",
                 "parent": [],
                 "name": "Seguridad de Procesos",
@@ -853,8 +882,8 @@
             {
                 "code": "17.10",
                 "parent": [],
-                "name": "Desarrollo de Yacimientos, Producción, Tratamiento y Comercialización de Gas y Petróleo",
-                "formal": "Desarrollo de Yacimientos, Producción, Tratamiento y Comercialización de Gas y Petróleo",
+                "name": "Desar. de Yacimientos, Produc., Tratam. y Comerc. de Gas y Petróleo",
+                "formal": "Desar. de Yacimientos, Produc., Tratam. y Comerc. de Gas y Petróleo",
                 "credits": 3,
                 "requires": 168
             },
@@ -982,6 +1011,17 @@
                 "formal": "Diseño de Productos Alimenticios",
                 "credits": 3,
                 "requires": 144
+            },
+            {
+                "code": "17.26",
+                "parent": [
+                    "12.25",
+                    "12.13"
+                ],
+                "name": "Intensificación de Procesos Químicos",
+                "formal": "Intensificación de Procesos Químicos",
+                "credits": 1,
+                "requires": 0
             },
             {
                 "code": "21.09",
@@ -1214,6 +1254,14 @@
                 "requires": 0
             },
             {
+                "code": "48.01",
+                "parent": [],
+                "name": "Oil & Gas Investment and Economics",
+                "formal": "Oil & Gas Investment and Economics",
+                "credits": 1,
+                "requires": 96
+            },
+            {
                 "code": "61.04",
                 "parent": [],
                 "name": "Sistema Monetario y Financiero en Argentina",
@@ -1238,6 +1286,17 @@
                 "requires": 0
             },
             {
+                "code": "71.22",
+                "parent": [
+                    "71.58",
+                    "93.24"
+                ],
+                "name": "Sistemas de Inteligencia Artificial",
+                "formal": "Sistemas de Inteligencia Artificial",
+                "credits": 3,
+                "requires": 0
+            },
+            {
                 "code": "72.75",
                 "parent": [
                     "71.58",
@@ -1257,12 +1316,12 @@
                 "requires": 96
             },
             {
-                "code": "92.04",
+                "code": "92.99",
                 "parent": [],
-                "name": "Análisis Matemàtico IV",
-                "formal": "Análisis Matemàtico IV",
-                "credits": 6,
-                "requires": 96
+                "name": "Complementos de Análisis Matemático IV",
+                "formal": "Complementos de Análisis Matemático IV",
+                "credits": 2,
+                "requires": 0
             },
             {
                 "code": "93.51",
