@@ -621,6 +621,14 @@
                 "requires": 0
             },
             {
+                "code": "71.48",
+                "parent": [],
+                "name": "Introducción a la realidad aumentada",
+                "formal": "Introducción a la realidad aumentada",
+                "credits": 1,
+                "requires": 51
+            },
+            {
                 "code": "72.02",
                 "parent": [],
                 "name": "Organización Básica de la Computadora",
@@ -807,6 +815,16 @@
                 "name": "Taller de Diseño de Videojuegos",
                 "formal": "Taller de Diseño de Videojuegos",
                 "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "72.64",
+                "parent": [
+                    "72.32"
+                ],
+                "name": "Cloud Computing",
+                "formal": "Cloud Computing",
+                "credits": 3,
                 "requires": 0
             },
             {
@@ -1200,6 +1218,16 @@
                 "name": "Temas Avanzados en Deep Learning",
                 "formal": "Temas Avanzados en Deep Learning",
                 "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "73.65",
+                "parent": [
+                    "93.07"
+                ],
+                "name": "Procesamiento del Lenguaje Natural",
+                "formal": "Procesamiento del Lenguaje Natural",
+                "credits": 3,
                 "requires": 0
             },
             {
