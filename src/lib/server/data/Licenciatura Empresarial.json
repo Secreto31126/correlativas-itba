@@ -740,16 +740,6 @@
         ],
         "Electivas Informática": [
             {
-                "code": "10.16",
-                "parent": [
-                    "82.15"
-                ],
-                "name": "Machine Learning para Negocios",
-                "formal": "Machine Learning para Negocios",
-                "credits": 3,
-                "requires": 0
-            },
-            {
                 "code": "71.22",
                 "parent": [
                     "71.20",
@@ -834,6 +824,14 @@
                 "requires": 0
             },
             {
+                "code": "81.91",
+                "parent": [],
+                "name": "Inteligencia Artificial Aplicada a los Negocios",
+                "formal": "Inteligencia Artificial Aplicada a los Negocios",
+                "credits": 3,
+                "requires": 96
+            },
+            {
                 "code": "82.06",
                 "parent": [],
                 "name": "Plataformas de Computación Cognitiva",
@@ -868,6 +866,16 @@
                 "name": "Inteligencia Artificial Generativa",
                 "formal": "Inteligencia Artificial Generativa",
                 "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "83.16",
+                "parent": [
+                    "82.15"
+                ],
+                "name": "Machine Learning para Negocios",
+                "formal": "Machine Learning para Negocios",
+                "credits": 3,
                 "requires": 0
             }
         ],

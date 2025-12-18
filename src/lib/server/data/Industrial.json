@@ -809,6 +809,36 @@
                 "requires": 72
             },
             {
+                "code": "15.85",
+                "parent": [
+                    "11.10"
+                ],
+                "name": "Logística Internacional",
+                "formal": "Logística Internacional",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "15.86",
+                "parent": [
+                    "11.20"
+                ],
+                "name": "Analítica para la Cadena de Suministro",
+                "formal": "Analítica para la Cadena de Suministro",
+                "credits": 2,
+                "requires": 0
+            },
+            {
+                "code": "15.87",
+                "parent": [
+                    "11.20"
+                ],
+                "name": "Simulación para la Cadena de Suministro",
+                "formal": "Simulación para la Cadena de Suministro",
+                "credits": 2,
+                "requires": 0
+            },
+            {
                 "code": "16.04",
                 "parent": [],
                 "name": "Neurociencias y Desarrollo Productivo",
