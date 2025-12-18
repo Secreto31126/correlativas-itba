@@ -7,6 +7,12 @@
         "itba": "BIO"
     },
     {
+        "plan": "AER 25",
+        "name": "Ingeniería Aeroespacial",
+        "file": "Aeroespacial.json",
+        "cute": "cohetes"
+    },
+    {
         "plan": "C23",
         "name": "Ingeniería Civil",
         "file": "Civil.json",
