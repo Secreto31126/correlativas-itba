@@ -512,6 +512,16 @@
                 "requires": 48
             },
             {
+                "code": "15.85",
+                "parent": [
+                    "11.83"
+                ],
+                "name": "Logística Internacional",
+                "formal": "Logística Internacional",
+                "credits": 3,
+                "requires": 48
+            },
+            {
                 "code": "17.22",
                 "parent": [],
                 "name": "Cálculo de Huella de Carbono en Organizaciones",
@@ -1013,7 +1023,15 @@
                 "name": "Comportamiento Organizacional",
                 "formal": "Comportamiento Organizacional",
                 "credits": 3,
-                "requires": 0
+                "requires": 48
+            },
+            {
+                "code": "94.42",
+                "parent": [],
+                "name": "Comunicación Estratégica",
+                "formal": "Comunicación Estratégica",
+                "credits": 3,
+                "requires": 48
             },
             {
                 "code": "94.62",
@@ -1304,6 +1322,16 @@
                 "parent": [],
                 "name": "Taller de Sistemas Integrados de Gestión Empresaria II",
                 "formal": "Taller de Sistemas Integrados de Gestión Empresaria II",
+                "credits": 3,
+                "requires": 48
+            },
+            {
+                "code": "81.91",
+                "parent": [
+                    "71.38"
+                ],
+                "name": "Inteligencia Artificial Aplicada a los Negocios",
+                "formal": "Inteligencia Artificial Aplicada a los Negocios",
                 "credits": 3,
                 "requires": 48
             },

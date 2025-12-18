@@ -981,6 +981,54 @@
                 "requires": 0
             },
             {
+                "code": "16.92",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Nanocarriers biológicos: vesículas extracelulares y su potencial biotecnológico",
+                "formal": "Nanocarriers biológicos: vesículas extracelulares y su potencial biotecnológico",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.93",
+                "parent": [
+                    "16.03"
+                ],
+                "name": "Análisis crítico de evidencia en bioingeniería",
+                "formal": "Análisis crítico de evidencia en bioingeniería",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.94",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Biomimética",
+                "formal": "Biomimética",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "16.95",
+                "parent": [],
+                "name": "Startups basadas en ciencia",
+                "formal": "Startups basadas en ciencia",
+                "credits": 1,
+                "requires": 144
+            },
+            {
+                "code": "16.96",
+                "parent": [
+                    "16.64"
+                ],
+                "name": "Laboratorio de Bioimpresión",
+                "formal": "Laboratorio de Bioimpresión",
+                "credits": 1,
+                "requires": 0
+            },
+            {
                 "code": "17.15",
                 "parent": [
                     "12.83"
@@ -1230,7 +1278,7 @@
                     "71.59"
                 ],
                 "name": "Fundamentos del desarrollo de software y análisis de datos en Python",
-                "formal": "Fundamentos del desarrollo de software y análisis de datos en Python",
+                "formal": "Fund. del desarrollo de software y análisis de datos en Python",
                 "credits": 1,
                 "requires": 0
             },

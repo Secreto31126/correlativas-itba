@@ -773,12 +773,66 @@
                 "requires": 0
             },
             {
+                "code": "16.02",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Histología y Anatomía",
+                "formal": "Histología y Anatomía",
+                "credits": 6,
+                "requires": 0
+            },
+            {
+                "code": "16.03",
+                "parent": [
+                    "16.55"
+                ],
+                "name": "Fisiología",
+                "formal": "Fisiología",
+                "credits": 6,
+                "requires": 0
+            },
+            {
                 "code": "16.06",
                 "parent": [
                     "92.04"
                 ],
                 "name": "Señales y Sistemas",
                 "formal": "Señales y Sistemas",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.64",
+                "parent": [
+                    "93.41",
+                    "16.03"
+                ],
+                "name": "Mecánica de biomateriales y tejidos",
+                "formal": "Mecánica de biomateriales y tejidos",
+                "credits": 8,
+                "requires": 0
+            },
+            {
+                "code": "16.79",
+                "parent": [
+                    "94.43",
+                    "16.03"
+                ],
+                "name": "Neurociencias",
+                "formal": "Neurociencias",
+                "credits": 3,
+                "requires": 0
+            },
+            {
+                "code": "16.82",
+                "parent": [
+                    "71.59",
+                    "92.03",
+                    "93.24"
+                ],
+                "name": "Neurociencia Computacional",
+                "formal": "Neurociencia Computacional",
                 "credits": 3,
                 "requires": 0
             },
