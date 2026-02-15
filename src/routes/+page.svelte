@@ -41,9 +41,9 @@
 
 <footer class="fixed bottom-0 w-full h-16 md:h-18 mb-4 flex justify-center bg-none">
 	<div
-		class="flex h-full justify-center gap-6 md:gap-5 rounded-full px-5 py-4 bg-indigo-50 dark:bg-gray-700 backdrop-opacity-50"
+		class="flex h-full justify-center gap-6 md:gap-5 rounded-full px-5 py-4 bg-indigo-50 dark:bg-gray-700 backdrop-opacity-50 *:size-full"
 	>
-		<button onclick={toggleTheme} class="h-full cursor-pointer">
+		<button onclick={toggleTheme} class="cursor-pointer">
 			{#if getTheme() === 'dark'}
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
