@@ -23,8 +23,8 @@ class Subject {
 		this.name = name;
 		this.formal = name;
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
-		this.credits = credits;
-		this.requires = requires;
+		this.credits = credits || undefined;
+		this.requires = requires || undefined no;
 	}
 }
 
@@ -98,4 +98,4 @@ if (old) {
 	}
 }
 
-console.log(JSON.stringify(db, null, 4));
+console.log(JSON.stringify(db, null, 2));
