@@ -335,8 +335,8 @@
         {
             "code": "72.41",
             "parent": [
-                "72.37",
-                "72.11"
+                "72.11",
+                "72.37"
             ],
             "name": "BD2",
             "formal": "Base de Datos II",
@@ -370,9 +370,8 @@
         {
             "code": "72.25",
             "parent": [
-                "93.75",
                 "72.34",
-                "93.07"
+                "93.75"
             ],
             "name": "Sims",
             "formal": "Simulación de Sistemas",
@@ -383,9 +382,9 @@
         {
             "code": "72.27",
             "parent": [
-                "93.75",
                 "93.24",
-                "72.34"
+                "72.34",
+                "93.75"
             ],
             "name": "SIA",
             "formal": "Sistemas de Inteligencia Artificial",
