@@ -335,8 +335,8 @@
         {
             "code": "72.41",
             "parent": [
-                "72.11",
-                "72.37"
+                "72.37",
+                "72.11"
             ],
             "name": "BD2",
             "formal": "Base de Datos II",
@@ -370,8 +370,9 @@
         {
             "code": "72.25",
             "parent": [
+                "93.75",
                 "72.34",
-                "93.75"
+                "93.07"
             ],
             "name": "Sims",
             "formal": "Simulación de Sistemas",
@@ -382,9 +383,9 @@
         {
             "code": "72.27",
             "parent": [
+                "93.75",
                 "93.24",
-                "72.34",
-                "93.75"
+                "72.34"
             ],
             "name": "SIA",
             "formal": "Sistemas de Inteligencia Artificial",
@@ -1235,6 +1236,16 @@
                 "parent": [],
                 "name": "Procesamiento de Imágenes Satelitales",
                 "formal": "Procesamiento de Imágenes Satelitales",
+                "credits": 1,
+                "requires": 0
+            },
+            {
+                "code": "73.67",
+                "parent": [
+                    "72.27"
+                ],
+                "name": "Análisis de series de tiempo con Inteligencia Artificial",
+                "formal": "Análisis de series de tiempo con Inteligencia Artificial",
                 "credits": 1,
                 "requires": 0
             },
