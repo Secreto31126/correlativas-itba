@@ -24,7 +24,7 @@ class Subject {
 		this.formal = name;
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
 		this.credits = credits || undefined;
-		this.requires = requires || undefined no;
+		this.requires = requires || undefined;
 	}
 }
 
