@@ -19,7 +19,7 @@
 class Subject {
 	constructor(code, name, parents, year, semester, credits, requires) {
 		this.code = code;
-		this.parent = parents;
+		this.parent = parents.sort();
 		this.name = name;
 		this.formal = name;
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
