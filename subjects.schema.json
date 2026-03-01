@@ -76,9 +76,7 @@
                 "code",
                 "parent",
                 "name",
-                "formal",
-                "credits",
-                "requires"
+                "formal"
             ]
         }
     }
