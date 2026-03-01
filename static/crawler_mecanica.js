@@ -19,12 +19,12 @@
 class Subject {
 	constructor(code, name, parents, year, semester, credits, requires) {
 		this.code = code;
-		this.parent = parents;
+		this.parent = parents.sort();
 		this.name = name;
 		this.formal = name;
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
-		this.credits = credits;
-		this.requires = requires;
+		this.credits = credits || undefined;
+		this.requires = requires || undefined;
 	}
 }
 
@@ -104,5 +104,5 @@ $('tr:not(:has(table)):has(td > a)').each(function () {
 
 for (const key in dbs) {
 	console.log(`\n${key}:\n`);
-	console.log(JSON.stringify(dbs[key], null, 4));
+	console.log(JSON.stringify(dbs[key], null, 2));
 }
