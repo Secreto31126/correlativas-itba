@@ -1,14 +1,15 @@
 <script lang="ts">
-	import { deleteDocument, getDocumentStore, saveDocument, signOut } from '$lib/modules/firebase';
+	import type { PageProps } from './$types';
+
+	import { onMount } from 'svelte';
+	import { resolve } from '$app/paths';
 	import { redirect } from '@sveltejs/kit';
 	import { UserData } from '$lib/types/documents';
-	import { onMount } from 'svelte';
-
-	import type { PageProps } from './$types';
+	import { deleteDocument, getDocumentStore, saveDocument, signOut } from '$lib/modules/firebase';
 
 	let { data }: PageProps = $props();
 
-	const db_store = getDocumentStore(UserData, new UserData(data.user_data));
+	const db_store = $derived(getDocumentStore(UserData, new UserData(data.user_data)));
 	let db = $derived($db_store);
 
 	function ok_byeeeee() {
@@ -63,47 +64,47 @@
 	<title>Correlativas ITBA - Cuenta</title>
 </svelte:head>
 
-<header class="md:ml-2 my-3 md:mt-1 md:w-fit">
-	<a href="/">
-		<h1 class="text-2xl md:text-4xl font-bold">Ajustes</h1>
+<header class="my-3 md:mt-1 md:ml-2 md:w-fit">
+	<a href={resolve('/')}>
+		<h1 class="text-2xl font-bold md:text-4xl">Ajustes</h1>
 	</a>
 </header>
 
 <div class="flex flex-col items-center gap-2">
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar código</span>
-		<input type="checkbox" checked={db.options.code} onchange={toggle_code} class="sr-only peer" />
+		<input type="checkbox" checked={db.options.code} onchange={toggle_code} class="peer sr-only" />
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-yellow-300 dark:peer-focus:ring-yellow-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-yellow-600 dark:peer-checked:bg-yellow-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-yellow-600 peer-focus:ring-4 peer-focus:ring-yellow-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-yellow-600 dark:peer-focus:ring-yellow-800"
 		></div>
 	</label>
 
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar créditos</span>
 		<input
 			type="checkbox"
 			checked={db.options.credits}
 			onchange={toggle_credits}
-			class="sr-only peer"
+			class="peer sr-only"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-blue-600 dark:peer-focus:ring-blue-800"
 		></div>
 	</label>
 
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
 			Mostrar requisitos
 		</span>
@@ -111,39 +112,39 @@
 			type="checkbox"
 			checked={db.options.requires}
 			onchange={toggle_requires}
-			class="sr-only peer"
+			class="peer sr-only"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-green-600 peer-focus:ring-4 peer-focus:ring-green-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-green-600 dark:peer-focus:ring-green-800"
 		></div>
 	</label>
 
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar progreso</span>
 		<input
 			type="checkbox"
 			checked={db.options.progress}
 			onchange={toggle_progress}
-			class="sr-only peer"
+			class="peer sr-only"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-violet-300 dark:peer-focus:ring-violet-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-violet-600 dark:peer-checked:bg-violet-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-violet-600 peer-focus:ring-4 peer-focus:ring-violet-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-violet-600 dark:peer-focus:ring-violet-800"
 		></div>
 	</label>
 
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
 			Arrastrar materias
 		</span>
@@ -151,47 +152,47 @@
 			type="checkbox"
 			checked={db.options.movement}
 			onchange={toggle_movement}
-			class="sr-only peer"
+			class="peer sr-only"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-pink-600 dark:peer-checked:bg-pink-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-pink-600 peer-focus:ring-4 peer-focus:ring-pink-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-pink-600 dark:peer-focus:ring-pink-800"
 		></div>
 	</label>
 
-	<label class="relative inline-flex items-center cursor-pointer w-fit">
+	<label class="relative inline-flex w-fit cursor-pointer items-center">
 		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar electivas</span>
 		<input
 			type="checkbox"
 			checked={db.options.optatives}
 			onchange={toggle_optatives}
-			class="sr-only peer"
+			class="peer sr-only"
 		/>
 		<div
-			class="w-11 h-6 bg-gray-200 peer-focus:outline-hidden peer-focus:ring-4
-			peer-focus:ring-orange-300 dark:peer-focus:ring-orange-800 rounded-full
-			peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:rtl:after:-translate-x-full
-			peer-checked:after:border-white after:content-[''] after:absolute
-			after:top-[2px] after:end-[22px] after:bg-white after:border-gray-300
-			after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-			dark:border-gray-600 peer-checked:bg-orange-600 dark:peer-checked:bg-orange-600"
+			class="peer h-6 w-11 rounded-full bg-gray-200
+			peer-checked:bg-orange-600 peer-focus:ring-4 peer-focus:ring-orange-300
+			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+			after:h-5 after:w-5 after:rounded-full
+			after:border after:border-gray-300 after:bg-white after:transition-all
+			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+			dark:bg-gray-700 dark:peer-checked:bg-orange-600 dark:peer-focus:ring-orange-800"
 		></div>
 	</label>
 
 	<div class="mt-4">
 		<button
 			onclick={signOut}
-			class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600
-			text-white text-sm font-medium rounded-md transition-all duration-500 w-fit"
+			class="inline-flex w-fit items-center rounded-md bg-indigo-500 px-4
+			py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-indigo-600"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-5 w-5 mr-2"
+				class="mr-2 h-5 w-5"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"
@@ -208,12 +209,12 @@
 
 		<button
 			onclick={ok_byeeeee}
-			class="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700
-			text-white text-sm font-medium rounded-md transition-all duration-500 w-fit"
+			class="inline-flex w-fit items-center rounded-md bg-red-600 px-4
+			py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-red-700"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-5 w-5 mr-2"
+				class="mr-2 h-5 w-5"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"

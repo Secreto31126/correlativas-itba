@@ -121,11 +121,10 @@
 <div
 	id={subject.codec}
 	data-parents={subject.parentc.join(' ')}
-	class="flex relative flex-col justify-center touch-none
-		border-2 md:border-4 rounded-xl md:rounded-2xl outline-hidden
-		p-1 md:p-2 md:max-w-[15%] cursor-pointer backdrop-blur-xs
-		transition-[color,background-color,border-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,box-shadow]
-		duration-500 ease-in-out dark:shadow-gray-300/5"
+	class="relative flex cursor-pointer touch-none flex-col
+		justify-center rounded-xl border-2 p-1 outline-hidden
+		backdrop-blur-xs transition-[color,background-color,border-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,box-shadow] duration-500 ease-in-out
+		md:max-w-[15%] md:rounded-2xl md:border-4 md:p-2 dark:shadow-gray-300/5"
 	class:famous={im_famous}
 	class:show={show.includes(subject.codec)}
 	class:hide={famous && !highlighted.includes(subject.codec)}
@@ -147,12 +146,12 @@
 	ontouchmove={safariContextMenu('move')}
 >
 	{#if selected}
-		<span class="absolute translate-x-1/2 translate-y-[-50%] top-0 right-0 w-4 h-4 md:w-6 md:h-6">
+		<span class="absolute top-0 right-0 h-4 w-4 translate-x-1/2 translate-y-[-50%] md:h-6 md:w-6">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 				fill="#0D0"
-				class="size-4 md:size-6 bg-white dark:bg-zinc-900 rounded-xl"
+				class="size-4 rounded-xl bg-white md:size-6 dark:bg-zinc-900"
 			>
 				<path
 					fill-rule="evenodd"
@@ -162,7 +161,7 @@
 			</svg>
 		</span>
 	{/if}
-	<p class="m-0 select-none text-sm md:text-2xl will-change-contents transform-gpu">
+	<p class="m-0 transform-gpu text-sm will-change-contents select-none md:text-2xl">
 		{im_famous && expanded ? fullInfo() : subject.name}
 	</p>
 </div>

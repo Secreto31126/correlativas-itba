@@ -2,17 +2,21 @@
 	import type { PageProps } from './$types';
 	import type { FilledSubject } from '$lib/types/subjects';
 
-	import { tick, untrack } from 'svelte';
 	import Block from '$lib/components/Block.svelte';
 	import GoogleButton from '$lib/components/GoogleButton.svelte';
-	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
-	import { UserData } from '$lib/types/documents';
-	import interact from 'interactjs';
+
 	import { page } from '$app/state';
+	import { resolve } from '$app/paths';
+	import { tick, untrack } from 'svelte';
 	import { writable } from 'svelte/store';
-	import confetti from 'canvas-confetti';
 	import { browser } from '$app/environment';
 	import { beforeNavigate } from '$app/navigation';
+
+	import { getDocumentStore, saveDocument } from '$lib/modules/firebase';
+	import { UserData } from '$lib/types/documents';
+
+	import interact from 'interactjs';
+	import confetti from 'canvas-confetti';
 
 	let { data }: PageProps = $props();
 
@@ -53,12 +57,11 @@
 	const passed = $derived(
 		all_subjects.filter((e) => (selected.length ? selected : $db.subjects).includes(e.codec))
 	);
-	let passed_credits = $derived(passed.reduce((acc, s) => (acc += s.credits ?? 0), 0));
+	let passed_credits = $derived(passed.reduce((acc, s) => acc + (s.credits ?? 0), 0));
 
 	let visible_optatives = $state({}) as Record<string, boolean>;
 
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore - LeaderLine is not typed
+	// @ts-expect-error - LeaderLine is not typed
 	type LeaderLineType = typeof import('leader-line');
 	type LineType = {
 		position: () => LeaderLineType;
@@ -248,7 +251,7 @@
 		}
 
 		if ($db.uid) saveDocument($db);
-		// @ts-ignore - If the db doesn't have a uid, it's a local writable store
+		// @ts-expect-error - If the db doesn't have a uid, it's a local writable store
 		else db.set($db);
 
 		selected = [];
@@ -268,7 +271,7 @@
 		}
 
 		if ($db.uid) saveDocument($db);
-		// @ts-ignore - If the db doesn't have a uid, it's a local writable store
+		// @ts-expect-error - If the db doesn't have a uid, it's a local writable store
 		else db.set($db);
 
 		selected = [];
@@ -368,11 +371,11 @@
 
 {#snippet subjects_row(subjects: FilledSubject[], collapse = false)}
 	<div
-		class="flex flex-wrap justify-around items-center h-full gap-1 md:gap-4 cuatrimestre {collapse
+		class="cuatrimestre flex h-full flex-wrap items-center justify-around gap-1 md:gap-4 {collapse
 			? 'hidden'
 			: ''}"
 	>
-		{#each subjects as subject}
+		{#each subjects as subject (subject.code)}
 			<Block
 				{subject}
 				{famous}
@@ -397,12 +400,12 @@
 {/snippet}
 
 <header
-	class="flex justify-between items-center fixed top-0 z-0 p-2 w-full h-12 md:h-16 bg-white dark:bg-zinc-900 transition-shadow"
+	class="fixed top-0 z-0 flex h-12 w-full items-center justify-between bg-white p-2 transition-shadow md:h-16 dark:bg-zinc-900"
 	class:shadow-md={scrollY > 0}
 	class:z-20={scrollY > 0}
 >
-	<a href="/">
-		<h1 class="text-2xl md:text-4xl font-bold">{data.career_data.plan}</h1>
+	<a href={resolve('/')}>
+		<h1 class="text-2xl font-bold md:text-4xl">{data.career_data.plan}</h1>
 	</a>
 	<div class="flex h-full gap-4">
 		{#if $db.options.progress || selected.length}
@@ -417,7 +420,7 @@
 			</button>
 		{/if}
 		{#if selected.length}
-			<div class="flex md:pr-2 *:w-5 md:*:w-6 gap-4">
+			<div class="flex gap-4 *:w-5 md:pr-2 md:*:w-6">
 				<!-- https://heroicons.com/solid -->
 				{#if data.career_data.itba}
 					<a
@@ -426,7 +429,7 @@
 						aria-label="Scheduler"
 						class="flex items-center"
 						target="_blank"
-						rel="noopener noreferrer"
+						rel="noopener noreferrer external"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -518,10 +521,10 @@
 </header>
 
 <main
-	class="flex flex-col md:justify-between gap-5 md:gap-1 w-full md:h-screen pt-12 md:pt-16 pb-2"
+	class="flex w-full flex-col gap-5 pt-12 pb-2 md:h-screen md:justify-between md:gap-1 md:pt-16"
 >
 	<!-- Troncales -->
-	{#each semesters as semester}
+	{#each semesters as semester (semester)}
 		{@render subjects_row(data.career.filter((e) => e.semester === semester))}
 	{/each}
 	<!-- Pinneadas -->
@@ -530,8 +533,8 @@
 	{/if}
 	<div class="md:mb-2"></div>
 	<!-- Electivas -->
-	{#each Object.entries(data.optatives) as [name, subjects]}
-		<div class="flex flex-col w-full text-center">
+	{#each Object.entries(data.optatives) as [name, subjects] (name)}
+		<div class="flex w-full flex-col text-center">
 			<hr />
 			<button onclick={() => toggleVisibleOptative(name)} class="cursor-pointer py-2">
 				{name}
@@ -543,10 +546,10 @@
 		)}
 	{/each}
 	<!-- Concentraciones -->
-	{#each data.career_data.specialization ?? [] as { name, cute }}
-		<div class="flex flex-col w-full text-center">
+	{#each data.career_data.specialization ?? [] as { name, cute } (name)}
+		<div class="flex w-full flex-col text-center">
 			<hr />
-			<a href="/{cute}" class="flex items-center justify-center gap-2 w-full py-2">
+			<a href={resolve(`/${cute}`)} class="flex w-full items-center justify-center gap-2 py-2">
 				<p>{name}</p>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

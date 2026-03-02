@@ -12,7 +12,6 @@
  * to be cooler :D
  */
 
-/* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
