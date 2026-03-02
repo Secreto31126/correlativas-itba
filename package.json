@@ -2,6 +2,7 @@
 	"name": "correlativas-itba",
 	"version": "0.0.1",
 	"private": true,
+	"packageManager": "pnpm@10.30.3",
 	"scripts": {
 		"dev": "vite dev",
 		"dev:host": "vite dev --host",
@@ -10,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"prepare": "svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.2",
