@@ -7,8 +7,7 @@
 			"name": "Química General",
 			"formal": "Química General",
 			"semester": 1,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "71.58",
@@ -16,8 +15,7 @@
 			"name": "Informática General",
 			"formal": "Informática General",
 			"semester": 1,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "92.01",
@@ -25,8 +23,7 @@
 			"name": "Análisis Matemático I",
 			"formal": "Análisis Matemático I",
 			"semester": 1,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "93.18",
@@ -34,8 +31,7 @@
 			"name": "Álgebra Lineal",
 			"formal": "Álgebra Lineal",
 			"semester": 1,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "94.33",
@@ -43,8 +39,7 @@
 			"name": "Tecnología y Sociedad",
 			"formal": "Tecnología y Sociedad",
 			"semester": 1,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "13.01",
@@ -52,8 +47,7 @@
 			"name": "Química Inorgánica",
 			"formal": "Química Inorgánica",
 			"semester": 2,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "17.01",
@@ -61,8 +55,7 @@
 			"name": "Introducción a la Ingeniería Química",
 			"formal": "Introducción a la Ingeniería Química",
 			"semester": 2,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "31.08",
@@ -70,17 +63,14 @@
 			"name": "Sistemas de Representación",
 			"formal": "Sistemas de Representación",
 			"semester": 2,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "71.90",
 			"parent": [],
 			"name": "Certificaciones tecnológicas",
 			"formal": "Certificaciones tecnológicas",
-			"semester": 2,
-			"credits": 0,
-			"requires": 0
+			"semester": 2
 		},
 		{
 			"code": "92.02",
@@ -88,8 +78,7 @@
 			"name": "Análisis Matemático II",
 			"formal": "Análisis Matemático II",
 			"semester": 2,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "93.41",
@@ -97,8 +86,7 @@
 			"name": "Física I",
 			"formal": "Física I",
 			"semester": 2,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "13.03",
@@ -106,8 +94,7 @@
 			"name": "Química Orgánica I",
 			"formal": "Química Orgánica I",
 			"semester": 3,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "16.55",
@@ -115,8 +102,7 @@
 			"name": "Biología",
 			"formal": "Biología",
 			"semester": 3,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "17.02",
@@ -124,8 +110,7 @@
 			"name": "Procesos Industriales",
 			"formal": "Procesos Industriales",
 			"semester": 3,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "92.03",
@@ -133,8 +118,7 @@
 			"name": "Análisis Matemático III",
 			"formal": "Análisis Matemático III",
 			"semester": 3,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "93.42",
@@ -142,8 +126,7 @@
 			"name": "Física II",
 			"formal": "Física II",
 			"semester": 3,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.33",
@@ -151,8 +134,7 @@
 			"name": "Química Orgánica II",
 			"formal": "Química Orgánica II",
 			"semester": 4,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "92.05",
@@ -160,8 +142,7 @@
 			"name": "Análisis Matemático IV",
 			"formal": "Análisis Matemático IV",
 			"semester": 4,
-			"credits": 4,
-			"requires": 0
+			"credits": 4
 		},
 		{
 			"code": "93.07",
@@ -169,8 +150,7 @@
 			"name": "Métodos Numéricos",
 			"formal": "Métodos Numéricos",
 			"semester": 4,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "93.24",
@@ -178,8 +158,7 @@
 			"name": "Probabilidad y Estadística",
 			"formal": "Probabilidad y Estadística",
 			"semester": 4,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "93.43",
@@ -187,8 +166,7 @@
 			"name": "Física III",
 			"formal": "Física III",
 			"semester": 4,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.19",
@@ -196,8 +174,7 @@
 			"name": "Química Analítica",
 			"formal": "Química Analítica",
 			"semester": 5,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.20",
@@ -205,8 +182,7 @@
 			"name": "Química-Física",
 			"formal": "Química-Física",
 			"semester": 5,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "17.03",
@@ -214,8 +190,7 @@
 			"name": "Bioquímica y Microbiología Aplicadas",
 			"formal": "Bioquímica y Microbiología Aplicadas",
 			"semester": 5,
-			"credits": 5,
-			"requires": 0
+			"credits": 5
 		},
 		{
 			"code": "30.62",
@@ -223,8 +198,7 @@
 			"name": "Materiales para la Industria Química",
 			"formal": "Materiales para la Industria Química",
 			"semester": 5,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "94.43",
@@ -241,8 +215,7 @@
 			"name": "Termodinámica",
 			"formal": "Termodinámica",
 			"semester": 6,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "17.04",
@@ -250,8 +223,7 @@
 			"name": "Fenómenos de Transporte",
 			"formal": "Fenómenos de Transporte",
 			"semester": 6,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "21.06",
@@ -259,8 +231,7 @@
 			"name": "Electrotecnia",
 			"formal": "Electrotecnia",
 			"semester": 6,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "30.61",
@@ -268,8 +239,7 @@
 			"name": "Instalaciones Mecánicas en Plantas de Proceso",
 			"formal": "Instalaciones Mecánicas en Plantas de Proceso",
 			"semester": 6,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "94.44",
@@ -277,17 +247,14 @@
 			"name": "Proyecto Interdisciplinario",
 			"formal": "Proyecto Interdisciplinario",
 			"semester": 6,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "94.51",
 			"parent": [],
 			"name": "Inglés I",
 			"formal": "Inglés I",
-			"semester": 6,
-			"credits": 0,
-			"requires": 0
+			"semester": 6
 		},
 		{
 			"code": "12.11",
@@ -295,8 +262,7 @@
 			"name": "Operaciones Unitarias I",
 			"formal": "Operaciones Unitarias I",
 			"semester": 7,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.12",
@@ -304,8 +270,7 @@
 			"name": "Operaciones Unitarias II",
 			"formal": "Operaciones Unitarias II",
 			"semester": 7,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.24",
@@ -313,8 +278,7 @@
 			"name": "Ingenieria de Reacciones y Reactores I",
 			"formal": "Ingenieria de Reacciones y Reactores I",
 			"semester": 7,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "61.31",
@@ -331,8 +295,7 @@
 			"name": "Operaciones Unitarias III",
 			"formal": "Operaciones Unitarias III",
 			"semester": 8,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "12.25",
@@ -340,8 +303,7 @@
 			"name": "Ingeniería de Reacciones y Reactores II",
 			"formal": "Ingeniería de Reacciones y Reactores II",
 			"semester": 8,
-			"credits": 4,
-			"requires": 0
+			"credits": 4
 		},
 		{
 			"code": "12.27",
@@ -349,8 +311,7 @@
 			"name": "Simulación de Procesos",
 			"formal": "Simulación de Procesos",
 			"semester": 8,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "17.05",
@@ -358,8 +319,7 @@
 			"name": "Control de Procesos",
 			"formal": "Control de Procesos",
 			"semester": 8,
-			"credits": 4,
-			"requires": 0
+			"credits": 4
 		},
 		{
 			"code": "11.15",
@@ -367,8 +327,7 @@
 			"name": "Organización Industrial",
 			"formal": "Organización Industrial",
 			"semester": 9,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "12.85",
@@ -376,8 +335,7 @@
 			"name": "Diseño Conceptual de Procesos",
 			"formal": "Diseño Conceptual de Procesos",
 			"semester": 9,
-			"credits": 4,
-			"requires": 0
+			"credits": 4
 		},
 		{
 			"code": "17.06",
@@ -385,8 +343,7 @@
 			"name": "Proyecto Final de Carrera I",
 			"formal": "Proyecto Final de Carrera I",
 			"semester": 9,
-			"credits": 6,
-			"requires": 0
+			"credits": 6
 		},
 		{
 			"code": "61.27",
@@ -394,17 +351,14 @@
 			"name": "Análisis de Coyuntura Económica",
 			"formal": "Análisis de Coyuntura Económica",
 			"semester": 9,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "94.52",
 			"parent": ["94.51"],
 			"name": "Inglés II",
 			"formal": "Inglés II",
-			"semester": 9,
-			"credits": 0,
-			"requires": 0
+			"semester": 9
 		},
 		{
 			"code": "12.66",
@@ -421,8 +375,7 @@
 			"name": "Proyecto Final de Carrera II",
 			"formal": "Proyecto Final de Carrera II",
 			"semester": 10,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "17.15",
@@ -430,8 +383,7 @@
 			"name": "Introducción a la Ingeniería Ambiental",
 			"formal": "Introducción a la Ingeniería Ambiental",
 			"semester": 10,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "61.16",
@@ -439,8 +391,7 @@
 			"name": "Introducción a las Finanzas",
 			"formal": "Introducción a las Finanzas",
 			"semester": 10,
-			"credits": 3,
-			"requires": 0
+			"credits": 3
 		},
 		{
 			"code": "94.65",
@@ -448,7 +399,6 @@
 			"name": "Practica Profesional supervisada",
 			"formal": "Practica Profesional supervisada",
 			"semester": 10,
-			"credits": 0,
 			"requires": 144
 		}
 	],
