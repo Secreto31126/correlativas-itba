@@ -2,7 +2,7 @@
 	"name": "correlativas-itba",
 	"version": "0.0.1",
 	"private": true,
-	"packageManager": "pnpm@10",
+	"packageManager": "pnpm@latest-10",
 	"scripts": {
 		"dev": "vite dev",
 		"dev:host": "vite dev --host",
