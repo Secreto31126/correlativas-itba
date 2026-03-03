@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { signInWith } from '$lib/modules/firebase';
 
 	interface Props {
@@ -11,14 +12,14 @@
 </script>
 
 {#if logged}
-	<a href="/account" class="relative h-full">
-		<img src={picture} alt="Your Account" class="h-full aspect-square rounded-full" />
+	<a href={resolve('/account')} class="relative h-full">
+		<img src={picture} alt="Your Account" class="aspect-square h-full rounded-full" />
 		{#if ping}
 			<span class="absolute top-0 right-0 flex h-3 w-3">
 				<span
-					class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+					class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"
 				></span>
-				<span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+				<span class="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
 			</span>
 		{/if}
 	</a>
@@ -27,7 +28,7 @@
 		<img
 			src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"
 			alt="Login"
-			class="h-full aspect-square rounded-full"
+			class="aspect-square h-full rounded-full"
 		/>
 	</button>
 {/if}

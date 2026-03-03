@@ -1,8 +1,10 @@
 <script lang="ts">
-	import GoogleButton from '$lib/components/GoogleButton.svelte';
-	import { getTheme, toggleTheme } from '$lib/stores/theme.svelte';
-
 	import type { PageProps } from './$types';
+
+	import GoogleButton from '$lib/components/GoogleButton.svelte';
+
+	import { resolve } from '$app/paths';
+	import { getTheme, toggleTheme } from '$lib/stores/theme.svelte';
 
 	let { data }: PageProps = $props();
 </script>
@@ -26,22 +28,22 @@
 </svelte:head>
 
 <header>
-	<h1 class="text-4xl md:text-6xl my-3">Correlativas de...</h1>
+	<h1 class="my-3 text-4xl md:text-6xl">Correlativas de...</h1>
 </header>
 
-<main class="flex flex-col items-center text-xl mb-24">
-	{#each data.careers as { cute, plan, name, hidden }}
+<main class="mb-24 flex flex-col items-center text-xl">
+	{#each data.careers as { cute, plan, name, hidden } (cute)}
 		{#if !hidden}
-			<a href="/{cute}" class="underline text-blue-500 mb-1">
+			<a href={resolve(`/${cute}`)} class="mb-1 text-blue-500 underline">
 				{name} (Plan {plan})
 			</a>
 		{/if}
 	{/each}
 </main>
 
-<footer class="fixed bottom-0 w-full h-16 md:h-18 mb-4 flex justify-center bg-none">
+<footer class="fixed bottom-0 mb-4 flex h-16 w-full justify-center bg-none md:h-18">
 	<div
-		class="flex h-full justify-center gap-6 md:gap-5 rounded-full px-5 py-4 bg-indigo-50 dark:bg-gray-700 backdrop-opacity-50 *:size-full"
+		class="flex h-full justify-center gap-6 rounded-full bg-indigo-50 px-5 py-4 backdrop-opacity-50 *:size-full md:gap-5 dark:bg-gray-700"
 	>
 		<button onclick={toggleTheme} class="cursor-pointer">
 			{#if getTheme() === 'dark'}
@@ -81,14 +83,14 @@
 			picture={data.userSession?.picture}
 			ping={!data.user_data?.options.visited_account}
 		/>
-		<a href="https://github.com/Secreto31126/correlativas-itba">
+		<a href="https://github.com/Secreto31126/correlativas-itba" rel="external">
 			{#if getTheme() === 'dark'}
 				<img src="github-white.png" alt="View Source Code" class="h-full rounded-full" />
 			{:else}
 				<img src="github.png" alt="View Source Code" class="h-full rounded-full" />
 			{/if}
 		</a>
-		<a href="/noob" aria-label="Tutorial" class="flex items-center justify-between">
+		<a href={resolve('/noob')} aria-label="Tutorial" class="flex items-center justify-between">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
