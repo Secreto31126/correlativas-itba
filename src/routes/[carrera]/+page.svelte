@@ -326,9 +326,8 @@
 	}
 
 	$effect(() => {
-		if (!$db.options.movement) return;
-
 		interact('.cuatrimestre > div').draggable({
+			enabled: $db.options.movement,
 			inertia: true,
 			autoScroll: false,
 			modifiers: [
