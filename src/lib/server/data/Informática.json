@@ -43,7 +43,7 @@
 		},
 		{
 			"code": "72.31",
-			"parent": ["93.58", "72.03"],
+			"parent": ["72.03", "93.58"],
 			"name": "PI",
 			"formal": "Programación Imperativa",
 			"semester": 2,
@@ -51,7 +51,7 @@
 		},
 		{
 			"code": "93.28",
-			"parent": ["93.58", "93.26"],
+			"parent": ["93.26", "93.58"],
 			"name": "Análisis II",
 			"formal": "Análisis Matemático II",
 			"semester": 2,
@@ -123,7 +123,7 @@
 		},
 		{
 			"code": "72.34",
-			"parent": ["93.59", "72.33"],
+			"parent": ["72.33", "93.59"],
 			"name": "EDA",
 			"formal": "Estructura de Datos y Algoritmos",
 			"semester": 4,
@@ -163,7 +163,7 @@
 		},
 		{
 			"code": "72.36",
-			"parent": ["72.33", "72.32"],
+			"parent": ["72.32", "72.33"],
 			"name": "HCI",
 			"formal": "Interacción Hombre-Computadora (HCI)",
 			"semester": 5,
@@ -187,7 +187,7 @@
 		},
 		{
 			"code": "72.38",
-			"parent": ["72.11", "72.37", "72.36", "72.35"],
+			"parent": ["72.11", "72.35", "72.36", "72.37"],
 			"name": "PAW",
 			"formal": "Proyecto de Aplicaciones Web",
 			"semester": 6,
@@ -252,7 +252,7 @@
 		},
 		{
 			"code": "72.41",
-			"parent": ["72.37", "72.11"],
+			"parent": ["72.11", "72.37"],
 			"name": "BD2",
 			"formal": "Base de Datos II",
 			"semester": 7,
@@ -276,7 +276,7 @@
 		},
 		{
 			"code": "72.25",
-			"parent": ["93.75", "72.34"],
+			"parent": ["72.34", "93.07", "93.75"],
 			"name": "Sims",
 			"formal": "Simulación de Sistemas",
 			"semester": 8,
@@ -285,7 +285,7 @@
 		},
 		{
 			"code": "72.27",
-			"parent": ["93.75", "93.24", "72.34"],
+			"parent": ["72.34", "93.24", "93.75"],
 			"name": "SIA",
 			"formal": "Sistemas de Inteligencia Artificial",
 			"semester": 8,
@@ -408,7 +408,7 @@
 			},
 			{
 				"code": "16.82",
-				"parent": ["93.28", "72.34", "93.24"],
+				"parent": ["72.34", "93.24", "93.28"],
 				"name": "Neurociencia Computacional",
 				"formal": "Neurociencia Computacional",
 				"credits": 3
@@ -429,7 +429,7 @@
 			},
 			{
 				"code": "23.15",
-				"parent": ["93.58", "72.34"],
+				"parent": ["72.34", "93.58"],
 				"name": "VR",
 				"formal": "Realidad Virtual",
 				"credits": 3
@@ -557,7 +557,7 @@
 			},
 			{
 				"code": "72.52",
-				"parent": ["93.75", "72.34"],
+				"parent": ["72.34", "93.75"],
 				"name": "Análisis y Tratamiento de Imágenes",
 				"formal": "Análisis y Tratamiento de Imágenes",
 				"credits": 3
@@ -571,7 +571,7 @@
 			},
 			{
 				"code": "72.54",
-				"parent": ["93.24", "72.41"],
+				"parent": ["72.41", "93.24"],
 				"name": "OLAP y Explotación de Datos",
 				"formal": "OLAP y Explotación de Datos",
 				"credits": 3
@@ -676,7 +676,7 @@
 			},
 			{
 				"code": "72.71",
-				"parent": ["72.07", "72.37", "72.35"],
+				"parent": ["72.07", "72.35", "72.37"],
 				"name": "Integración de Sistemas de Información",
 				"formal": "Integración de Sistemas de Información",
 				"credits": 3
@@ -704,7 +704,7 @@
 			},
 			{
 				"code": "72.75",
-				"parent": ["93.75", "72.34", "93.24"],
+				"parent": ["72.34", "93.24", "93.75"],
 				"name": "Aprendizaje Automático (Machine Learning)",
 				"formal": "Aprendizaje Automático (Machine Learning)",
 				"credits": 3
@@ -788,7 +788,7 @@
 			},
 			{
 				"code": "72.88",
-				"parent": ["93.75", "93.24", "72.34"],
+				"parent": ["72.34", "93.24", "93.75"],
 				"name": "Introducción a la Neurociencia Computacional",
 				"formal": "Introducción a la Neurociencia Computacional",
 				"credits": 3
@@ -900,7 +900,7 @@
 			},
 			{
 				"code": "73.62",
-				"parent": ["72.33", "72.11"],
+				"parent": ["72.11", "72.33"],
 				"name": "Introducción a la Programación Paralela",
 				"formal": "Introducción a la Programación Paralela",
 				"credits": 1
@@ -1005,7 +1005,7 @@
 			},
 			{
 				"code": "81.57",
-				"parent": ["72.07", "72.37", "72.35"],
+				"parent": ["72.07", "72.35", "72.37"],
 				"name": "Arquitectura de soluciones digitales",
 				"formal": "Arquitectura de soluciones digitales",
 				"credits": 3
