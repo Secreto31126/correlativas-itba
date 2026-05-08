@@ -1,179 +1,179 @@
 [
-    {
-        "plan": "BIO 22",
-        "name": "Bioingeniería",
-        "file": "Bioingeniería.json",
-        "cute": "bio",
-        "itba": "BIO"
-    },
-    {
-        "plan": "AER 25",
-        "name": "Ingeniería Aeroespacial",
-        "file": "Aeroespacial.json",
-        "cute": "cohetes"
-    },
-    {
-        "plan": "C23",
-        "name": "Ingeniería Civil",
-        "file": "Civil.json",
-        "cute": "puentes",
-        "itba": "C"
-    },
-    {
-        "plan": "E 11A",
-        "name": "Ingeniería Electricista",
-        "file": "Electrisista.json",
-        "cute": "pikachu"
-    },
-    {
-        "plan": "K22",
-        "name": "Ingeniería Electrónica",
-        "file": "Electrónica.json",
-        "cute": "arduino",
-        "itba": "K"
-    },
-    {
-        "plan": "B 25",
-        "name": "Ingeniería en Biotecnología",
-        "file": "Biotecnología.json",
-        "cute": "cyborgs"
-    },
-    {
-        "plan": "S10-Rev23",
-        "name": "Ingeniería en Informática",
-        "file": "Informática.json",
-        "cute": "linux",
-        "itba": "S"
-    },
-    {
-        "plan": "P22",
-        "name": "Ingeniería en Petróleo",
-        "file": "Petroleo.json",
-        "cute": "nafta",
-        "itba": "P"
-    },
-    {
-        "plan": "I22",
-        "name": "Ingeniería Industrial",
-        "file": "Industrial.json",
-        "cute": "industrial",
-        "itba": "I"
-    },
-    {
-        "plan": "M22",
-        "name": "Ingeniería Mecánica",
-        "file": "Mecánica.json",
-        "cute": "cars",
-        "specialization": [
-            {
-                "name": "Concentración - AUTOMOTRIZ",
-                "file": "Mecánica-Automotriz.json",
-                "cute": "cars2"
-            },
-            {
-                "name": "Concentración - DISEÑO MECANICO",
-                "file": "Mecánica-Diseño.json",
-                "cute": "estilistas"
-            },
-            {
-                "name": "Concentración - ENERGIA",
-                "file": "Mecánica-Energía.json",
-                "cute": "roller-coaster"
-            },
-            {
-                "name": "Concentración - INSTALACIONES",
-                "file": "Mecánica-Instalaciones.json",
-                "cute": "instalaciones"
-            },
-            {
-                "name": "Concentración - MATERIALES \"A\"",
-                "file": "Mecánica-Materiales-A.json",
-                "cute": "conductores"
-            },
-            {
-                "name": "Concentración - MATERIALES \"B\"",
-                "file": "Mecánica-Materiales-B.json",
-                "cute": "aislantes"
-            },
-            {
-                "name": "Concentración - MECANICA COMPUTACIONAL",
-                "file": "Mecánica-Computacional.json",
-                "cute": "simuladores"
-            },
-            {
-                "name": "Concentración - MECATRONICA",
-                "file": "Mecánica-Mecatrónica.json",
-                "cute": "robots"
-            },
-            {
-                "name": "Concentración - NAVAL",
-                "file": "Mecánica-Naval.json",
-                "cute": "submarinos"
-            },
-            {
-                "name": "Focalización Automotriz",
-                "file": "Mecánica-Automotriz-Focal.json",
-                "cute": "cars3"
-            },
-            {
-                "name": "Focalización Materiales",
-                "file": "Mecánica-Materiales-Focal.json",
-                "cute": "superconductores"
-            },
-            {
-                "name": "Focalización Mecatrónica",
-                "file": "Mecánica-Mecatrónica-Focal.json",
-                "cute": "robots2"
-            }
-        ],
-        "itba": "M"
-    },
-    {
-        "plan": "N22",
-        "name": "Ingeniería Naval",
-        "file": "Naval.json",
-        "cute": "barquitos",
-        "itba": "N"
-    },
-    {
-        "plan": "Q22",
-        "name": "Ingeniería Química",
-        "file": "Química.json",
-        "cute": "oppenheimer",
-        "itba": "Q"
-    },
-    {
-        "plan": "L09T",
-        "name": "Lic. en Administración y Sistemas",
-        "file": "Licenciatura Administración.json",
-        "cute": "admin",
-        "itba": "L"
-    },
-    {
-        "plan": "A22",
-        "name": "Licenciatura en Analítica Empresarial y Social",
-        "file": "Licenciatura Empresarial.json",
-        "cute": "empresarial",
-        "itba": "LAES"
-    },
-    {
-        "plan": "LCC 25",
-        "name": "Licenciatura en Ciencias del Comportamiento",
-        "file": "Licenciatura Comportamiento.json",
-        "cute": "comportamiento"
-    },
-    {
-        "plan": "L20",
-        "name": "Licenciatura en Negocios",
-        "file": "Licenciatura Negocios.json",
-        "cute": "negocios",
-        "itba": "LN"
-    },
-    {
-        "plan": "Tutorial",
-        "name": "Ayuda",
-        "file": "ayuda.json",
-        "cute": "noob",
-        "hidden": true
-    }
+	{
+		"plan": "BIO 22",
+		"name": "Bioingeniería",
+		"file": "Bioingeniería.json",
+		"cute": "bio",
+		"itba": "BIO"
+	},
+	{
+		"plan": "AER 25",
+		"name": "Ingeniería Aeroespacial",
+		"file": "Aeroespacial.json",
+		"cute": "cohetes"
+	},
+	{
+		"plan": "C23",
+		"name": "Ingeniería Civil",
+		"file": "Civil.json",
+		"cute": "puentes",
+		"itba": "C"
+	},
+	{
+		"plan": "E 11A",
+		"name": "Ingeniería Electricista",
+		"file": "Electrisista.json",
+		"cute": "pikachu"
+	},
+	{
+		"plan": "K22",
+		"name": "Ingeniería Electrónica",
+		"file": "Electrónica.json",
+		"cute": "arduino",
+		"itba": "K"
+	},
+	{
+		"plan": "B 25",
+		"name": "Ingeniería en Biotecnología",
+		"file": "Biotecnología.json",
+		"cute": "cyborgs"
+	},
+	{
+		"plan": "S10-Rev23",
+		"name": "Ingeniería en Informática",
+		"file": "Informática.json",
+		"cute": "linux",
+		"itba": "S"
+	},
+	{
+		"plan": "P22",
+		"name": "Ingeniería en Petróleo",
+		"file": "Petroleo.json",
+		"cute": "nafta",
+		"itba": "P"
+	},
+	{
+		"plan": "I22",
+		"name": "Ingeniería Industrial",
+		"file": "Industrial.json",
+		"cute": "industrial",
+		"itba": "I"
+	},
+	{
+		"plan": "M22",
+		"name": "Ingeniería Mecánica",
+		"file": "Mecánica.json",
+		"cute": "cars",
+		"specialization": [
+			{
+				"name": "Concentración - AUTOMOTRIZ",
+				"file": "Mecánica-Automotriz.json",
+				"cute": "cars2"
+			},
+			{
+				"name": "Concentración - DISEÑO MECANICO",
+				"file": "Mecánica-Diseño.json",
+				"cute": "estilistas"
+			},
+			{
+				"name": "Concentración - ENERGIA",
+				"file": "Mecánica-Energía.json",
+				"cute": "roller-coaster"
+			},
+			{
+				"name": "Concentración - INSTALACIONES",
+				"file": "Mecánica-Instalaciones.json",
+				"cute": "instalaciones"
+			},
+			{
+				"name": "Concentración - MATERIALES \"A\"",
+				"file": "Mecánica-Materiales-A.json",
+				"cute": "conductores"
+			},
+			{
+				"name": "Concentración - MATERIALES \"B\"",
+				"file": "Mecánica-Materiales-B.json",
+				"cute": "aislantes"
+			},
+			{
+				"name": "Concentración - MECANICA COMPUTACIONAL",
+				"file": "Mecánica-Computacional.json",
+				"cute": "simuladores"
+			},
+			{
+				"name": "Concentración - MECATRONICA",
+				"file": "Mecánica-Mecatrónica.json",
+				"cute": "robots"
+			},
+			{
+				"name": "Concentración - NAVAL",
+				"file": "Mecánica-Naval.json",
+				"cute": "submarinos"
+			},
+			{
+				"name": "Focalización Automotriz",
+				"file": "Mecánica-Automotriz-Focal.json",
+				"cute": "cars3"
+			},
+			{
+				"name": "Focalización Materiales",
+				"file": "Mecánica-Materiales-Focal.json",
+				"cute": "superconductores"
+			},
+			{
+				"name": "Focalización Mecatrónica",
+				"file": "Mecánica-Mecatrónica-Focal.json",
+				"cute": "robots2"
+			}
+		],
+		"itba": "M"
+	},
+	{
+		"plan": "N22",
+		"name": "Ingeniería Naval",
+		"file": "Naval.json",
+		"cute": "barquitos",
+		"itba": "N"
+	},
+	{
+		"plan": "Q22",
+		"name": "Ingeniería Química",
+		"file": "Química.json",
+		"cute": "oppenheimer",
+		"itba": "Q"
+	},
+	{
+		"plan": "L09T",
+		"name": "Lic. en Administración y Sistemas",
+		"file": "Licenciatura Administración.json",
+		"cute": "admin",
+		"itba": "L"
+	},
+	{
+		"plan": "A22",
+		"name": "Licenciatura en Analítica Empresarial y Social",
+		"file": "Licenciatura Empresarial.json",
+		"cute": "empresarial",
+		"itba": "LAES"
+	},
+	{
+		"plan": "LCC 25",
+		"name": "Licenciatura en Ciencias del Comportamiento",
+		"file": "Licenciatura Comportamiento.json",
+		"cute": "comportamiento"
+	},
+	{
+		"plan": "L20",
+		"name": "Licenciatura en Negocios",
+		"file": "Licenciatura Negocios.json",
+		"cute": "negocios",
+		"itba": "LN"
+	},
+	{
+		"plan": "Tutorial",
+		"name": "Ayuda",
+		"file": "ayuda.json",
+		"cute": "noob",
+		"hidden": true
+	}
 ]

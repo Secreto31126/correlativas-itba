@@ -2,12 +2,11 @@ import admin from 'firebase-admin';
 import { FIREBASE_SERVER_CONFIG } from '$env/static/private';
 
 import type { Document } from '$lib/types/documents';
-import type { DecodedIdToken } from 'firebase-admin/lib/auth/token-verifier';
+import type { BaseAuth } from 'firebase-admin/auth';
 
 function base64ToBytes(base64: string) {
 	const binString = atob(base64);
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore Copy pasted from https://developer.mozilla.org/en-US/docs/Glossary/Base64
+	// @ts-expect-error Copy pasted from https://developer.mozilla.org/en-US/docs/Glossary/Base64
 	return Uint8Array.from(binString, (m) => m.codePointAt(0));
 }
 
@@ -24,7 +23,9 @@ function initializeFirebase() {
 	}
 }
 
-export async function decodeToken(token: string): Promise<DecodedIdToken | null> {
+export async function decodeToken(
+	token: string
+): Promise<ReturnType<BaseAuth['verifyIdToken']> | null> {
 	if (!token || token === 'null' || token === 'undefined') return null;
 	try {
 		initializeFirebase();

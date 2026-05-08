@@ -2,18 +2,17 @@ import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark';
 
-if (browser) {
-	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-		setTheme(event.matches ? 'dark' : 'light');
-	});
-}
+const dark_query = browser ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
 let store: Theme = $state(
 	browser
-		? ((localStorage.getItem('theme') as Theme | null) ??
-				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+		? ((localStorage.getItem('theme') as Theme | null) ?? (dark_query?.matches ? 'dark' : 'light'))
 		: 'light'
 );
+
+dark_query?.addEventListener('change', (event) => {
+	setTheme(event.matches ? 'dark' : 'light');
+});
 
 export function getTheme() {
 	return store;

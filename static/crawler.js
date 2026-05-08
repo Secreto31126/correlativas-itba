@@ -12,19 +12,18 @@
  * to be cooler :D
  */
 
-/* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
 class Subject {
 	constructor(code, name, parents, year, semester, credits, requires) {
 		this.code = code;
-		this.parent = parents;
+		this.parent = parents.sort();
 		this.name = name;
 		this.formal = name;
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
-		this.credits = credits;
-		this.requires = requires;
+		this.credits = credits || undefined;
+		this.requires = requires || undefined;
 	}
 }
 
@@ -98,4 +97,4 @@ if (old) {
 	}
 }
 
-console.log(JSON.stringify(db, null, 4));
+console.log(JSON.stringify(db, null, 2));

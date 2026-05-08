@@ -15,7 +15,7 @@ export const load = (async ({ params, locals }) => {
 	if (!career_data) {
 		let specialization: NonNullable<(typeof Careers)[number]['specialization']>[number] | undefined;
 
-		let pointer = Careers.find((c) => {
+		const pointer = Careers.find((c) => {
 			specialization ??= c.specialization?.find((s) => params.carrera === s.cute);
 			return !!specialization;
 		});
@@ -43,7 +43,7 @@ export const load = (async ({ params, locals }) => {
 		const path = Object.keys(files).find((e) => e.endsWith(filename)) ?? 'LOL no.';
 
 		data = (await files[path]()) as CareerData;
-	} catch (e) {
+	} catch {
 		error(500, 'Failed to open file');
 	}
 	// #endregion
