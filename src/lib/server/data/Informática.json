@@ -414,6 +414,14 @@
 				"credits": 3
 			},
 			{
+				"code": "16.95",
+				"parent": [],
+				"name": "Startups basadas en ciencia",
+				"formal": "Startups basadas en ciencia",
+				"credits": 1,
+				"requires": 144
+			},
+			{
 				"code": "22.09",
 				"parent": [],
 				"name": "Fundamentos Electrónicos de la Informática",
@@ -471,11 +479,26 @@
 				"credits": 1
 			},
 			{
+				"code": "61.16",
+				"parent": ["61.23"],
+				"name": "Introducción a las Finanzas",
+				"formal": "Introducción a las Finanzas",
+				"credits": 3
+			},
+			{
 				"code": "61.50",
 				"parent": ["61.23"],
 				"name": "Finanzas",
 				"formal": "Finanzas de la Empresa",
 				"credits": 3
+			},
+			{
+				"code": "68.99",
+				"parent": [],
+				"name": "Introducción a la Ciencia de Ciudades",
+				"formal": "Introducción a la Ciencia de Ciudades",
+				"credits": 1,
+				"requires": 144
 			},
 			{
 				"code": "71.48",
@@ -941,6 +964,28 @@
 				"credits": 1
 			},
 			{
+				"code": "73.68",
+				"parent": ["72.27"],
+				"name": "Tecnologías Emergentes para Aprendizaje Automático e Inteligencia Artificial",
+				"formal": "Tecnologías Emergentes para Aprendizaje Automático e Inteligencia Artificial",
+				"credits": 1
+			},
+			{
+				"code": "73.69",
+				"parent": [],
+				"name": "Large Language Models",
+				"formal": "Large Language Models",
+				"credits": 3
+			},
+			{
+				"code": "73.70",
+				"parent": [],
+				"name": "Análisis de datos en neurociencias",
+				"formal": "Análisis de datos en neurociencias",
+				"credits": 3,
+				"requires": 144
+			},
+			{
 				"code": "73.80",
 				"parent": ["72.44"],
 				"name": "SEGURIDAD OFENSIVA",
@@ -960,6 +1005,13 @@
 				"name": "Bases de Datos Espaciales y de Movilidad",
 				"formal": "Bases de Datos Espaciales y de Movilidad",
 				"credits": 3
+			},
+			{
+				"code": "73.83",
+				"parent": ["72.44"],
+				"name": "Gestión estratégica de la Ciberseguridad",
+				"formal": "Gestión estratégica de la Ciberseguridad",
+				"credits": 1
 			},
 			{
 				"code": "73.84",
@@ -1017,6 +1069,14 @@
 				"formal": "Introducción a la realidad aumentada",
 				"credits": 1,
 				"requires": 51
+			},
+			{
+				"code": "81.76",
+				"parent": [],
+				"name": "Tecnologías para las Finanzas",
+				"formal": "Tecnologías para las Finanzas",
+				"credits": 3,
+				"requires": 144
 			},
 			{
 				"code": "81.94",
