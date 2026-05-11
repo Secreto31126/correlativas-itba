@@ -1,5 +1,291 @@
 {
-	"credits": 0,
-	"mandatories": [],
+	"credits": 192,
+	"mandatories": [
+		{
+			"code": "19.01",
+			"parent": [],
+			"name": "Fundamentos del comportamiento humano",
+			"formal": "Fundamentos del comportamiento humano",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "19.02",
+			"parent": [],
+			"name": "Filosofía de la mente",
+			"formal": "Filosofía de la mente",
+			"semester": 1,
+			"credits": 3
+		},
+		{
+			"code": "93.20",
+			"parent": [],
+			"name": "Análisis Matemático",
+			"formal": "Análisis Matemático",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "93.21",
+			"parent": [],
+			"name": "Álgebra",
+			"formal": "Álgebra",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "94.33",
+			"parent": [],
+			"name": "Tecnología y Sociedad",
+			"formal": "Tecnología y Sociedad",
+			"semester": 1,
+			"credits": 3
+		},
+		{
+			"code": "19.03",
+			"parent": ["19.01", "19.02"],
+			"name": "Psicología cognitiva",
+			"formal": "Psicología cognitiva",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "19.04",
+			"parent": [],
+			"name": "Neurofisiología y Neuroanatomía",
+			"formal": "Neurofisiología y Neuroanatomía",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "71.20",
+			"parent": [],
+			"name": "Informática General",
+			"formal": "Informática General",
+			"semester": 2,
+			"credits": 3
+		},
+		{
+			"code": "71.90",
+			"parent": [],
+			"name": "Certificaciones tecnológicas",
+			"formal": "Certificaciones tecnológicas",
+			"semester": 2
+		},
+		{
+			"code": "92.10",
+			"parent": ["93.20", "93.21"],
+			"name": "Matemática Aplicada",
+			"formal": "Matemática Aplicada",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "94.34",
+			"parent": ["94.33"],
+			"name": "Economía y Sociedad",
+			"formal": "Economía y Sociedad",
+			"semester": 2,
+			"credits": 3
+		},
+		{
+			"code": "94.51",
+			"parent": [],
+			"name": "Inglés I",
+			"formal": "Inglés I",
+			"semester": 2
+		},
+		{
+			"code": "11.28",
+			"parent": [],
+			"name": "Sistemas Complejos",
+			"formal": "Sistemas Complejos",
+			"semester": 3,
+			"credits": 3
+		},
+		{
+			"code": "19.05",
+			"parent": ["19.03"],
+			"name": "Psicología del Desarrollo",
+			"formal": "Psicología del Desarrollo",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "61.17",
+			"parent": ["19.03", "94.34"],
+			"name": "Economía del Comportamiento",
+			"formal": "Economía del Comportamiento",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "71.88",
+			"parent": ["71.20"],
+			"name": "Gestión de Datos",
+			"formal": "Gestión de Datos",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "93.36",
+			"parent": ["92.10", "93.20"],
+			"name": "Probabilidad",
+			"formal": "Probabilidad",
+			"semester": 3,
+			"credits": 3
+		},
+		{
+			"code": "11.67",
+			"parent": ["93.36"],
+			"name": "Estadística Aplicada",
+			"formal": "Estadística Aplicada",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "19.06",
+			"parent": [],
+			"name": "Lenguaje y cognición",
+			"formal": "Lenguaje y cognición",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "19.07",
+			"parent": ["19.03", "19.04"],
+			"name": "Cerebro y neurociencias cognitivas",
+			"formal": "Cerebro y neurociencias cognitivas",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "94.52",
+			"parent": ["94.51"],
+			"name": "Inglés II",
+			"formal": "Inglés II",
+			"semester": 4
+		},
+		{
+			"code": "94.66",
+			"parent": ["11.67"],
+			"name": "Metodología de la Investigación en Ciencias del comportamiento",
+			"formal": "Metodología de la Investigación en Ciencias del comportamiento",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "19.08",
+			"parent": [],
+			"name": "Neurotecnología",
+			"formal": "Neurotecnología",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "71.22",
+			"parent": ["71.20", "92.10"],
+			"name": "Sistemas de Inteligencia Artificial",
+			"formal": "Sistemas de Inteligencia Artificial",
+			"semester": 5,
+			"credits": 3
+		},
+		{
+			"code": "81.92",
+			"parent": [],
+			"name": "Gestión de proyectos de innovación y transformación",
+			"formal": "Gestión de proyectos de innovación y transformación",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "82.04",
+			"parent": ["11.67", "71.88"],
+			"name": "Analítica Descriptiva",
+			"formal": "Analítica Descriptiva",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "94.67",
+			"parent": [],
+			"name": "Ética profesional",
+			"formal": "Ética profesional",
+			"semester": 5,
+			"credits": 3
+		},
+		{
+			"code": "19.09",
+			"parent": ["19.06", "19.07"],
+			"name": "Neurociencia aplicada al comportamiento del consumidor",
+			"formal": "Neurociencia aplicada al comportamiento del consumidor",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "19.10",
+			"parent": ["19.01", "94.66"],
+			"name": "Medición y evaluación de la conducta",
+			"formal": "Medición y evaluación de la conducta",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "61.05",
+			"parent": ["94.34"],
+			"name": "Economía de la Salud",
+			"formal": "Economía de la Salud",
+			"semester": 6,
+			"credits": 3
+		},
+		{
+			"code": "82.05",
+			"parent": ["11.67"],
+			"name": "Análisis Predictivo",
+			"formal": "Análisis Predictivo",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "94.35",
+			"parent": [],
+			"name": "Antropología cognitiva",
+			"formal": "Antropología cognitiva",
+			"semester": 6,
+			"credits": 3
+		},
+		{
+			"code": "19.11",
+			"parent": [],
+			"name": "Sistemas sociotécnicos adaptativos",
+			"formal": "Sistemas sociotécnicos adaptativos",
+			"semester": 7,
+			"credits": 3
+		},
+		{
+			"code": "19.12",
+			"parent": ["19.01"],
+			"name": "Técnicas de modificación del comportamiento",
+			"formal": "Técnicas de modificación del comportamiento",
+			"semester": 7,
+			"credits": 3
+		},
+		{
+			"code": "19.13",
+			"parent": [],
+			"name": "Proyecto final de carrera (Anual)",
+			"formal": "Proyecto final de carrera (Anual)",
+			"semester": 7,
+			"credits": 6
+		},
+		{
+			"code": "19.14",
+			"parent": ["19.07"],
+			"name": "Cognición afectiva y motivacional",
+			"formal": "Cognición afectiva y motivacional",
+			"semester": 8,
+			"credits": 3
+		}
+	],
 	"optatives": {}
 }
