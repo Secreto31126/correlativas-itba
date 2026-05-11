@@ -130,7 +130,7 @@
 		},
 		{
 			"code": "11.83",
-			"parent": ["93.39", "81.06"],
+			"parent": ["81.06", "93.39"],
 			"name": "Gestión de Operaciones",
 			"formal": "Gestión de Operaciones",
 			"semester": 5,
@@ -154,7 +154,7 @@
 		},
 		{
 			"code": "11.84",
-			"parent": ["93.39", "81.06"],
+			"parent": ["81.06", "93.39"],
 			"name": "Gestión de Proyectos",
 			"formal": "Gestión de Proyectos",
 			"semester": 6,
@@ -162,7 +162,7 @@
 		},
 		{
 			"code": "11.85",
-			"parent": ["93.39", "81.06"],
+			"parent": ["81.06", "93.39"],
 			"name": "Toma de Decisiones",
 			"formal": "Toma de Decisiones",
 			"semester": 6,

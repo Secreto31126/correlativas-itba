@@ -106,7 +106,7 @@
 		},
 		{
 			"code": "17.02",
-			"parent": ["93.41", "17.01"],
+			"parent": ["17.01", "93.41"],
 			"name": "Procesos Industriales",
 			"formal": "Procesos Industriales",
 			"semester": 3,
@@ -178,7 +178,7 @@
 		},
 		{
 			"code": "12.20",
-			"parent": ["92.03", "17.02"],
+			"parent": ["17.02", "92.03"],
 			"name": "Química-Física",
 			"formal": "Química-Física",
 			"semester": 5,
@@ -235,7 +235,7 @@
 		},
 		{
 			"code": "30.61",
-			"parent": ["30.62", "93.41", "31.08"],
+			"parent": ["30.62", "31.08", "93.41"],
 			"name": "Instalaciones Mecánicas en Plantas de Proceso",
 			"formal": "Instalaciones Mecánicas en Plantas de Proceso",
 			"semester": 6,
@@ -258,7 +258,7 @@
 		},
 		{
 			"code": "12.11",
-			"parent": ["30.61", "17.04", "12.26"],
+			"parent": ["12.26", "17.04", "30.61"],
 			"name": "Operaciones Unitarias I",
 			"formal": "Operaciones Unitarias I",
 			"semester": 7,
@@ -266,7 +266,7 @@
 		},
 		{
 			"code": "12.12",
-			"parent": ["17.04", "12.26"],
+			"parent": ["12.26", "17.04"],
 			"name": "Operaciones Unitarias II",
 			"formal": "Operaciones Unitarias II",
 			"semester": 7,
@@ -299,7 +299,7 @@
 		},
 		{
 			"code": "12.25",
-			"parent": ["12.24", "12.11", "17.03"],
+			"parent": ["12.11", "12.24", "17.03"],
 			"name": "Ingeniería de Reacciones y Reactores II",
 			"formal": "Ingeniería de Reacciones y Reactores II",
 			"semester": 8,
@@ -331,7 +331,7 @@
 		},
 		{
 			"code": "12.85",
-			"parent": ["12.24", "12.13", "12.27"],
+			"parent": ["12.13", "12.24", "12.27"],
 			"name": "Diseño Conceptual de Procesos",
 			"formal": "Diseño Conceptual de Procesos",
 			"semester": 9,
@@ -449,8 +449,7 @@
 				"parent": ["92.03", "93.24"],
 				"name": "Machine Learning para Negocios",
 				"formal": "Machine Learning para Negocios",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "10.23",
@@ -505,8 +504,7 @@
 				"parent": ["93.24"],
 				"name": "Estadística Aplicada",
 				"formal": "Estadística Aplicada",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "11.73",
@@ -521,8 +519,7 @@
 				"parent": ["93.24"],
 				"name": "Gestión de Calidad",
 				"formal": "Gestión de Calidad",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "11.84",
@@ -537,72 +534,63 @@
 				"parent": ["12.25"],
 				"name": "Reactores de Polimerización",
 				"formal": "Reactores de Polimerización",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.28",
 				"parent": ["12.11"],
 				"name": "Residuos sólidos y residuos peligrosos",
 				"formal": "Residuos sólidos y residuos peligrosos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.29",
 				"parent": ["17.04", "93.07"],
 				"name": "Modelado Matemático en Ingeniería Química",
 				"formal": "Modelado Matemático en Ingeniería Química",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "12.36",
 				"parent": ["12.33"],
 				"name": "Química de Macromoléculas",
 				"formal": "Química de Macromoléculas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.37",
 				"parent": ["12.20"],
 				"name": "Físico-Química de Superficies",
 				"formal": "Físico-Química de Superficies",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.46",
-				"parent": ["30.62", "13.01"],
+				"parent": ["13.01", "30.62"],
 				"name": "Introducción al Proceso de Fabricación de Aceros",
 				"formal": "Introducción al Proceso de Fabricación de Aceros",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.51",
 				"parent": ["17.04"],
 				"name": "Tecnología de los Alimentos",
 				"formal": "Tecnología de los Alimentos",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "12.52",
 				"parent": ["12.33"],
 				"name": "Bioquímica de los Alimentos",
 				"formal": "Bioquímica de los Alimentos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.53",
 				"parent": ["17.04"],
 				"name": "Introducción a la Ing de los Alimentos",
 				"formal": "Introducción a la Ing de los Alimentos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.57",
@@ -617,24 +605,21 @@
 				"parent": ["13.01"],
 				"name": "Partículas en Agua",
 				"formal": "Partículas en Agua",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.87",
 				"parent": ["12.11"],
 				"name": "Tratamiento de Efluentes",
 				"formal": "Tratamiento de Efluentes",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.94",
 				"parent": ["12.26"],
 				"name": "Introducción a la Ingeniería Nuclear",
 				"formal": "Introducción a la Ingeniería Nuclear",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "12.96",
@@ -665,16 +650,14 @@
 				"parent": ["17.03"],
 				"name": "Biotecnología aplicada",
 				"formal": "Biotecnología aplicada",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "16.87",
 				"parent": ["30.62"],
 				"name": "Microfabricación",
 				"formal": "Microfabricación",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "17.08",
@@ -689,8 +672,7 @@
 				"parent": ["12.26"],
 				"name": "Industrias Químicas",
 				"formal": "Industrias Químicas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.10",
@@ -705,88 +687,76 @@
 				"parent": ["13.01"],
 				"name": "Química del Agua y Aplicaciones Tecnológicas",
 				"formal": "Química del Agua y Aplicaciones Tecnológicas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.12",
 				"parent": ["12.20"],
 				"name": "Trabajo de Laboratorio Ambiental",
 				"formal": "Trabajo de Laboratorio Ambiental",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.13",
 				"parent": ["17.04"],
 				"name": "Introducción a los Balances Poblacionales",
 				"formal": "Introducción a los Balances Poblacionales",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.14",
 				"parent": ["17.05"],
 				"name": "Control de Procesos Avanzado",
 				"formal": "Control de Procesos Avanzado",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.16",
 				"parent": ["12.20"],
 				"name": "Introducción a la Nanotecnología",
 				"formal": "Introducción a la Nanotecnología",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.17",
 				"parent": [],
 				"name": "Seminario de Diseño Asistido por Computadora (CAD)",
-				"formal": "Seminario de Diseño Asistido por Computadora (CAD)",
-				"credits": 0,
-				"requires": 0
+				"formal": "Seminario de Diseño Asistido por Computadora (CAD)"
 			},
 			{
 				"code": "17.18",
 				"parent": [],
 				"name": "Caracterización de Suelos y Remediación",
 				"formal": "Caracterización de Suelos y Remediación",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "17.19",
 				"parent": [],
 				"name": "Calidad de Aire",
 				"formal": "Calidad de Aire",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.20",
 				"parent": [],
 				"name": "Agua y Efluentes Líquidos",
 				"formal": "Agua y Efluentes Líquidos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.21",
 				"parent": [],
 				"name": "Introducción a la Temática Social",
 				"formal": "Introducción a la Temática Social",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "17.22",
 				"parent": [],
 				"name": "Cálculo de Huella de Carbono en Organizaciones",
 				"formal": "Cálculo de Huella de Carbono en Organizaciones",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "17.23",
@@ -801,8 +771,7 @@
 				"parent": ["12.11", "12.12"],
 				"name": "Introducción al Proceso de Producción de Cerveza",
 				"formal": "Introducción al Proceso de Producción de Cerveza",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "17.25",
@@ -814,91 +783,80 @@
 			},
 			{
 				"code": "17.26",
-				"parent": ["12.25", "12.13"],
+				"parent": ["12.13", "12.25"],
 				"name": "Intensificación de Procesos Químicos",
 				"formal": "Intensificación de Procesos Químicos",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "21.09",
 				"parent": [],
 				"name": "Máquinas Eléctricas",
 				"formal": "Máquinas Eléctricas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "30.14",
 				"parent": ["17.04"],
 				"name": "Mecánica de Fluidos Computacional",
 				"formal": "Mecánica de Fluidos Computacional",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "30.24",
-				"parent": ["30.62", "30.61"],
+				"parent": ["30.61", "30.62"],
 				"name": "Metalurgia Física I",
 				"formal": "Metalurgia Física I",
-				"credits": 4,
-				"requires": 0
+				"credits": 4
 			},
 			{
 				"code": "30.69",
-				"parent": ["30.62", "12.26"],
+				"parent": ["12.26", "30.62"],
 				"name": "Tecnologías del Hidrógeno",
 				"formal": "Tecnologías del Hidrógeno",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "31.30",
 				"parent": ["30.62"],
 				"name": "Materiales Poliméricos",
 				"formal": "Materiales Poliméricos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "31.90",
 				"parent": ["30.61"],
 				"name": "Integridad Estructural",
 				"formal": "Integridad Estructural",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "31.94",
-				"parent": ["30.62", "30.61"],
+				"parent": ["30.61", "30.62"],
 				"name": "Tecnología de Materiales Compuestos",
 				"formal": "Tecnología de Materiales Compuestos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "31.96",
-				"parent": ["30.62", "30.61"],
+				"parent": ["30.61", "30.62"],
 				"name": "Deformación y Fractura de Materiales",
 				"formal": "Deformación y Fractura de Materiales",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "31.97",
-				"parent": ["30.62", "12.19"],
+				"parent": ["12.19", "30.62"],
 				"name": "Corrosión y Degradación de Materiales",
 				"formal": "Corrosión y Degradación de Materiales",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "41.19",
 				"parent": [],
 				"name": "Desarrollo de Negocios",
 				"formal": "Desarrollo de Negocios",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.21",
@@ -913,96 +871,84 @@
 				"parent": ["46.21"],
 				"name": "Petrofísica y Fluidos de Reservorio",
 				"formal": "Petrofísica y Fluidos de Reservorio",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "46.44",
 				"parent": ["46.21"],
 				"name": "Análisis de Transientes de Presión",
 				"formal": "Análisis de Transientes de Presión",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.46",
 				"parent": ["46.41"],
 				"name": "Ingeniería de Reservorios",
 				"formal": "Ingeniería de Reservorios",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "46.61",
 				"parent": ["46.21"],
 				"name": "Ingeniería de Perforación I",
 				"formal": "Ingeniería de Perforación I",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.65",
 				"parent": ["12.13"],
 				"name": "Instalaciones de Superficie",
 				"formal": "Instalaciones de Superficie",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.66",
 				"parent": ["12.11"],
 				"name": "Gas y Gasolina Natural",
 				"formal": "Gas y Gasolina Natural",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.67",
 				"parent": ["46.65"],
 				"name": "Ingeniería de Producción I",
 				"formal": "Ingeniería de Producción I",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "46.69",
-				"parent": ["46.66"],
+				"parent": ["12.11"],
 				"name": "Transporte y Cadena de Valor de los Hidrocarburos",
 				"formal": "Transporte y Cadena de Valor de los Hidrocarburos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "46.70",
-				"parent": ["46.69"],
+				"parent": ["12.11"],
 				"name": "Industrialización y Economía de los Hidrocarburos",
 				"formal": "Industrialización y Economía de los Hidrocarburos",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "47.48",
 				"parent": ["46.46"],
 				"name": "Simulación de Reservorios",
 				"formal": "Simulación de Reservorios",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "47.73",
 				"parent": ["46.66", "46.67"],
 				"name": "Operaciones Offshore",
 				"formal": "Operaciones Offshore",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "47.86",
 				"parent": ["12.26"],
 				"name": "Transición Energética y Sustentabilidad",
 				"formal": "Transición Energética y Sustentabilidad",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "48.01",
@@ -1033,24 +979,21 @@
 				"parent": [],
 				"name": "Macroeconomía",
 				"formal": "Macroeconomía",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "71.22",
 				"parent": ["71.58", "93.24"],
 				"name": "Sistemas de Inteligencia Artificial",
 				"formal": "Sistemas de Inteligencia Artificial",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "72.75",
 				"parent": ["71.58", "93.24"],
 				"name": "Aprendizaje Automático (Machine Learning)",
 				"formal": "Aprendizaje Automático (Machine Learning)",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.59",
@@ -1065,40 +1008,35 @@
 				"parent": [],
 				"name": "Complementos de Análisis Matemático IV",
 				"formal": "Complementos de Análisis Matemático IV",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "93.51",
 				"parent": [],
 				"name": "Mecánica General",
 				"formal": "Mecánica General",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "93.61",
 				"parent": ["93.42", "93.43"],
 				"name": "Física IV",
 				"formal": "Física IV",
-				"credits": 4,
-				"requires": 0
+				"credits": 4
 			},
 			{
 				"code": "94.19",
 				"parent": [],
 				"name": "Comportamiento Organizacional",
 				"formal": "Comportamiento Organizacional",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.24",
 				"parent": [],
 				"name": "Metodología del Aprendizaje",
 				"formal": "Metodología del Aprendizaje",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.27",
@@ -1113,8 +1051,7 @@
 				"parent": [],
 				"name": "Estructura de las Organizaciones",
 				"formal": "Estructura de las Organizaciones",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.64",

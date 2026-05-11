@@ -98,7 +98,7 @@
 		},
 		{
 			"code": "61.12",
-			"parent": ["81.11", "81.07", "93.21"],
+			"parent": ["81.07", "81.11", "93.21"],
 			"name": "Gestión Financiera",
 			"formal": "Gestión Financiera",
 			"semester": 3,
@@ -114,7 +114,7 @@
 		},
 		{
 			"code": "71.88",
-			"parent": ["71.30", "71.20"],
+			"parent": ["71.20", "71.30"],
 			"name": "Gestión de Datos",
 			"formal": "Gestión de Datos",
 			"semester": 3,
@@ -154,7 +154,7 @@
 		},
 		{
 			"code": "81.29",
-			"parent": ["81.06", "71.20"],
+			"parent": ["71.20", "81.06"],
 			"name": "Gestión organizacional basada en procesos de negocio",
 			"formal": "Gestión organizacional basada en procesos de negocio",
 			"semester": 4,
@@ -187,7 +187,7 @@
 		},
 		{
 			"code": "11.85",
-			"parent": ["93.39", "81.06"],
+			"parent": ["81.06", "93.39"],
 			"name": "Toma de Decisiones",
 			"formal": "Toma de Decisiones",
 			"semester": 5,
@@ -195,7 +195,7 @@
 		},
 		{
 			"code": "81.47",
-			"parent": ["81.11", "61.82", "61.87"],
+			"parent": ["61.82", "61.87", "81.11"],
 			"name": "Impuestos para la toma de decisiones I",
 			"formal": "Impuestos para la toma de decisiones I",
 			"semester": 5,
@@ -203,7 +203,7 @@
 		},
 		{
 			"code": "81.57",
-			"parent": ["81.32", "71.88", "81.53"],
+			"parent": ["71.88", "81.32", "81.53"],
 			"name": "Arquitectura de soluciones digitales",
 			"formal": "Arquitectura de soluciones digitales",
 			"semester": 5,
@@ -219,7 +219,7 @@
 		},
 		{
 			"code": "11.83",
-			"parent": ["93.39", "81.06"],
+			"parent": ["81.06", "93.39"],
 			"name": "Gestión de Operaciones",
 			"formal": "Gestión de Operaciones",
 			"semester": 6,
@@ -259,7 +259,7 @@
 		},
 		{
 			"code": "81.34",
-			"parent": ["81.57", "81.29"],
+			"parent": ["81.29", "81.57"],
 			"name": "Arquitectura empresarial",
 			"formal": "Arquitectura empresarial",
 			"semester": 7,
@@ -311,7 +311,7 @@
 			},
 			{
 				"code": "11.79",
-				"parent": ["93.39", "81.06"],
+				"parent": ["81.06", "93.39"],
 				"name": "Sistemas y Modelos",
 				"formal": "Sistemas y Modelos",
 				"credits": 3,
@@ -319,7 +319,7 @@
 			},
 			{
 				"code": "11.84",
-				"parent": ["93.39", "81.06"],
+				"parent": ["81.06", "93.39"],
 				"name": "Gestión de Proyectos",
 				"formal": "Gestión de Proyectos",
 				"credits": 3,
@@ -431,11 +431,10 @@
 			},
 			{
 				"code": "61.02",
-				"parent": ["61.82", "61.81", "94.27"],
+				"parent": ["61.81", "61.82", "94.27"],
 				"name": "Economía del Mercado Laboral",
 				"formal": "Economía del Mercado Laboral",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "61.04",
@@ -466,28 +465,25 @@
 				"parent": ["61.87"],
 				"name": "Derecho Digital",
 				"formal": "Derecho Digital",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "61.11",
 				"parent": ["61.87"],
 				"name": "Derecho Laboral y Seguridad Social en la Empresa",
 				"formal": "Derecho Laboral y Seguridad Social en la Empresa",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "61.13",
 				"parent": ["61.87"],
 				"name": "Práctica Contractual",
 				"formal": "Práctica Contractual",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "61.14",
-				"parent": ["61.82", "61.12"],
+				"parent": ["61.12", "61.82"],
 				"name": "Economía Internacional Real",
 				"formal": "Economía Internacional Real",
 				"credits": 3,
@@ -495,7 +491,7 @@
 			},
 			{
 				"code": "61.15",
-				"parent": ["61.82", "61.12"],
+				"parent": ["61.12", "61.82"],
 				"name": "Economía Internacional Monetaria",
 				"formal": "Economía Internacional Monetaria",
 				"credits": 3,
@@ -503,7 +499,7 @@
 			},
 			{
 				"code": "61.30",
-				"parent": ["93.39", "61.82"],
+				"parent": ["61.82", "93.39"],
 				"name": "Econometría Aplicada",
 				"formal": "Econometría Aplicada",
 				"credits": 3,
@@ -527,7 +523,7 @@
 			},
 			{
 				"code": "61.92",
-				"parent": ["81.26", "61.87"],
+				"parent": ["61.87", "81.26"],
 				"name": "Derecho Aduanero",
 				"formal": "Derecho Aduanero",
 				"credits": 3,
@@ -538,12 +534,11 @@
 				"parent": ["61.12"],
 				"name": "Estrategia Financiera",
 				"formal": "Estrategia Financiera",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.04",
-				"parent": ["61.82", "61.81"],
+				"parent": ["61.81", "61.82"],
 				"name": "Teoría de Juegos y Estrategia",
 				"formal": "Teoría de Juegos y Estrategia",
 				"credits": 3,
@@ -714,8 +709,7 @@
 				"parent": [],
 				"name": "Experiencia Inmersiva de Innovación Tecnológica",
 				"formal": "Experiencia Inmersiva de Innovación Tecnológica",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "82.80",
@@ -873,27 +867,24 @@
 		"Electivas Proyecto Final": [
 			{
 				"code": "81.95",
-				"parent": ["81.48", "11.83", "61.12", "81.57", "81.42"],
+				"parent": ["11.83", "61.12", "81.42", "81.48", "81.57"],
 				"name": "Proyecto de lanzamiento de productos o servicios (Trabajo Final)",
 				"formal": "Proyecto de lanzamiento de productos o servicios (Trabajo Final)",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.96",
-				"parent": ["81.48", "11.83", "61.12", "81.57", "81.42"],
+				"parent": ["11.83", "61.12", "81.42", "81.48", "81.57"],
 				"name": "Diagnóstico Empresario y Plan de Implementación de Sistemas (TF)",
 				"formal": "Diagnóstico Empresario y Plan de Implementación de Sistemas (TF)",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.97",
-				"parent": ["81.48", "11.83", "81.57", "61.12", "81.42"],
+				"parent": ["11.83", "61.12", "81.42", "81.48", "81.57"],
 				"name": "Diagnóstico Empresario y Plan de Acción ( Trabajo Final )",
 				"formal": "Diagnóstico Empresario y Plan de Acción ( Trabajo Final )",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			}
 		],
 		"Electivas Sistemas y Tecnología": [
@@ -950,8 +941,7 @@
 				"parent": ["71.22"],
 				"name": "Ciencia de Datos Aplicada",
 				"formal": "Ciencia de Datos Aplicada",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.19",
@@ -987,7 +977,7 @@
 			},
 			{
 				"code": "81.38",
-				"parent": ["71.30", "71.20", "81.29"],
+				"parent": ["71.20", "71.30", "81.29"],
 				"name": "Integración de Procesos de Negocios y Aplicaciones Informáticas",
 				"formal": "Integración de Procesos de Negocios y Aplicaciones Informáticas",
 				"credits": 3,
@@ -1043,11 +1033,10 @@
 			},
 			{
 				"code": "81.76",
-				"parent": ["81.57", "61.12"],
+				"parent": ["61.12", "81.57"],
 				"name": "Tecnologías para las Finanzas",
 				"formal": "Tecnologías para las Finanzas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.83",
@@ -1062,16 +1051,14 @@
 				"parent": ["81.11", "81.29"],
 				"name": "ERP Action Lab",
 				"formal": "ERP Action Lab",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.85",
 				"parent": ["81.21", "81.29"],
 				"name": "CRM Action Lab",
 				"formal": "CRM Action Lab",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.87",
@@ -1142,12 +1129,11 @@
 				"parent": ["81.57"],
 				"name": "Inteligencia Artificial Generativa",
 				"formal": "Inteligencia Artificial Generativa",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "94.15",
-				"parent": ["81.53", "61.87"],
+				"parent": ["61.87", "81.53"],
 				"name": "Propiedad Intelectual y Nuevas Tecnologías",
 				"formal": "Propiedad Intelectual y Nuevas Tecnologías",
 				"credits": 3,
@@ -1159,17 +1145,13 @@
 				"code": "94.90",
 				"parent": [],
 				"name": "Inglés I (analista)",
-				"formal": "Inglés I (analista)",
-				"credits": 0,
-				"requires": 0
+				"formal": "Inglés I (analista)"
 			},
 			{
 				"code": "94.91",
 				"parent": ["94.90"],
 				"name": "Inglés II (licenciado)",
-				"formal": "Inglés II (licenciado)",
-				"credits": 0,
-				"requires": 0
+				"formal": "Inglés II (licenciado)"
 			}
 		]
 	}

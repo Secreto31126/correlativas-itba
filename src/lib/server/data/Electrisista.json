@@ -51,7 +51,7 @@
 		},
 		{
 			"code": "93.02",
-			"parent": ["93.18", "93.17"],
+			"parent": ["93.17", "93.18"],
 			"name": "Matemática II",
 			"formal": "Matemática II",
 			"semester": 2,
@@ -75,7 +75,7 @@
 		},
 		{
 			"code": "22.08",
-			"parent": ["93.02", "22.07"],
+			"parent": ["22.07", "93.02"],
 			"name": "Algoritmos y Estructura de Datos",
 			"formal": "Algoritmos y Estructura de Datos",
 			"semester": 3,
@@ -83,7 +83,7 @@
 		},
 		{
 			"code": "93.03",
-			"parent": ["93.18", "93.17"],
+			"parent": ["93.17", "93.18"],
 			"name": "Matemática III",
 			"formal": "Matemática III",
 			"semester": 3,
@@ -155,7 +155,7 @@
 		},
 		{
 			"code": "21.80",
-			"parent": ["21.71", "21.32"],
+			"parent": ["21.32", "21.71"],
 			"name": "Máquinas Eléctricas I",
 			"formal": "Máquinas Eléctricas I",
 			"semester": 5,
@@ -171,7 +171,7 @@
 		},
 		{
 			"code": "22.37",
-			"parent": ["93.65", "93.43"],
+			"parent": ["93.43", "93.65"],
 			"name": "Electromagnetismo",
 			"formal": "Electromagnetismo",
 			"semester": 5,
@@ -219,7 +219,7 @@
 		},
 		{
 			"code": "31.19",
-			"parent": ["93.02", "93.41", "31.08"],
+			"parent": ["31.08", "93.02", "93.41"],
 			"name": "Estática y Resistencia de Materiales",
 			"formal": "Estática y Resistencia de Materiales",
 			"semester": 6,
@@ -242,7 +242,7 @@
 		},
 		{
 			"code": "21.32",
-			"parent": ["93.65", "93.43"],
+			"parent": ["93.43", "93.65"],
 			"name": "Tecnología de Mat. Eléctricos",
 			"formal": "Tecnología de Mat. Eléctricos",
 			"semester": 7,
@@ -274,7 +274,7 @@
 		},
 		{
 			"code": "31.27",
-			"parent": ["93.65", "31.17", "93.43"],
+			"parent": ["31.17", "93.43", "93.65"],
 			"name": "Mecanismos y Elementos de Máquinas",
 			"formal": "Mecanismos y Elementos de Máquinas",
 			"semester": 7,
@@ -282,7 +282,7 @@
 		},
 		{
 			"code": "21.85",
-			"parent": ["21.83", "21.81"],
+			"parent": ["21.81", "21.83"],
 			"name": "Sistemas Eléctricos de Potencia",
 			"formal": "Sistemas Eléctricos de Potencia",
 			"semester": 8,
@@ -322,7 +322,7 @@
 		},
 		{
 			"code": "21.73",
-			"parent": ["21.82", "21.65"],
+			"parent": ["21.65", "21.82"],
 			"name": "Energías Alternativas",
 			"formal": "Energías Alternativas",
 			"semester": 9,
@@ -330,7 +330,7 @@
 		},
 		{
 			"code": "21.84",
-			"parent": ["21.83", "21.82", "21.65"],
+			"parent": ["21.65", "21.82", "21.83"],
 			"name": "Proyecto Final",
 			"formal": "Proyecto Final",
 			"semester": 9,
@@ -346,7 +346,7 @@
 		},
 		{
 			"code": "21.88",
-			"parent": ["21.83", "21.65"],
+			"parent": ["21.65", "21.83"],
 			"name": "Distribución de la Energía Eléctrica",
 			"formal": "Distribución de la Energía Eléctrica",
 			"semester": 9,
@@ -423,8 +423,7 @@
 				"parent": ["94.21"],
 				"name": "Formación General III",
 				"formal": "Formación General III",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			}
 		]
 	}

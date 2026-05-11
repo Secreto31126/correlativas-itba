@@ -306,7 +306,7 @@
 		},
 		{
 			"code": "10.01",
-			"parent": ["94.44", "11.51", "61.09", "11.20"],
+			"parent": ["11.20", "11.51", "61.09", "94.44"],
 			"name": "Proyecto Final de Ingeniería Industrial (Anual)",
 			"formal": "Proyecto Final de Ingeniería Industrial (Anual)",
 			"semester": 9,
@@ -335,8 +335,7 @@
 				"parent": ["71.20"],
 				"name": "Estructura de Datos y Programación",
 				"formal": "Estructura de Datos y Programación",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			}
 		],
 		"Bloque II Electivas General": [
@@ -433,8 +432,7 @@
 				"parent": [],
 				"name": "Metodología de la Investigación",
 				"formal": "Metodología de la Investigación",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "14.03",
@@ -449,8 +447,7 @@
 				"parent": [],
 				"name": "Introducción a la Consultoría",
 				"formal": "Introducción a la Consultoría",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "14.37",
@@ -497,32 +494,28 @@
 				"parent": [],
 				"name": "Diseño de Producto",
 				"formal": "Diseño de Producto",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "14.97",
 				"parent": [],
 				"name": "Diseño Circular: Sustentabilidad e Innovación en la Cadena de Valor.",
 				"formal": "Diseño Circular: Sustentabilidad e Innovación en la Cadena de Valor.",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "14.99",
 				"parent": [],
 				"name": "Electric Cars Technology",
 				"formal": "Electric Cars Technology",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "15.06",
 				"parent": [],
 				"name": "Storytelling aplicado a los negocios",
 				"formal": "Storytelling aplicado a los negocios",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "15.07",
@@ -537,8 +530,7 @@
 				"parent": ["11.67"],
 				"name": "Aplicaciones avanzadas de estadística",
 				"formal": "Aplicaciones avanzadas de estadística",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "15.12",
@@ -561,40 +553,35 @@
 				"parent": [],
 				"name": "Proyecto I",
 				"formal": "Proyecto I",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "15.16",
 				"parent": ["11.20"],
 				"name": "Supply Chain leadership",
 				"formal": "Supply Chain leadership",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "15.61",
 				"parent": [],
 				"name": "Mecánica de Fluidos Computacional",
 				"formal": "Mecánica de Fluidos Computacional",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "15.62",
 				"parent": [],
 				"name": "Ciclos reales en motores de combustión interna",
 				"formal": "Ciclos reales en motores de combustión interna",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "15.63",
 				"parent": [],
 				"name": "Deformación y fractura de materiales",
 				"formal": "Deformación y fractura de materiales",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "15.69",
@@ -649,8 +636,7 @@
 				"parent": [],
 				"name": "Química Inorgánica",
 				"formal": "Química Inorgánica",
-				"credits": 6,
-				"requires": 0
+				"credits": 6
 			},
 			{
 				"code": "15.80",
@@ -697,24 +683,21 @@
 				"parent": ["11.10"],
 				"name": "Logística Internacional",
 				"formal": "Logística Internacional",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "15.86",
 				"parent": ["11.20"],
 				"name": "Analítica para la Cadena de Suministro",
 				"formal": "Analítica para la Cadena de Suministro",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "15.87",
 				"parent": ["11.20"],
 				"name": "Simulación para la Cadena de Suministro",
 				"formal": "Simulación para la Cadena de Suministro",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "16.04",
@@ -729,24 +712,21 @@
 				"parent": [],
 				"name": "Instalaciones Eléctricas",
 				"formal": "Instalaciones Eléctricas",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "23.15",
-				"parent": ["71.45", "71.20"],
+				"parent": ["71.20", "71.45"],
 				"name": "Realidad Virtual",
 				"formal": "Realidad Virtual",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "31.67",
 				"parent": [],
 				"name": "Procesos de Manufactura I",
 				"formal": "Procesos de Manufactura I",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "47.73",
@@ -761,24 +741,21 @@
 				"parent": [],
 				"name": "AI: Data Management Course & Digital Transformation",
 				"formal": "AI: Data Management Course & Digital Transformation",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "61.11",
 				"parent": ["61.31"],
 				"name": "Derecho Laboral y Seguridad Social en la Empresa",
 				"formal": "Derecho Laboral y Seguridad Social en la Empresa",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "61.34",
 				"parent": ["61.50"],
 				"name": "Valuación de Empresas",
 				"formal": "Valuación de Empresas",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "71.22",
@@ -857,8 +834,7 @@
 				"parent": [],
 				"name": "Experiencia Inmersiva de Innovación Tecnológica",
 				"formal": "Experiencia Inmersiva de Innovación Tecnológica",
-				"credits": 1,
-				"requires": 0
+				"credits": 1
 			},
 			{
 				"code": "82.07",
@@ -889,8 +865,7 @@
 				"parent": [],
 				"name": "Complementos de Análisis Matemático IV",
 				"formal": "Complementos de Análisis Matemático IV",
-				"credits": 2,
-				"requires": 0
+				"credits": 2
 			},
 			{
 				"code": "94.13",
@@ -921,8 +896,7 @@
 				"parent": [],
 				"name": "Estructura de las Organizaciones",
 				"formal": "Estructura de las Organizaciones",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.42",
@@ -973,8 +947,7 @@
 				"parent": [],
 				"name": "Programación Básica",
 				"formal": "Programación Básica",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "81.03",
@@ -1081,8 +1054,7 @@
 				"parent": ["61.09"],
 				"name": "Estrategia Financiera",
 				"formal": "Estrategia Financiera",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			}
 		],
 		"Bloque VII Electivas  Tecnología": [

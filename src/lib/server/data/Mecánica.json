@@ -98,7 +98,7 @@
 		},
 		{
 			"code": "30.41",
-			"parent": ["93.41", "30.26", "31.08"],
+			"parent": ["30.26", "31.08", "93.41"],
 			"name": "Diseño Mecánico I",
 			"formal": "Diseño Mecánico I",
 			"semester": 3,
@@ -106,7 +106,7 @@
 		},
 		{
 			"code": "30.46",
-			"parent": ["93.41", "31.08", "30.26"],
+			"parent": ["30.26", "31.08", "93.41"],
 			"name": "Laboratorio de Diseño Mecánico",
 			"formal": "Laboratorio de Diseño Mecánico",
 			"semester": 3,
@@ -146,7 +146,7 @@
 		},
 		{
 			"code": "31.21",
-			"parent": ["93.42", "93.41"],
+			"parent": ["93.41", "93.42"],
 			"name": "Termodinámica",
 			"formal": "Termodinámica",
 			"semester": 4,
@@ -194,7 +194,7 @@
 		},
 		{
 			"code": "30.43",
-			"parent": ["30.42", "92.03", "93.07", "92.04"],
+			"parent": ["30.42", "92.03", "92.04", "93.07"],
 			"name": "Diseño Mecánico III A",
 			"formal": "Diseño Mecánico III A",
 			"semester": 5,
@@ -202,7 +202,7 @@
 		},
 		{
 			"code": "30.44",
-			"parent": ["92.03", "30.42", "93.07", "92.04"],
+			"parent": ["30.42", "92.03", "92.04", "93.07"],
 			"name": "Diseño Mecánico III B",
 			"formal": "Diseño Mecánico III B",
 			"semester": 5,
@@ -227,7 +227,7 @@
 		},
 		{
 			"code": "30.45",
-			"parent": ["30.41", "30.43", "30.25", "30.44"],
+			"parent": ["30.25", "30.41", "30.43", "30.44"],
 			"name": "Diseño Mecánico IV",
 			"formal": "Diseño Mecánico IV",
 			"semester": 6,
@@ -235,7 +235,7 @@
 		},
 		{
 			"code": "30.47",
-			"parent": ["31.21", "92.03", "93.42", "93.41"],
+			"parent": ["31.21", "92.03", "93.41", "93.42"],
 			"name": "Termofluidos I",
 			"formal": "Termofluidos I",
 			"semester": 6,
@@ -296,8 +296,7 @@
 				"parent": ["11.15"],
 				"name": "Comportamiento Organizacional",
 				"formal": "Comportamiento Organizacional",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.27",
@@ -312,8 +311,7 @@
 				"parent": ["11.15"],
 				"name": "Estructura de las Organizaciones",
 				"formal": "Estructura de las Organizaciones",
-				"credits": 3,
-				"requires": 0
+				"credits": 3
 			},
 			{
 				"code": "94.42",
