@@ -396,6 +396,13 @@
 				"requires": 72
 			},
 			{
+				"code": "15.13",
+				"parent": [],
+				"name": "Innovación en materiales Biobasados",
+				"formal": "Innovación en materiales Biobasados",
+				"credits": 1
+			},
+			{
 				"code": "16.04",
 				"parent": ["16.03"],
 				"name": "Neurociencias y Desarrollo Productivo",
@@ -747,6 +754,13 @@
 				"credits": 1
 			},
 			{
+				"code": "16.97",
+				"parent": ["16.03", "16.64"],
+				"name": "Modelado en mecánica cardiovascular",
+				"formal": "Modelado en mecánica cardiovascular",
+				"credits": 3
+			},
+			{
 				"code": "17.15",
 				"parent": ["12.83"],
 				"name": "Introducción a la Ingeniería Ambiental",
@@ -914,6 +928,21 @@
 				"name": "Procesamiento de Imágenes Satelitales",
 				"formal": "Procesamiento de Imágenes Satelitales",
 				"credits": 1
+			},
+			{
+				"code": "73.67",
+				"parent": ["72.75"],
+				"name": "Análisis de series de tiempo con Inteligencia Artificial",
+				"formal": "Análisis de series de tiempo con Inteligencia Artificial",
+				"credits": 1
+			},
+			{
+				"code": "73.70",
+				"parent": [],
+				"name": "Análisis de datos en neurociencias",
+				"formal": "Análisis de datos en neurociencias",
+				"credits": 3,
+				"requires": 144
 			},
 			{
 				"code": "81.75",

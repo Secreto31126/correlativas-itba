@@ -705,6 +705,14 @@
 				"requires": 48
 			},
 			{
+				"code": "81.86",
+				"parent": ["81.29"],
+				"name": "Gestión de la Experiencia del Usuario (CX, UX, UI)",
+				"formal": "Gestión de la Experiencia del Usuario (CX, UX, UI)",
+				"credits": 3,
+				"requires": 48
+			},
+			{
 				"code": "81.94",
 				"parent": [],
 				"name": "Experiencia Inmersiva de Innovación Tecnológica",
@@ -1130,6 +1138,13 @@
 				"name": "Inteligencia Artificial Generativa",
 				"formal": "Inteligencia Artificial Generativa",
 				"credits": 1
+			},
+			{
+				"code": "82.23",
+				"parent": ["71.88", "81.20", "93.39"],
+				"name": "Marketing Analytics",
+				"formal": "Marketing Analytics",
+				"credits": 3
 			},
 			{
 				"code": "94.15",

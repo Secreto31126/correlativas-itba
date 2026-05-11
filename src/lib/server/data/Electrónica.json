@@ -565,6 +565,27 @@
 				"requires": 144
 			},
 			{
+				"code": "25.40",
+				"parent": ["25.26"],
+				"name": "Transmisión Digital y Codificación",
+				"formal": "Transmisión Digital y Codificación",
+				"credits": 3
+			},
+			{
+				"code": "25.41",
+				"parent": ["25.26"],
+				"name": "Sistemas de Comunicaciones de Datos",
+				"formal": "Sistemas de Comunicaciones de Datos",
+				"credits": 3
+			},
+			{
+				"code": "25.42",
+				"parent": ["25.26"],
+				"name": "Análisis de Sistemas Estocásticos",
+				"formal": "Análisis de Sistemas Estocásticos",
+				"credits": 3
+			},
+			{
 				"code": "25.51",
 				"parent": [],
 				"name": "Electrónica aplicada a Movilidad Eléctrica",
@@ -585,6 +606,13 @@
 				"name": "Señales Aleatorias",
 				"formal": "Señales Aleatorias",
 				"credits": 4
+			},
+			{
+				"code": "25.54",
+				"parent": [],
+				"name": "Física Electrónica",
+				"formal": "Física Electrónica",
+				"credits": 3
 			},
 			{
 				"code": "25.55",
@@ -792,6 +820,28 @@
 				"name": "Mecatrónica Aplicada",
 				"formal": "Mecatrónica Aplicada",
 				"credits": 3
+			},
+			{
+				"code": "34.99",
+				"parent": [],
+				"name": "Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",
+				"formal": "Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",
+				"credits": 1,
+				"requires": 144
+			},
+			{
+				"code": "72.75",
+				"parent": [],
+				"name": "Aprendizaje Automático (Machine Learning)",
+				"formal": "Aprendizaje Automático (Machine Learning)",
+				"credits": 3
+			},
+			{
+				"code": "73.67",
+				"parent": ["72.75"],
+				"name": "Análisis de series de tiempo con Inteligencia Artificial",
+				"formal": "Análisis de series de tiempo con Inteligencia Artificial",
+				"credits": 1
 			},
 			{
 				"code": "81.83",

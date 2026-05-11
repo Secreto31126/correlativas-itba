@@ -458,6 +458,13 @@
 				"requires": 72
 			},
 			{
+				"code": "14.40",
+				"parent": [],
+				"name": "Ingeniería y Cambio Climático",
+				"formal": "Ingeniería y Cambio Climático",
+				"credits": 1
+			},
+			{
 				"code": "14.46",
 				"parent": [],
 				"name": "Lean Manufacturing",
@@ -698,6 +705,13 @@
 				"name": "Simulación para la Cadena de Suministro",
 				"formal": "Simulación para la Cadena de Suministro",
 				"credits": 2
+			},
+			{
+				"code": "15.89",
+				"parent": ["11.10", "11.67"],
+				"name": "Mejora continua de procesos",
+				"formal": "Mejora continua de procesos",
+				"credits": 3
 			},
 			{
 				"code": "16.04",
@@ -1008,12 +1022,26 @@
 				"requires": 72
 			},
 			{
+				"code": "14.52",
+				"parent": [],
+				"name": "Eficiencia Energética",
+				"formal": "Eficiencia Energética",
+				"credits": 1
+			},
+			{
 				"code": "15.15",
 				"parent": [],
 				"name": "Tecnologías del Hidrógeno",
 				"formal": "Tecnologías del Hidrógeno",
 				"credits": 1,
 				"requires": 72
+			},
+			{
+				"code": "34.98",
+				"parent": ["12.67", "23.17", "30.32"],
+				"name": "Baterías y Acumulación de Energía",
+				"formal": "Baterías y Acumulación de Energía",
+				"credits": 1
 			},
 			{
 				"code": "47.86",

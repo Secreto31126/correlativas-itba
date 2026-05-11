@@ -259,11 +259,26 @@
 				"requires": 96
 			},
 			{
+				"code": "73.67",
+				"parent": ["71.88", "93.20", "93.36"],
+				"name": "Análisis de series de tiempo con Inteligencia Artificial",
+				"formal": "Análisis de series de tiempo con Inteligencia Artificial",
+				"credits": 1
+			},
+			{
 				"code": "81.17",
 				"parent": ["82.04", "82.05"],
 				"name": "Finanzas y Programación",
 				"formal": "Finanzas y Programación",
 				"credits": 1,
+				"requires": 96
+			},
+			{
+				"code": "81.76",
+				"parent": ["71.88"],
+				"name": "Tecnologías para las Finanzas",
+				"formal": "Tecnologías para las Finanzas",
+				"credits": 3,
 				"requires": 96
 			},
 			{
@@ -493,6 +508,14 @@
 				"requires": 96
 			},
 			{
+				"code": "81.03",
+				"parent": [],
+				"name": "Sistemas de Información",
+				"formal": "Sistemas de Información",
+				"credits": 3,
+				"requires": 96
+			},
+			{
 				"code": "81.04",
 				"parent": [],
 				"name": "Teoría de Juegos y Estrategia",
@@ -565,6 +588,14 @@
 				"requires": 96
 			},
 			{
+				"code": "81.86",
+				"parent": [],
+				"name": "Gestión de la Experiencia del Usuario (CX, UX, UI)",
+				"formal": "Gestión de la Experiencia del Usuario (CX, UX, UI)",
+				"credits": 3,
+				"requires": 96
+			},
+			{
 				"code": "82.90",
 				"parent": [],
 				"name": "Estadística para los Negocios",
@@ -631,12 +662,36 @@
 				"requires": 96
 			},
 			{
+				"code": "73.22",
+				"parent": ["81.32"],
+				"name": "Fundamentos de DevOps",
+				"formal": "Fundamentos de DevOps",
+				"credits": 3,
+				"requires": 96
+			},
+			{
+				"code": "73.82",
+				"parent": ["71.88"],
+				"name": "Bases de Datos Espaciales y de Movilidad",
+				"formal": "Bases de Datos Espaciales y de Movilidad",
+				"credits": 3,
+				"requires": 96
+			},
+			{
 				"code": "73.89",
 				"parent": [],
 				"name": "Introducción a Blockchain y Criptomonedas",
 				"formal": "Introducción a Blockchain y Criptomonedas",
 				"credits": 3,
 				"requires": 96
+			},
+			{
+				"code": "81.32",
+				"parent": [],
+				"name": "Análisis funcional de aplicaciones informáticas",
+				"formal": "Análisis funcional de aplicaciones informáticas",
+				"credits": 3,
+				"requires": 72
 			},
 			{
 				"code": "81.56",

@@ -626,8 +626,15 @@
 				"parent": [],
 				"name": "Trabajo Supervisado I",
 				"formal": "Trabajo Supervisado I",
+				"credits": 1
+			},
+			{
+				"code": "15.15",
+				"parent": [],
+				"name": "Tecnologías del Hidrógeno",
+				"formal": "Tecnologías del Hidrógeno",
 				"credits": 1,
-				"requires": 0
+				"requires": 72
 			},
 			{
 				"code": "16.04",
@@ -808,6 +815,13 @@
 				"name": "Metalurgia Física I",
 				"formal": "Metalurgia Física I",
 				"credits": 4
+			},
+			{
+				"code": "30.48",
+				"parent": ["17.04"],
+				"name": "Termofluidos II",
+				"formal": "Termofluidos II",
+				"credits": 3
 			},
 			{
 				"code": "30.69",

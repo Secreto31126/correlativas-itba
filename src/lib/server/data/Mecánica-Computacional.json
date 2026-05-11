@@ -942,6 +942,62 @@
 				"credits": 6
 			},
 			{
+				"code": "33.04",
+				"parent": ["92.02", "93.42"],
+				"name": "Astrodinámica y misiones espaciales",
+				"formal": "Astrodinámica y misiones espaciales",
+				"credits": 6
+			},
+			{
+				"code": "33.05",
+				"parent": ["30.47"],
+				"name": "Aerodinámica",
+				"formal": "Aerodinámica",
+				"credits": 6
+			},
+			{
+				"code": "33.06",
+				"parent": ["30.44"],
+				"name": "Estructuras aeroespaciales",
+				"formal": "Estructuras aeroespaciales",
+				"credits": 6
+			},
+			{
+				"code": "33.12",
+				"parent": [],
+				"name": "Sistemas de Propulsión II",
+				"formal": "Sistemas de Propulsión II",
+				"credits": 6
+			},
+			{
+				"code": "33.13",
+				"parent": ["23.16", "23.18"],
+				"name": "Guiado, Navegación y Control",
+				"formal": "Guiado, Navegación y Control",
+				"credits": 6
+			},
+			{
+				"code": "33.14",
+				"parent": ["31.21", "33.04"],
+				"name": "Sistemas de control térmico",
+				"formal": "Sistemas de control térmico",
+				"credits": 3
+			},
+			{
+				"code": "34.98",
+				"parent": ["12.67", "23.18", "31.21"],
+				"name": "Baterías y Acumulación de Energía",
+				"formal": "Baterías y Acumulación de Energía",
+				"credits": 1
+			},
+			{
+				"code": "34.99",
+				"parent": ["23.18"],
+				"name": "Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",
+				"formal": "Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",
+				"credits": 1
+			},
+			{
 				"code": "72.31",
 				"parent": ["71.58", "93.18"],
 				"name": "Programación Imperativa",

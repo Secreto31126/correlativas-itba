@@ -552,6 +552,14 @@
 				"credits": 3
 			},
 			{
+				"code": "68.99",
+				"parent": [],
+				"name": "Introducción a la Ciencia de Ciudades",
+				"formal": "Introducción a la Ciencia de Ciudades",
+				"credits": 1,
+				"requires": 144
+			},
+			{
 				"code": "71.22",
 				"parent": ["71.88"],
 				"name": "Sistemas de Inteligencia Artificial",
