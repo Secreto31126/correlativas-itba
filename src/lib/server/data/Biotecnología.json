@@ -1,5 +1,343 @@
 {
-	"credits": 0,
-	"mandatories": [],
+	"credits": 240,
+	"mandatories": [
+		{
+			"code": "12.67",
+			"parent": [],
+			"name": "Química General",
+			"formal": "Química General",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "71.58",
+			"parent": [],
+			"name": "Informática General",
+			"formal": "Informática General",
+			"semester": 1,
+			"credits": 3
+		},
+		{
+			"code": "92.01",
+			"parent": [],
+			"name": "Análisis Matemático I",
+			"formal": "Análisis Matemático I",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "93.18",
+			"parent": [],
+			"name": "Álgebra Lineal",
+			"formal": "Álgebra Lineal",
+			"semester": 1,
+			"credits": 6
+		},
+		{
+			"code": "94.33",
+			"parent": [],
+			"name": "Tecnología y Sociedad",
+			"formal": "Tecnología y Sociedad",
+			"semester": 1,
+			"credits": 3
+		},
+		{
+			"code": "13.02",
+			"parent": ["12.67"],
+			"name": "Fundamentos de Química Orgánica",
+			"formal": "Fundamentos de Química Orgánica",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "16.55",
+			"parent": [],
+			"name": "Biología",
+			"formal": "Biología",
+			"semester": 2,
+			"credits": 3
+		},
+		{
+			"code": "18.01",
+			"parent": [],
+			"name": "Introducción a la Biotecnología",
+			"formal": "Introducción a la Biotecnología",
+			"semester": 2,
+			"credits": 3
+		},
+		{
+			"code": "31.08",
+			"parent": [],
+			"name": "Sistemas de Representación",
+			"formal": "Sistemas de Representación",
+			"semester": 2,
+			"credits": 3
+		},
+		{
+			"code": "92.02",
+			"parent": ["92.01", "93.18"],
+			"name": "Análisis Matemático II",
+			"formal": "Análisis Matemático II",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "93.41",
+			"parent": ["92.01"],
+			"name": "Física I",
+			"formal": "Física I",
+			"semester": 2,
+			"credits": 6
+		},
+		{
+			"code": "94.51",
+			"parent": [],
+			"name": "Inglés I",
+			"formal": "Inglés I",
+			"semester": 2
+		},
+		{
+			"code": "12.19",
+			"parent": ["12.67", "92.01", "93.41"],
+			"name": "Química Analítica",
+			"formal": "Química Analítica",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "17.03",
+			"parent": ["13.02", "16.55"],
+			"name": "Bioquímica y Microbiología Aplicadas",
+			"formal": "Bioquímica y Microbiología Aplicadas",
+			"semester": 3,
+			"credits": 5
+		},
+		{
+			"code": "92.03",
+			"parent": ["92.01", "93.18"],
+			"name": "Análisis Matemático III",
+			"formal": "Análisis Matemático III",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "93.42",
+			"parent": ["92.02"],
+			"name": "Física II",
+			"formal": "Física II",
+			"semester": 3,
+			"credits": 6
+		},
+		{
+			"code": "12.20",
+			"parent": ["92.03"],
+			"name": "Química-Física",
+			"formal": "Química-Física",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "16.01",
+			"parent": ["12.19", "16.55"],
+			"name": "Biología Molecular y Celular",
+			"formal": "Biología Molecular y Celular",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "92.05",
+			"parent": ["92.02", "92.03"],
+			"name": "Análisis Matemático IV",
+			"formal": "Análisis Matemático IV",
+			"semester": 4,
+			"credits": 4
+		},
+		{
+			"code": "93.24",
+			"parent": ["92.02"],
+			"name": "Probabilidad y Estadística",
+			"formal": "Probabilidad y Estadística",
+			"semester": 4,
+			"credits": 6
+		},
+		{
+			"code": "94.52",
+			"parent": ["94.51"],
+			"name": "Inglés II",
+			"formal": "Inglés II",
+			"semester": 4
+		},
+		{
+			"code": "12.26",
+			"parent": ["12.20"],
+			"name": "Termodinámica",
+			"formal": "Termodinámica",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "17.04",
+			"parent": ["12.20"],
+			"name": "Fenómenos de Transporte",
+			"formal": "Fenómenos de Transporte",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "18.02",
+			"parent": ["16.01", "17.03"],
+			"name": "Fisiología y Genética de Microorganismos",
+			"formal": "Fisiología y Genética de Microorganismos",
+			"semester": 5,
+			"credits": 6
+		},
+		{
+			"code": "93.54",
+			"parent": ["92.03"],
+			"name": "Métodos Numéricos",
+			"formal": "Métodos Numéricos",
+			"semester": 5,
+			"credits": 3
+		},
+		{
+			"code": "94.43",
+			"parent": [],
+			"name": "Metodología del Diseño",
+			"formal": "Metodología del Diseño",
+			"semester": 5,
+			"credits": 3,
+			"requires": 96
+		},
+		{
+			"code": "11.15",
+			"parent": ["93.24"],
+			"name": "Organización Industrial",
+			"formal": "Organización Industrial",
+			"semester": 6,
+			"credits": 3
+		},
+		{
+			"code": "12.11",
+			"parent": ["12.26", "17.04"],
+			"name": "Operaciones Unitarias I",
+			"formal": "Operaciones Unitarias I",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "18.03",
+			"parent": ["12.26", "17.04", "18.02"],
+			"name": "Bioprocesos",
+			"formal": "Bioprocesos",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "25.23",
+			"parent": ["12.26", "71.58", "92.05", "93.42"],
+			"name": "Sistemas de Control",
+			"formal": "Sistemas de Control",
+			"semester": 6,
+			"credits": 6
+		},
+		{
+			"code": "94.44",
+			"parent": ["94.43"],
+			"name": "Proyecto Interdisciplinario",
+			"formal": "Proyecto Interdisciplinario",
+			"semester": 6,
+			"credits": 3
+		},
+		{
+			"code": "15.88",
+			"parent": ["11.15"],
+			"name": "Calidad de Organizaciones",
+			"formal": "Calidad de Organizaciones",
+			"semester": 7,
+			"credits": 3
+		},
+		{
+			"code": "18.04",
+			"parent": ["16.01", "17.03"],
+			"name": "Separaciones Biotecnológicas",
+			"formal": "Separaciones Biotecnológicas",
+			"semester": 7,
+			"credits": 4
+		},
+		{
+			"code": "18.05",
+			"parent": ["18.02"],
+			"name": "Biodepuraciones y biorremediación",
+			"formal": "Biodepuraciones y biorremediación",
+			"semester": 7,
+			"credits": 4
+		},
+		{
+			"code": "18.06",
+			"parent": ["16.01", "18.02"],
+			"name": "Ingeniería Genética",
+			"formal": "Ingeniería Genética",
+			"semester": 7,
+			"credits": 4
+		},
+		{
+			"code": "61.27",
+			"parent": ["93.24"],
+			"name": "Análisis de Coyuntura Económica",
+			"formal": "Análisis de Coyuntura Económica",
+			"semester": 7,
+			"credits": 3
+		},
+		{
+			"code": "61.31",
+			"parent": [],
+			"name": "Derecho para Ingenieros",
+			"formal": "Derecho para Ingenieros",
+			"semester": 7,
+			"credits": 3,
+			"requires": 144
+		},
+		{
+			"code": "11.84",
+			"parent": [],
+			"name": "Gestión de Proyectos",
+			"formal": "Gestión de Proyectos",
+			"semester": 8,
+			"credits": 3
+		},
+		{
+			"code": "12.83",
+			"parent": ["11.15"],
+			"name": "Seguridad Ocupacional y Ambiental",
+			"formal": "Seguridad Ocupacional y Ambiental",
+			"semester": 8,
+			"credits": 3
+		},
+		{
+			"code": "61.16",
+			"parent": ["11.15", "61.27"],
+			"name": "Introducción a las Finanzas",
+			"formal": "Introducción a las Finanzas",
+			"semester": 8,
+			"credits": 3
+		},
+		{
+			"code": "18.07",
+			"parent": [],
+			"name": "Proyecto final de carrera (Anual)",
+			"formal": "Proyecto final de carrera (Anual)",
+			"semester": 9,
+			"credits": 6,
+			"requires": 192
+		},
+		{
+			"code": "94.65",
+			"parent": [],
+			"name": "Practica Profesional supervisada",
+			"formal": "Practica Profesional supervisada",
+			"semester": 10,
+			"requires": 144
+		}
+	],
 	"optatives": {}
 }
