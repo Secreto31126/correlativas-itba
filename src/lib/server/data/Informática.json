@@ -388,7 +388,7 @@
 			{
 				"code": "16.04",
 				"parent": [],
-				"name": "Neurociencias y Desarrollo Productivo",
+				"name": "Neuro",
 				"formal": "Neurociencias y Desarrollo Productivo",
 				"credits": 3
 			},
@@ -721,7 +721,7 @@
 			{
 				"code": "72.74",
 				"parent": ["72.31"],
-				"name": "Visualización de Información",
+				"name": "VizInfo",
 				"formal": "Visualización de Información",
 				"credits": 3
 			},
