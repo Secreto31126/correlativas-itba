@@ -931,7 +931,7 @@
 			{
 				"code": "73.62",
 				"parent": ["72.11", "72.33"],
-				"name": "Introducción a la Programación Paralela",
+				"name": "Paralela",
 				"formal": "Introducción a la Programación Paralela",
 				"credits": 1
 			},
@@ -1016,7 +1016,7 @@
 			{
 				"code": "73.83",
 				"parent": ["72.44"],
-				"name": "Gestión estratégica de la Ciberseguridad",
+				"name": "Gestión de Ciber",
 				"formal": "Gestión estratégica de la Ciberseguridad",
 				"credits": 1
 			},
