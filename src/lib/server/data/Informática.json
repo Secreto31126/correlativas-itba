@@ -735,7 +735,7 @@
 			{
 				"code": "72.75",
 				"parent": ["72.34", "93.24", "93.75"],
-				"name": "Aprendizaje Automático (Machine Learning)",
+				"name": "ML",
 				"formal": "Aprendizaje Automático (Machine Learning)",
 				"credits": 3
 			},
@@ -868,7 +868,7 @@
 			{
 				"code": "72.97",
 				"parent": ["72.34"],
-				"name": "Intro Videojuegos",
+				"name": "VJ",
 				"formal": "Introducción a la Programación de Videojuegos",
 				"credits": 3
 			},
@@ -980,7 +980,7 @@
 			{
 				"code": "73.69",
 				"parent": [],
-				"name": "Large Language Models",
+				"name": "LLMs",
 				"formal": "Large Language Models",
 				"credits": 3
 			},
@@ -1138,14 +1138,14 @@
 			{
 				"code": "94.62",
 				"parent": [],
-				"name": "Ética en los Negocios",
+				"name": "Ética",
 				"formal": "Ética en los Negocios",
 				"credits": 3
 			},
 			{
 				"code": "94.64",
 				"parent": [],
-				"name": "Prácticas Expositivas",
+				"name": "Expo",
 				"formal": "Prácticas Expositivas",
 				"credits": 3,
 				"requires": 120
