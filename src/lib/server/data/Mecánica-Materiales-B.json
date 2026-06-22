@@ -513,6 +513,14 @@
 				"formal": "Epistemología y Heurística",
 				"credits": 3,
 				"requires": 72
+			},
+			{
+				"code": "94.64",
+				"parent": [],
+				"name": "Prácticas Expositivas",
+				"formal": "Prácticas Expositivas",
+				"credits": 3,
+				"requires": 72
 			}
 		],
 		"ELECTIVAS Concentración - MATERIALES \"B\"": [
@@ -948,7 +956,7 @@
 				"parent": ["92.02", "93.42"],
 				"name": "Astrodinámica y misiones espaciales",
 				"formal": "Astrodinámica y misiones espaciales",
-				"credits": 6
+				"credits": 3
 			},
 			{
 				"code": "33.05",

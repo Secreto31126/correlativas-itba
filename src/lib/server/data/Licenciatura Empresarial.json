@@ -596,6 +596,13 @@
 				"requires": 96
 			},
 			{
+				"code": "82.24",
+				"parent": ["11.67", "82.04"],
+				"name": "Investigación de Mercados",
+				"formal": "Investigación de Mercados",
+				"credits": 3
+			},
+			{
 				"code": "82.90",
 				"parent": [],
 				"name": "Estadística para los Negocios",

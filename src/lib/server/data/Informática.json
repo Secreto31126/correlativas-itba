@@ -386,6 +386,13 @@
 				"requires": 192
 			},
 			{
+				"code": "11.83",
+				"parent": ["93.24"],
+				"name": "Gestión de Operaciones",
+				"formal": "Gestión de Operaciones",
+				"credits": 6
+			},
+			{
 				"code": "16.04",
 				"parent": [],
 				"name": "Neuro",
@@ -1033,6 +1040,14 @@
 				"name": "Desarrollo Integral de Videojuegos",
 				"formal": "Desarrollo Integral de Videojuegos",
 				"credits": 3
+			},
+			{
+				"code": "74.60",
+				"parent": [],
+				"name": "Visión por Computadora (Computer Vision)",
+				"formal": "Visión por Computadora (Computer Vision)",
+				"credits": 3,
+				"requires": 144
 			},
 			{
 				"code": "81.13",

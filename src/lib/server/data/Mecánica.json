@@ -344,6 +344,14 @@
 				"formal": "Epistemología y Heurística",
 				"credits": 3,
 				"requires": 72
+			},
+			{
+				"code": "94.64",
+				"parent": [],
+				"name": "Prácticas Expositivas",
+				"formal": "Prácticas Expositivas",
+				"credits": 3,
+				"requires": 72
 			}
 		]
 	}

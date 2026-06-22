@@ -552,6 +552,13 @@
 				"credits": 3
 			},
 			{
+				"code": "67.23",
+				"parent": ["93.42"],
+				"name": "Sustentabilidad y eficiencia energética en la construcción",
+				"formal": "Sustentabilidad y eficiencia energética en la construcción",
+				"credits": 3
+			},
+			{
 				"code": "68.99",
 				"parent": [],
 				"name": "Introducción a la Ciencia de Ciudades",

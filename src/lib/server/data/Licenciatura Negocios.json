@@ -720,6 +720,13 @@
 				"credits": 1
 			},
 			{
+				"code": "82.24",
+				"parent": ["81.20", "93.39"],
+				"name": "Investigación de Mercados",
+				"formal": "Investigación de Mercados",
+				"credits": 3
+			},
+			{
 				"code": "82.80",
 				"parent": [],
 				"name": "Serv. de Exc. Lean aplic. a los Serv. y Princ. de Lean Office",

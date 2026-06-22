@@ -586,6 +586,14 @@
 				"credits": 3
 			},
 			{
+				"code": "25.43",
+				"parent": ["25.20"],
+				"name": "Laboratorio de Procesamiento de Señales",
+				"formal": "Laboratorio de Procesamiento de Señales",
+				"credits": 3,
+				"requires": 144
+			},
+			{
 				"code": "25.51",
 				"parent": [],
 				"name": "Electrónica aplicada a Movilidad Eléctrica",
@@ -738,6 +746,13 @@
 				"credits": 6
 			},
 			{
+				"code": "25.74",
+				"parent": ["25.18"],
+				"name": "Verificación de Sistemas Digitales",
+				"formal": "Verificación de Sistemas Digitales",
+				"credits": 3
+			},
+			{
 				"code": "25.80",
 				"parent": [],
 				"name": "Introducción a la programación orientada a objetos",
@@ -806,6 +821,14 @@
 				"name": "Laboratorio de simulaciones de señales aleatorias",
 				"formal": "Laboratorio de simulaciones de señales aleatorias",
 				"credits": 2
+			},
+			{
+				"code": "25.90",
+				"parent": ["25.15"],
+				"name": "Sistemas de energía espaciales",
+				"formal": "Sistemas de energía espaciales",
+				"credits": 3,
+				"requires": 144
 			},
 			{
 				"code": "31.81",

@@ -761,6 +761,13 @@
 				"credits": 3
 			},
 			{
+				"code": "16.98",
+				"parent": ["12.67", "16.01"],
+				"name": "Glicobiología Funcional",
+				"formal": "Glicobiología Funcional",
+				"credits": 3
+			},
+			{
 				"code": "17.15",
 				"parent": ["12.83"],
 				"name": "Introducción a la Ingeniería Ambiental",
@@ -947,7 +954,7 @@
 			{
 				"code": "81.75",
 				"parent": ["71.59"],
-				"name": "Fundamentos del desarrollo de software y análisis de datos en Python",
+				"name": "Fund. del desarrollo de software y análisis de datos en Python",
 				"formal": "Fund. del desarrollo de software y análisis de datos en Python",
 				"credits": 1
 			},

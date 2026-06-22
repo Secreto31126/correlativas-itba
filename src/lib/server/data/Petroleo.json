@@ -559,6 +559,20 @@
 				"requires": 96
 			},
 			{
+				"code": "48.04",
+				"parent": ["61.27"],
+				"name": "El Gas Natural Licuado",
+				"formal": "El Gas Natural Licuado",
+				"credits": 3
+			},
+			{
+				"code": "48.05",
+				"parent": ["61.27"],
+				"name": "La Cadena de valor del Gas Natural",
+				"formal": "La Cadena de valor del Gas Natural",
+				"credits": 3
+			},
+			{
 				"code": "61.10",
 				"parent": [],
 				"name": "Economía Internacional",
