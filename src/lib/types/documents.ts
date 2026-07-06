@@ -44,6 +44,7 @@ export class UserData extends Document {
 		progress: boolean;
 		movement: boolean;
 		optatives: boolean;
+		hide_old: boolean;
 		visited_account: boolean;
 	} = {
 		code: true,
@@ -52,6 +53,7 @@ export class UserData extends Document {
 		progress: true,
 		movement: true,
 		optatives: true,
+		hide_old: true,
 		visited_account: false
 	};
 

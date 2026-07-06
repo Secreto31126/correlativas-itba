@@ -66,6 +66,10 @@
 				"requires": {
 					"description": "Número de créditos requeridos para cursar la materia",
 					"type": "number"
+				},
+				"hidden": {
+					"description": "Bajada lógica de una materia",
+					"type": "boolean"
 				}
 			},
 			"required": ["code", "parent", "name", "formal"]
