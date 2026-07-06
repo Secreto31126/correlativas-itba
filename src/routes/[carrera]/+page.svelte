@@ -524,7 +524,7 @@
 >
 	<!-- Troncales -->
 	{#each semesters as semester (semester)}
-		{@render subjects_row(data.career.filter((e) => e.semester === semester))}
+		{@render subjects_row(data.career.filter((e) => !e.hidden && e.semester === semester))}
 	{/each}
 	<!-- Pinneadas -->
 	{#if starred.length}
@@ -540,7 +540,7 @@
 			</button>
 		</div>
 		{@render subjects_row(
-			subjects.filter((e) => !$db.starred.includes(e.codec)),
+			subjects.filter((e) => !e.hidden && !$db.starred.includes(e.codec)),
 			!visible_optatives[name]
 		)}
 	{/each}

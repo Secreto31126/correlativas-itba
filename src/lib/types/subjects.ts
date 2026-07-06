@@ -9,6 +9,7 @@ export interface Subject {
 	parentc?: string[];
 	codec?: string;
 	optative?: string;
+	hidden?: boolean;
 }
 
 export interface FilledSubject extends Subject {

@@ -24,6 +24,7 @@ class Subject {
 		this.semester = year !== null ? (year - 1) * 2 + semester * 1 : undefined;
 		this.credits = credits || undefined;
 		this.requires = requires || undefined;
+		this.hidden = undefined;
 	}
 }
 
@@ -68,11 +69,7 @@ $('tr:not(:has(table)):has(td > a)').each(function () {
 	const subject = new Subject(code, name, parents, year, semester, credits, requires);
 
 	if (specialization) {
-		if (!(specialization in db.optatives)) {
-			db.optatives[specialization] = [];
-		}
-
-		db.optatives[specialization].push(subject);
+		(db.optatives[specialization] ??= []).push(subject);
 	} else {
 		db.mandatories.push(subject);
 	}
@@ -80,7 +77,11 @@ $('tr:not(:has(table)):has(td > a)').each(function () {
 
 if (old) {
 	db.mandatories.forEach((e) => {
-		e.name = old.mandatories.find((o) => o.code === e.code)?.name ?? e.name;
+		const existing = old.mandatories.find((o) => o.code === e.code);
+		if (existing) {
+			e.name = existing.name;
+			e.hidden = existing.hidden;
+		}
 	});
 
 	for (const specialization in old.optatives) {
@@ -92,6 +93,7 @@ if (old) {
 			const existing = db.optatives[specialization].find((o) => o.code === e.code);
 			if (existing) {
 				existing.name = e.name;
+				existing.hidden = e.hidden;
 			}
 		});
 	}
