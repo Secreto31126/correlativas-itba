@@ -325,6 +325,11 @@
 		}
 	}
 
+	function shouldHide(s: FilledSubject) {
+		if (!$db.options.hide_old) return false;
+		return s.hidden;
+	}
+
 	$effect(() => {
 		interact('.cuatrimestre > div').draggable({
 			enabled: $db.options.movement,
@@ -524,7 +529,7 @@
 >
 	<!-- Troncales -->
 	{#each semesters as semester (semester)}
-		{@render subjects_row(data.career.filter((e) => !e.hidden && e.semester === semester))}
+		{@render subjects_row(data.career.filter((e) => !shouldHide(e) && e.semester === semester))}
 	{/each}
 	<!-- Pinneadas -->
 	{#if starred.length}
@@ -540,7 +545,7 @@
 			</button>
 		</div>
 		{@render subjects_row(
-			subjects.filter((e) => !e.hidden && !$db.starred.includes(e.codec)),
+			subjects.filter((e) => !shouldHide(e) && !$db.starred.includes(e.codec)),
 			!visible_optatives[name]
 		)}
 	{/each}
