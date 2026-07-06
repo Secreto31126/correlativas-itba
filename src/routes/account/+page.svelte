@@ -7,6 +7,8 @@
 	import { UserData } from '$lib/types/documents';
 	import { deleteDocument, getDocumentStore, saveDocument, signOut } from '$lib/modules/firebase';
 
+	type Options = keyof (typeof db)['options'];
+
 	let { data }: PageProps = $props();
 
 	const db_store = $derived(getDocumentStore(UserData, new UserData(data.user_data)));
@@ -22,39 +24,11 @@
 		}
 	}
 
-	function toggle_code() {
-		db.options.code = !db.options.code;
-		saveDocument(db);
-	}
-
-	function toggle_credits() {
-		db.options.credits = !db.options.credits;
-		saveDocument(db);
-	}
-
-	function toggle_requires() {
-		db.options.requires = !db.options.requires;
-		saveDocument(db);
-	}
-
-	function toggle_progress() {
-		db.options.progress = !db.options.progress;
-		saveDocument(db);
-	}
-
-	function toggle_movement() {
-		db.options.movement = !db.options.movement;
-		saveDocument(db);
-	}
-
-	function toggle_optatives() {
-		db.options.optatives = !db.options.optatives;
-		saveDocument(db);
-	}
-
-	function toggle_hidden() {
-		db.options.hide_old = !db.options.hide_old;
-		saveDocument(db);
+	function toggle_option(key: Options) {
+		return () => {
+			db.options[key] = !db.options[key];
+			saveDocument(db);
+		};
 	}
 
 	onMount(() => {
@@ -75,140 +49,37 @@
 	</a>
 </header>
 
-<div class="flex flex-col items-center gap-2">
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar código</span>
-		<input type="checkbox" checked={db.options.code} onchange={toggle_code} class="peer sr-only" />
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-yellow-600 peer-focus:ring-4 peer-focus:ring-yellow-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-yellow-600 dark:peer-focus:ring-yellow-800"
-		></div>
-	</label>
+<div class="flex w-full flex-col items-center gap-2">
+	<div class="flex w-4/5 flex-col gap-2 md:w-120 md:max-w-1/6">
+		{#snippet toggle_button(label: string, key: Options)}
+			<label class="relative inline-flex w-full cursor-pointer items-center justify-between">
+				<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">{label}</span>
+				<input
+					type="checkbox"
+					checked={db.options[key]}
+					onchange={toggle_option(key)}
+					class="peer sr-only"
+				/>
+				<div
+					class="peer h-6 w-11 rounded-full bg-gray-200
+					peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300
+					peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
+					after:h-5 after:w-5 after:rounded-full
+					after:border after:border-gray-300 after:bg-white after:transition-all
+					after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
+					dark:bg-gray-700 dark:peer-checked:bg-blue-600 dark:peer-focus:ring-blue-800"
+				></div>
+			</label>
+		{/snippet}
 
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar créditos</span>
-		<input
-			type="checkbox"
-			checked={db.options.credits}
-			onchange={toggle_credits}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-blue-600 dark:peer-focus:ring-blue-800"
-		></div>
-	</label>
-
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-			Mostrar requisitos
-		</span>
-		<input
-			type="checkbox"
-			checked={db.options.requires}
-			onchange={toggle_requires}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-green-600 peer-focus:ring-4 peer-focus:ring-green-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-green-600 dark:peer-focus:ring-green-800"
-		></div>
-	</label>
-
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar progreso</span>
-		<input
-			type="checkbox"
-			checked={db.options.progress}
-			onchange={toggle_progress}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-violet-600 peer-focus:ring-4 peer-focus:ring-violet-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-violet-600 dark:peer-focus:ring-violet-800"
-		></div>
-	</label>
-
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-			Arrastrar materias
-		</span>
-		<input
-			type="checkbox"
-			checked={db.options.movement}
-			onchange={toggle_movement}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-pink-600 peer-focus:ring-4 peer-focus:ring-pink-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-pink-600 dark:peer-focus:ring-pink-800"
-		></div>
-	</label>
-
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mostrar electivas</span>
-		<input
-			type="checkbox"
-			checked={db.options.optatives}
-			onchange={toggle_optatives}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-orange-600 peer-focus:ring-4 peer-focus:ring-orange-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-orange-600 dark:peer-focus:ring-orange-800"
-		></div>
-	</label>
-
-	<label class="relative inline-flex w-fit cursor-pointer items-center">
-		<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-			Ocultar materias viejas
-		</span>
-		<input
-			type="checkbox"
-			checked={db.options.hide_old}
-			onchange={toggle_hidden}
-			class="peer sr-only"
-		/>
-		<div
-			class="peer h-6 w-11 rounded-full bg-gray-200
-			peer-checked:bg-cyan-600 peer-focus:ring-4 peer-focus:ring-cyan-300
-			peer-focus:outline-hidden after:absolute after:end-5.5 after:top-0.5
-			after:h-5 after:w-5 after:rounded-full
-			after:border after:border-gray-300 after:bg-white after:transition-all
-			after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full dark:border-gray-600
-			dark:bg-gray-700 dark:peer-checked:bg-cyan-600 dark:peer-focus:ring-cyan-800"
-		></div>
-	</label>
+		{@render toggle_button('Mostrar código', 'code')}
+		{@render toggle_button('Mostrar créditos', 'credits')}
+		{@render toggle_button('Mostrar requisitos', 'requires')}
+		{@render toggle_button('Mostrar progreso', 'progress')}
+		{@render toggle_button('Arrastrar materias', 'movement')}
+		{@render toggle_button('Mostrar electivas', 'optatives')}
+		{@render toggle_button('Ocultar materias viejas', 'hide_old')}
+	</div>
 
 	<div class="mt-4">
 		<button
