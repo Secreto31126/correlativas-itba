@@ -5,11 +5,17 @@
  * It asumes JQuery is loaded in the page.
  *
  * To use it, open SGA, go to a career's "Plan de estudio", open the
- * browser's console (ctrl + mayus + i) and paste the code. Copy the
- * output and save it in `src/lib/server/data/{CAREER}.json`.
+ * browser's console (ctrl + mayus + i) and paste the code. Then merge
+ * the output into the existing file with `static/merge.js`:
  *
- * Last, you need to manually change the `name` property of the subjects
- * to be cooler :D
+ *   node static/merge.js src/lib/server/data/{CAREER}.json
+ *
+ * Paste the output and press Ctrl+D. It upserts every subject, keeps
+ * the manually curated `name`s and drops codes listed in
+ * `static/exclusions.json`.
+ *
+ * Last, for new subjects you need to manually change the `name`
+ * property to be cooler :D
  */
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
