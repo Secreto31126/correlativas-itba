@@ -414,6 +414,13 @@
 				"credits": 3
 			},
 			{
+				"code": "16.68",
+				"parent": ["93.75"],
+				"name": "Señales y Sistemas",
+				"formal": "Señales y Sistemas",
+				"credits": 6
+			},
+			{
 				"code": "16.82",
 				"parent": ["72.34", "93.24", "93.28"],
 				"name": "Neurociencia Computacional",
@@ -454,6 +461,14 @@
 				"parent": [],
 				"name": "Cuántica",
 				"formal": "Computación Cuántica",
+				"credits": 6,
+				"requires": 144
+			},
+			{
+				"code": "25.27",
+				"parent": [],
+				"name": "Sistemas Embebidos",
+				"formal": "Sistemas Embebidos",
 				"credits": 6,
 				"requires": 144
 			},
@@ -1156,6 +1171,13 @@
 				"name": "PPS",
 				"formal": "Practica Profesional supervisada",
 				"requires": 144
+			},
+			{
+				"code": "94.78",
+				"parent": ["10.09"],
+				"name": "Gestión de Capital Emprendedor y Venture Capital",
+				"formal": "Gestión de Capital Emprendedor y Venture Capital",
+				"credits": 1
 			},
 			{
 				"code": "94.92",
