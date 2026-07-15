@@ -80,6 +80,13 @@
 			"semester": 4
 		},
 		{
+			"code": "14",
+			"parent": ["6"],
+			"name": "Pro tip 7",
+			"formal": "Pro tip 7: Algunas electivas están ocultas porque no se dictan, pero podés desactivar este filtro en los ajustes de tu cuenta",
+			"semester": 4
+		},
+		{
 			"code": "7",
 			"parent": ["5", "6"],
 			"name": "Bonus: ¿Cómo vuelvo al inicio?",
@@ -99,6 +106,14 @@
 			"name": "Bonus: ¿Puedo borrar mi cuenta si me retracto?",
 			"formal": "¡Sí! Hacé click en tu foto de perfil arriba a la derecha, y en los ajustes de cuenta podés borrarla",
 			"semester": 5
+		},
+		{
+			"code": "15",
+			"parent": ["14"],
+			"name": "Bonus: ¿Cómo vuelvo a ocultar las electivas viejas?",
+			"formal": "Desde ajustes, con la opción 'Ocultar materias viejas'",
+			"semester": 5,
+			"hidden": true
 		}
 	],
 	"optatives": {}
