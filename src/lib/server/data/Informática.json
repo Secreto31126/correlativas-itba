@@ -748,8 +748,7 @@
 				"parent": ["72.07", "72.35", "72.37"],
 				"name": "Integración de Sistemas de Información",
 				"formal": "Integración de Sistemas de Información",
-				"credits": 3,
-				"hidden": true
+				"credits": 3
 			},
 			{
 				"code": "72.72",
