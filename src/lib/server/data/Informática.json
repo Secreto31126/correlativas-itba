@@ -383,7 +383,8 @@
 				"name": "Innovación y Competitividad",
 				"formal": "Innovación y Competitividad",
 				"credits": 3,
-				"requires": 192
+				"requires": 192,
+				"hidden": true
 			},
 			{
 				"code": "11.83",
@@ -425,7 +426,8 @@
 				"parent": ["72.34", "93.24", "93.28"],
 				"name": "Neurociencia Computacional",
 				"formal": "Neurociencia Computacional",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "16.95",
@@ -440,7 +442,8 @@
 				"parent": [],
 				"name": "Fundamentos Electrónicos de la Informática",
 				"formal": "Fundamentos Electrónicos de la Informática",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "22.48",
@@ -535,7 +538,8 @@
 				"parent": [],
 				"name": "Organización Básica de la Computadora",
 				"formal": "Organización Básica de la Computadora",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.18",
@@ -549,7 +553,8 @@
 				"parent": [],
 				"name": "Sistemas Tolerantes a Fallas",
 				"formal": "Sistemas Tolerantes a Fallas",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.23",
@@ -563,84 +568,96 @@
 				"parent": [],
 				"name": "Topología de Internet: Análisis y Modelado",
 				"formal": "Topología de Internet: Análisis y Modelado",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.29",
 				"parent": ["72.34"],
 				"name": "Tipos para Lenguajes de Programación",
 				"formal": "Tipos para Lenguajes de Programación",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.46",
 				"parent": ["72.27"],
 				"name": "Robótica Basada en Comportamiento",
 				"formal": "Robótica Basada en Comportamiento",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.49",
 				"parent": ["72.42"],
 				"name": "Sistemas Tolerantes a Fallas",
 				"formal": "Sistemas Tolerantes a Fallas",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.50",
 				"parent": ["72.34"],
 				"name": "Introducción al Desarrollo de Videojuegos",
 				"formal": "Introducción al Desarrollo de Videojuegos",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.51",
 				"parent": ["72.42"],
 				"name": "Tecnologías para Web 2.0 y Redes Sociales",
 				"formal": "Tecnologías para Web 2.0 y Redes Sociales",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.52",
 				"parent": ["72.34", "93.75"],
 				"name": "Análisis y Tratamiento de Imágenes",
 				"formal": "Análisis y Tratamiento de Imágenes",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.53",
 				"parent": ["72.34"],
 				"name": "Visión Computacional 3D",
 				"formal": "Visión Computacional 3D",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.54",
 				"parent": ["72.41", "93.24"],
 				"name": "OLAP y Explotación de Datos",
 				"formal": "OLAP y Explotación de Datos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.55",
 				"parent": ["72.32", "72.37"],
 				"name": "Ontologías en la Web",
 				"formal": "Ontologías en la Web",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.56",
 				"parent": [],
 				"name": "Automatización e Integración de Sistemas de Información",
 				"formal": "Automatización e Integración de Sistemas de Información",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.57",
 				"parent": [],
 				"name": "Sistemas Embebidos",
 				"formal": "Sistemas Embebidos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.58",
@@ -654,14 +671,16 @@
 				"parent": ["72.27"],
 				"name": "Sistemas de Inteligencia Artificial II",
 				"formal": "Sistemas de Inteligencia Artificial II",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.60",
 				"parent": ["72.34"],
 				"name": "Programación Funcional",
 				"formal": "Programación Funcional",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.61",
@@ -675,14 +694,16 @@
 				"parent": ["72.32"],
 				"name": "Cloud Computing",
 				"formal": "Cloud Computing",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.65",
 				"parent": ["72.34"],
 				"name": "Desarrollo de Videojuegos 2D en iPhone OS",
 				"formal": "Desarrollo de Videojuegos 2D en iPhone OS",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.66",
@@ -696,21 +717,24 @@
 				"parent": [],
 				"name": "Robótica Cinemática Computacional",
 				"formal": "Robótica Cinemática Computacional",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.68",
 				"parent": [],
 				"name": "Arte y Ciencia Interactivos",
 				"formal": "Arte y Ciencia Interactivos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.69",
 				"parent": [],
 				"name": "Seguridad de Software basada en Flujo de Información",
 				"formal": "Seguridad de Software basada en Flujo de Información",
-				"credits": 6
+				"credits": 6,
+				"hidden": true
 			},
 			{
 				"code": "72.70",
@@ -731,14 +755,16 @@
 				"parent": [],
 				"name": "Análisis y Verificación de Modelos y Códigos",
 				"formal": "Análisis y Verificación de Modelos y Códigos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.73",
 				"parent": [],
 				"name": "Aprendizaje por Refuerzo en Robótica",
 				"formal": "Aprendizaje por Refuerzo en Robótica",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.74",
@@ -759,14 +785,16 @@
 				"parent": [],
 				"name": "Técnicas Automáticas para  Testing de Software",
 				"formal": "Técnicas Automáticas para  Testing de Software",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.78",
 				"parent": [],
 				"name": "OLAP Espacial",
 				"formal": "OLAP Espacial",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.79",
@@ -787,42 +815,48 @@
 				"parent": [],
 				"name": "Simulación y Animación de Sistemas Multipartículas",
 				"formal": "Simulación y Animación de Sistemas Multipartículas",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.82",
 				"parent": ["72.41"],
 				"name": "Tópicos de NOSQL",
 				"formal": "Tópicos de NOSQL",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.83",
 				"parent": [],
 				"name": "Técnicas Avanzadas de HCI con Uso de Rastreadores de Ojos y Manos",
 				"formal": "Técnicas Avanzadas de HCI con Uso de Rastreadores de Ojos y Manos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.84",
 				"parent": ["72.37"],
 				"name": "Base de Datos Espaciales y Sistemas de Información Geográfica",
 				"formal": "Base de Datos Espaciales y Sistemas de Información Geográfica",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.85",
 				"parent": ["72.32", "72.37"],
 				"name": "Análisis de Datos en la Web Semántica",
 				"formal": "Análisis de Datos en la Web Semántica",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.86",
 				"parent": ["72.97"],
 				"name": "Técnicas Avanzadas en Videojuegos",
 				"formal": "Técnicas Avanzadas en Videojuegos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.87",
@@ -836,14 +870,16 @@
 				"parent": ["72.34", "93.24", "93.75"],
 				"name": "Introducción a la Neurociencia Computacional",
 				"formal": "Introducción a la Neurociencia Computacional",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.89",
 				"parent": ["72.44"],
 				"name": "Moneda Digital Descentralizada",
 				"formal": "Moneda Digital Descentralizada",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.90",
@@ -864,21 +900,24 @@
 				"parent": ["72.08"],
 				"name": "Introducción a los Sistemas Embebidos",
 				"formal": "Introducción a los Sistemas Embebidos",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.95",
 				"parent": [],
 				"name": "Proyecto de Innovación Científico-Tecnológico",
 				"formal": "Proyecto de Innovación Científico-Tecnológico",
-				"credits": 12
+				"credits": 12,
+				"hidden": true
 			},
 			{
 				"code": "72.96",
 				"parent": ["72.38"],
 				"name": "Proyecto de Aplicaciones Móviles",
 				"formal": "Proyecto de Aplicaciones Móviles",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "72.97",
@@ -892,7 +931,8 @@
 				"parent": ["72.38"],
 				"name": "Desarrollo de Aplicaciones Móviles Multiplataforma",
 				"formal": "Desarrollo de Aplicaciones Móviles Multiplataforma",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "73.22",
@@ -969,7 +1009,8 @@
 				"parent": ["93.07"],
 				"name": "Procesamiento del Lenguaje Natural",
 				"formal": "Procesamiento del Lenguaje Natural",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "73.66",
@@ -1012,7 +1053,8 @@
 				"parent": ["72.44"],
 				"name": "SEGURIDAD OFENSIVA",
 				"formal": "SEGURIDAD OFENSIVA",
-				"credits": 1
+				"credits": 1,
+				"hidden": true
 			},
 			{
 				"code": "73.81",
@@ -1141,7 +1183,8 @@
 				"parent": [],
 				"name": "Comunicación Organizacional",
 				"formal": "Comunicación Organizacional",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			},
 			{
 				"code": "94.42",
@@ -1184,7 +1227,8 @@
 				"parent": [],
 				"name": "Escritura Académica",
 				"formal": "Escritura Académica",
-				"credits": 3
+				"credits": 3,
+				"hidden": true
 			}
 		]
 	}
