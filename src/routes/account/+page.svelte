@@ -50,7 +50,7 @@
 </header>
 
 <div class="flex w-full flex-col items-center gap-2">
-	<div class="flex w-4/5 flex-col gap-2 md:w-120 md:max-w-1/6">
+	<div class="flex w-4/5 flex-col gap-2 md:w-120 md:max-w-1/6 md:min-w-3xs">
 		{#snippet toggle_button(label: string, key: Options)}
 			<label class="relative inline-flex w-full cursor-pointer items-center justify-between">
 				<span class="me-2 text-sm font-medium text-gray-900 dark:text-gray-300">{label}</span>
