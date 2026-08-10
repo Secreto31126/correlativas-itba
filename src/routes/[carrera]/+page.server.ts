@@ -1,6 +1,7 @@
 import type { PageServerLoad } from './$types';
-import type { UserData } from '$lib/types/documents';
 import type { FilledSubject, CareerData } from '$lib/types/subjects';
+
+import { UserData } from '$lib/types/documents';
 
 import { error } from '@sveltejs/kit';
 import { codify } from '$lib/modules/codes';
@@ -52,10 +53,10 @@ export const load = (async ({ params, locals }) => {
 	let user_data: UserData | null = null;
 	if (locals.userSession) {
 		const { uid } = locals.userSession;
-		const docs = <UserData[]>await getDocuments('user_data', uid);
+		const docs = await getDocuments('user_data', uid, UserData);
 
 		if (!docs.length) {
-			const doc = <UserData>await createDocument('user_data', uid);
+			const doc = await createDocument('user_data', uid, UserData);
 			user_data = doc;
 		} else {
 			user_data = docs[0];

@@ -36,26 +36,32 @@ export async function decodeToken(
 	}
 }
 
-export async function getDocuments(collectionPath: string, uid: string): Promise<Array<Document>> {
+export async function getDocuments<T extends Document>(
+	collectionPath: string,
+	uid: string,
+	mapper: new (data: unknown) => T
+): Promise<Array<T>> {
 	if (!uid) return [];
 	initializeFirebase();
 	const db = admin.firestore();
 	const querySnapshot = await db.collection(collectionPath).where('uid', '==', uid).get();
-	const list: Array<Document> = [];
+	const list: Array<T> = [];
 	querySnapshot.forEach((doc) => {
-		const document: Document = <Document>doc.data(); // Just need the data on the server
+		const document = doc.data(); // Just need the data on the server
 		document._id = doc.id;
-		list.push(document);
+		list.push(new mapper(document));
 	});
 	return list;
 }
 
-export async function createDocument(collectionPath: string, uid: string): Promise<Document> {
+export async function createDocument<T extends Document>(
+	collectionPath: string,
+	uid: string,
+	mapper: new (data: unknown) => T
+): Promise<T> {
 	initializeFirebase();
 	const db = admin.firestore();
-	const doc = await (await db.collection(collectionPath).add({ uid })).get();
+	const doc = await db.collection(collectionPath).add({ uid });
 
-	const document = <Document>doc.data(); // Just need the data on the server
-	document._id = doc.id;
-	return document;
+	return new mapper({ uid, _id: doc.id });
 }
