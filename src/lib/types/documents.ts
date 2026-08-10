@@ -60,5 +60,18 @@ export class UserData extends Document {
 	constructor(data: unknown = {}) {
 		super(data, 'user_data', 'subjects', 'starred', 'options');
 		this._load(data);
+
+		this.subjects ??= [];
+		this.starred ??= [];
+		this.options ??= {
+			code: true,
+			credits: true,
+			requires: true,
+			progress: true,
+			movement: true,
+			optatives: true,
+			hide_old: true,
+			visited_account: false
+		};
 	}
 }
