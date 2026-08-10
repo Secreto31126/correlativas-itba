@@ -32,6 +32,10 @@ export class Document {
 			}
 		}
 	}
+
+	pojo() {
+		return { ...this };
+	}
 }
 
 export class UserData extends Document {

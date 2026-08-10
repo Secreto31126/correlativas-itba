@@ -13,9 +13,9 @@ export const load = (async ({ locals }) => {
 
 		if (!docs.length) {
 			const doc = await createDocument('user_data', uid, UserData);
-			user_data = doc;
+			user_data = doc.pojo();
 		} else {
-			user_data = docs[0];
+			user_data = docs[0].pojo();
 		}
 	}
 

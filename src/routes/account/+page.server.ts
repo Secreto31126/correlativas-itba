@@ -12,6 +12,6 @@ export const load = (async ({ locals }) => {
 	if (!docs.length) error(404, 'User data not found, unexpectedly');
 
 	return {
-		user_data: docs[0]
+		user_data: docs[0].pojo()
 	};
 }) satisfies PageServerLoad;
