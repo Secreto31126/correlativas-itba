@@ -36,14 +36,10 @@ export const load = (async ({ params, locals }) => {
 
 	let data: CareerData;
 	try {
-		const files = import.meta.glob('$lib/server/data/*.json', {
-			query: '?json',
-			import: 'default'
-		});
-
+		const files = import.meta.glob<CareerData>('$lib/server/data/*.json');
 		const path = Object.keys(files).find((e) => e.endsWith(filename)) ?? 'LOL no.';
 
-		data = (await files[path]()) as CareerData;
+		data = await files[path]();
 	} catch {
 		error(500, 'Failed to open file');
 	}

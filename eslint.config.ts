@@ -8,8 +8,7 @@ import prettier from 'eslint-config-prettier';
 
 import svelteConfig from './svelte.config.js';
 
-import { defineConfig, globalIgnores } from 'eslint/config';
-import { includeIgnoreFile } from '@eslint/compat';
+import { defineConfig, globalIgnores, includeIgnoreFile } from 'eslint/config';
 import { fileURLToPath } from 'node:url';
 
 const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
