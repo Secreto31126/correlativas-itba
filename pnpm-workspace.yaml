@@ -4,3 +4,6 @@ allowBuilds:
   protobufjs: true
 minimumReleaseAgeExclude:
   - eslint-plugin-svelte@3.23.0
+overrides:
+  # Required for firebase-admin support on Vercel
+  "jwks-rsa@4>jose": "5"

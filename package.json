@@ -3,6 +3,13 @@
 	"version": "0.0.1",
 	"private": true,
 	"packageManager": "pnpm@11.21.0",
+	"engines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.19.0",
+			"onFail": "warn"
+		}
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"dev:host": "vite dev --host",
@@ -50,12 +57,5 @@
 		"firebase-admin": "^14.2.0",
 		"interactjs": "^1.10.28",
 		"leader-line": "^1.0.8"
-	},
-	"engines": {
-		"runtime": {
-			"name": "node",
-			"version": "24.19.0",
-			"onFail": "warn"
-		}
 	}
 }
