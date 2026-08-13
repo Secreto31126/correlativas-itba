@@ -1,23 +1,20 @@
-import admin from 'firebase-admin';
+import { getApp, initializeApp, cert, type App } from 'firebase-admin';
+import { getFirestore } from 'firebase-admin/firestore';
+import { getAuth } from 'firebase-admin/auth';
+
 import { FIREBASE_SERVER_CONFIG } from '$env/static/private';
 
 import type { Document } from '$lib/types/documents';
 import type { BaseAuth } from 'firebase-admin/auth';
 
-function base64ToBytes(base64: string) {
-	const binString = atob(base64);
-	// @ts-expect-error Copy pasted from https://developer.mozilla.org/en-US/docs/Glossary/Base64
-	return Uint8Array.from(binString, (m) => m.codePointAt(0));
-}
-
 function initializeFirebase() {
-	if (!admin.apps.length) {
-		const serviceAccount = JSON.parse(
-			new TextDecoder().decode(base64ToBytes(FIREBASE_SERVER_CONFIG))
-		);
+	try {
+		getApp();
+	} catch (error) {
+		const serviceAccount = JSON.parse(atob(FIREBASE_SERVER_CONFIG));
 
-		admin.initializeApp({
-			credential: admin.credential.cert(serviceAccount),
+		initializeApp({
+			credential: cert(serviceAccount),
 			databaseURL: `https://${serviceAccount.project_id}.firebaseio.com`
 		});
 	}
@@ -29,7 +26,7 @@ export async function decodeToken(
 	if (!token || token === 'null' || token === 'undefined') return null;
 	try {
 		initializeFirebase();
-		return await admin.auth().verifyIdToken(token);
+		return await getAuth().verifyIdToken(token);
 	} catch (err) {
 		console.error(err);
 		return null;
@@ -43,7 +40,7 @@ export async function getDocuments<T extends Document>(
 ): Promise<Array<T>> {
 	if (!uid) return [];
 	initializeFirebase();
-	const db = admin.firestore();
+	const db = getFirestore();
 	const querySnapshot = await db.collection(collectionPath).where('uid', '==', uid).get();
 	const list: Array<T> = [];
 	querySnapshot.forEach((doc) => {
@@ -60,7 +57,7 @@ export async function createDocument<T extends Document>(
 	mapper: new (data: unknown) => T
 ): Promise<T> {
 	initializeFirebase();
-	const db = admin.firestore();
+	const db = getFirestore();
 	const doc = await db.collection(collectionPath).add({ uid });
 
 	return new mapper({ uid, _id: doc.id });
